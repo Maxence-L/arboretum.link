@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3e416042-0831-410e-bc48-ad8738bffa8b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/_notes/Analyse discriminante linéaire.markdown" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_notes/Theoreme-de-bayes.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/content.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/content.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/feed.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/feed.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/post.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/post.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_notes/Comparison based on accomplishment does not have a baseline.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_notes/Cultural artefacts to improve the resonance and life expectancy of your writing.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_notes/Dark theme adoption as a function of cognitive exhaustion.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_notes/Epistemic humility to avoid unintended ontological dust while writing.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_notes/Everyone should have a project that they control 100% of.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_notes/Humility is the knowing of the epistemic gap.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_notes/Reading the material to completion over interest-based pickups-n-drops.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_notes/Reading with fractalized mental pattern.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_notes/Serendipity-based outlook as a driver for large-scale personal projects.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2020-01-01-Test-page-to-see-how-the-markdown-is-rendered.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2020-02-01-How-to-use-simply-jekyll-features-on-your-website.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2020-03-01-How-to-setup-simply-jekyll.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2020-04-01-Exploring-the-features-of-simply-jekyll.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2020-05-01-Introduction-to-simply-jekyll.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2020-06-01-informational-hazard-thinking-before-consuming.markdown" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.md" beforeDir="false" afterPath="$PROJECT_DIR$/about.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/favicon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/profile.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/profile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tags.md" beforeDir="false" afterPath="$PROJECT_DIR$/tags.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1iXqinBlGrRKyIfzRGAJBJSaM9N" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/img" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/img" />
+      <recent name="$PROJECT_DIR$/_notes" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3e416042-0831-410e-bc48-ad8738bffa8b" name="Default Changelist" comment="" />
+      <created>1602064414773</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602064414773</updated>
+      <workItem from="1602064416830" duration="5474000" />
+      <workItem from="1602170341951" duration="3989000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="100" y="123" width="2360" height="1131" key="dock-window-1" timestamp="1602171701044">
+      <screen x="0" y="23" width="2560" height="1333" />
+    </state>
+    <state x="100" y="123" width="2360" height="1131" key="dock-window-1/0.23.2560.1333@0.23.2560.1333" timestamp="1602171701044" />
+    <state x="859" y="317" width="840" height="1035" key="search.everywhere.popup" timestamp="1602172849646">
+      <screen x="0" y="23" width="2560" height="1331" />
+    </state>
+    <state x="859" y="317" width="840" height="1034" key="search.everywhere.popup/0.23.2560.1330@0.23.2560.1330" timestamp="1602071850342" />
+    <state x="859" y="317" width="840" height="1035" key="search.everywhere.popup/0.23.2560.1331@0.23.2560.1331" timestamp="1602172849646" />
+  </component>
+</project>
