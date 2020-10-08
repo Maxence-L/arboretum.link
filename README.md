@@ -2,4 +2,4 @@
 
 # Arboretum.link
 
-Un jardin digital.
+Un jardin digital utilisant un thème `simply-jekyll`modifié.
