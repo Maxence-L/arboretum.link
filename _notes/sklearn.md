@@ -2,8 +2,6 @@
 title: sklearn
 tags: #sklearn #ml-pratique
 ---
-
-#ml #scikit-learn #meta
 Scikit-Learn est une bibliothèque de code utilisée pour appliquer les principaux algorithmes de machine learning à des jeux de données.
 
 Chaque technique correspond à un objet, sur lequel on peut agir en définissant les paramètres de départ, en l'appliquant à des données et en utilisant le modèle ainsi construit pour prédire de nouvelles données.
@@ -38,8 +36,8 @@ Exemple dans le cas des [[K-Means]] :
 # Importation de KMeans :
 from sklearn.cluster import KMeans
 
-X = np.array([[1, 2], [1, 4], [1, 0],
-              [10, 2], [10, 4], [10, 0]])
+X = np.array([ [1, 2], [1, 4], [1, 0],
+               [10, 2], [10, 4], [10, 0] ])
 
 # Creating the classifier, with custom parameters :
 cluster_model = KMeans(n_clusters=2)
