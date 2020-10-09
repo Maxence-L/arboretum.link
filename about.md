@@ -1,9 +1,8 @@
 ---
 layout: post
-title: About
+title: À propos
 permalink: /about/
 content-type: eg
 ---
-# À propos
 
 ...

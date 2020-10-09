@@ -3,12 +3,12 @@ title: Analyse discriminante linéaire
 tags: Apprentissage-non-supervisé
 ---
 
-L'analyse discriminante linéaire (ADL) est une méthode de classification proche de la [[régression logistique::Régression logistique]]. 
+L'analyse discriminante linéaire (ADL) est une méthode de classification proche de la [[régression logistique]]. 
 
 Elle est appelée en anglais *linear discriminant analysis*.
 
 ## Principe
-Soit une variable réponse $$Y$$ possédant $$k$$ classes possibles. L'analyse discriminante linéaire consiste à modéliser la distribution de X pour chaque classe de la variable réponse et d'utiliser le [[théorème de Bayes]] pour en déduire $$Pr(Y=k \vert X=x)$$
+Soit une variable réponse $$Y$$ possédant $$k$$ classes possibles. L'analyse discriminante linéaire consiste à modéliser la distribution de X pour chaque classe de la variable réponse et d'utiliser le [théorème de Bayes](\Théorème de Bayes) pour en déduire $$Pr(Y=k \vert X=x)$$
 
 On peut donc utiliser le théorème de Bayes pour estimer la valeur des paramètres $$P(X)$$, $$P(Y)$$, $$ P(X \vert Y) $$ et donc déterminer la vraisemblance $$Pr(Y=k \vert X=x)$$ pour chaque Y. 
 
@@ -35,7 +35,7 @@ Soit :
 	
 On notera $$p_k(X) =P(Y=k \vert X)$$
 
-Selon le [[théorème de Bayes]], on a :
+Selon le [théorème de Bayes](\Théorème de Bayes), on a :
 
 $$p_k(X) = \dfrac{\pi_{k}f_{k}(x)}{ \sum_{t=1}^k \pi_{l} f_{l}(x)}$$
 
