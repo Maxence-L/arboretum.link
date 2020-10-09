@@ -50,5 +50,5 @@ est le plus grand. Le classificateur ainsi obtenu sépare les observations sur u
 
 Voit que dans ce cas, la distinction se fait selon une simple rêgle d'équidistance aux deux moyennes.
 
-### ADL avec $p > 1$ ($X = X_1, X_2,....X_p)$
+### ADL avec p > 1
 
