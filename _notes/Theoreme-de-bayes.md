@@ -1,5 +1,5 @@
 ---
-title: théorème de Bayes
+title: Théorème de Bayes
 tags: Probabilités
 ---
 
