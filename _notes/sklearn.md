@@ -1,6 +1,6 @@
 ---
 title: sklearn
-tags: #sklearn #ml-pratique
+tags: ml-pratique
 ---
 Scikit-Learn est une bibliothèque de code utilisée pour appliquer les principaux algorithmes de machine learning à des jeux de données.
 
