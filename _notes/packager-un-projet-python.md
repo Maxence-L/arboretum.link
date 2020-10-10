@@ -1,6 +1,6 @@
 ---
 title : Packager un projet python
-tags : #python
+tags : Python
 ---
 
 Packager un projet python permet de rendre les scripts qu'il contient exécutables de manière standardisée par un autre utilisateur. 
@@ -67,7 +67,7 @@ Par exemple, si l'on a :
 	 
 ````
 
-On pourra [[import|importer]] `database.py` avec la phrase suivante :
+On pourra importer `database.py` avec la phrase suivante :
 ```python
 import utils.database
 ````
@@ -146,7 +146,7 @@ Thumbs.db
 
 Comme on s'en doute en regardant ci-dessus, on peut spécifier les extensions avec un astérisque en préfixe (ex : \*.exe) et les noms des fichiers ou dossiers - écrits simplement, en entier (ex : script.py).
 
-On peut trouver un [exemplaire plus complet](https://github.com/github/gitignore/blob/master/Python.gitignore) sur github.
+On peut trouver un [[exemplaire plus complet::https://github.com/github/gitignore/blob/master/Python.gitignore]] sur github.
 
 #### requirements.txt
 
@@ -172,7 +172,7 @@ Pour obtenir une liste des packages utilisés par l'environnement, on peut utili
 pip freeze > requirements.txt
 `````
 
-Il est aussi possible d'utiliser [pigar](https://github.com/damnever/pigar) si l'on désire restreindre les packages spécifiés dans requirements.txt aux seules importations du package.
+Il est aussi possible d'utiliser [[pigar::https://github.com/damnever/pigar]] si l'on désire restreindre les packages spécifiés dans requirements.txt aux seules importations du package.
 
 Enfin, si l'on utilise [[Pycharm]], il est possible, après avoir créé le fichier `requirements.txt`, de retirer les packages non utilisés avec l'outil *sync python requirements* dans l'onglet *tool*.
 
