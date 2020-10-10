@@ -50,5 +50,3 @@ est le plus grand. Le classificateur ainsi obtenu sépare les observations sur u
 
 Voit que dans ce cas, la distinction se fait selon une simple rêgle d'équidistance aux deux moyennes.
 
-### ADL avec p > 1
-

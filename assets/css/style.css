@@ -947,9 +947,10 @@ label.margin-toggle:not(.sidenote-number) {
 }
 
 .spaced-rep {
-    font-size: 30px;
+    font-size: 20px;
     display: none;
 }
+
 
 input.srs-toggle {
     display: none; 
@@ -968,12 +969,13 @@ label.srs-toggle {
     vertical-align: baseline;
     position: relative; 
     padding: 12px;
-    width: 240px;
+    width: 300px;
     background-color: #fff;
     border: solid 1px #dfdfdf;
     border-radius: 5px;
     box-shadow: 1px 1px 15px #cfcfcf;
     word-wrap:break-word;
+    font-size: 20px;
 }
 
 .related {
