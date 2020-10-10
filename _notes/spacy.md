@@ -84,7 +84,7 @@ doc = nlp("This is a sentence.")
 displacy.serve(doc, style="dep")
 ````
 
-![dependency tree](assets/img/dependency_tree_spacy.png)
+![dependency tree](/assets/img/dependency_tree_spacy.png)
 
 Il est possible d'accéder aux "named entity" (- aux noms propres) avec la propriété `.ents`, spaCy reconnaissant ces objets automatiquement :
 
