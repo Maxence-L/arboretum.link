@@ -39,7 +39,15 @@ for token in doc:
 
 ````
 
-Les éléments du texte, traités par spaCy, sont disponibles en accédant aux propriétés de l'objet.
+Les éléments du texte, traités par spaCy, sont disponibles en accédant aux propriétés[[
+*⚠️ A noter :*
+Il est possible d'avoir une explication des labels avec `spacy.explain()` :
+```python
+spacy.explain("VBZ")
+
+> 'verb, 3rd person singular present'
+````
+::wrap]]  de l'objet.
 
 Description des propriétés :
 - `.text` : le texte original de l'objet `.token``
@@ -50,15 +58,7 @@ Description des propriétés :
 - `.alpha_` : le token est est-il un mot alphabétique
 - `.stop_`: le token fait il partie des mots 'stop' (les mots les plus communs)
 
-[[
-*⚠️ A noter :*
-Il est possible d'avoir une explication des labels avec `spacy.explain()` :
-```python
-spacy.explain("VBZ")
 
-'verb, 3rd person singular present'
-````
-::wrap]]
 
 Le résultat :
 
