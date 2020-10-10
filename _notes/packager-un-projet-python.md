@@ -7,7 +7,7 @@ Packager un projet python permet de rendre les scripts qu'il contient exécutabl
 
 Organiser son code sous la forme d'un package a plusieurs avantages :
 
-[[https://the-hitchhikers-guide-to-packaging.readthedocs.io/en/latest/introduction.html#benefits-of-packaging::rsn]]
+[[https://the-hitchhikers-guide-to-packaging.readthedocs.io/en/latest/introduction.html#benefits-of-packaging::rmn]]
 
 - Le téléchargement et/ou l'ajout automatique des dépendances, c'est-à-dire les packages annexes nécessaires pour que notre programme s'exécute.
 - La gestion des packages installés sur l'environnement, leur version, leur auteur, etc...
@@ -51,7 +51,7 @@ if __name__ == '__main__':
 #### \_\_init__.py
 Les dossiers contenant un script [[__init__]].py sont considérés par python comme étant des packages et les modules qu'ils contiennent deviennent importables[^2] s'ils ont été installés.
 
-[[https://stackoverflow.com/questions/448271/what-is-init-py-for::rsn]]
+[[https://stackoverflow.com/questions/448271/what-is-init-py-for::rmn]]
 
 Par exemple, si l'on a :
 ````
@@ -101,7 +101,7 @@ Si l'on utilise un gestionnaire de version comme [[git]], il y aura probablement
 
 On utilise le fichier `.gitignore` pour préciser quels fichiers [[git]] devra ignorer. Un exemple des fichiers les plus ignorés :
 
-[[https://gist.github.com/octocat/9257657::rsn]]
+[[https://gist.github.com/octocat/9257657::rmn]]
 
 ```.gitignore
 # Compiled source #
@@ -163,7 +163,7 @@ requests
 
 On peut demander à utiliser la version exacte avec l'opérateur `==` ou une version compatible avec `~=`[^7]. On peut aussi ne pas préciser de version, comme dans le cas du package `requests`ci-dessus.
 
-[[https://stackoverflow.com/questions/39590187/in-requirements-txt-what-does-tilde-equals-mean::rsn]]
+[[https://stackoverflow.com/questions/39590187/in-requirements-txt-what-does-tilde-equals-mean::rmn]]
 
 On l'exécute avec la commande `pip install -r requirements.txt`.
 
@@ -184,8 +184,8 @@ Le Readme est un fichier texte résumant l'usage auquel se destine le programme,
 
 #### setup.py
 Le fichier `setup.py` a pour rôle d'appeler la fonction [[setup()]] de l'outil d'installation choisi qui créera un fichier installable. Il en existe plusieurs, mais l'on utilisera [[setuptools]], recommandé par la [[Python Packaging Authority]][^4]
-[[https://setuptools.readthedocs.io/en/latest/userguide/index.html::rsn]]
-[[https://packaging.python.org/guides/tool-recommendations/::lsn]]
+[[https://setuptools.readthedocs.io/en/latest/userguide/index.html::rmn]]
+[[https://packaging.python.org/guides/tool-recommendations/::lmn]]
 
 Une aide très complète est disponible ici : https://docs.python.org/3/distutils/index.html
 
@@ -218,13 +218,13 @@ Les sous-packages comme `my_package.foo`se trouvent dans le dossier `./my_packag
 
 Setuptools ne parcourt par récursivement les dossiers à la recherche de fichiers `__init__.py`, il faut donc spécifier explicitement le nom des packages.
 
-[[https://docs.python.org/3/distutils/setupscript.html#listing-whole-packages::lsn]]
+[[https://docs.python.org/3/distutils/setupscript.html#listing-whole-packages::lmn]]
 
 ##### Les dépendances
 
 Définir les dépendances nécessaires dans `setup.py` permet à [[setuptools]] de les localiser sur Pypi et de les télécharger lors de l'installation du package (`python setup.py`, voir plus bas).
 
-[[https://setuptools.readthedocs.io/en/latest/userguide/dependency_management.html#build-system-requirement::rsn]]
+[[https://setuptools.readthedocs.io/en/latest/userguide/dependency_management.html#build-system-requirement::rmn]]
 
 On spécifie les dépendances `x` et `y` à installer avec le paramètre `install_require=["x","y"]` :
 
@@ -252,7 +252,7 @@ https://python-packaging.readthedocs.io/en/latest/testing.html
 ### Distribution source (*sdist*)
 Une fois que les fichiers précedemment cités sont dans le package, on peut créer la distribution source avec la commande `sdist` (*source distribution*).
 
-[[https://docs.python.org/3/distutils/introduction.html#distutils-simple-example::rsn]]
+[[https://docs.python.org/3/distutils/introduction.html#distutils-simple-example::rmn]]
 
 ```bash
 python setup.py sdist
