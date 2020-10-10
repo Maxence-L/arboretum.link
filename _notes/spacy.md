@@ -40,13 +40,13 @@ for token in doc:
 ````
 
 
-⚠️ A noter :
-Il est possible d'avoir une explication des labels avec `spacy.explain()` :
-```python
-spacy.explain("VBZ")
-
-'verb, 3rd person singular present'
-````
+> A noter :
+> Il est possible d'avoir une explication des labels avec `spacy.explain()` :
+> ```python
+> spacy.explain("VBZ")
+> 
+> 'verb, 3rd person singular present'
+> ````
 
 
 Description des propriétés :

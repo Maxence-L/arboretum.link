@@ -998,6 +998,11 @@ label.srs-toggle {
     grid-gap: 10px;
 }
 
+img[src*='#center'] {
+    display: block;
+    margin: auto;
+}
+
 .related-group {
     margin-left: 10px;
     width: 90% !important;
