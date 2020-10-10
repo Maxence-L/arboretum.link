@@ -52,7 +52,7 @@ classifier.predict([0,0],[12,3])
 ```
 
 ## Sauvegarde du modèle
-Il est possible d'enregistrer le modèle dans la RAM avec le module [[pickle]]. On le sauvegarde avec `f = pickle.dumps(model)`et on le charge avec `pickle.loads(f)`:
+Il est possible d'enregistrer le modèle avec le module [[pickle]]. On le sauvegarde avec `f = pickle.dumps(model)`et on le charge dans la RAM avec `pickle.loads(f)`:
 
 ```python
 import pickle
@@ -64,6 +64,8 @@ classifier2.predict([0,0],[12,3])
 
 > array([1, 0], dtype=int32)
 ````
+
+Les fichiers pickle pouvant contenir des programmes malveillant, il est toutefois déconseillé de charger de tels fichiers trouvés sur le net dont la provenance est douteuse.
 
 On peut aussi enregistrer le modèle sur le disque avec [[joblib]][^1] `joblib.dump`et `joblib.load``
 
