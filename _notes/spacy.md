@@ -50,11 +50,15 @@ Description des propriétés :
 - `.alpha_` : le token est est-il un mot alphabétique
 - `.stop_`: le token fait il partie des mots 'stop' (les mots les plus communs)
 
-> *A noter :*
-> Il est possible d'avoir une explication des labels avec `spacy.explain()` :
-> ```python
-> spacy.explain("VBZ")
-> > 'verb, 3rd person singular present'
+[[
+*⚠️ A noter :*
+Il est possible d'avoir une explication des labels avec `spacy.explain()` :
+```python
+spacy.explain("VBZ")
+
+'verb, 3rd person singular present'
+````
+::wrap]]
 
 Le résultat :
 
