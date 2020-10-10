@@ -39,15 +39,15 @@ for token in doc:
 
 ````
 
-[[
-*⚠️ A noter :*
-Il est possible d'avoir une explication des labels avec `spacy.explain()`
+
+⚠️ A noter :
+Il est possible d'avoir une explication des labels avec `spacy.explain()` :
 ```python
 spacy.explain("VBZ")
 
 'verb, 3rd person singular present'
 ````
-::rmn]]
+
 
 Description des propriétés :
 - `.text` : le texte original de l'objet `.token``
