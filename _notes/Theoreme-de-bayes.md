@@ -10,4 +10,4 @@ tags: Probabilités
  
 Le théorème de Bayes statue que :
 
-[[ $$P(A|B) = \frac{P(B | A)\cdot P(A)}{P(B)}$$ ::srs]]
+[[ $$P(A \vert B) = \frac{P(B \vert A)\cdot P(A)}{P(B)}$$ ::srs]]
