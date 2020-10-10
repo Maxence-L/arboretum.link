@@ -47,7 +47,7 @@ spacy.explain("VBZ")
 
 > 'verb, 3rd person singular present'
 ````
-::wrap]]  de l'objet.
+::rmn]]  de l'objet.
 
 Description des propriétés :
 - `.text` : le texte original de l'objet `.token``
