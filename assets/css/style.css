@@ -947,6 +947,7 @@ label.margin-toggle:not(.sidenote-number) {
 }
 
 .spaced-rep {
+    font-size: 30px;
     display: none;
 }
 
