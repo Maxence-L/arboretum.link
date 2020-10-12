@@ -7,7 +7,7 @@ content-type: eg
 
 Mon carnet de notes sur [[Obsidian::obsidian.md]] devenant de plus en plus touffu, j'ai décidé de mettre en ligne progressivement quelques notes.
 
-J'ai parfois du mal à me souvenir d'éléments purement technique: une formule mathématique, la forme d'une méthode d'une bibliothèque python... Je compense en m'expliquant à moi-même par écrit ce que j'étudie, afin de pouvoir y revenir facilement lorsque j'en ai besoin.
+J'ai parfois du mal à me souvenir d'éléments purement techniques: une formule mathématique, la forme d'une méthode d'une bibliothèque python... Je compense en m'expliquant à moi-même par écrit ce que j'étudie, afin de pouvoir y revenir facilement lorsque j'en ai besoin.
 
 Le but est de me forcer à en améliorer la qualité de ces notes, la perspective d'être lu par quelqu'un étant motivant. Cela me permet par ailleurs d'y accéder partout et de les modifier aisément depuis le dossier (privé) Github.
 
