@@ -79,7 +79,7 @@ Le package [[scipy.spatial.distance]] permet de calculer facilement des distance
 
 [^3]: https://docs.scipy.org/doc/scipy/reference/spatial.distance.html
 
-La distance euclidienne entre deux arrays se calcule avec la méthode *[[spatial.distance.euclidian()|euclidian]]*[^1] : 
+La distance euclidienne entre deux arrays se calcule avec la méthode *[[spatial.distance]].euclidian()* : 
 ```python
 from scipy.spatial import distance
 distance.euclidean([1, 0, 0], [0, 1, 0])
