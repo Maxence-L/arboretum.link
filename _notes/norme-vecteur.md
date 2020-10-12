@@ -57,7 +57,7 @@ Comme on le voit, $$L_\infty$$ renvoie la valeur correspondant à la plus grande
 
 ## Normalisation d'un vecteur
 
-Il est parfois nécessaire de comparer l'orientation de vecteurs, en neutralisant donc leur longueur. Par exemple, si l'on veut comparer le sens de deux articles de presse, leur longueur n'est pas importante.
+Il est parfois nécessaire de comparer l'orientation de vecteurs, en neutralisant donc leur longueur. Par exemple, en si l'on veut comparer le sens de deux articles de presse, leur longueur n'est pas importante.
  
 On peut alors normaliser un vecteur, c'est-à-dire lui donner une norme égale à un, **en divisant ses éléments par sa magnitude**. Si la norme $$L_2$$ est utilisée, la position possible du vecteur se répartit sur une sphère-unité de centre $$(0,0)$$ et de rayon $$1$$ :
 
