@@ -23,7 +23,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e416042-0831-410e-bc48-ad8738bffa8b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/_notes/norme-vecteur.md" beforeDir="false" afterPath="$PROJECT_DIR$/_notes/norme-vecteur.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.md" beforeDir="false" afterPath="$PROJECT_DIR$/about.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +68,7 @@
       <workItem from="1602175571316" duration="549000" />
       <workItem from="1602177134156" duration="10936000" />
       <workItem from="1602339071311" duration="9384000" />
-      <workItem from="1602359835287" duration="2151000" />
+      <workItem from="1602359835287" duration="2412000" />
     </task>
     <servers />
   </component>
