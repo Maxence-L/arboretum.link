@@ -1,6 +1,6 @@
 ---
 title: Norme d'un vecteur
-tags: maths
+tags: Maths
 ---
 La norme est un élément de la définition d'un vecteur correspondant à sa longueur.
 
@@ -73,6 +73,18 @@ $$d(p, q)=1-\frac{\arccos (\cos (p, q))}{\pi}$$
 
 $$arrcos()$$ est ici l'inverse de la fonction $$cos^{-1}()$$ et $$\pi$$ est le plus grand angle, en radians.
 
+## Pratique
+
+Le package [[scipy.spatial.distance]] permet de calculer facilement des distances[^3]
+[^3]: https://docs.scipy.org/doc/scipy/reference/spatial.distance.html
+
+La distance euclidienne entre deux arrays se calcule avec la méthode *[[spatial.distance.euclidian()|euclidian]]*[^1] : 
+```python
+from scipy.spatial import distance
+distance.euclidean([1, 0, 0], [0, 1, 0])
+
+>1.4142135623730951
+```
 ---
 
 
