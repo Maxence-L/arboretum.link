@@ -76,6 +76,7 @@ $$arrcos()$$ est ici l'inverse de la fonction $$cos^{-1}()$$ et $$\pi$$ est le p
 ## Pratique
 
 Le package [[scipy.spatial.distance]] permet de calculer facilement des distances[^3]
+
 [^3]: https://docs.scipy.org/doc/scipy/reference/spatial.distance.html
 
 La distance euclidienne entre deux arrays se calcule avec la méthode *[[spatial.distance.euclidian()|euclidian]]*[^1] : 
