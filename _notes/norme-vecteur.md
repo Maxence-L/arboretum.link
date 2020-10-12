@@ -10,7 +10,7 @@ La norme d'un vecteur correspond à la longueur d'un vecteur, c'est-à-dire la d
 
 La définition formelle est la suivante[^1] :
 
-[[Si $$\overrightarrow{u} \in I\!R^n$$ alors la **Norme** ou la **Magnitude** de $$\overrightarrow{u}$$ est définie comme la longueur ou la magnitude du vecteur et peut être calculée en utilisant la formule $$\vert\vec{u}\vert=\sqrt{u_{1}^{2}+u_{2}^{2}+\ldots+u_{n}^{2}}$$::wrap]]
+[[Si $$\overrightarrow{u} \in I\!R^n$$ alors la **Norme** ou la **Magnitude** de $$\overrightarrow{u}$$ est définie comme la longueur ou la magnitude du vecteur et peut être calculée en utilisant la formule $$\vert\vert\vec{u}\vert\vert=\sqrt{u_{1}^{2}+u_{2}^{2}+\ldots+u_{n}^{2}}$$::wrap]]
 
 [^1]: http://mathonline.wikidot.com/the-norm-of-a-vector
 
@@ -18,7 +18,7 @@ La définition formelle est la suivante[^1] :
 
 > **Trouvons la norme du vecteur $$\overrightarrow{u} = (2,-2,3,-4)$$**.
 > 
->Du fait que $$\overrightarrow{u} \in I\!R^4$$ on calcule $$\vert\vec{u}\vert=\sqrt{u_{1}^{2}+u_{2}^{2}+u_{3}^{2}+u_{4}^{2}} = \sqrt{4+4+9+16} = \sqrt{33}$$. La norme du vecteur $$\overrightarrow{u}$$ est donc de 33.
+>Du fait que $$\overrightarrow{u} \in I\!R^4$$ on calcule $$\vert\vert\vec{u}\vert\vert=\sqrt{u_{1}^{2}+u_{2}^{2}+u_{3}^{2}+u_{4}^{2}} = \sqrt{4+4+9+16} = \sqrt{33}$$. La norme du vecteur $$\overrightarrow{u}$$ est donc de 33.
 
 Plus généralement, la distance euclidienne entre deux points $$p$$ et $$q$$ se calcule ainsi :
 
@@ -57,7 +57,9 @@ Comme on le voit, $$L_\infty$$ renvoie la valeur correspondant à la plus grande
 
 ## Normalisation d'un vecteur
 
-On peut normaliser un vecteur, c'est-à-dire lui donner une norme égale à un, **en divisant ses éléments par sa magnitude**. Si la norme $$L_2$$ est utilisée, la position possible du vecteur se répartit sur une sphère-unité de centre $$(0,0)$$ et de rayon $$1$$ :
+Il est parfois nécessaire de comparer l'orientation de vecteurs, en neutralisant donc leur longueur. Par exemple, si l'on veut comparer le sens de deux articles de presse, leur longueur n'est pas importante.
+ 
+On peut alors normaliser un vecteur, c'est-à-dire lui donner une norme égale à un, **en divisant ses éléments par sa magnitude**. Si la norme $$L_2$$ est utilisée, la position possible du vecteur se répartit sur une sphère-unité de centre $$(0,0)$$ et de rayon $$1$$ :
 
 ![norme L2](/assets/img/norme-L2.png#center)
 
@@ -69,7 +71,7 @@ Il sera préférable[^2] d'exploiter la *distance angulaire* :
 
 $$d(p, q)=1-\frac{\arccos (\cos (p, q))}{\pi}$$
 
-$$arrcos()$$ est ici l'inverse de la fonction $$cos^{-1}()$$ et $$\pi$$ est le plus grand angle, en radians
+$$arrcos()$$ est ici l'inverse de la fonction $$cos^{-1}()$$ et $$\pi$$ est le plus grand angle, en radians.
 
 ---
 
