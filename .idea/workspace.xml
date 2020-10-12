@@ -22,9 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e416042-0831-410e-bc48-ad8738bffa8b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/_notes/centroide.md" afterDir="false" />
-    </list>
+    <list default="true" id="3e416042-0831-410e-bc48-ad8738bffa8b" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,7 +66,7 @@
       <workItem from="1602175571316" duration="549000" />
       <workItem from="1602177134156" duration="10936000" />
       <workItem from="1602339071311" duration="9384000" />
-      <workItem from="1602359835287" duration="2752000" />
+      <workItem from="1602359835287" duration="3011000" />
     </task>
     <servers />
   </component>

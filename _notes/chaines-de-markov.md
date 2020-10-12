@@ -11,7 +11,7 @@ Une exemple de chaîne de Markov pour deux états possibles :
 
 ![Source setosa.io](/assets/img/chaine_markov_setosa.io.png#center)
 
-Dans ce cas, on quatre transitions sont possibles : A vers B, B vers A, A vers A, B vers B. On peut faire une carte des probabilités $P(Y \vert X)$ (où X est l'état de départ et Y l'état d'arrivée) de transitions entre états, sous la forme d'une [[matrice de passage]] :
+Dans ce cas, on quatre transitions sont possibles : A vers B, B vers A, A vers A, B vers B. On peut faire une carte des probabilités $$P(Y \vert X)$$ (où X est l'état de départ et Y l'état d'arrivée) de transitions entre états, sous la forme d'une [[matrice de passage]] :
 
 $$X\downarrow Y \to$$|A|B|
 -|-|-
