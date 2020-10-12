@@ -2,11 +2,11 @@
 title: Norme d'un vecteur
 tags: maths
 ---
-La norme est un élément de la définition d'un vecteur. Celle-ci se compose de sa direction, son sens ainsi que sa longueur. 
+La norme est un élément de la définition d'un vecteur correspondant à sa longueur.
 
 ## Définition
 
-La norme d'un vecteur correspond à la longueur d'un vecteur, c'est-à-dire la distance euclidienne qui sépare les deux points qui définissent le vecteur.
+La norme d'un vecteur correspond à la longueur d'un vecteur, c'est-à-dire la distance qui sépare les deux points qui définissent le vecteur.
 
 La définition formelle est la suivante[^1] :
 
