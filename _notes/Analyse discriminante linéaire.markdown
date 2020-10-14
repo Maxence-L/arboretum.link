@@ -42,7 +42,7 @@ $$p_k(X) = \dfrac{\pi_{k}f_{k}(x)}{ \sum_{t=1}^k \pi_{l} f_{l}(x)}$$
 Si l'on suppose que $$f_k(x)$$ suit une [[loi normale]] de loi ($$\mu_k, \sigma^2_k$$) où $$\sigma^2 = \sigma^2_k$$ pour tout $$k$$ (hypothèse d'homoscédasticité), alors on peut estimer $$p_k(X)$$ pour chaque $$k$$.
 
 Après manipulations[[Voir [ceci](https://web.archive.org/web/20190214175740/http://www.math.u-bordeaux.fr/~mchave100p/wordpress/wp-content/uploads/2013/10/Analyse_discrim.pdf) et "An introduction to statistical learning (Hastie et al.)", p. 139 pour la démonstration.
-::rsn]], l'ADL assigne la classe $$k$$ à l'observation $$X=x$$ pour laquelle 
+::lsn]], l'ADL assigne la classe $$k$$ à l'observation $$X=x$$ pour laquelle 
 
 $$\hat{\delta}_k(x) = x \cdot \frac{\hat{\mu}_k}{\hat{\sigma}^2} - \frac{\hat{\mu}^2_k}{2\hat{\sigma}^2} + log(\hat{\pi}_k)$$
 

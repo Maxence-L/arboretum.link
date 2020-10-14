@@ -1,6 +1,7 @@
 ---
 title : Centroïde
 tags: Maths
+toc: false
 ---
 Le centroïde d'une figure géométrique correspond à la moyenne de tous les points appartenant à la figure[^1]. 
 

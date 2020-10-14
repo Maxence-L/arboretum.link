@@ -195,6 +195,9 @@ cite {
 blockquote p {
     font-family: inherit;
     font-size: inherit;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
 }
 
 table {
@@ -423,6 +426,29 @@ hr {
 }
 
 /* Notes: Note-heading, Note-subheading, Notes-content, Related Notes */
+
+.section-nav {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 10px 30px;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    width: auto;
+}
+
+.toc-entry , a{
+    color: #4183c4;
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.toc {
+    padding: 10 18px;
+    display: none;
+    overflow: hidden;
+    border-radius : 5px;
+}
 
 .notes-page-subheader {
     border-bottom: 1px solid #f7f7f7;

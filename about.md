@@ -13,6 +13,6 @@ Le but est de me forcer à en améliorer la qualité de ces notes, la perspectiv
 
 Les notes que vous trouverez ici sont donc naturellement en cours d'amélioration. Mémoriser des concepts est un processus itératif au cours duquel je me corrige et je complète mes connaissances. Même si je tente au maximum de donner les sources, les informations peuvent être parcellaires ou fausses - comme sur le reste du web, cela dit.  
 
-Le web étant essentiellement en anglais, traduire en français des sujets techniques me permet de réfléchir au sens des mots que j'utilise, et donc de mieux m'approprier ces connaissances. Ne vous étonnez donc pas si certaines pages vous disent quelque chose. Il s'agit sûrement de documentation traduite.
+Le web étant essentiellement en anglais, traduire en français des sujets techniques me permet de réfléchir au sens des mots que j'utilise, et donc de mieux m'approprier ces connaissances.
 
 Le site utilise [[Jekyll]], ainsi que le modèle [[simply-jekyll]], que j'ai modifié et traduit en français. Il n'est pas indexé par Google, ce qui en fait un site semi-privé, je suppose.
