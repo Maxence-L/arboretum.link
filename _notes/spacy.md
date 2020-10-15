@@ -2,29 +2,31 @@
 title: spaCy
 tags: nlp ml-pratique
 toc: true
+
 ---
 SpaCy est une bibliothèque python facilitant les étapes du NLP.
 
 La documentation de spaCy est, je dois le dire, absolument la meilleure que j'ai pu lire sur le web :
 
-- [[Pour bien commencer::https://spacy.io/usage]]
-- [[La documentation de l'API::https://spacy.io/api]]
-- [[Les modèles disponibles::https://spacy.io/models]]
+* \[\[Pour bien commencer::https://spacy.io/usage\]\]
+* \[\[La documentation de l'API::https://spacy.io/api\]\]
+* \[\[Les modèles disponibles::https://spacy.io/models\]\]
 
 [Une cheat-sheet est disponible.](https://datacamp-community-prod.s3.amazonaws.com/29aa28bf-570a-4965-8f54-d6a541ae4e06)
 
-
 ## Installation
+
 On l'importe de la manière suivante :
+
 ```bash
 pip install spacy
-````
+```
 
 Il faut penser à installer le pack de langage désiré [parmi ceux disponibles](https://spacy.io/usage/models) pour l'analyse :
 
 ```bash
 python -m spacy download en
-````
+```
 
 On peut alors importer spaCy, ainsi que le modèle contenant les règles de tokenisation ainsi que le pipeline de transformation :
 
@@ -42,12 +44,14 @@ On peut toutefois importer la classe correspondant au champ lexical d'une langue
 ```python
 from spacy.lang.en import English
 nlp = English()
-````
+```
 
-Certaines parties de spaCy, comme la reconnaissance d'attributs *contextuels* (POS, dep, ents) ne sera, dans ce cas, pas possible.
+Certaines parties de spaCy, comme la reconnaissance d'attributs _contextuels_ (POS, dep, ents) ne sera, dans ce cas, pas possible.
 
 ## Trouver des mots, des phrases, des noms et des concepts
+
 ### Nettoyage et tokenisation
+
 On instancie un objet `nlp` - le modèle - en passant du texte en paramètre. Cela entraine le nettoyage de celui-ci, sa tokenisation et la labellisation de ses composants :
 
 ```python
@@ -58,24 +62,25 @@ doc = nlp("Apple is looking at buying U.K. startup for $1 billion")
 for token in doc:
     print(token.i, token.text, token.lemma_, token.pos_, token.tag_, token.dep_,
             token.shape_, token.is_alpha, token.is_stop)
+```
 
-````
-
-Les attributs des tokens, traités par spaCy, sont disponibles en accédant aux propriétés de l'objet. Les attributs terminant par un *underscore* sont au format texte, les autres sont des facteurs d'identification (index, [[hash]]...)
+Les attributs des tokens, traités par spaCy, sont disponibles en accédant aux propriétés de l'objet. Les attributs terminant par un _underscore_ sont au format texte, les autres sont des facteurs d'identification (index, \[\[hash\]\]...)
 
 Description des attributs :
-- `.token.i` : index du token dans le texte
-- `.text` : le texte original de l'objet `.token``
-- `.lemma_`: la forme de base du mot (similaire à la racine)
-- `.pos_` "Part-Of-Speech" tag, correspond à la forme grammaticale du mot (adjectif, adverbe...)
-- `.dep_` : lien de dépendance (préposition, auxiliaire...)
-- `.shape_` : la forme du mot (capitalisation, ponctuation, chiffres...)
-- `.alpha_` : le token est est-il un mot alphabétique
-- `.stop_`: le token fait il partie des mots 'stop' (les mots les plus communs)
-- `.head` : token parent d'un point de vue syntaxique ("orange" dans "orange bleue") - c'est un token gigogne, on accède à son texte par `.head.text`
+
+* `.token.i` : index du token dans le texte
+* `.text` : le texte original de l'objet \`.token\`\`
+* `.lemma_`: la forme de base du mot (similaire à la racine)
+* `.pos_` "Part-Of-Speech" tag, correspond à la forme grammaticale du mot (adjectif, adverbe...)
+* `.dep_` : lien de dépendance (préposition, auxiliaire...)
+* `.shape_` : la forme du mot (capitalisation, ponctuation, chiffres...)
+* `.alpha_` : le token est est-il un mot alphabétique
+* `.stop_`: le token fait il partie des mots 'stop' (les mots les plus communs)
+* `.head` : token parent d'un point de vue syntaxique ("orange" dans "orange bleue") - c'est un token gigogne, on accède à son texte par `.head.text`
 
 > **A noter** :
 > Il est possible d'avoir une explication des labels avec `spacy.explain()` :
+>
 > ```python
 > spacy.explain("VBZ")
 > 
@@ -84,27 +89,26 @@ Description des attributs :
 
 Le résultat :
 
-i|TEXT|LEMMA|POS|TAG|DEP|SHAPE|ALPHA|STOP
--|----|-----|---|---|---|-----|-----|----
-1|Apple|Apple|PROPN|NNP|nsubj|Xxxxx|True|False
-2|is|be|AUX|VBZ|aux|xx|True|True
-3|looking|look|VERB|VBG|ROOT|xxxx|True|False
-4|at|at|ADP|IN|prep|xx|True|True
-5|buying|buy|VERB|VBG|pcomp|xxxx|True|False
-6|U.K.|U.K.|PROPN|NNP|compound|X.X.|False|False
-7|startup|startup|NOUN|NN|dobj|xxxx|True|False
-8|for|for|ADP|IN|prep|xxx|True|True
-9|\$|\$|SYM|\$|quantmod|\$|False|False
-10|1|1|NUM|CD|compound|d|False|False
-11|billion|billion|NUM|CD|pobj|xxxx|True|False
-
-
+| i | TEXT | LEMMA | POS | TAG | DEP | SHAPE | ALPHA | STOP |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | Apple | Apple | PROPN | NNP | nsubj | Xxxxx | True | False |
+| 2 | is | be | AUX | VBZ | aux | xx | True | True |
+| 3 | looking | look | VERB | VBG | ROOT | xxxx | True | False |
+| 4 | at | at | ADP | IN | prep | xx | True | True |
+| 5 | buying | buy | VERB | VBG | pcomp | xxxx | True | False |
+| 6 | U.K. | U.K. | PROPN | NNP | compound | X.X. | False | False |
+| 7 | startup | startup | NOUN | NN | dobj | xxxx | True | False |
+| 8 | for | for | ADP | IN | prep | xxx | True | True |
+| 9 | $ | $ | SYM | $ | quantmod | $ | False | False |
+| 10 | 1 | 1 | NUM | CD | compound | d | False | False |
+| 11 | billion | billion | NUM | CD | pobj | xxxx | True | False |
 
 > **A noter** :
-> Il est possible de sélectionner une tranche (*slice*) de plusieurs mots en en spécifiant l'index : `doc[0:3]`. 
+> Il est possible de sélectionner une tranche (_slice_) de plusieurs mots en en spécifiant l'index : `doc[0:3]`.
 > Une bonne pratique est de le stocker dans un objet [Span](#span).
 
 ### Named entities
+
 Il est possible d'accéder aux "named entity" (- aux noms propres) avec la propriété `.ents`, spaCy reconnaissant ces objets automatiquement :
 
 ```python
@@ -112,30 +116,31 @@ doc = nlp("Apple is looking at buying U.K. startup for $1 billion")
 
 for ent in doc.ents:
     print(ent.text, ent.start_char, ent.end_char, ent.label_)
-````
+```
 
 Description des propriétés :
 
-- `.text` : le texte original de l'objet `.ent`
-- `.start_char`: l'index du début de l'entité dans le `doc``
-- `.end_char`: l'index de la fin de l'entité
-- `.label_` : le type d'entité
+* `.text` : le texte original de l'objet `.ent`
+* `.start_char`: l'index du début de l'entité dans le \`doc\`\`
+* `.end_char`: l'index de la fin de l'entité
+* `.label_` : le type d'entité
 
 Le résultat :
 
-TEXT|START|END|LABEL|DESCRIPTION
--|-|-|-|-
-Apple|0|5|ORG|Companies, agencies, institutions.
-U.K.|27|31|GPE|Geopolitical entity, i.e. countries, cities, states.
-$1 billion|44|54|MONEY|	Monetary values, including unit.
+| TEXT | START | END | LABEL | DESCRIPTION |
+| --- | --- | --- | --- | --- |
+| Apple | 0 | 5 | ORG | Companies, agencies, institutions. |
+| U.K. | 27 | 31 | GPE | Geopolitical entity, i.e. countries, cities, states. |
+| $1 billion | 44 | 54 | MONEY | Monetary values, including unit. |
 
-> **A noter** : 
+> **A noter** :
 > Il est possible de passer dans spaCy des règles [customisées de tokenisation](https://spacy.io/usage/linguistic-features#tokenization0)
 
 ### Matching
 
 #### Matcher
-On peut matcher des parties du texte, de manière similaire au [[regex]] mais en ajoutant la possibilité de matcher des mots possédant certains attributs. 
+
+On peut matcher des parties du texte, de manière similaire au \[\[regex\]\] mais en ajoutant la possibilité de matcher des mots possédant certains attributs.
 
 Par exemple, dans le texte "Pierre boit de l'eau", on peut matcher "Pierre"+Verbe, ce qui n'est pas faisable avec une expression régulière.
 
@@ -148,7 +153,7 @@ nlp = spacy.load('en_core_web_sm')
 
 # Initialisation du matcher avec le vocabulaire partagé
 matcher = Matcher(nlp.vocab)
-````
+```
 
 On définit un pattern sous forme d'une liste de dictionnaires :
 
@@ -157,31 +162,30 @@ pattern = [{'ORTH': 'iPhone'}, {'IS_DIGIT': True}]
 matcher.add('IPHONE_PATTERN', None, pattern)
 ```
 
-Ici, `ORTH` correspond au texte du token ('iphone'). On peut utiliser aussi `'TEXT`'. 
+Ici, `ORTH` correspond au texte du token ('iphone'). On peut utiliser aussi `'TEXT`'.
 
-On peut le remplacer par l'attribut que l'on désire chercher, par exemple `'LOWER':'arbre'` ou `'POS':'VERB'`. 
+On peut le remplacer par l'attribut que l'on désire chercher, par exemple `'LOWER':'arbre'` ou `'POS':'VERB'`.
 
-- La liste des attributs de type lexeme : https://spacy.io/api/lexeme#attributes
-- La liste des attributs de type POS : https://spacy.io/api/annotation#pos-en
-- La liste des attributs de type Named Entity : https://spacy.io/api/annotation#named-entities
+* La liste des attributs de type lexeme : https://spacy.io/api/lexeme#attributes
+* La liste des attributs de type POS : https://spacy.io/api/annotation#pos-en
+* La liste des attributs de type Named Entity : https://spacy.io/api/annotation#named-entities
 
 > **A noter**
 > Les noms des attributs (`is_digit` par exemple) doivent être écrits en majuscule
 
-On ajoute le pattern avec la méthode `.add(pattern_name, on_match, patterns*)`[^1]
+On ajoute le pattern avec la méthode `.add(pattern_name, on_match, patterns*)`[^1](https://spacy.io/api/matcher#add)
 
-[^1]: https://spacy.io/api/matcher#add
+On peut utiliser (similaire au \[regex\]) des opérateurs :
 
-On peut utiliser (similaire au [regex]) des opérateurs :
-
- -|Description
- -|-
-{'OP': '!'}|Negation: match 0 times
-{'OP': '?'}|Optional: match 0 or 1 times
-{'OP': '+'}|Match 1 or more times
-{'OP': '*'}|Match 0 or more times
+| - | Description |
+| --- | --- |
+| {'OP': '!'} | Negation: match 0 times |
+| {'OP': '?'} | Optional: match 0 or 1 times |
+| {'OP': '+'} | Match 1 or more times |
+| {'OP': '*'} | Match 0 or more times |
 
 On ajoute alors l'opérateur au dictionnaire de l'élément :
+
 ```python
 # On matche un adjectif + un ou deux noms
 pattern = [{'POS': 'ADJ'}, {'POS': 'NOUN'}, {'POS': 'NOUN', 'OP': '?'}]
@@ -190,12 +194,13 @@ pattern = [{'POS': 'ADJ'}, {'POS': 'NOUN'}, {'POS': 'NOUN', 'OP': '?'}]
 **Le matcher retourne un tuple comprenant trois éléments** : `match_id`, qui correspond à la valeur hash du nom du pattern, `start`, qui correspond au début de l'index du span matché et `end`, sa fin.
 
 On utilise le matcher :
+
 ```python
 matches = matcher(doc)
 print('Matches:', [doc[start:end].text for match_id, start, end in matches])
 
 > Matches: ['iPhone 6']
-````
+```
 
 #### PhraseMatcher
 
@@ -213,9 +218,10 @@ matcher.add('COUNTRY', None, *patterns)
 
 # Call the matcher
 matches = matcher(doc)
-````
+```
 
 On peut ensuite ajouter les matchs (en l'occurrence, des noms de pays) à la liste de Named Entities par exemple :
+
 ```python
 # Create a doc and find matches in it
 doc = nlp(text)
@@ -235,6 +241,7 @@ for match_id, start, end in matcher(doc):
 ```
 
 ### Visualisations
+
 On peut visualiser la relation de dépendance (`.dep_`) ainsi en exploitant les [visualisateurs](https://spacy.io/usage/visualizers) intégrés :
 
 ```python
@@ -243,17 +250,19 @@ from spacy import displacy
 nlp = spacy.load("en_core_web_sm")
 doc = nlp("This is a sentence.")
 displacy.serve(doc, style="dep")
-````
+```
 
 ![dependency tree](/assets/img/dependency_tree_spacy.png#center)
 
 ## Analyse de données
+
 ### Structure des données dans spaCy
 
 ![structure données](/assets/img/spacy-structure-donnees.png#center)
 
 #### String
-Chaque mot du texte reçoit une valeur hash la reliant à un mot dans le catalogue de mot `StringStore`., à la manière d'un index dans un [[bag-of-words]]. 
+
+Chaque mot du texte reçoit une valeur hash la reliant à un mot dans le catalogue de mot `StringStore`., à la manière d'un index dans un \[\[bag-of-words\]\].
 
 On peut le consulter ainsi :
 
@@ -277,21 +286,23 @@ On ne peut toutefois pas chercher à partir d'un hash un mot non sauvegardé aup
 > Le hashage d'un mot est différent pour chaque texte.
 
 #### Vocab
+
 Le `vocab` correspond au [lexemes](https://spacy.io/api/lexeme#_title) et fait le lien entre le `doc` et le `StringStore`.
 
 `vocab`contient pour chaque mot des informations **indépendantes du contexte** :
-- `lexeme.text`
-- `lexeme.orth`- la valeur hash (l'index, en quelque sorte) qui le relie au dictionnaire
-- Des attributs lexicaux comme `lexeme.is_alpha`
-- Aucun attribut contextuel de type `POS`, `dep`, `ents`...
 
+* `lexeme.text`
+* `lexeme.orth`- la valeur hash (l'index, en quelque sorte) qui le relie au dictionnaire
+* Des attributs lexicaux comme `lexeme.is_alpha`
+* Aucun attribut contextuel de type `POS`, `dep`, `ents`...
 
 #### Doc
+
 L'objet `doc`contient le `vocab` et les tokens, qui représentent le résultat de l'analyse du texte par spaCy et contiennent les informations relative à leur valeur `string` mais aussi à leur relation avec les autres tokens.
 
 On construit un objet `doc`de la manière suivante :
 
-````python
+```python
 from spacy.lang.en import English
 nlp = English()
 
@@ -304,11 +315,12 @@ spaces = [True, False, False]
 
 # Create a doc manually
 doc = Doc(nlp.vocab, words=words, spaces=spaces)
-````
+```
 
 Comme on le voit ci-dessus, l'objet `Doc` prend en paramètres `nlp.vocab` correspondant à la langue du texte, les mots et les espaces qui les séparent.
 
 (#span)
+
 #### Span
 
 Un objet `span` est un sous-ensemble de `Doc`correspondant à une tranche de mots du `doc`.
@@ -334,7 +346,7 @@ span = Span(doc, 0, 2)
 print(span)
 
 > 'Hello world'
-````
+```
 
 Une fois l'objet `Span` importé et définit, on peut l'ajouter, par exemple, à l'objet `doc.ents`. Dans ce cas, spaCy reconnaitre le contenu du `span` comme une named entity.
 
@@ -348,25 +360,27 @@ doc.ents = [span_with_label]
 print([(ent.text, ent.label_)
 
 > [('Hello world', 'GREETING')]
-````
+```
 
 En règle générale, il vaut mieux utiliser `span`et `doc` un maximum pour éviter la conversion en strings, qui est moins efficace et prend plus de temps.
 
 ### Analyse de similarité
 
 #### Vectorisation du texte
-SpaCy peut réaliser des analyse de similarité[^2]. En anglais, le texte est vectorisé selon l'algorithme [GloVe](https://spacy.io/models/en#en_core_web_md) [par défaut](https://spacy.io/models/en#en_core_web_md). Il est par ailleurs [possible](https://spacy.io/usage/vectors-similarity#converting) d'utiliser des algorithmes alternatifs ([[Word2Vec]]), par exemple.
 
-[^2]: [Le saviez-vous](http://204.19.47.207/bdl/gabarit_bdl.asp?id=4458) ? "Le nom similitude vient du latin similitudo « ressemblance, rapprochement ». On l’emploie pour exprimer une ressemblance complète, exacte entre des personnes ou des choses. Le nom similarité est dérivé de l’adjectif similaire. On l’utilise pour désigner une ressemblance à peu près exacte entre deux choses ou deux personnes. Ce nom n’exprime pas une idée de parfaite ressemblance comme le nom similitude."
+SpaCy peut réaliser des analyse de similarité\[^2\]. En anglais, le texte est vectorisé selon l'algorithme [GloVe](https://spacy.io/models/en#en_core_web_md) [par défaut](https://spacy.io/models/en#en_core_web_md). Il est par ailleurs [possible](https://spacy.io/usage/vectors-similarity#converting) d'utiliser des algorithmes alternatifs (\[\[Word2Vec\]\]), par exemple.
+
+\[^2\]: [Le saviez-vous](http://204.19.47.207/bdl/gabarit_bdl.asp?id=4458) ? "Le nom similitude vient du latin similitudo « ressemblance, rapprochement ». On l’emploie pour exprimer une ressemblance complète, exacte entre des personnes ou des choses. Le nom similarité est dérivé de l’adjectif similaire. On l’utilise pour désigner une ressemblance à peu près exacte entre deux choses ou deux personnes. Ce nom n’exprime pas une idée de parfaite ressemblance comme le nom similitude."
 
 Les modèles utilisés pour analyser le texte ne sont pas tous équivalent : si l'on veut vectoriser un texte en les utilisant, il faut charger le modèle `md` (medium) ou `lg` (large - 746mo en anglais)
 
 On peut consulter les valeurs calculée du vecteur d'un `token` ou d'un `doc` avec `doc.vector`ou `doc[index].vector`.
 
-On peut aussi accéder à la [[Norme d'un vecteur]] avec `doc.vector_norm`.
+On peut aussi accéder à la \[\[Norme d'un vecteur\]\] avec `doc.vector_norm`.
 
 #### Similarité
-SpaCy propose par défaut la méthode `doc.similarity(doc comparé)` qui produit la [[similarité cosinus]]. On peut l'appliquer à un document ou à un [[Span::#span]].
+
+SpaCy propose par défaut la méthode `doc.similarity(doc comparé)` qui produit la \[\[similarité cosinus\]\]. On peut l'appliquer à un document ou à un \[\[Span::#span\]\].
 
 ```python
 doc = nlp("This was a great restaurant. Afterwards, we went to a really nice bar.")
@@ -380,23 +394,24 @@ similarity = span1.similarity(span2)
 print(similarity)
 
 > 0.702384635043887
-````
+```
+
 ## Pipelines
 
 ### Composants
+
 Lorsque l'on crée un objet `doc`à partir d'un texte, spaCy démarre un pipeline pour extraire les informations de ce dernier et classifier ces éléments.
 
 ![pipeline](/assets/img/spacy-pipeline.png#center)
 
-
-NOM|COMPOSANT|PRODUIT|DESCRIPTION
--|-|-|-
-tokenizer|`Tokenizer`|`Doc`|Segmente le text en tokens.
-tagger|`Tagger`|`Doc[i].tag`|Attribue les tags [[POS]].
-parser|`DependencyParser`|`Doc[i].head`, `Doc[i].dep`, `Doc.sents`, `Doc.noun_chunks`|Attribue les étiquettes (*labels*) de dépendance.
-ner|`EntityRecognizer`|`Doc.ents`, `Doc[i].ent_iob`, `Doc[i].ent_type`|Détecte et étiquette les *named entities*.
-textcat|`TextCategorizer`|`Doc.cats`|Attribue une étiquette aux documents.
-…|custom components|`Doc._.xxx`, `Token._.xxx`, `Span._.xxx`|Assigne des attributs, des méthodes ou des propriétés *custom*.
+| NOM | COMPOSANT | PRODUIT | DESCRIPTION |
+| --- | --- | --- | --- |
+| tokenizer | Tokenizer | Doc | Segmente le text en tokens. |
+| tagger | Tagger | Doc\[i\].tag | Attribue les tags \[\[POS\]\]. |
+| parser | DependencyParser | Doc\[i\].head, Doc\[i\].dep, Doc.sents, Doc.noun_chunks | Attribue les étiquettes (labels) de dépendance. |
+| ner | EntityRecognizer | Doc.ents, Doc\[i\].ent_iob, Doc\[i\].ent_type | Détecte et étiquette les named entities. |
+| textcat | TextCategorizer | Doc.cats | Attribue une étiquette aux documents. |
+| … | custom components | Doc._.xxx, Token._.xxx, Span._.xxx | Assigne des attributs, des méthodes ou des propriétés custom. |
 
 Chaque modèle définira dans ses métadonnées (`meta.json`) les composants de son pipeline de traitement :
 
@@ -406,32 +421,36 @@ Chaque modèle définira dans ses métadonnées (`meta.json`) les composants de 
 	"name":"core_web_sm"n
 	"pipeline": ["tagger", "parser", "ner"]
 }
-````
+```
 
 > **A noter**:
 > On peut accéder aux noms des composants du pipeline en appelant `nlp.pipe.names`:
+>
 > ```python
 > print(nlp.pipe_names)
 > > ["tagger", "parser", "ner"]
->  ````
->  Et aux tuples `(nom, composant)` avec `nlp.pipeline`:
->  ```python
->  [('tagger', <spacy.pipeline.Tagger>), 
->   ('parser', <spacy.pipeline.DependencyParser>), 
->   ('ner', <spacy.pipeline.EntityRecognizer>)]
->  `````
+> ```
+>
+> Et aux tuples `(nom, composant)` avec `nlp.pipeline`:
+>
+> ```python
+> [('tagger', <spacy.pipeline.Tagger>), 
+>  ('parser', <spacy.pipeline.DependencyParser>), 
+>  ('ner', <spacy.pipeline.EntityRecognizer>)]
+> ```
 
 #### Ajouter ses propres composants
+
 Il est possible de créer des fonctions de traitement du texte personnalisées et de les ajouter au pipeline. Elles seront alors exécutées avec les autres composants.
 
 Une fois la fonction définie, on l'ajoute avec la la méthode `nlp.add_pipe`. Il est possible d'ajouter une option définissant son ordre de passage dans l'exécution du pipe :
 
-Argument|Description|Example
--|-|-
-last|If True, add last|nlp.add_pipe(component, last=True)
-first|If True, add first|nlp.add_pipe(component, first=True)
-before|Add before component|nlp.add_pipe(component, before='ner')
-after|Add after component|nlp.add_pipe(component, after='tagger')
+| Argument | Description | Example |
+| --- | --- | --- |
+| last | If True, add last | nlp.add_pipe(component, last=True) |
+| first | If True, add first | nlp.add_pipe(component, first=True) |
+| before | Add before component | nlp.add_pipe(component, before='ner') |
+| after | Add after component | nlp.add_pipe(component, after='tagger') |
 
 Un exemple ou l'on renvoie la longueur du document :
 
@@ -463,14 +482,16 @@ doc = nlp("Hello world!")
 ```
 
 ### Extensions
+
 On peut définir des attributs (comme `.POS_`par exemple), des propriétés et des méthodes personnalisés. Ils sont accessibles par la propriété `._.` :
+
 ```python
 doc._.title = 'My document'
 token._.is_color = True
 span._.has_color = False
 ```
 
-On peut les enregistrer dans les objets `Doc`, `Token` ou `Span` avec le setteur `.set_extension`. Le niveau d'objet dans lequel on enregistrera l'extension sera celui sur lequel on l'appelera. 
+On peut les enregistrer dans les objets `Doc`, `Token` ou `Span` avec le setteur `.set_extension`. Le niveau d'objet dans lequel on enregistrera l'extension sera celui sur lequel on l'appelera.
 
 Par exemple, si l'on veut analyser tout un document, on utiliser `doc`. En revanche, si on veut analyser le contenu d'un `span`, ce sera ce niveau qui sera choisi.
 
@@ -485,8 +506,11 @@ Span.set_extension('has_color', default=False)
 ```
 
 Il existe trois types d'extensions :
+
 #### Attributs
+
 Ils sont définis par l'utilisateur et peuvent être modifiés directement  à tout moment :
+
 ```python
 from spacy.tokens import Token
 
@@ -496,10 +520,12 @@ doc = nlp("The sky is blue.")
 
 # Overwrite extension attribute value
 doc[3]._.is_color = True
-````
+```
 
 #### Propriétés
+
 Elles nécessitent de définir des méthodes `getter`et `setter`. Ces dernières seront appelées pour produire ou définir la valeur au moment où l'on y accède.
+
 ```python
 from spacy.tokens import Token
 # Define getter function
@@ -514,9 +540,10 @@ doc = nlp("The sky is blue.")
 print(doc[3]._.is_color, '-', doc[3].text)
 
 > blue - True
-````
+```
 
 #### Méthodes
+
 On peut assigner une fonction, qui devient une méthode de l'objet et permet de passer des arguments. Il faut toutefois à ce moment utiliser l'option `method`au lieu de `getter` :
 
 ```python
@@ -552,9 +579,9 @@ doc = nlp("In over fifty years from his very first recordings right through to h
 for ent in doc.ents:
     # Print the text and Wikipedia URL of the entity
     print(ent.text, ent._.wikipedia_url)
-````
+```
 
-Enfin, un exemple d'utilisation croisée entre composant et propriété custom. On crée un composant qui va matcher les pays, leur assigner un label `.ents`. 
+Enfin, un exemple d'utilisation croisée entre composant et propriété custom. On crée un composant qui va matcher les pays, leur assigner un label `.ents`.
 
 Par la suite, la propriété, lorsqu'elle sera appelée sur les `.ents` comportant ce label, renverra la capitale du pays en question.
 
@@ -574,23 +601,23 @@ Span.set_extension('capital', getter=lambda span: capitals.get(span.text))
 # Process the text and print the entity text, label and capital attributes
 doc = nlp("Czech Republic may help Slovakia protect its airspace")
 print([(ent.text, ent.label_, ent._.capital) for ent in doc.ents])
-````
-
-
+```
 
 ### Performance
 
 #### Traitement des textes
-Si l'on désire traiter plusieurs textes, on fera appel à la fonction [nlp.pipe](https://spacy.io/api/language#pipe) plutôt que d'utiliser une [[list comprehension]]. 
+
+Si l'on désire traiter plusieurs textes, on fera appel à la fonction [nlp.pipe](https://spacy.io/api/language#pipe) plutôt que d'utiliser une \[\[list comprehension\]\].
 
 ```python
 texts = ["This is a text", "These are lots of texts", "..."]
 
 docs = [nlp(text) for text in texts] # Ne pas faire
 docs = list(nlp.pipe(texts)) # Faire
-````
+```
 
 On peut aussi utiliser cette technique pour les patterns qui serviront à `PhraseMatcher` :
+
 ```python
 people = ['David Bowie', 'Angela Merkel', 'Lady Gaga']
 
@@ -613,14 +640,15 @@ for doc, context in nlp.pipe(DATA, as_tuples=True):
     
     # Print the text and custom attribute data
     print(doc.text, '\n', "— '{}' by {}".format(doc._.book, doc._.author), '\n')
-````
+```
 
 On peut utiliser cette méthode pour passer au texte des informations contextuelles, comme le numéro de page, un identifiant, une position...
 
->**A noter** : 
->L'output de `nlp.pipe()` est un [[générateur]] : il faut appeler [[list]] dessus pour l'exploiter.
+> **A noter** :
+> L'output de `nlp.pipe()` est un \[\[générateur\]\] : il faut appeler \[\[list\]\] dessus pour l'exploiter.
 
 #### Choix des composants
+
 Il est possible de désactiver les composants qui ne nous sont pas utiles afin d'accélérer le traitement. On rappelle que l'on peut accéder à la liste des composants avec `nlp.pipe_names`.
 
 ```python
@@ -634,7 +662,7 @@ On peut aussi utiliser la méthode `nlp.make_doc(text)` pour procéder uniquemen
 
 ```python
 doc = nlp.make_doc("Bonjour tout le monde")
-````
+```
 
 ## Entrainer un modèle d'étiquettage de données
 
@@ -642,11 +670,10 @@ On peut utiliser spaCy pour modifier le modèle de reconnaissance d'attributs ou
 
 ![model](/assets/img/spacy-model.png#center)
 
-
 Les étapes sont les suivantes :
 
-1. Initialisation des poids du modèle avec `nlp.begin_training``
-2. Prédiction de quelques exemples avec les poids actuels avec `nlp.update``
+1. Initialisation des poids du modèle avec \`nlp.begin_training\`\`
+2. Prédiction de quelques exemples avec les poids actuels avec \`nlp.update\`\`
 3. Comparaison des prédiction avec les vrais labels
 4. Calcul de nouveaux poids pour améliorer la prédiction
 5. Mise à jour des poids
@@ -655,21 +682,23 @@ Les étapes sont les suivantes :
 ### Comment obtenir des données d'entrainement ?
 
 #### Des outils externes
+
 [Brat](http://brat.nlplab.org/) et [Prodigy](https://prodi.gy/) sont des outils qui peuvent être utiles pour étiquetter les mots, pour les enregistrer dans le modèle.
 
 #### Le module Matcher
-Le module `matcher` est aussi bon moyen d'obtenir des données d'entrainement, en définissant des rêgles pour labelliser le données de manière similaire au [[regex]].
+
+Le module `matcher` est aussi bon moyen d'obtenir des données d'entrainement, en définissant des rêgles pour labelliser le données de manière similaire au \[\[regex\]\].
 
 ##### Exemple
+
 On a les données d'entrainement suivantes :
-````
-How to preorder the iPhone X
-iPhone X is coming
-Should I pay $1,000 for the iPhone X?
-The iPhone 8 reviews are here
-Your iPhone goes up to 11 today
-I need a new phone! Any tips?
-````
+
+    How to preorder the iPhone X
+    iPhone X is coming
+    Should I pay $1,000 for the iPhone X?
+    The iPhone 8 reviews are here
+    Your iPhone goes up to 11 today
+    I need a new phone! Any tips?
 
 Dans l'exemple ci-dessous, on crée un nouveau type de named entity, appelé `GAGDGET`, qui pourra ensuite être utilisé par le modèle.
 
@@ -698,7 +727,7 @@ for doc in nlp.pipe(TEXTS):
     TRAINING_DATA.append(training_example)
     
 print(*TRAINING_DATA, sep='\n')
-````
+```
 
 L'output comprenant les données étiquettées est le suivant :
 
@@ -712,13 +741,14 @@ L'output comprenant les données étiquettées est le suivant :
 ```
 
 ### Fonctionnement
+
 Une fois les données étiquettées obtenu, on procède ainsi pour entraîner le modèle :
 
-- Pour un nombre *n* d'itérations :
-	- Mélange des données d'entrainement pour éviter que le modèle fasse des prédictions fondées sur l'ordre des échantillons.
-	- Division des données en plusieurs échantillons
-	- Entraînement et mise à jour du modèle pour chaque échantillon
-- Enregistrement du modèle
+* Pour un nombre _n_ d'itérations :
+  * Mélange des données d'entrainement pour éviter que le modèle fasse des prédictions fondées sur l'ordre des échantillons.
+  * Division des données en plusieurs échantillons
+  * Entraînement et mise à jour du modèle pour chaque échantillon
+* Enregistrement du modèle
 
 Un exemple à partir du code plus au dessus :
 
@@ -743,21 +773,24 @@ for itn in range(10):
 
 # Save the model
 nlp.to_disk(path_to_model)
-````
+```
 
 ### Problèmes possibles :
+
 #### "Catastrophic forgetting"
+
 Le modèle peut sur-optimiser la détection d'un type de données et donc "oublier" (sous-optimiser) d'autres données en même temps. Par exemple, si l'on entraine uniquement un modèle sur des données comprenant l'étiquette "PAYS", on risque d'oublier l'étiquette "PERSONNE".
 
 C'est en général dû au fait que l'on a fourni au modèle de nouvelles données ne comprenant pas les anciennes étiquettes. La solution est de mélanger aux nouvelles données des anciennes comprenant la ou les étiquettes manquantes.
 
 #### Données contextuelles
-Le modèle peut avoir du mal à détecter de manière fiable des données reposant sur un contexte. 
+
+Le modèle peut avoir du mal à détecter de manière fiable des données reposant sur un contexte.
 
 Il vaut donc mieux définir des étiquettes ne dépendant pas du contexte. Par exemple, pas "Chaussure_de_sport" ou "Chaussure_de_randonnées" mais simplement "Chaussure".
 
-### En savoir plus sur l'analyse de données avec spaCy :
+#### En savoir plus sur l'analyse de données avec spaCy :
 
 https://spacy.io/usage/training pour plus de détails.
 
----
+***
