@@ -2,7 +2,7 @@
 new_page_extension: md
 auto_deploy: false
 admin_path: ''
-webhook_url: 
+webhook_url: https://api.netlify.com/build_hooks/5f89ea290adf041d8d158328
 sections:
 - type: jekyll-pages
   label: Pages
