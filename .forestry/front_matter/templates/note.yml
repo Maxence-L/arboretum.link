@@ -19,3 +19,4 @@ fields:
   label: tags
 pages:
 - _notes/__file__.md
+- _notes/selenium.md
