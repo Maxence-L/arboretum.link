@@ -2,3 +2,5 @@
 label: Note
 hide_body: false
 fields: []
+pages:
+- _notes/__file__.md
