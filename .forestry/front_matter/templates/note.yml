@@ -1,6 +1,20 @@
 ---
 label: Note
 hide_body: false
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: tags
+  type: tag_list
+  default: []
+  label: tags
+- name: toc
+  type: text
+  config:
+    required: false
+  label: toc
 pages:
 - _notes/__file__.md
