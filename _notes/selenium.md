@@ -145,7 +145,7 @@ xpath |	Locates elements matching an XPath expression
 
 Il est par ailleurs possible de sélectionner des éléments situés  de manière relative à d'autrés élements sélectionnés. Dans le cas d'un formulaire de mot de passe:
 
-![[Capture d’écran 2020-07-20 à 00.07.12.png]]
+![[/assets/img/capture-d-ecran-2020-10-16-a-22-28-08.png]]
 
 ```python
 #from selenium.webdriver.support.relative_locator import with_tag_name
@@ -252,9 +252,3 @@ if new_height == last_height:
 	break
 	last_height = new_height
 ````
-
-
-
-
-
-
