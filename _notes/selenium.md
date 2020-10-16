@@ -90,7 +90,7 @@ On localise les éléments d'intérêt avec la méthode `driver.find_element(By.
 ```python
 driver.find_element(By.ID, "cheese")
 ````
-![[Capture d’écran 2020-09-17 à 01.17.34.png]]
+![1][/assets/img/capture-d-ecran-2020-10-16-a-22-29-31.png]
 Il est aussi possible d'utiliser la méthode `find_element_by_class_name('xxxx')` - il existe une méthode de ce type pour chaque catégorie d'attribut.
 
 #### Chercher des éléments imbriqués (*nested*)
@@ -145,7 +145,7 @@ xpath |	Locates elements matching an XPath expression
 
 Il est par ailleurs possible de sélectionner des éléments situés  de manière relative à d'autrés élements sélectionnés. Dans le cas d'un formulaire de mot de passe:
 
-![[/assets/img/capture-d-ecran-2020-10-16-a-22-28-08.png]]
+![2][/assets/img/capture-d-ecran-2020-10-16-a-22-28-08.png#center]
 
 ```python
 #from selenium.webdriver.support.relative_locator import with_tag_name
