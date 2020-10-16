@@ -2,7 +2,6 @@
 title: __file__
 tags: []
 toc: 'false'
-published: false
 
 ---
 [[Variable globale]] renvoyant le chemin  relatif vers le fichier
