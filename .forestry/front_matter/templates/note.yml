@@ -7,14 +7,15 @@ fields:
   config:
     required: false
   label: Title
-- name: tags
-  type: tag_list
-  default: []
-  label: tags
 - name: toc
   type: text
   config:
     required: false
   label: toc
+- name: tags
+  type: text
+  config:
+    required: false
+  label: tags
 pages:
 - _notes/__file__.md
