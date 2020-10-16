@@ -1,12 +1,10 @@
 ---
+title: __file__
+tags: []
+toc: 'false'
 published: false
 
 ---
-___
-title: __file__
-tags: python-stdlib
-___
-
 [[Variable globale]] renvoyant le chemin  relatif vers le fichier
 
 Si on a un package organisé ainsi :
