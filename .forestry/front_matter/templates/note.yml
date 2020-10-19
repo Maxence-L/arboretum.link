@@ -20,3 +20,4 @@ fields:
 pages:
 - _notes/__file__.md
 - _notes/selenium.md
+- _notes/sys.exit.md
