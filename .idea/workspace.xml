@@ -23,9 +23,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e416042-0831-410e-bc48-ad8738bffa8b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/_notes/list-comprehension.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_notes/configparse.md" beforeDir="false" afterPath="$PROJECT_DIR$/_notes/configparse.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_notes/packager-un-projet-python.md" beforeDir="false" afterPath="$PROJECT_DIR$/_notes/packager-un-projet-python.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/feed.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/feed.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.md" beforeDir="false" afterPath="$PROJECT_DIR$/about.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +81,7 @@
       <workItem from="1602339071311" duration="9384000" />
       <workItem from="1602359835287" duration="3661000" />
       <workItem from="1602691439623" duration="9443000" />
-      <workItem from="1603206799714" duration="704000" />
+      <workItem from="1603206799714" duration="1711000" />
     </task>
     <servers />
   </component>

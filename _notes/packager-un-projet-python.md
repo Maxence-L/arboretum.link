@@ -1,6 +1,6 @@
 ---
 title : Packager un projet python
-tags : Python
+tags : stdlib
 toc : true
 ---
 
