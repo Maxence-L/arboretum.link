@@ -22,25 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e416042-0831-410e-bc48-ad8738bffa8b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/_includes/toc.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/spacy-model.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/spacy-pipeline.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/spacy-span.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/spacy-structure-donnees.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/content.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/content.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/post.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/post.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_notes/Analyse discriminante linéaire.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/_notes/Analyse discriminante linéaire.markdown" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_notes/centroide.md" beforeDir="false" afterPath="$PROJECT_DIR$/_notes/centroide.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_notes/spacy.md" beforeDir="false" afterPath="$PROJECT_DIR$/_notes/spacy.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/about.md" beforeDir="false" afterPath="$PROJECT_DIR$/about.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
-    </list>
+    <list default="true" id="3e416042-0831-410e-bc48-ad8738bffa8b" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -93,7 +75,7 @@
       <workItem from="1602177134156" duration="10936000" />
       <workItem from="1602339071311" duration="9384000" />
       <workItem from="1602359835287" duration="3661000" />
-      <workItem from="1602691439623" duration="9184000" />
+      <workItem from="1602691439623" duration="9443000" />
     </task>
     <servers />
   </component>
