@@ -1,6 +1,7 @@
 ---
 title : Packager un projet python
 tags : Python
+toc : true
 ---
 
 Packager un projet python permet de rendre les scripts qu'il contient exécutables de manière standardisée par un autre utilisateur. 

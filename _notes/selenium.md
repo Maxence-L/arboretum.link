@@ -1,12 +1,13 @@
 ---
 title: Selenium
-toc: 'true'
+toc: true
 tags: web-scraping
 
 ---
 Selenium est un outil émulant un navigateur et permettant de simuler automatiquement l'interaction d'un utilisateur avec un site web. Il est utilisé à l'origine pour le test de sites webs mais peut être aussi utilisé pour le scraping.
 
- ## Installation
+## Installation
+ 
 On peut utiliser le navigateur chrome pour afficher les pages webs en version "headless"[^1]. Il faut avoir chrome installé sur le poste, on peut ensuite installer *chromedriver* qui fait la connexion entre selenium et chrome :
 
 ```bash
@@ -41,9 +42,7 @@ driver.close()
 > A button to click!
 ````
 
-## Fonctionnement
-
-### Navigation
+## Navigation
 Atteindre une url :
 ```python
 driver.get("https://selenium.dev")
@@ -81,7 +80,7 @@ finally:
     driver.quit()
 ```
 
-### Recherche du contexte
+## Recherche du contexte
 L'objet *webdriver* correspond au navigateur, il contiendra les pages chargées.
 
 On localise les éléments d'intérêt avec la méthode `driver.find_element(By.XX, "cheese")` de l'instance *WebDriver*. Cette méthode retourne un objet de type *WebElement*. A la place de `XX`, on peut préciser l'attribut recherché : XPath, nom de class (`CLASS_NAME`), etc...
@@ -92,7 +91,7 @@ driver.find_element(By.ID, "cheese")
 ![1][/assets/img/selenium-tags.png]
 Il est aussi possible d'utiliser la méthode `find_element_by_class_name('xxxx')` - il existe une méthode de ce type pour chaque catégorie d'attribut.
 
-#### Chercher des éléments imbriqués (*nested*)
+### Chercher des éléments imbriqués (*nested*)
 
 On peut recherche des éléments plus précis au sein des objets *WebElement* en utilisant une méthode similaire :
 ```python
@@ -154,7 +153,7 @@ emailAddressField = driver.find_element(with_tag_name("input").above(passwordFie
 
 Les méthodes sont *.above() .below() .toLeftOff() .toRightOf() .near()*.
 
-### Interactions
+## Interactions
 On remplit un champ avec du texte de la façon suivante :
 ```python
 name = "Charles"
@@ -171,7 +170,7 @@ Et, bien sûr, **cliquer sur un élément :**
 driver.find_element(By.CSS_SELECTOR, "input[type='submit']").click()
 ````
 
-### Attente
+## Attente
 Utiliser `time.sleep()` permet de passer les temps d'attente, notamment pour l'affichage de certains pop-ups ou éléments de la page.
 
 Plus de précisions peuvent être trouvée ici :
@@ -179,7 +178,7 @@ https://www.selenium.dev/documentation/en/webdriver/waits/
 
 ou p. 169 du livre "Web Scraping with Python".
 
-### Récupération les informations
+## Récupération les informations
 On peut utiliser `.text`pour obtenir la valeur string d'un élément :
 ```python
 print(driver.find_element_by_id('content').text)
@@ -196,7 +195,7 @@ bs = BeautifulSoup(pageSource, 'html.parser')
 print(bs.find(id='content').get_text())
 ````
 
-### Gestion des exceptions et des erreurs
+## Gestion des exceptions et des erreurs
 La structure des sites webs visités peut être parfois imprévisible et il faut donc que le programme s'adapte et évite de rencontrer une erreur, ce qui fera planter le *driver*.
 
 On peut donc réaliser une gestion des erreurs avec des [[try ... except ... finally]]. 
@@ -211,7 +210,7 @@ import selenium.common.exceptions as selexcep!t
 
 On peut ensuite utiliser les erreurs, comme `selexcept.NoSuchElementException`.
 
-### Gestion des cookies
+## Gestion des cookies
 On peut utiliser le module [[pickle]] pour enregistrer les cookies en vue d'ue réutilisation lors de futures sessions.
 
 ```python
@@ -227,8 +226,7 @@ for cookie in self.cookies:
 	self.driver.add_cookie(cookie)
 ````
 
-
-#### Petits scripts pratiques :
+## Petits scripts pratiques
 
 Pour scroller une page sans fin :
 

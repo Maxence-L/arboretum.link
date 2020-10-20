@@ -1,11 +1,12 @@
 ---
 title : Créer un fichier de configuration avec ConfigParse
 tags : stdlib
+toc : true
 --- 
 
 ConfigParse est un module de python permettant de définir des paramètres d'un programme par défaut et de laisser les utilisateurs les modifier. Le module est particulièrement utile couplé à [[argparse]].
 
-## config.ini
+## Le fichier config.ini
 Les valeurs de configuration du programme sont stockées dans un fichier `.ini`, typiquement `config.ini`. Il est structuré de la manière suivante :
 
 ```ini
@@ -24,7 +25,6 @@ On a ici deux sections, dont le titre est entre crochets : `DEFAULT`, `bitbucket
 Voici un exemple de la structure du fichier :
 
 ```
-
 [Simple Values]
 key=value
 spaces in keys=allowed
