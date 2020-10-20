@@ -23,7 +23,7 @@ On a ici deux sections, dont le titre est entre crochets : `DEFAULT`, `bitbucket
 
 Voici un exemple de la structure du fichier :
 
-```ini
+```
 
 [Simple Values]
 key=value
