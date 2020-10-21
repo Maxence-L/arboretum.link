@@ -50,7 +50,7 @@ positional_arg.py Peter 23
 
 - *required = True* permet de définir des arguments optionnels obligatoires.
 
-- *default* : la valeur par défaut à attribuer à cet argument. On peut le coupler avec [[Créer un fichier de configuration avec ConfigParse|configparse]] 🔥 pour gérer plus facilement la configuration du programme, et laisser à l'utilisateur le pouvoir de la changer. (ex : `default=config['global']['email']`)
+- *default* : la valeur par défaut à attribuer à cet argument. On peut le coupler avec [[Créer un fichier de configuration avec ConfigParse::configparse]] 🔥 pour gérer plus facilement la configuration du programme, et laisser à l'utilisateur le pouvoir de la changer. (ex : `default=config['global']['email']`)
 
 - *dest* : donne un nom interne à l'argument différent du nom utilisé pour l'appeler. Par exemple, si l'on précise `'-n', dest = 'now'` on utilisera `-n` pour l'argument en ligne de commande mais on fera référence à sa valeur comme `args.now`.
 
