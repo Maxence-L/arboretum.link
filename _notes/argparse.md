@@ -183,7 +183,7 @@ print(arg_obj['subparsers_obj'])
 Voilà le résultat en ligne de commande :
 
 ```bash
-$ python prog.py 
+python prog.py 
 
 > Les arguments enregistrés sont les suivants : 
 > {'arg1': None, 'arg2': None, 'arg3': None, 'subparsers_obj': None}
@@ -195,7 +195,7 @@ $ python prog.py
 Comme prévu, sans ajouter de commande liée aux subparsers, argparse ne traite que les arguments du niveau `root`.
 
 ```bash
-$ python prog.py subparser1_obj
+python prog.py subparser1_obj
 
 > Les arguments enregistrés sont les suivants : 
 > {'arg1': None, 'arg2': None, 'arg3': None, 'subparsers_obj': 'subparser1_obj', 'parser1_arg1': None, 'parser1_arg2': None}
@@ -203,7 +203,7 @@ $ python prog.py subparser1_obj
 > Le subparser utilisé est :
 > subparser1_obj
 
-$ python prog.py subparser2_obj
+python prog.py subparser2_obj
 
 > Les arguments enregistrés sont les suivants : 
 > {'arg1': None, 'arg2': None, 'arg3': None, 'subparsers_obj': 'subparser2_obj', 'parser2_arg1': None, 'parser2_arg2': None}
