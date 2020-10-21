@@ -48,17 +48,23 @@ positional_arg.py Peter 23
 
 - Les *arguments optionnels* sont définis en ajoutant le préfixe `--`. Ils peuvent bénéficier de commandes raccourcies en une lettre, avec `-`comme préfixe (ex : `-o, --options`). Il est nécessaire de taper leur nom en ligne de commande si l'on veut les utiliser.
 
+
 - *required = True* permet de définir des arguments optionnels obligatoires.
+
 
 - *default* : la valeur par défaut à attribuer à cet argument. On peut le coupler avec [[Créer un fichier de configuration avec ConfigParse::configparse]] 🔥 pour gérer plus facilement la configuration du programme, et laisser à l'utilisateur le pouvoir de la changer. (ex : `default=config['global']['email']`)
 
+
 - *dest* : donne un nom interne à l'argument différent du nom utilisé pour l'appeler. Par exemple, si l'on précise `'-n', dest = 'now'` on utilisera `-n` pour l'argument en ligne de commande mais on fera référence à sa valeur comme `args.now`.
 
+
 - *help* : Description à afficher pour cet argument si l'on appelle la commande `--help`. (ex : `help='bla bla'`)
+
 
 - *action* : Explique à `ArgumentParser` que faire si l'on a entré en ligne de commande l'argument. Les plus utiles [parmi d'autres](https://docs.python.org/3/library/argparse.html#argumentparser-objects) :
 	- *store* enregistre la valeur passée. C'est l'action par défaut
 	- *store_true* ou *store_false* enregistre `True` ou `False` si l'on a passé l'argument. Cela permet de créer des switchs.
+
 
 - *type* : Cette option détermine le type d'argument passé. Si l'argument est différent du type précisé, le programme renverra une erreur. SInon, il enregistrera l'argument au type donné.
 
