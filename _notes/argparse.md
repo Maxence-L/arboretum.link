@@ -62,11 +62,16 @@ positional_arg.py Peter 23
 
 
 - *action* : Explique à `ArgumentParser` que faire si l'on a entré en ligne de commande l'argument. Les plus utiles [parmi d'autres](https://docs.python.org/3/library/argparse.html#argumentparser-objects) :
+
+
 	- *store* enregistre la valeur passée. C'est l'action par défaut
+	
+	
 	- *store_true* ou *store_false* enregistre `True` ou `False` si l'on a passé l'argument. Cela permet de créer des switchs.
 
 
 - *type* : Cette option détermine le type d'argument passé. Si l'argument est différent du type précisé, le programme renverra une erreur. SInon, il enregistrera l'argument au type donné.
+
 
 On peut trouver d'excellents exemples [ici](http://zetcode.com/python/argparse/).
 
