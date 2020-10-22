@@ -368,9 +368,9 @@ En règle générale, il vaut mieux utiliser `span`et `doc` un maximum pour évi
 
 #### Vectorisation du texte
 
-SpaCy peut réaliser des analyse de similarité\[^2\]. En anglais, le texte est vectorisé selon l'algorithme [GloVe](https://spacy.io/models/en#en_core_web_md) [par défaut](https://spacy.io/models/en#en_core_web_md). Il est par ailleurs [possible](https://spacy.io/usage/vectors-similarity#converting) d'utiliser des algorithmes alternatifs (\[\[Word2Vec\]\]), par exemple.
+SpaCy peut réaliser des analyse de similarité\[^2\]. En anglais, le texte est vectorisé selon l'algorithme [GloVe](https://spacy.io/models/en#en_core_web_md) [par défaut](https://spacy.io/models/en#en_core_web_md). Il est par ailleurs [possible](https://spacy.io/usage/vectors-similarity#converting) d'utiliser des algorithmes alternatifs (\[\[Word2Vec\]\]), par exemple.::lsn]]
 
-\[^2\]: [Le saviez-vous](http://204.19.47.207/bdl/gabarit_bdl.asp?id=4458) ? "Le nom similitude vient du latin similitudo « ressemblance, rapprochement ». On l’emploie pour exprimer une ressemblance complète, exacte entre des personnes ou des choses. Le nom similarité est dérivé de l’adjectif similaire. On l’utilise pour désigner une ressemblance à peu près exacte entre deux choses ou deux personnes. Ce nom n’exprime pas une idée de parfaite ressemblance comme le nom similitude."
+[[ [Le saviez-vous](http://204.19.47.207/bdl/gabarit_bdl.asp?id=4458) ? "Le nom similitude vient du latin similitudo « ressemblance, rapprochement ». On l’emploie pour exprimer une ressemblance complète, exacte entre des personnes ou des choses. Le nom similarité est dérivé de l’adjectif similaire. On l’utilise pour désigner une ressemblance à peu près exacte entre deux choses ou deux personnes. Ce nom n’exprime pas une idée de parfaite ressemblance comme le nom similitude."
 
 Les modèles utilisés pour analyser le texte ne sont pas tous équivalent : si l'on veut vectoriser un texte en les utilisant, il faut charger le modèle `md` (medium) ou `lg` (large - 746mo en anglais)
 

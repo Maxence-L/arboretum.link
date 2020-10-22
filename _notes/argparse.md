@@ -30,7 +30,7 @@ L'objet `parser` peut traiter les commandes définies à l'avance. Pour cela, on
 
 [De nombreuses options sont disponibles](https://docs.python.org/3/library/argparse.html#argumentparser-objects), les plus courantes sont les suivantes :
 
-- Les *arguments positionnels* sont des arguments attendus dans que l'on donne leur nom. Ils sont obligatoires Ils se définissent simplement :
+- Les *arguments positionnels* sont des arguments attendus sans que l'on donne leur nom. Ils se définissent simplement :
 
 ```python
 parser.add_argument('name')
@@ -52,7 +52,7 @@ positional_arg.py Peter 23
 - *required = True* permet de définir des arguments optionnels obligatoires.
 
 
-- *default* : la valeur par défaut à attribuer à cet argument. On peut le coupler avec [[Créer un fichier de configuration avec ConfigParse::configparse]] 🔥 pour gérer plus facilement la configuration du programme, et laisser à l'utilisateur le pouvoir de la changer. (ex : `default=config['global']['email']`)
+- *default* : la valeur par défaut à attribuer à cet argument. On peut le coupler avec [[configparse::Créer un fichier de configuration avec ConfigParse]] 🔥 pour gérer plus facilement la configuration du programme, et laisser à l'utilisateur le pouvoir de la changer (ex : `default=config['global']['email']`).
 
 
 - *dest* : donne un nom interne à l'argument différent du nom utilisé pour l'appeler. Par exemple, si l'on précise `'-n', dest = 'now'` on utilisera `-n` pour l'argument en ligne de commande mais on fera référence à sa valeur comme `args.now`.
@@ -70,7 +70,7 @@ positional_arg.py Peter 23
 	- *store_true* ou *store_false* enregistre `True` ou `False` si l'on a passé l'argument. Cela permet de créer des switchs.
 
 
-- *type* : Cette option détermine le type d'argument passé. Si l'argument est différent du type précisé, le programme renverra une erreur. SInon, il enregistrera l'argument au type donné.
+- *type* : Cette option détermine le type d'argument passé. Si l'argument est différent du type précisé, le programme renverra une erreur. Sinon, il enregistrera l'argument au type donné.
 
 
 On peut trouver d'excellents exemples [ici](http://zetcode.com/python/argparse/).
@@ -109,7 +109,7 @@ if args.now:
     print(f"Now: {now}")
 ````
 
-A noter que l'on peut y accéder à la manière d'un dictionnaire en utilisant [[vars]] :
+A noter que l'on peut y accéder à la manière d'un dictionnaire en utilisant [[vars()]] :
 ```python
 args_obj = vars(parser.parse_args())
 ````
