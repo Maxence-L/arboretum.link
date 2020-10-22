@@ -16,13 +16,13 @@ Les étapes de construction d'un modèle sont les suivantes :
 
 2. Ajustement du modèle (*model fit*) aux données et définition des paramètres. Dans le cas d'une régression, par exemple, cela revient à calculer la valeur de $$\beta$$. 
 
-3. Prédiction : on utilise le modèle pour produire une estimation des de la variable cible. Toujours de la cas d'une régression, cela correspond au calcul de $$\beta X$$.
+3. Prédiction : on utilise le modèle pour produire une estimation des de la variable cible. Toujours de le cas d'une régression, cela correspond au calcul de $$\beta X$$.
 
 4. Evaluation : On calcule la précision et divers indicateurs sur la fiabilité de la prédiction en fonction des paramètres de départ.
 
 L'utilisation de sklearn est la suivante pour chaque étape :
 
-1. On choisit la classe correspondant à l'algorithme désiré dans la bibliothèque de [sklearn](https://scikit-learn.org/stable/user_guide.html) et l'on crèe un objet en l'initialisant.
+1. On choisit la classe correspondant à l'algorithme désiré dans la bibliothèque de [sklearn](https://scikit-learn.org/stable/user_guide.html) et l'on crée un objet en l'initialisant.
 
 2.  On utilise la méthode `fit()` en passant les paramètres du modèle (données, valeurs diverses...)
 

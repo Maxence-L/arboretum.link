@@ -10,10 +10,10 @@ Organiser son code sous la forme d'un package a plusieurs avantages[^1] :
 
 [^1]: https://the-hitchhikers-guide-to-packaging.readthedocs.io/en/latest/introduction.html#benefits-of-packaging
 
-- Le téléchargement et/ou l'ajout automatique des dépendances, c'est-à-dire les packages annexes nécessaires pour que notre programme s'exécute.
-- La gestion des packages installés sur l'environnement, leur version, leur auteur, etc...
+- Le téléchargement ou l'ajout automatique des dépendances, c'est-à-dire les packages annexes nécessaires pour que notre programme s'exécute.
+- La gestion des packages installés sur l'environnement, leur version, leur auteur, etc.
 - La désinstallation facilitée des packages installés.
-- La recherche et l'installation au moyen d'un gestionnaire de packages, de type  [[pip]] ou [[conda]].
+- La recherche et l'installation au moyen d'un gestionnaire de packages, de type [[pip]] ou [[conda]].
 
 ## La structure d'un projet
 ### Arborescence
@@ -34,13 +34,13 @@ projet
      |____init__.py
 ````
 
-Les fichiers relatifs à l'installation et au déploiement du package sont situés à la racine de l'arborescence; les fichiers relatifs au fonctionnement du package lui-même sont dans le dossier `nom_du_package`.
+Les fichiers relatifs à l'installation et au déploiement du package sont situés à la racine de l'arborescence ; les fichiers relatifs au fonctionnement du package lui-même sont dans le dossier `nom_du_package`.
 
 ### Les fichiers relatifs au fonctionnement du package
 On retrouve dans le dossier `nom_du_package` trois fichiers : `utils.py`, `__main__.py` et `__init__.py`.
 
 #### \_\_main__.py
-`__main.py__` est le fichier par défaut qui sera exécuté par python lors de l'utilisation du package. Il contient donc les indications relatives à la mise en oeuvre du programme. On y ajoute souvent une fonction `main()` ainsi qu'une exécution conditionnelle si il est exécuté en tant que [[__main__]] (ce qui devrait être le cas) :
+`__main.py__` est le fichier par défaut qui sera exécuté par python lors de l'utilisation du package. Il contient donc les indications relatives à la mise en oeuvre du programme. On y ajoute souvent une fonction `main()` ainsi qu'une exécution conditionnelle s’il est exécuté en tant que [[__main__]] (ce qui devrait être le cas) :
 ```python
 def main():
 	print('hello world')
@@ -82,10 +82,10 @@ Par ailleurs, il est possible d'inclure du code dans `__init__.py`qui sera exéc
 
 #### utils.py
 
-`utils.py`correspond aux modules supplémentaires - il est conseillé de ne pas concentrer son programme dansun seul script si celui-ci dépasse une certaine taiile.
+`utils.py`correspond aux modules supplémentaires - il est conseillé de ne pas concentrer son programme dans un seul script si celui-ci dépasse une certaine taille.
 
 ### Les fichiers relatifs au déploiement du package
-Comme on peut le voir dans l'arborescence, un certain nombres de fichiers sont présents afin d'aider le packaging du projet et sa distribution :
+Comme on peut le voir dans l'arborescence, un certain nombre de fichiers sont présents afin d'aider le packaging du projet et sa distribution :
 
 ```
 |
@@ -98,7 +98,7 @@ Comme on peut le voir dans l'arborescence, un certain nombres de fichiers sont p
 
 #### .gitignore
 
-Si l'on utilise un gestionnaire de version comme [[git]], il y aura probablement des fichiers que l'on ne souhaite pas inclure dans la package, notamment s'il est uploadé sur internet.
+Si l'on utilise un gestionnaire de version comme [[git]], il y aura probablement des fichiers que l'on ne souhaite pas inclure dans le package, notamment s'il est téléversé sur internet.
 
 On utilise le fichier `.gitignore` pour préciser quels fichiers [[git]] devra ignorer. Un exemple des fichiers les plus ignorés[^6] :
 
@@ -151,7 +151,7 @@ On peut trouver un [[exemplaire plus complet::https://github.com/github/gitignor
 
 #### requirements.txt
 
-Si l'on désire reproduire l'environnement d'exécution du package, on peut charger les dépendances en se réfèrrant à celles décrites dans le fichier `requirements.txt`.
+Si l'on désire reproduire l'environnement d'exécution du package, on peut charger les dépendances en se référant à celles décrites dans le fichier `requirements.txt`.
 
 Il prend la forme suivante :
 
@@ -178,7 +178,7 @@ Il est aussi possible d'utiliser [[pigar::https://github.com/damnever/pigar]] si
 Enfin, si l'on utilise [[Pycharm]], il est possible, après avoir créé le fichier `requirements.txt`, de retirer les packages non utilisés avec l'outil *sync python requirements* dans l'onglet *tool*.
 
 #### LICENSE
-Il s'agit de la du régime de propriété intellectuelle sous lequel le package est distribué. On peut choisir celui qui nous convient (généralement [[licence MIT]]) avec l'outil [choosealicence.com](https://choosealicense.com/). Il est au format texte.
+Il s'agit là du régime de propriété intellectuelle sous lequel le package est distribué. On peut choisir celui qui nous convient (généralement [[licence MIT]]) avec l'outil [choosealicence.com](https://choosealicense.com/). Il est au format texte.
 
 #### README.md
 Le Readme est un fichier texte résumant l'usage auquel se destine le programme, la méthode d'installation et son fonctionnement. Il est au format .md, si l'on veut le publier sur [[Github]].
@@ -197,7 +197,7 @@ La fonction `setup()` comprend les paramètres relatifs aux métadonnées du pro
 
 ##### Les métadonnées
 
-Voici un exemple pratique de ce qui est inclu :
+Voici un exemple pratique de ce qui est inclus :
 
 ```python
 name=("my_pckg",
@@ -251,7 +251,7 @@ https://python-packaging.readthedocs.io/en/latest/testing.html
 ## Création d'une distribution installable
 
 ### Distribution source (*sdist*)
-Une fois que les fichiers précedemment cités sont dans le package, on peut créer la distribution source avec la commande `sdist` (*source distribution*).[^8]
+Une fois que les fichiers précédemment cités sont dans le package, on peut créer la distribution source avec la commande `sdist` (*source distribution*).[^8]
 
 [^8]: https://docs.python.org/3/distutils/introduction.html#distutils-simple-example
 
@@ -261,11 +261,11 @@ python setup.py sdist
 
 Setuptools va créer un fichier en *.tar.gz* dans le dossier `sdist` comprenant les fichiers du package ainsi que des fichiers relatifs à son installation et à la gestion des dépendances. Le fichier source n'est toutefois pas encore compilé et le sera au moment de l'installation. 
 
-### Distribution préconstruite (*wheel*)
+### Distribution pré-construite (*wheel*)
 
-On peut aussi créer une distribution préconstruite qui sera installable directement, (comprenant un fichier [*wheel*](https://realpython.com/python-wheels/)) sans passer par une exécution de `setup.py`. 
+On peut aussi créer une distribution pré-construite qui sera installable directement, (comprenant un fichier [*wheel*](https://realpython.com/python-wheels/)) sans passer par une exécution de `setup.py`. 
 
-L'avantage est que le fichier di'nstallation sera plus rapide d'exécution et prendra moins de mémoire, du fait du prétraitement réalisé en amont.
+L'avantage est que le fichier d'installation sera plus rapide d'exécution et prendra moins de mémoire, du fait du prétraitement réalisé en amont.
 
 On le crée avec la commande suivante :
 
@@ -273,7 +273,7 @@ On le crée avec la commande suivante :
 python setup.py bdist_wheel
 ````
 
-Si l'on désire que le package soit installabe sur différents OS, il faudra créer une distribution pour chacun. Des options supplémentaires sont disponible dans la [documentation officielle](https://docs.python.org/3/distutils/builtdist.html).
+Si l'on désire que le package soit installable sur différents OS, il faut créer une distribution pour chacun. Des options supplémentaires sont disponible dans la [documentation officielle](https://docs.python.org/3/distutils/builtdist.html).
 
 ## Upload vers Pypi
 

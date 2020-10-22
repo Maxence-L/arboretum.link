@@ -7,7 +7,7 @@ toc : true
 Argparse est un module de python permettant au programme d'interagir avec la ligne de commande. on peut, par exemple, passer des arguments et spécifier quelle fonction on désire exécuter.
 
 ## Installation
-Le module s'appelle `argparse` et est inclu dans la bibliothèque standard de python[^1].
+Le module s'appelle `argparse` et est inclus dans la bibliothèque standard de python[^1].
 
 [^1]: https://docs.python.org/3/library/argparse.html#name-or-flags
 
@@ -124,14 +124,14 @@ args_obj['name']
 ## Sous-programme
 Notre programme peut posséder plusieurs fonctions, pour lesquelles il faudra potentiellement passer des arguments différents. 
 
-La mise en oeuvre demande d'instancer un objet enfant de parser avec la commande `parser.add_subparsers(dest='subroutine')`:
+La mise en oeuvre demande d'instancier un objet enfant de parser avec la commande `parser.add_subparsers(dest='subroutine')`:
 
 ```python
 parser = argparse.ArgumentParser()
 subparsers = parser.add_subparsers(dest='subroutine')
 ```
 
-Pour créer des parsers propres à une fonction, on créé pour chacun un nouvel objet à partir de `subparsers` par la méthode `subparsers.add_parser('mon_parser, help='...')` les parsers relatif à chaque fonction subalterne de notre programme. 
+Pour créer des parsers propres à une fonction, on crée pour chacun un nouvel objet à partir de `subparsers` par la méthode `subparsers.add_parser('mon_parser, help='...')` les parsers relatif à chaque fonction subalterne de notre programme. 
 
 On peut adjoindre à ces parsers une série d'arguments avec la méthode `.add_argument(...)` appelé sur l'objet 
 

@@ -35,7 +35,7 @@ Soit :
 	
 On notera $$p_k(X) =P(Y=k \vert X)$$
 
-Selon le [théorème de Bayes](\Théorème de Bayes), on a :
+Selon le [[Théorème de Bayes]], on a :
 
 $$p_k(X) = \dfrac{\pi_{k}f_{k}(x)}{ \sum_{t=1}^k \pi_{l} f_{l}(x)}$$
 
@@ -48,5 +48,5 @@ $$\hat{\delta}_k(x) = x \cdot \frac{\hat{\mu}_k}{\hat{\sigma}^2} - \frac{\hat{\m
 
 est le plus grand. Le classificateur ainsi obtenu sépare les observations sur une ligne de partage, ce qui explique le nom d'*analyse discriminante linéaire*.
 
-Voit que dans ce cas, la distinction se fait selon une simple rêgle d'équidistance aux deux moyennes.
+Voit que dans ce cas, la distinction se fait selon une simple règle d'équidistance aux deux moyennes.
 

@@ -15,7 +15,7 @@ brew cask install chromedriver
 ````
 [^1]: https://intoli.com/blog/running-selenium-with-headless-chrome/
 
-On peut à présent paramètrer chrome pour sa version *headless* :
+On peut à présent paramétrer chrome pour sa version *headless* :
 ```python
 from selenium import webdriver
 
@@ -83,7 +83,7 @@ finally:
 ## Recherche du contexte
 L'objet *webdriver* correspond au navigateur, il contiendra les pages chargées.
 
-On localise les éléments d'intérêt avec la méthode `driver.find_element(By.XX, "cheese")` de l'instance *WebDriver*. Cette méthode retourne un objet de type *WebElement*. A la place de `XX`, on peut préciser l'attribut recherché : XPath, nom de class (`CLASS_NAME`), etc...
+On localise les éléments d'intérêt avec la méthode `driver.find_element(By.XX, "cheese")` de l'instance *WebDriver*. Cette méthode retourne un objet de type *WebElement*. À la place de `XX`, on peut préciser l'attribut recherché : XPath, nom de class (`CLASS_NAME`), etc.
 
 ```python
 driver.find_element(By.ID, "cheese")
@@ -116,7 +116,7 @@ Si l'on veut obtenir une liste d'éléments contenus dans un sélecteur [[CSS]],
 mucho_cheese = driver.find_elements_by_css_selector("#cheese li")
 ````
 
-Cela permet notamment de réaliser une [[itération]] sur la [[liste]] d'élements obtenue :
+Cela permet notamment de réaliser une [[itération]] sur la [[liste]] d'éléments obtenue :
 ```python
 elements = driver.find_elements_by_css_selector("span.name")
 for element in range(len(elements)):
@@ -141,7 +141,7 @@ xpath |	Locates elements matching an XPath expression
 
 [^2]: https://www.selenium.dev/documentation/en/getting_started_with_webdriver/locating_elements/
 
-Il est par ailleurs possible de sélectionner des éléments situés  de manière relative à d'autrés élements sélectionnés. Dans le cas d'un formulaire de mot de passe:
+Il est par ailleurs possible de sélectionner des éléments situés de manière relative à d'autres éléments sélectionnés. Dans le cas d'un formulaire de mot de passe :
 
 ![2][/assets/img/selenium-user-pwd.png#center]
 
@@ -173,7 +173,7 @@ driver.find_element(By.CSS_SELECTOR, "input[type='submit']").click()
 ## Attente
 Utiliser `time.sleep()` permet de passer les temps d'attente, notamment pour l'affichage de certains pop-ups ou éléments de la page.
 
-Plus de précisions peuvent être trouvée ici :
+Plus de précisions peuvent être trouvées ici :
 https://www.selenium.dev/documentation/en/webdriver/waits/
 
 ou p. 169 du livre "Web Scraping with Python".
@@ -211,14 +211,14 @@ import selenium.common.exceptions as selexcep!t
 On peut ensuite utiliser les erreurs, comme `selexcept.NoSuchElementException`.
 
 ## Gestion des cookies
-On peut utiliser le module [[pickle]] pour enregistrer les cookies en vue d'ue réutilisation lors de futures sessions.
+On peut utiliser le module [[pickle]] pour enregistrer les cookies en vue d'une réutilisation lors de futures sessions.
 
 ```python
 # On nomme le fichier sauvegardé 'cookies.pkl'
 pickle.dump(driver.get_cookies(), open("cookies.pkl", "wb"))
 ````
 
-Les cookies peuvent être réutilisés avec [[pickle#pickle load chargement d'un objet|pickle.load()]]. ==Attention toutefois à atteindre l'addresse désirée avec le webdriver avant d'ajouter les cookies==. Dans le cas contraire, on obtiendra une erreur de type `selenium.common.exceptions.InvalidCookieDomainException: Message: invalid cookie domain`.
+Les cookies peuvent être réutilisés avec [[pickle#pickle load chargement d'un objet|pickle.load()]]. ==Attention toutefois à atteindre l'adresse désirée avec le webdriver avant d'ajouter les cookies==. Dans le cas contraire, on obtiendra une erreur de type `selenium.common.exceptions.InvalidCookieDomainException: Message: invalid cookie domain`.
 
 ```python
 driver.get(self.website)

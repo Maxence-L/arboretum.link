@@ -7,7 +7,7 @@ Les chaines de markov sont des modèles mathématiques modélisant pour un objet
 
 Par exemple, un humain peut avoir plusieurs états possibles : manger, dormir, travailler, se divertir. Chaque heure, on inspecte dans quel état est l'humain. Une chaîne de Markov donnera la probabilité de passer d'un de ces états à un autre.
 
-Une exemple de chaîne de Markov pour deux états possibles :
+Un exemple de chaîne de Markov pour deux états possibles :
 
 ![Source setosa.io](/assets/img/chaine_markov_setosa.io.png#center)
 

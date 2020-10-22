@@ -32,7 +32,7 @@ Les mesures de distance sont des éléments distincts des scores de [[similarit�
 Une mesure de distance est une **métrique** (*metric* en anglais) si elle vérifie les propriétés suivantes :
 
 - *Positivité* : $$d(x,y) \geqslant 0$$ pour tout $$x$$ et $$y$$.
-- *Identité* :  $$d(x,y) = 0$$ si et seulement si $$x=y$$.
+- *Identité* : $$d(x,y) = 0$$ si et seulement si $$x=y$$.
 - *Symétrie* : $$d(x,y) = d(y,x)$$ pour tout $$x$$ et $$y$$.
 - *Inégalité triangulaire* : $$d(x,y ) \geqslant d(z,y)$$ pour tout $$x$$, $$y$$, $$z$$.
 
