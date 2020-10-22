@@ -9,7 +9,7 @@ L'analyse discriminante linéaire (ADL) est une méthode de classification proch
 Elle est appelée en anglais *linear discriminant analysis*.
 
 ## Principe
-Soit une variable réponse $$Y$$ possédant $$k$$ classes possibles. L'analyse discriminante linéaire consiste à modéliser la distribution de X pour chaque classe de la variable réponse et d'utiliser le [théorème de Bayes](\Théorème-de-sklearnBayes) pour en déduire $$Pr(Y=k \vert X=x)$$
+Soit une variable réponse $$Y$$ possédant $$k$$ classes possibles. L'analyse discriminante linéaire consiste à modéliser la distribution de X pour chaque classe de la variable réponse et d'utiliser le [théorème de Bayes](\Théorème-de-Bayes) pour en déduire $$Pr(Y=k \vert X=x)$$
 
 On peut donc utiliser le théorème de Bayes pour estimer la valeur des paramètres $$P(X)$$, $$P(Y)$$, $$ P(X \vert Y) $$ et donc déterminer la vraisemblance $$Pr(Y=k \vert X=x)$$ pour chaque Y. 
 
@@ -28,12 +28,14 @@ Selon la valeur que prendra $$x$$, on attribuera à l'observation la classe $$k$
 ### ADL avec p = 1 (une seule variable explicative)
 
 Soit :
+
 - $$\pi_k$$ la probabilité marginale qu'une observation aléatoire de $$Y$$ fasse partie de la classe $$k$$.
 
 - $$f_k(X) = P(X=x \vert Y=k)$$ la *fonction de vraisemblance* de $$X$$ pour une observation de $$Y$$ ayant la classe $$k$$. 
-	
-	En d'autres termes, $$f_k(x)$$ sera élevée s'il existe une forte probabilité qu'une observation de la $$k^{eme}$$ classe soit égale à $$x$$. Inversement, si observer $$X = x$$ est peu probable pour une observation de classe $$k$$, alors $$f_k(x)$$ sera faible.
-	
+
+> En d'autres termes, $$f_k(x)$$ sera élevée s'il existe une forte probabilité qu'une observation de la $$k^{eme}$$ classe soit égale à $$x$$. Inversement, si observer $$X = x$$ est peu probable pour une observation de classe $$k$$, alors $$f_k(x)$$ sera faible.
+
+
 On notera $$p_k(X) =P(Y=k \vert X)$$
 
 Selon le [[Théorème de Bayes]], on a :
