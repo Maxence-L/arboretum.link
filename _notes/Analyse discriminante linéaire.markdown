@@ -58,5 +58,23 @@ Voit que dans ce cas, la distinction se fait selon une simple règle d'équidist
 
 - Lorsque nous la variable réponse prend plus de deux classes, l'ADL est plus appropriée.
 
-## Mise en pratique avec [[sklearn]]
+## Mise en pratique avec [[sklearn.discriminant_analysis]]
+
+### Installation
+
+On importe classes `LinearDiscriminantAnalysis` et `QuadraticDiscriminantAnalysis` du [module](https://scikit-learn.org/stable/modules/classes.html#module-sklearn.discriminant_analysis) `sklearn.discriminant_analysis`.
+
+```python
+from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
+from sklearn.discriminant_analysis import QuadraticDiscriminantAnalysis
+````
+
+### Utilisation
+
+On instancie un objet `LinearDiscriminantAnalysis()` puis on peut utiliser sa méthode `.fit(X_train, y_train).predict(X_test))` :
+
+```python
+lda = LinearDiscriminantAnalysis()
+pred = lda.fit(X_train, y_train).predict(X_test)
+````
 
