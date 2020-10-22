@@ -8,9 +8,9 @@ SpaCy est une bibliothèque python facilitant les étapes du NLP.
 
 La documentation de spaCy est, je dois le dire, absolument la meilleure que j'ai pu lire sur le web :
 
-* \[\[Pour bien commencer::https://spacy.io/usage\]\]
-* \[\[La documentation de l'API::https://spacy.io/api\]\]
-* \[\[Les modèles disponibles::https://spacy.io/models\]\]
+* [[Pour bien commencer::https://spacy.io/usage]]
+* [[La documentation de l'API::https://spacy.io/api]]
+* [[Les modèles disponibles::https://spacy.io/models]]
 
 [Une cheat-sheet est disponible.](https://datacamp-community-prod.s3.amazonaws.com/29aa28bf-570a-4965-8f54-d6a541ae4e06)
 
@@ -64,21 +64,21 @@ for token in doc:
             token.shape_, token.is_alpha, token.is_stop)
 ```
 
-Les attributs des tokens, traités par spaCy, sont disponibles en accédant aux propriétés de l'objet. Les attributs terminant par un _underscore_ sont au format texte, les autres sont des facteurs d'identification (index, \[\[hash\]\]...)
+Les attributs des tokens, traités par spaCy, sont disponibles en accédant aux propriétés de l'objet. Les attributs terminant par un _underscore_ sont au format texte, les autres sont des facteurs d'identification (index, [[hash]]...)
 
 Description des attributs :
 
-* `.token.i` : index du token dans le texte
-* `.text` : le texte original de l'objet \`.token\`\`
-* `.lemma_`: la forme de base du mot (similaire à la racine)
-* `.pos_` "Part-Of-Speech" tag, correspond à la forme grammaticale du mot (adjectif, adverbe...)
-* `.dep_` : lien de dépendance (préposition, auxiliaire...)
-* `.shape_` : la forme du mot (capitalisation, ponctuation, chiffres...)
-* `.alpha_` : le token est est-il un mot alphabétique
-* `.stop_`: le token fait il partie des mots 'stop' (les mots les plus communs)
-* `.head` : token parent d'un point de vue syntaxique ("orange" dans "orange bleue") - c'est un token gigogne, on accède à son texte par `.head.text`
+* `.token.i` : index du token dans le texte
+* `.text` : le texte original de l'objet `.token`
+* `.lemma_` : la forme de base du mot (similaire à la racine)
+* `.pos_` : "Part-Of-Speech" tag, correspond à la forme grammaticale du mot (adjectif, adverbe...)
+* `.dep_` : lien de dépendance (préposition, auxiliaire...)
+* `.shape_` : la forme du mot (capitalisation, ponctuation, chiffres...)
+* `.alpha_` : le token est est-il un mot alphabétique
+* `.stop_` : le token fait il partie des mots 'stop' (les mots les plus communs)
+* `.head` : token parent d'un point de vue syntaxique ("orange" dans "orange bleue") - c'est un token gigogne, on accède à son texte par `.head.text`
 
-> **A noter** :
+> **A noter** :
 > Il est possible d'avoir une explication des labels avec `spacy.explain()` :
 >
 > ```python
@@ -103,7 +103,7 @@ Le résultat :
 | 10 | 1 | 1 | NUM | CD | compound | d | False | False |
 | 11 | billion | billion | NUM | CD | pobj | xxxx | True | False |
 
-> **A noter** :
+> **A noter** :
 > Il est possible de sélectionner une tranche (_slice_) de plusieurs mots en en spécifiant l'index : `doc[0:3]`.
 > Une bonne pratique est de le stocker dans un objet [Span](#span).
 
@@ -120,10 +120,10 @@ for ent in doc.ents:
 
 Description des propriétés :
 
-* `.text` : le texte original de l'objet `.ent`
-* `.start_char`: l'index du début de l'entité dans le \`doc\`\`
-* `.end_char`: l'index de la fin de l'entité
-* `.label_` : le type d'entité
+* `.text` : le texte original de l'objet `.ent`
+* `.start_char` : l'index du début de l'entité dans le `doc
+* `.end_char` : l'index de la fin de l'entité
+* `.label_` : le type d'entité
 
 Le résultat :
 
@@ -133,14 +133,14 @@ Le résultat :
 | U.K. | 27 | 31 | GPE | Geopolitical entity, i.e. countries, cities, states. |
 | $1 billion | 44 | 54 | MONEY | Monetary values, including unit. |
 
-> **A noter** :
+> **A noter** :
 > Il est possible de passer dans spaCy des règles [customisées de tokenisation](https://spacy.io/usage/linguistic-features#tokenization0)
 
 ### Matching
 
 #### Matcher
 
-On peut matcher des parties du texte, de manière similaire au \[\[regex\]\] mais en ajoutant la possibilité de matcher des mots possédant certains attributs.
+On peut matcher des parties du texte, de manière similaire au [[regex]] mais en ajoutant la possibilité de matcher des mots possédant certains attributs.
 
 Par exemple, dans le texte "Pierre boit de l'eau", on peut matcher "Pierre"+Verbe, ce qui n'est pas faisable avec une expression régulière.
 
@@ -155,7 +155,7 @@ nlp = spacy.load('en_core_web_sm')
 matcher = Matcher(nlp.vocab)
 ```
 
-On définit un pattern sous forme d'une liste de dictionnaires :
+On définit un motif (*pattern*) sous forme d'une liste de dictionnaires :
 
 ```python
 pattern = [{'ORTH': 'iPhone'}, {'IS_DIGIT': True}]
@@ -170,10 +170,10 @@ On peut le remplacer par l'attribut que l'on désire chercher, par exemple `'LOW
 * La liste des attributs de type POS : https://spacy.io/api/annotation#pos-en
 * La liste des attributs de type Named Entity : https://spacy.io/api/annotation#named-entities
 
-> **A noter**
+> **A noter** :
 > Les noms des attributs (`is_digit` par exemple) doivent être écrits en majuscule
 
-On ajoute le pattern avec la méthode `.add(pattern_name, on_match, patterns*)`[^1](https://spacy.io/api/matcher#add)
+On ajoute le motif avec la méthode `.add(pattern_name, on_match, patterns*)`[^1](https://spacy.io/api/matcher#add)
 
 On peut utiliser (similaire au \[regex\]) des opérateurs :
 
@@ -191,7 +191,7 @@ On ajoute alors l'opérateur au dictionnaire de l'élément :
 pattern = [{'POS': 'ADJ'}, {'POS': 'NOUN'}, {'POS': 'NOUN', 'OP': '?'}]
 ```
 
-**Le matcher retourne un tuple comprenant trois éléments** : `match_id`, qui correspond à la valeur hash du nom du pattern, `start`, qui correspond au début de l'index du span matché et `end`, sa fin.
+**Le matcher retourne un tuple comprenant trois éléments** : `match_id`, qui correspond à la valeur hash du nom du motif, `start`, qui correspond au début de l'index du span matché et `end`, sa fin.
 
 On utilise le matcher :
 
@@ -204,7 +204,7 @@ print('Matches:', [doc[start:end].text for match_id, start, end in matches])
 
 #### PhraseMatcher
 
-Il est également possible de matcher des objets de type `doc`et `span` avec le module [PhraseMatcher](https://spacy.io/api/phrasematcher#_title). C'est particulièrement utile lorsque l'on veut matcher une liste d'expressions composées de plusieurs mots, comme par exemple des noms de pays ("Arabie Saoudite").l
+Il est également possible de matcher des objets de type `doc`et `span` avec le module [PhraseMatcher](https://spacy.io/api/phrasematcher#_title). C'est particulièrement utile lorsque l'on veut matcher une liste d'expressions composées de plusieurs mots, par exemple des noms de pays ("Arabie Saoudite").l
 
 ```python
 # Import the PhraseMatcher and initialize it
@@ -220,7 +220,7 @@ matcher.add('COUNTRY', None, *patterns)
 matches = matcher(doc)
 ```
 
-On peut ensuite ajouter les matchs (en l'occurrence, des noms de pays) à la liste de Named Entities par exemple :
+On peut ensuite ajouter les matchs (en l'occurrence, des noms de pays) à la liste de Named Entities :
 
 ```python
 # Create a doc and find matches in it
@@ -242,7 +242,7 @@ for match_id, start, end in matcher(doc):
 
 ### Visualisations
 
-On peut visualiser la relation de dépendance (`.dep_`) ainsi en exploitant les [visualisateurs](https://spacy.io/usage/visualizers) intégrés :
+On peut visualiser la relation de dépendance (`.dep_`) ainsi en exploitant les [visualisations](https://spacy.io/usage/visualizers) intégrées :
 
 ```python
 from spacy import displacy
@@ -262,7 +262,7 @@ displacy.serve(doc, style="dep")
 
 #### String
 
-Chaque mot du texte reçoit une valeur hash la reliant à un mot dans le catalogue de mot `StringStore`., à la manière d'un index dans un \[\[bag-of-words\]\].
+Chaque mot du texte reçoit une valeur hash la reliant à un mot dans le catalogue de mot `StringStore`., à la manière d'un index dans un [[bag-of-words]].
 
 On peut le consulter ainsi :
 
@@ -282,8 +282,8 @@ print(cat_string)
 
 On ne peut toutefois pas chercher à partir d'un hash un mot non sauvegardé auparavant. Il faudra donc le rajouter avant de pouvoir le chercher.
 
-> **A noter** :
-> Le hashage d'un mot est différent pour chaque texte.
+> **A noter** :
+> L’hashage d'un mot est différent pour chaque texte.
 
 #### Vocab
 
@@ -298,7 +298,7 @@ Le `vocab` correspond au [lexemes](https://spacy.io/api/lexeme#_title) et fait l
 
 #### Doc
 
-L'objet `doc`contient le `vocab` et les tokens, qui représentent le résultat de l'analyse du texte par spaCy et contiennent les informations relative à leur valeur `string` mais aussi à leur relation avec les autres tokens.
+L'objet `doc`contient le `vocab` et les tokens, qui représentent le résultat de l'analyse du texte par spaCy et contiennent les informations relatives à leur valeur `string` mais aussi à leur relation avec les autres tokens.
 
 On construit un objet `doc`de la manière suivante :
 
@@ -368,19 +368,17 @@ En règle générale, il vaut mieux utiliser `span`et `doc` un maximum pour évi
 
 #### Vectorisation du texte
 
-SpaCy peut réaliser des analyse de similarité. En anglais, le texte est vectorisé selon l'algorithme [GloVe](https://spacy.io/models/en#en_core_web_md) [par défaut](https://spacy.io/models/en#en_core_web_md). Il est par ailleurs [possible](https://spacy.io/usage/vectors-similarity#converting) d'utiliser des algorithmes alternatifs ([[Word2Vec]]), par exemple.
-
-[[ [Le saviez-vous](http://204.19.47.207/bdl/gabarit_bdl.asp?id=4458) ? "Le nom similitude vient du latin similitudo « ressemblance, rapprochement ». On l’emploie pour exprimer une ressemblance complète, exacte entre des personnes ou des choses. Le nom similarité est dérivé de l’adjectif similaire. On l’utilise pour désigner une ressemblance à peu près exacte entre deux choses ou deux personnes. Ce nom n’exprime pas une idée de parfaite ressemblance comme le nom similitude."::lsn]]
+SpaCy peut réaliser des analyses de similarité. En anglais, le texte est vectorisé selon l'algorithme [GloVe](https://spacy.io/models/en#en_core_web_md) [par défaut](https://spacy.io/models/en#en_core_web_md). Il est par ailleurs [possible](https://spacy.io/usage/vectors-similarity#converting) d'utiliser des algorithmes alternatifs ([[Word2Vec]]), par exemple.
 
 Les modèles utilisés pour analyser le texte ne sont pas tous équivalent : si l'on veut vectoriser un texte en les utilisant, il faut charger le modèle `md` (medium) ou `lg` (large - 746mo en anglais)
 
 On peut consulter les valeurs calculée du vecteur d'un `token` ou d'un `doc` avec `doc.vector`ou `doc[index].vector`.
 
-On peut aussi accéder à la \[\[Norme d'un vecteur\]\] avec `doc.vector_norm`.
+On peut aussi accéder à la [[Norme d'un vecteur]] avec `doc.vector_norm`.
 
 #### Similarité
 
-SpaCy propose par défaut la méthode `doc.similarity(doc comparé)` qui produit la \[\[similarité cosinus\]\]. On peut l'appliquer à un document ou à un \[\[Span::#span\]\].
+SpaCy propose par défaut la méthode `doc.similarity(doc comparé)` qui produit la [[similarité cosinus]]. On peut l'appliquer à un document ou à un [[Span::#span]].
 
 ```python
 doc = nlp("This was a great restaurant. Afterwards, we went to a really nice bar.")
@@ -418,13 +416,13 @@ Chaque modèle définira dans ses métadonnées (`meta.json`) les composants de 
 ```json
 {
 	"lang":"en",
-	"name":"core_web_sm"n
+	"name":"core_web_sm",
 	"pipeline": ["tagger", "parser", "ner"]
 }
 ```
 
-> **A noter**:
-> On peut accéder aux noms des composants du pipeline en appelant `nlp.pipe.names`:
+> **A noter** :
+> On peut accéder aux noms des composants du pipeline en appelant `nlp.pipe.names` :
 >
 > ```python
 > print(nlp.pipe_names)
@@ -443,7 +441,7 @@ Chaque modèle définira dans ses métadonnées (`meta.json`) les composants de 
 
 Il est possible de créer des fonctions de traitement du texte personnalisées et de les ajouter au pipeline. Elles seront alors exécutées avec les autres composants.
 
-Une fois la fonction définie, on l'ajoute avec la la méthode `nlp.add_pipe`. Il est possible d'ajouter une option définissant son ordre de passage dans l'exécution du pipe :
+Une fois la fonction définie, on l'ajoute avec la méthode `nlp.add_pipe`. Il est possible d'ajouter une option définissant son ordre de passage dans l'exécution du pipe :
 
 | Argument | Description | Example |
 | --- | --- | --- |
@@ -491,7 +489,7 @@ token._.is_color = True
 span._.has_color = False
 ```
 
-On peut les enregistrer dans les objets `Doc`, `Token` ou `Span` avec le setteur `.set_extension`. Le niveau d'objet dans lequel on enregistrera l'extension sera celui sur lequel on l'appelera.
+On peut les enregistrer dans les objets `Doc`, `Token` ou `Span` avec le setteur `.set_extension`. Le niveau d'objet dans lequel on enregistrera l'extension sera celui sur lequel on l'appellera.
 
 Par exemple, si l'on veut analyser tout un document, on utiliser `doc`. En revanche, si on veut analyser le contenu d'un `span`, ce sera ce niveau qui sera choisi.
 
@@ -563,7 +561,7 @@ print(doc._.has_token('cloud'), '- cloud')
 > True - blueFalse - cloud
 ```
 
-Un exemple de méthode : on cherche les named entities et l'on renvoie l'url wikipedia qui leur correspond :
+Un exemple de méthode : on cherche les named entities et l'on renvoie l'url Wikipédia qui leur correspond :
 
 ```python
 def get_wikipedia_url(span):
@@ -607,7 +605,7 @@ print([(ent.text, ent.label_, ent._.capital) for ent in doc.ents])
 
 #### Traitement des textes
 
-Si l'on désire traiter plusieurs textes, on fera appel à la fonction [nlp.pipe](https://spacy.io/api/language#pipe) plutôt que d'utiliser une \[\[list comprehension\]\].
+Si l'on désire traiter plusieurs textes, on fera appel à la fonction [nlp.pipe](https://spacy.io/api/language#pipe) plutôt que d'utiliser une [[list comprehension]].
 
 ```python
 texts = ["This is a text", "These are lots of texts", "..."]
@@ -616,7 +614,7 @@ docs = [nlp(text) for text in texts] # Ne pas faire
 docs = list(nlp.pipe(texts)) # Faire
 ```
 
-On peut aussi utiliser cette technique pour les patterns qui serviront à `PhraseMatcher` :
+On peut aussi utiliser cette technique pour les motifs qui serviront à `PhraseMatcher` :
 
 ```python
 people = ['David Bowie', 'Angela Merkel', 'Lady Gaga']
@@ -644,8 +642,8 @@ for doc, context in nlp.pipe(DATA, as_tuples=True):
 
 On peut utiliser cette méthode pour passer au texte des informations contextuelles, comme le numéro de page, un identifiant, une position...
 
-> **A noter** :
-> L'output de `nlp.pipe()` est un \[\[générateur\]\] : il faut appeler \[\[list\]\] dessus pour l'exploiter.
+> **A noter** :
+> L'output de `nlp.pipe()` est un [[générateur]] : il faut appeler [[list]] dessus pour l'exploiter.
 
 #### Choix des composants
 
@@ -664,9 +662,9 @@ On peut aussi utiliser la méthode `nlp.make_doc(text)` pour procéder uniquemen
 doc = nlp.make_doc("Bonjour tout le monde")
 ```
 
-## Entrainer un modèle d'étiquettage de données
+## Entrainer un modèle d'étiquetage de données
 
-On peut utiliser spaCy pour modifier le modèle de reconnaissance d'attributs ou détecter des types de Named Entities. Cela permet d'améliorer les systèmes de rêgles de type regex mais nécessite un grand nombre de données étiquettées au préalable.
+On peut utiliser spaCy pour modifier le modèle de reconnaissance d'attributs ou détecter des types de Named Entities. Cela permet d'améliorer les systèmes de règles de type regex mais nécessite un grand nombre de données étiquetées au préalable.
 
 ![model](/assets/img/spacy-model.png#center)
 
@@ -683,11 +681,11 @@ Les étapes sont les suivantes :
 
 #### Des outils externes
 
-[Brat](http://brat.nlplab.org/) et [Prodigy](https://prodi.gy/) sont des outils qui peuvent être utiles pour étiquetter les mots, pour les enregistrer dans le modèle.
+[Brat](http://brat.nlplab.org/) et [Prodigy](https://prodi.gy/) sont des outils qui peuvent être utiles pour étiqueter les mots, pour les enregistrer dans le modèle.
 
 #### Le module Matcher
 
-Le module `matcher` est aussi bon moyen d'obtenir des données d'entrainement, en définissant des rêgles pour labelliser le données de manière similaire au \[\[regex\]\].
+Le module `matcher` est aussi bon moyen d'obtenir des données d'entrainement, en définissant des règles pour étiqueter les données de manière similaire au [[regex]].
 
 ##### Exemple
 
@@ -729,7 +727,7 @@ for doc in nlp.pipe(TEXTS):
 print(*TRAINING_DATA, sep='\n')
 ```
 
-L'output comprenant les données étiquettées est le suivant :
+L'output comprenant les données étiquetées est le suivant :
 
 ```python
 ('How to preorder the iPhone X', {'entities': [(20, 28, 'GADGET')]})
@@ -742,7 +740,7 @@ L'output comprenant les données étiquettées est le suivant :
 
 ### Fonctionnement
 
-Une fois les données étiquettées obtenu, on procède ainsi pour entraîner le modèle :
+Une fois les données étiquetées obtenu, on procède ainsi pour entraîner le modèle :
 
 * Pour un nombre _n_ d'itérations :
   * Mélange des données d'entrainement pour éviter que le modèle fasse des prédictions fondées sur l'ordre des échantillons.
@@ -750,7 +748,7 @@ Une fois les données étiquettées obtenu, on procède ainsi pour entraîner le
   * Entraînement et mise à jour du modèle pour chaque échantillon
 * Enregistrement du modèle
 
-Un exemple à partir du code plus au dessus :
+Un exemple à partir de l'exemple ci-dessus :
 
 ```python
 # Start the training
