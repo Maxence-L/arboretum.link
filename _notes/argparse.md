@@ -2,6 +2,7 @@
 title : argparse
 tags : stdlib
 toc : true
+etat : été
 ---
 
 Argparse est un module de python permettant au programme d'interagir avec la ligne de commande. on peut, par exemple, passer des arguments et spécifier quelle fonction on désire exécuter.

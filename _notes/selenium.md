@@ -2,7 +2,7 @@
 title: Selenium
 toc: true
 tags: web-scraping
-
+etat: été
 ---
 Selenium est un outil émulant un navigateur et permettant de simuler automatiquement l'interaction d'un utilisateur avec un site web. Il est utilisé à l'origine pour le test de sites webs mais peut être aussi utilisé pour le scraping.
 

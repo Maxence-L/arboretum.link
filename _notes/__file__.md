@@ -2,7 +2,7 @@
 title: __file__
 tags: python-stdlib
 toc: 'false'
-
+etat: printemps
 ---
 [[Variable globale]] renvoyant le chemin  relatif vers le fichier
 

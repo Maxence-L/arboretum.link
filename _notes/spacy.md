@@ -2,7 +2,7 @@
 title: spaCy
 tags: nlp ml-pratique
 toc: true
-
+etat: été
 ---
 SpaCy est une bibliothèque python facilitant les étapes du NLP.
 

@@ -15,6 +15,11 @@ Le but est de ce site est de me forcer à en améliorer la qualité de ces notes
 
 Les notes que vous trouverez ici sont donc perpétuellement en cours d'amélioration. Mémoriser des concepts est un processus itératif au cours duquel je me corrige et je complète mes connaissances. 
 
-Les informations peuvent être parcellaires ou fausses - comme sur le reste du web, cela dit.  
+Par conséquent, les notes peuvent prendre un des quatres état suivants :
 
-Le site utilise [[Jekyll]], ainsi que le modèle [[simply-jekyll]], que j'ai modifié et traduit en français, disponible sur [Github](https://github.com/Maxence-L/arborio). Il n'est pas indexé par Google, ce qui en fait un site semi-privé, je suppose.
+- Hiver : la note est créée et quelques informations sont là, mais l'essentiel reste à faire.
+- Printemps : la note bourgeonne mais n'est toujours pas complète.
+- Été : la note est considérée comme complète (*evergreen*).
+- Automne : la note est à retravailler, à la lumière des nouvelles informations acquises.
+
+Le site utilise [[Jekyll]], ainsi que le modèle [[simply-jekyll::https://github.com/raghuveerdotnet/simply-jekyll]], que j'ai modifié et traduit en français, disponible sur [[Github::https://github.com/Maxence-L/arborio]]. Il n'est pas indexé par Google, ce qui en fait un site semi-privé, je suppose.

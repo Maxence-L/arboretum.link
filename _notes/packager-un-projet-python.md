@@ -2,6 +2,7 @@
 title : Packager un projet python
 tags : stdlib
 toc : true
+etat: été
 ---
 
 Packager un projet python permet de rendre les scripts qu'il contient exécutables de manière standardisée par un autre utilisateur. 

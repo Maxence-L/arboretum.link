@@ -1,6 +1,7 @@
 ---
 title: Chaines de markov
 tag: Probabilités
+etat: hiver
 ---
 
 Les chaines de markov sont des modèles mathématiques modélisant pour un objet le fait de passer d'un état à un autre.

@@ -1,6 +1,7 @@
 ---
 title: Norme d'un vecteur
 tags: Maths
+etat: printemps
 ---
 La norme est un élément de la définition d'un vecteur correspondant à sa longueur.
 

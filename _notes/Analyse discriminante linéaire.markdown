@@ -1,6 +1,7 @@
 ---
 title: Analyse discriminante linéaire
 tags: Apprentissage-non-supervisé
+etat: printemps
 ---
 
 L'analyse discriminante linéaire (ADL) est une méthode de classification proche de la [[régression logistique]]. 

@@ -1,6 +1,7 @@
 ---
 title: Théorème de Bayes
 tags: Probabilités
+etat: printemps
 ---
 
  Soit deux évènements, A et B. On a :

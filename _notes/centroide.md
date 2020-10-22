@@ -2,6 +2,7 @@
 title : Centroïde
 tags: Maths
 toc: false
+etat : hiver
 ---
 Le centroïde d'une figure géométrique correspond à la moyenne de tous les points appartenant à la figure[^1]. 
 
