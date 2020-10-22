@@ -11,7 +11,7 @@ La méthode retourne un [[tuple]] comportant deux éléments:
 
 - `codes`: Un array portant le nom de chaque facteur. Le premier élément correspondra au chiffre 0 de `uniques`, le second au chiffre un et ainsi de suite.
 
-Par exemple, si l'on a la liste suivante : `['bleu', 'vert', 'bleu', 'jaune', 'vert', 'bleu']` :
+Par exemple, si l'on a la liste suivante : `['bleu', 'vert', 'bleu', 'jaune', 'vert', 'bleu']` :
 
 ```python
 import pandas as pd
