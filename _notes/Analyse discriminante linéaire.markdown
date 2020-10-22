@@ -1,6 +1,6 @@
 ---
-title: Analyse discriminante linéaire
-tags: Apprentissage-non-supervisé
+title: Analyse discriminante
+tags: Apprentissage-non-supervisé, Clustering
 etat: printemps
 ---
 
@@ -16,17 +16,9 @@ On peut donc utiliser le théorème de Bayes pour estimer la valeur des paramèt
 
 Selon la valeur que prendra $$x$$, on attribuera à l'observation la classe $$k$$ de $$Y$$ correspondant à la valeur maximum de $$Pr(Y=k \vert X=x)$$.
 
-## Quand l'utiliser ?
-
-- Lorsque les classes sont séparées distinctement, l'estimation de paramètres peut être instable dans le cas la [[régression logistique::Régression logistique]]. L'ADL ne rencontrera pas ce type de problème.
-
-- Si n est faible est que la distribution des prédicteurs X suit approximativement une loi normale, l'ADL est plus stable que la [[régression logistique]].
-
-- Lorsque nous la variable réponse prend plus de deux classes, l'ADL est plus appropriée.
-
 ## Théorie
 
-### ADL avec p = 1 (une seule variable explicative)
+### Analyse discriminante linéaire (ADL) avec p = 1 (une seule variable explicative)
 
 Soit :
 
@@ -53,4 +45,18 @@ $$\hat{\delta}_k(x) = x \cdot \frac{\hat{\mu}_k}{\hat{\sigma}^2} - \frac{\hat{\m
 est le plus grand. Le classificateur ainsi obtenu sépare les observations sur une ligne de partage, ce qui explique le nom d'*analyse discriminante linéaire*.
 
 Voit que dans ce cas, la distinction se fait selon une simple règle d'équidistance aux deux moyennes.
+
+## Analyse discriminante quadratique (ADQ) avec p = 1 (une seule variable explicative)
+
+(à compléter)
+
+## Quand l'utiliser ?
+
+- Lorsque les classes sont séparées distinctement, l'estimation de paramètres peut être instable dans le cas la [[régression logistique::Régression logistique]]. L'ADL ne rencontrera pas ce type de problème.
+
+- Si n est faible est que la distribution des prédicteurs X suit approximativement une loi normale, l'ADL est plus stable que la [[régression logistique]].
+
+- Lorsque nous la variable réponse prend plus de deux classes, l'ADL est plus appropriée.
+
+## Mise en pratique avec [[sklearn]]
 
