@@ -123,7 +123,7 @@ où $$\vec{x}=(\operatorname{Lag} 1, \operatorname{Lag} 2)^{T}$$. Les coefficien
 ![](/assets/img/score_adl.png#center)
 
 
-Le score correspond ici à la multiplication entre $X$ et les coefficients :
+Le score correspond ici à la multiplication entre $$X$$ et les coefficients :
 `np.array(df.iloc[0,0:2])@lda.coef_.T`
 
 On peut regarder la [[matrice de confusion]] :
