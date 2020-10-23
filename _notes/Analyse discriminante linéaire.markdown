@@ -54,7 +54,7 @@ Si $$k=2$$ et $$\pi_1 = \pi_2$$, alors le classificateur est à équidistance de
 
 *À gauche, on peut voir deux densités normales, la ligne en pointillés représentant la ligne de démarcation du classificateur. À droite, des observations générées à partir de ces fonctions de densité. La ligne pleine représente le classificateur bayésien estimé.*
 
-### Analyse discriminante quadratique (ADQ) avec p =n
+### Analyse discriminante quadratique (ADQ)
 
 (à compléter)
 
