@@ -41,6 +41,7 @@ Les fichiers relatifs à l'installation et au déploiement du package sont situ�
 On retrouve dans le dossier `nom_du_package` trois fichiers : `utils.py`, `__main__.py` et `__init__.py`.
 
 #### \_\_main__.py
+
 `__main.py__` est le fichier par défaut qui sera exécuté par python lors de l'utilisation du package. Il contient donc les indications relatives à la mise en oeuvre du programme. On y ajoute souvent une fonction `main()` ainsi qu'une exécution conditionnelle s’il est exécuté en tant que [[__main__]] (ce qui devrait être le cas) :
 ```python
 def main():
