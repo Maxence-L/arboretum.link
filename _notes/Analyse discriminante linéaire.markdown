@@ -70,14 +70,29 @@ Si $$k=2$$ et $$\pi_1 = \pi_2$$, alors le classificateur est à équidistance de
 
 ### Installation
 
-On importe classes `LinearDiscriminantAnalysis` et `QuadraticDiscriminantAnalysis` du [module](https://scikit-learn.org/stable/modules/classes.html#module-sklearn.discriminant_analysis) `sklearn.discriminant_analysis`.
+On importe classes [[LinearDiscriminantAnalysis::https://scikit-learn.org/stable/modules/generated/sklearn.discriminant_analysis.LinearDiscriminantAnalysis.html]] et [[QuadraticDiscriminantAnalysis::https://scikit-learn.org/stable/modules/generated/sklearn.discriminant_analysis.QuadraticDiscriminantAnalysis.html#sklearn.discriminant_analysis.QuadraticDiscriminantAnalysis]] du module [[sklearn.discriminant_analysis::https://scikit-learn.org/stable/modules/classes.html#module-sklearn.discriminant_analysis]].
 
 ```python
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 from sklearn.discriminant_analysis import QuadraticDiscriminantAnalysis
+from sklearn.metrics import confusion_matrix, classification_report, precision_score
 ````
 
-Pour cet exemple, on utilise les [[données::https://github.com/JWarmenhoven/ISLR-python/raw/master/Notebooks/Data/Smarket.csv]] relatives au mouvements à la hausse ou à la baisse du marché boursier. 
+Pour cet exemple, on utilise les [[données::https://github.com/JWarmenhoven/ISLR-python/raw/master/Notebooks/Data/Smarket.csv]] relatives au mouvements à la hausse ou à la baisse du marché boursier, en fonction des variations des jours précédents.
+
+```python
+df = pd.read_csv('Smarket.csv', usecols=range(1,10), index_col=0, parse_dates=True)
+
+X_train = df[:'2004'][ ['Lag1','Lag2'] ]
+y_train = df[:'2004']['Direction']
+
+X_test = df['2005':][ ['Lag1','Lag2'] ]
+y_test = df['2005':]['Direction']
+
+lda = LinearDiscriminantAnalysis()
+pred = lda.fit(X_train, y_train).predict(X_test)
+````
+
 
 ### Utilisation pour l'analyse discriminante linéaire
 
@@ -187,6 +202,8 @@ qda.means_
 [ 0.04279022,  0.03389409],
 [-0.03954635, -0.03132544]
 ])
+````
+L'objet `qda` ne contient pas de coefficient : le discriminant est quadratique.
 
 confusion_matrix(y_test, pred).T
 
@@ -203,5 +220,7 @@ print(classification_report(y_test, pred, digits=3))
 |Down|0.600|0.275|0.373|111
 |Up|0.599|0.858|0.706|141
 |avg / total|0.599|0.599|0.559|252
+
+On peut noter que l'analyse discriminante quadratique permet ici d'obtenir une précision de 60%, ce qui est particulièrement élevé dans le cas des marchés financiers. Par ailleurs, l'ADQ est plus efficace que l'ADL.
 
 ----
