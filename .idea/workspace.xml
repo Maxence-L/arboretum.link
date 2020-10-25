@@ -23,10 +23,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e416042-0831-410e-bc48-ad8738bffa8b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/_notes/list-comprehension.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/feed.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/feed.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/about.md" beforeDir="false" afterPath="$PROJECT_DIR$/about.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,13 +54,13 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/assets/img" />
-      <recent name="$PROJECT_DIR$" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/assets/img" />
       <recent name="$PROJECT_DIR$/_notes" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/img" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -81,7 +78,9 @@
       <workItem from="1602339071311" duration="9384000" />
       <workItem from="1602359835287" duration="3661000" />
       <workItem from="1602691439623" duration="9443000" />
-      <workItem from="1603206799714" duration="1711000" />
+      <workItem from="1603206799714" duration="1910000" />
+      <workItem from="1603304310141" duration="4481000" />
+      <workItem from="1603370957245" duration="2600000" />
     </task>
     <servers />
   </component>

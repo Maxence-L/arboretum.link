@@ -1,8 +1,7 @@
 ---
 title: Analyse discriminante
-tags: Apprentissage-non-supervisé, Clustering
-etat: printemps
-toc: true
+created: '2020-10-08T15:49:59.253Z'
+modified: '2020-10-23T20:08:24.866Z'
 ---
 
 L'analyse discriminante est une méthode de classification proche de la [[régression logistique]]. 
@@ -13,7 +12,7 @@ Elle est appelée en anglais *linear discriminant analysis*.
 
 Soit une variable réponse $$Y$$ possédant $$k$$ classes possibles. L'analyse discriminante linéaire consiste à modéliser la distribution de X pour chaque classe de la variable réponse et d'utiliser le [[Théorème-de-Bayes]] pour en déduire $$Pr(Y=k \vert X=x)$$
 
-On peut donc utiliser le théorème de Bayes pour estimer la valeur des paramètres $$P(X)$$, $$P(Y)$$, $$ P(X \vert Y) $$ et donc déterminer la vraisemblance $$Pr(Y=k \vert X=x)$$ pour chaque Y. 
+On peut donc utiliser le théorème de Bayes pour estimer la valeur des paramètres $$P(X)$$, $$P(Y)$$, $$P(X \vert Y)$$ et donc déterminer la vraisemblance $$Pr(Y=k \vert X=x)$$ pour chaque Y. 
 
 Selon la valeur que prendra $$x$$, on attribuera à l'observation la classe $$k$$ de $$Y$$ correspondant à la valeur maximum de $$Pr(Y=k \vert X=x)$$.
 
@@ -23,9 +22,9 @@ Selon la valeur que prendra $$x$$, on attribuera à l'observation la classe $$k$
 
 Soit :
 
-- $$\pi_k$$ la probabilité qu'une observation aléatoire de $$Y$$ fasse partie de la classe $$k$$.
+- La probabilité $$\pi_k$$ qu'une observation aléatoire de $$Y$$ fasse partie de la classe $$k$$.
 
-- $$f_k(X) = P(X=x \vert Y=k)$$ la *fonction de vraisemblance* de $$X$$ pour une observation de $$Y$$ ayant la classe $$k$$. 
+- La *fonction de vraisemblance* $$f_k(X) = P(X=x \vert Y=k)$$  de $$X$$ pour une observation de $$Y$$ ayant la classe $$k$$. 
 
 > En d'autres termes, $$f_k(x)$$ sera élevée s'il existe une forte probabilité qu'une observation de la $$k^{eme}$$ classe soit égale à $$x$$. Inversement, si observer $$X = x$$ est peu probable pour une observation de classe $$k$$, alors $$f_k(x)$$ sera faible.
 
@@ -115,7 +114,9 @@ $$
 \hat{\delta}_{2}(\vec{x})-\hat{\delta}_{1}(\vec{x})=\vec{x}^{T} \hat{\Sigma}^{-1}\left(\overrightarrow{\hat{\mu}}_{2}-\overrightarrow{\hat{\mu}}_{1}\right)-\frac{1}{2}\left(\overrightarrow{\hat{\mu}}_{2}+\overrightarrow{\hat{\mu}}_{1}\right)^{T} \hat{\Sigma}^{-1}\left(\overrightarrow{\hat{\mu}}_{2}-\overrightarrow{\hat{\mu}}_{1}\right)+\log \left(\frac{\pi_{2}}{\pi_{1}}\right)
 $$
 
-où $$\vec{x}=(\operatorname{Lag} 1, \operatorname{Lag} 2)^{T}$$. Les coefficients correspondent au terme $$\hat{\Sigma}^{-1}\left(\overrightarrow{\hat{\mu}}_{2}-\overrightarrow{\hat{\mu}}_{1}\right)$$, ce qui correspond à la pente de la courbe suivante[^2] :
+où $$\vec{x}=(\operatorname{Lag} 1, \operatorname{Lag} 2)^{T}$$. 
+
+Les coefficients correspondent au terme $$\hat{\Sigma}^{-1}\left(\overrightarrow{\hat{\mu}}_{2}-\overrightarrow{\hat{\mu}}_{1}\right)$$, ce qui correspond à la pente de la courbe suivante[^2] :
 
 [^2]: https://stats.stackexchange.com/questions/87479/what-are-coefficients-of-linear-discriminants-in-lda
 
@@ -135,17 +136,19 @@ confusion_matrix(y_test, pred).T
           [ 76, 106] ])
 ````
 
+
 On peut regarder le [[rapport de classification]]:
 
 ```python
 print(classification_report(y_test, pred, digits=3))
 ````
 
-|-|precision|recall|f1-score|support
-|-|-|-|-
-|Down|0.500|0.315|0.387|111
-|Up|0.582|0.752|0.656|141
-|avg / total|0.546|0.560|0.538|252
+|x|precision|recall|f1-score|support|
+|-|-|-|-|-|
+|Down|0.500|0.315|0.387|111|
+|Up|0.582|0.752|0.656|141|
+|avg / total|0.546|0.560|0.538|252|
+
 
 La méthode `lda.predict_proba(X_test)` permet d'obtenir la probabilité estimée associée à chaque classe pour le point de données :
 
@@ -203,8 +206,10 @@ qda.means_
 [-0.03954635, -0.03132544]
 ])
 ````
+
 L'objet `qda` ne contient pas de coefficient : le discriminant est quadratique.
 
+```python
 confusion_matrix(y_test, pred).T
 
 > array([
