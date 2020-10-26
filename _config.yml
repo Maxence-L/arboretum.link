@@ -21,9 +21,10 @@ markdown: kramdown
 kramdown:
   input: GFM
   hard_wrap: false
-  math_engine: mathjax
+  math_engine: null
   smart_quotes: ["apos", "apos", "quot", "quot"]
   syntax_highlighter: rouge
+
 
 sass:
   style: compressed

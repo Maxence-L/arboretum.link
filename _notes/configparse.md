@@ -143,7 +143,7 @@ config.set('bitbucket.org', 'user', 'arboretum')
 config.get('bitbucket.org', 'user')
 
 > 'arboretum'
-````
+`````
 
 On peut aussi utiliser les crochets : `config[section][key] = value`
 

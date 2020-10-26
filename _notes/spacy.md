@@ -20,7 +20,7 @@ On l'importe de la manière suivante :
 
 ```bash
 pip install spacy
-```
+````
 
 Il faut penser à installer le pack de langage désiré [parmi ceux disponibles](https://spacy.io/usage/models) pour l'analyse :
 

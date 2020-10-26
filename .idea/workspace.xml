@@ -24,6 +24,15 @@
   <component name="ChangeListManager">
     <list default="true" id="3e416042-0831-410e-bc48-ad8738bffa8b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_notes/Theoreme-de-bayes.md" beforeDir="false" afterPath="$PROJECT_DIR$/_notes/Theoreme-de-bayes.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_notes/configparse.md" beforeDir="false" afterPath="$PROJECT_DIR$/_notes/configparse.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_notes/loi-normale.md" beforeDir="false" afterPath="$PROJECT_DIR$/_notes/loi-normale.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_notes/spacy.md" beforeDir="false" afterPath="$PROJECT_DIR$/_notes/spacy.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/highlight.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/highlight.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +90,7 @@
       <workItem from="1603206799714" duration="1910000" />
       <workItem from="1603304310141" duration="4481000" />
       <workItem from="1603370957245" duration="2600000" />
+      <workItem from="1603705856973" duration="2984000" />
     </task>
     <servers />
   </component>
