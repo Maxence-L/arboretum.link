@@ -8,6 +8,7 @@ etat: printemps
 ConfigParse est un module de python permettant de définir des paramètres d'un programme par défaut et de laisser les utilisateurs les modifier. Le module est particulièrement utile couplé à [[argparse]].
 
 ## Le fichier config.ini
+
 Les valeurs de configuration du programme sont stockées dans un fichier `.ini`, typiquement `config.ini`. Il est structuré de la manière suivante :
 
 ```ini
@@ -71,6 +72,7 @@ empty string value here =
 
 
 ## Initialisation
+
 On initialise un objet de type `Configparser()` qui pourra lire le fichier `config.ini`:
 
 ```python
@@ -82,8 +84,9 @@ config.read('config.ini')
 > ['config.ini']
 ````
 
-> **A noter :**
-> Si l'on décide de laisser des clés sans valeurs (section `No Values`), il faudra passer l'option`allow_no_value=True` lors de l'initialisation de `ConfigParser()`:
+> **À noter :**
+> Si l'on décide de laisser des clés sans valeurs (section `No Values`), il faudra passer l'option `allow_no_value=True` lors de l'initialisation de `ConfigParser()`:
+>
 >  ```python
 >  ConfigParser(allow_no_value=True)
 >  ````
@@ -122,8 +125,8 @@ Un objet `.ConfigParser()` initialisé étant un itérable, il est possible de p
 
 ```python
 for key in config['DEFAULT']:
-	print(f"{key} : {config['DEFAULT'][key]}")
-	
+    print(f"{key} : {config['DEFAULT'][key]}")
+
 > serveraliveinterval : 45
 > compression : yes
 > compressionlevel : 9
@@ -142,7 +145,7 @@ config.get('bitbucket.org', 'user')
 > 'arboretum'
 ````
 
-On peut aussi utiliser les crochets : `config[section][key] = value``
+On peut aussi utiliser les crochets : `config[section][key] = value`
 
 ```python
 config['bitbucket.org']['user'] = 'arborio'
@@ -151,3 +154,20 @@ config['bitbucket.org']['user']
 > 'arborio'
 ```
 
+### Si le programme est un package
+
+Il faut préciser au packager (`setup.py`) le fichier `config.ini` à ajouter au package. On écrit la ligne suivante dans `setup.py`:
+
+```python
+    package_data={'my_package': ['config.ini',]}
+````
+
+À noter que pour qu'il soit inclut au package, le fichier `config.ini` devra être dans le fichier racine.
+
+Afin que Confiparse retrouve le fichier lors de l'exécution, il est nécessaire de définir de manière claire le chemin vers `config.ini` :
+
+```python
+config_filename = os.path.join(os.path.dirname(os.path.realpath(__file__)),
+                                   'config.ini')
+    config.read(config_filename)
+`````
