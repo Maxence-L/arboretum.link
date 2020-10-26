@@ -136,7 +136,6 @@ confusion_matrix(y_test, pred).T
           [ 76, 106] ])
 ````
 
-
 On peut regarder le [[rapport de classification]]:
 
 ```python

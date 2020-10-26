@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "test.md",
+            "file": "selenium.md",
             "mode": "source"
           }
         }
@@ -64,7 +64,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "test.md"
+                "file": "selenium.md"
               }
             }
           },
@@ -84,6 +84,7 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "selenium.md",
     "test.md",
     "norme-vecteur.md",
     "dbscan.md",

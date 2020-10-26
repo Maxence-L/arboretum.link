@@ -13,5 +13,6 @@
   },
   "attachmentFolderPath": "assets/img",
   "newFileLocation": "folder",
-  "newFileFolderPath": "_notes"
+  "newFileFolderPath": "_notes",
+  "enabledPlugins": []
 }

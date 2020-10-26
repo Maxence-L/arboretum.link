@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/list-comprehension.md",
+            "file": "_notes/selenium.md",
             "mode": "source"
           }
         }
@@ -64,7 +64,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/list-comprehension.md"
+                "file": "_notes/selenium.md"
               }
             }
           },
@@ -74,7 +74,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/list-comprehension.md"
+                "file": "_notes/selenium.md"
               }
             }
           }
@@ -86,10 +86,12 @@
     "collapsed": true
   },
   "lastOpenFiles": [
-    "_notes/list-comprehension.md",
-    "_notes/centroide.md",
-    "_notes/test.md",
     "_notes/selenium.md",
-    "_notes/norme-vecteur.md"
+    "_notes/configparse.md",
+    "_notes/norme-vecteur.md",
+    "_notes/loi-normale.md",
+    "_notes/test.md",
+    "_notes/list-comprehension.md",
+    "_notes/centroide.md"
   ]
 }

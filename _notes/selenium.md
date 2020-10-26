@@ -80,6 +80,7 @@ finally:
     driver.quit()
 ```
 
+
 ## Recherche du contexte
 L'objet *webdriver* correspond au navigateur, il contiendra les pages chargées.
 
@@ -218,7 +219,7 @@ On peut utiliser le module [[pickle]] pour enregistrer les cookies en vue d'une 
 pickle.dump(driver.get_cookies(), open("cookies.pkl", "wb"))
 ````
 
-Les cookies peuvent être réutilisés avec [[pickle#pickle load chargement d'un objet|pickle.load()]]. ==Attention toutefois à atteindre l'adresse désirée avec le webdriver avant d'ajouter les cookies==. Dans le cas contraire, on obtiendra une erreur de type `selenium.common.exceptions.InvalidCookieDomainException: Message: invalid cookie domain`.
+Les cookies peuvent être réutilisés avec [[pickle|pickle.load()]]. ==Attention toutefois à atteindre l'adresse désirée avec le webdriver avant d'ajouter les cookies==. Dans le cas contraire, on obtiendra une erreur de type `selenium.common.exceptions.InvalidCookieDomainException: Message: invalid cookie domain`.
 
 ```python
 driver.get(self.website)

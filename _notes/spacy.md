@@ -28,7 +28,7 @@ Il faut penser à installer le pack de langage désiré [parmi ceux disponibles]
 python -m spacy download en
 ```
 
-On peut alors importer spaCy, ainsi que le modèle contenant les règles de tokenisation ainsi que le pipeline de transformation :
+On peut alors importer spaCy, ainsi que le modèle contenant les règles de tokenisation ainsi que le pipeline de transformation : ^466265
 
 ```python
 import spacy
