@@ -159,7 +159,7 @@ config['bitbucket.org']['user']
 Il faut préciser au packager (`setup.py`) le fichier `config.ini` à ajouter au package. On écrit la ligne suivante dans `setup.py`:
 
 ```python
-    package_data={'my_package': ['config.ini',]}
+package_data={'my_package': ['config.ini',]}
 ````
 
 À noter que pour qu'il soit inclut au package, le fichier `config.ini` devra être dans le fichier racine.
@@ -167,7 +167,6 @@ Il faut préciser au packager (`setup.py`) le fichier `config.ini` à ajouter au
 Afin que Confiparse retrouve le fichier lors de l'exécution, il est nécessaire de définir de manière claire le chemin vers `config.ini` :
 
 ```python
-config_filename = os.path.join(os.path.dirname(os.path.realpath(__file__)),
-                                   'config.ini')
-    config.read(config_filename)
+config_filename = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'config.ini')
+config.read(config_filename)
 `````
