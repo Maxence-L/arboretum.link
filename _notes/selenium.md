@@ -88,7 +88,7 @@ On localise les éléments d'intérêt avec la méthode `driver.find_element(By.
 ```python
 driver.find_element(By.ID, "cheese")
 ````
-![1][/assets/img/selenium-tags.png]
+![1](/assets/img/selenium-tags.png)
 Il est aussi possible d'utiliser la méthode `find_element_by_class_name('xxxx')` - il existe une méthode de ce type pour chaque catégorie d'attribut.
 
 ### Chercher des éléments imbriqués (*nested*)

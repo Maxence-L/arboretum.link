@@ -23,9 +23,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e416042-0831-410e-bc48-ad8738bffa8b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/_notes/test.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_notes/.obsidian/config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_notes/.obsidian/workspace" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_includes/content.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/content.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_notes/loi-normale.md" beforeDir="false" afterPath="$PROJECT_DIR$/_notes/loi-normale.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_notes/norme-vecteur.md" beforeDir="false" afterPath="$PROJECT_DIR$/_notes/norme-vecteur.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_notes/selenium.md" beforeDir="false" afterPath="$PROJECT_DIR$/_notes/selenium.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_notes/test.md" beforeDir="false" afterPath="$PROJECT_DIR$/_notes/test.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +88,7 @@
       <workItem from="1603206799714" duration="1910000" />
       <workItem from="1603304310141" duration="4481000" />
       <workItem from="1603370957245" duration="2600000" />
-      <workItem from="1603705856973" duration="15096000" />
+      <workItem from="1603705856973" duration="16330000" />
     </task>
     <servers />
   </component>

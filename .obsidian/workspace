@@ -1,0 +1,95 @@
+{
+  "main": {
+    "id": "9703bdd4998ab8e3",
+    "type": "split",
+    "children": [
+      {
+        "id": "f95a7adb4dd3baf0",
+        "type": "leaf",
+        "active": true,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "_notes/list-comprehension.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "85643e4960c76bd8",
+    "type": "split",
+    "children": [
+      {
+        "id": "9779d13d9a148908",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6957ca7d97a3375a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "2916b8a76fd850de",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": ""
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "15b808a1e515cd90",
+    "type": "split",
+    "children": [
+      {
+        "id": "65b6707c9b86ace0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "86c06186390a27c9",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "_notes/list-comprehension.md"
+              }
+            }
+          },
+          {
+            "id": "174f51443e3d0486",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "_notes/list-comprehension.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "lastOpenFiles": [
+    "_notes/list-comprehension.md",
+    "_notes/centroide.md",
+    "_notes/test.md",
+    "_notes/selenium.md",
+    "_notes/norme-vecteur.md"
+  ]
+}
