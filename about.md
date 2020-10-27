@@ -5,7 +5,7 @@ permalink: /about/
 content-type: eg
 ---
 
-Mon carnet de notes sur [[Obsidian::obsidian.md]] devenant de plus en plus touffu, j'ai décidé de mettre en ligne progressivement quelques notes.
+Mon espace de travail sur [[Obsidian::obsidian.md]] devenant de plus en plus touffu et complexe à gérer, j'ai décidé de mettre en ligne progressivement mes notes sur cette interface que je trouve plus claire.
 
 J'ai parfois du mal à me souvenir d'éléments purement techniques : une formule mathématique, quelle méthode utiliser... Je compense en m'expliquant à moi-même par écrit ce que j'étudie, afin de pouvoir y revenir facilement lorsque j'en ai besoin.
 
@@ -13,7 +13,7 @@ Le web étant essentiellement en anglais, traduire en français des sujets techn
 
 Le but est de ce site est de me forcer à en améliorer la qualité de ces notes, la perspective d'être lu par quelqu'un étant motivant. Cela me permet par ailleurs d'y accéder partout.
 
-Les notes que vous trouverez ici sont donc perpétuellement en cours d'amélioration. Mémoriser des concepts est un processus itératif au cours duquel je me corrige et je complète mes connaissances. 
+Les notes que vous trouverez ici sont donc perpétuellement en cours d'amélioration et son mises à jour quotidiennement. Mémoriser des concepts est un processus itératif au cours duquel je me corrige et je complète mes connaissances. 
 
 Par conséquent, les notes peuvent prendre un des quatres état suivants :
 
