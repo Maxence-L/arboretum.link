@@ -67,7 +67,6 @@
 
     {%- assign external_url_array = external_urls | split:link_joiner_delimiter -%}
     {%- assign external_link_array = external_links | split:link_joiner_delimiter -%}
-
     {%- assign replaced_content = content -%}
 
     {%- for title in internal_link_array -%}
@@ -105,9 +104,14 @@
 
     {%- endfor -%}
 
+
+
+
     {%- assign internal_url_alt_array = internal_urls_alt | split:link_joiner_delimiter -%}
     {%- assign internal_link_alt_array = internal_links_alt | split:link_joiner_delimiter -%}
     {%- assign internal_titles_alt_array = internal_titles_alt | split:link_joiner_delimiter -%}
+
+
 
     {%- for title in internal_link_alt_array -%}
 
@@ -139,7 +143,6 @@
         {%- endif -%}
 
             {%- assign bracket_link = '[[' | append: title | append: '|' | append: alt_title | append: ']]' -%}
-            {{link_text}}
             {%- assign replaced_content = replaced_content | replace: bracket_link, link_text -%}
 
     {%- endfor -%}
