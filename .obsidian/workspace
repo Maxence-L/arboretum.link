@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/Geonamescache.md",
+            "file": "_notes/Se connecter à une base SQL.md",
             "mode": "preview"
           }
         }
@@ -64,7 +64,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Geonamescache.md"
+                "file": "_notes/Se connecter à une base SQL.md"
               }
             }
           },
@@ -74,7 +74,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Geonamescache.md"
+                "file": "_notes/Se connecter à une base SQL.md"
               }
             }
           }
@@ -86,15 +86,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "_notes/Untitled 1.md",
+    "_notes/chaines-de-markov.md",
+    "_notes/df.to_sql().md",
+    "_notes/df.query().md",
+    "_notes/df.isin().md",
     "_notes/Geonamescache.md",
     "_notes/Calculer des distances terrestres.md",
     "_notes/df.append().md",
     "_notes/Format datetime.md",
-    "_notes/series.str.split().md",
-    "_notes/pd.factorize.md",
-    "_notes/df.to_sql().md",
-    "_notes/dbscan.md",
-    "_notes/Untitled 1.md",
-    "_notes/Untitled.md"
+    "_notes/series.str.split().md"
   ]
 }

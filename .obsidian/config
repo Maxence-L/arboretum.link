@@ -9,7 +9,8 @@
     "command-palette": true,
     "markdown-importer": true,
     "word-count": true,
-    "outline": true
+    "outline": true,
+    "custom-css": true
   },
   "attachmentFolderPath": "assets/img",
   "newFileLocation": "folder",

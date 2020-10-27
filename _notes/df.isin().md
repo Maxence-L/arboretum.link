@@ -22,18 +22,19 @@ df = pd.DataFrame({'num_legs': [2, 4], 'num_wings': [2, 0]},
                   index=['falcon', 'dog'])
 df
 
-        num_legs  num_wings
-falcon         2          2
-dog            4          0
+>         num_legs  num_wings
+> falcon         2          2
+> dog            4          0
 ````
 
 On recherche les animaux ayant zéro ou deux membres :
 
 ```python
 df.isin([0, 2])
-        num_legs  num_wings
-falcon      True       True
-dog        False       True
+
+>		num_legs  num_wings
+> falcon      True       True
+> dog        False       True
 ````
 
 Cette méthode est utile pour réaliser des selections conditionnelles :
@@ -41,8 +42,8 @@ Cette méthode est utile pour réaliser des selections conditionnelles :
 ```python
 df[df['num_legs'].isin([2])]
 
-        num_legs  num_wings
-falcon         2          2
+>         num_legs  num_wings
+> falcon         2          2
 ````
 
 Si l'on désire chercher *NOT IN* au lieu de *IN*, il faut préciser [[~]] en préfixe à la condition[^2] :
@@ -52,7 +53,7 @@ Si l'on désire chercher *NOT IN* au lieu de *IN*, il faut préciser [[~]] en pr
 ```python
 df[~df['num_legs'].isin([2])]
 
-        num_legs  num_wings
-falcon         2          2*
+>         num_legs  num_wings
+> falcon         2          2*
 ````
 
