@@ -4,9 +4,12 @@ tags: stdlib
 toc: false
 etat: hiver
 ---
-
 La *list comprehension* permet de construire des [[listes]] issues d'opérations itératives directement lors de la définition de celles-ci. Les list comprehensions sont généralement plus rapide et élégantes.
-La syntaxe est la suivante : [expression for item in iterable]
+
+La syntaxe est la suivante : 
+
+[[[expression for item in iterable]::srs]]
+
 ```python
 [x*x for x in range(5)]
 
@@ -37,3 +40,4 @@ print(transposed)
 # [ [1, 3, 5, 7], [2, 4, 6, 8] ]
 ```
 
+On peut réutiliser le même type de syntaxe pour le [[Dict comprehension]]

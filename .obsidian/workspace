@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/Geonamescache.md",
+            "file": "_notes/list-comprehension.md",
             "mode": "source"
           }
         }
@@ -64,7 +64,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Geonamescache.md"
+                "file": "_notes/list-comprehension.md"
               }
             }
           },
@@ -74,7 +74,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Geonamescache.md"
+                "file": "_notes/list-comprehension.md"
               }
             }
           }
@@ -86,6 +86,7 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "_notes/list-comprehension.md",
     "_notes/Geonamescache.md",
     "_notes/df.duplicated().md",
     "_notes/pd.concat().md",
@@ -94,7 +95,6 @@
     "_notes/selenium.md",
     "_notes/series.str.split().md",
     "assets/img/Capture d’écran 2020-10-27 à 17.00.12.png",
-    "_notes/Untitled.md",
-    "_notes/Untitled 1.md"
+    "_notes/Untitled.md"
   ]
 }
