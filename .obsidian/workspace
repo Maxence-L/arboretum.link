@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/Se connecter à une base SQL.md",
+            "file": "_notes/Afficher les tables existantes dans une base SQL.md",
             "mode": "preview"
           }
         }
@@ -64,7 +64,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Se connecter à une base SQL.md"
+                "file": "_notes/Afficher les tables existantes dans une base SQL.md"
               }
             }
           },
@@ -74,7 +74,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Se connecter à une base SQL.md"
+                "file": "_notes/Afficher les tables existantes dans une base SQL.md"
               }
             }
           }
