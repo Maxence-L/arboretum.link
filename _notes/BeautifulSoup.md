@@ -1,6 +1,6 @@
 ---
 title: BeautifulSoup
-tags: web-scrapping
+tags: web-scraping
 toc: true
 etat: printemps
 ---

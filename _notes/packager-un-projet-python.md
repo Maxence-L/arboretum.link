@@ -247,6 +247,16 @@ name=("# meta parameters"
 
 On peut les installer avec la commande `pip install -e "test"`.
 
+##### Les données supplémentaires
+Par défaut, le package ne comprend que les fichiers .py servant à son exécution. On peut toutefois ajouter des fichiers de données, comme une base sqlite ou un fichier de configuration, par exemple.
+
+```python
+name=(
+	package_data={'package_name': ['config.ini',]}
+	)
+```
+
+
 ## Ajout de tests unitaires au package
 https://python-packaging.readthedocs.io/en/latest/testing.html
 

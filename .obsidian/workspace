@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/Afficher les tables existantes dans une base SQL.md",
+            "file": "_notes/Se connecter à une base SQL.md",
             "mode": "preview"
           }
         }
@@ -48,7 +48,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 142.0036334991455
   },
   "right": {
     "id": "15b808a1e515cd90",
@@ -64,7 +64,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Afficher les tables existantes dans une base SQL.md"
+                "file": "_notes/Se connecter à une base SQL.md"
               }
             }
           },
@@ -74,7 +74,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Afficher les tables existantes dans une base SQL.md"
+                "file": "_notes/Se connecter à une base SQL.md"
               }
             }
           }
@@ -86,15 +86,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
-    "_notes/Untitled 1.md",
+    "_notes/Se connecter à une base SQL.md",
     "_notes/chaines-de-markov.md",
-    "_notes/df.to_sql().md",
-    "_notes/df.query().md",
-    "_notes/df.isin().md",
-    "_notes/Geonamescache.md",
+    "_notes/centroide.md",
     "_notes/Calculer des distances terrestres.md",
-    "_notes/df.append().md",
-    "_notes/Format datetime.md",
-    "_notes/series.str.split().md"
+    "_notes/BeautifulSoup.md",
+    "_notes/sqlite3.md",
+    "_notes/packager-un-projet-python.md",
+    "_notes/df.isin().md",
+    "_notes/df.fillna().md",
+    "_notes/Untitled 1.md"
   ]
 }

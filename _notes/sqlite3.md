@@ -1,5 +1,5 @@
 ---
-title: Sqlite3
+title: sqlite3
 tags: SQL, stdlib
 etat: printemps
 ---
