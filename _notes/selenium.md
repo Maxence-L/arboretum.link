@@ -4,23 +4,22 @@ toc: true
 tags: web-scraping
 etat: été
 ---
-Selenium est un outil émulant un navigateur et permettant de simuler automatiquement l'interaction d'un utilisateur avec un site web. Il est utilisé à l'origine pour le test de sites webs mais peut être aussi utilisé pour le scraping.
+Selenium est un outil émulant un navigateur et permettant de simuler automatiquement l'interaction d'un utilisateur avec un site web depuis un navigateur. Il est utilisé pour le test de sites webs mais peut être aussi exploité pour le scraping.
 
 ## Installation
  
-On peut utiliser le navigateur chrome pour afficher les pages webs en version "headless"[^1]. Il faut avoir chrome installé sur le poste, on peut ensuite installer *chromedriver* qui fait la connexion entre selenium et chrome :
+Bien qu'il soit possible d'utiliser d'autres navigateurs, on utilisera Chrome pour les exemples de cette note. Si Chrome est installé sur le poste, on peut ensuite installer *chromedriver* qui fait la connexion entre selenium et chrome :
 
 ```bash
 brew cask install chromedriver
 ````
 [^1]: https://intoli.com/blog/running-selenium-with-headless-chrome/
 
-On peut à présent paramétrer chrome pour sa version *headless* :
+On peut à présent paramétrer chrome :
 ```python
 from selenium import webdriver
 
 options = webdriver.ChromeOptions()
-options.add_argument('headless')
 
 # set the window size
 options.add_argument('window-size=1200x600')
@@ -41,6 +40,37 @@ driver.close()
 > Here is some important text you want to retrieve!
 > A button to click!
 ````
+
+> **À noter** : On peut aussi utiliser Chrome pour afficher les pages web en version "headless"[^1], ce qui utilise moins de ressources. On ajoutera pour ce faire l'option suivante : 
+> `options.add_argument('headless')`
+
+### Gestion du navigateur
+
+Si l'accès au navigateur pose problème (version en emplacement, généralement), on peut utiliser le package `webdriver_manager.chrome` qui téléchargera une version compatible avec Selenium.
+
+```python
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+from webdriver_manager.chrome import ChromeDriverManager
+import selenium.common.exceptions as selexcept
+
+def __start_webdriver():
+
+	try:
+		options = Options()
+		options.add_argument('window-size=1200x1000')
+		
+		return webdriver.Chrome(chrome_options=options)
+
+	except selexcept.SessionNotCreatedException:
+		
+		from webdriver_manager.chrome import ChromeDriverManager
+		options = Options()
+		options.add_argument('window-size=1200x1000')
+		
+		return webdriver.Chrome(ChromeDriverManager().install(), chrome_options=options)
+```
+
 
 ## Navigation
 Atteindre une url :
@@ -72,6 +102,7 @@ Quitter le navigateur :
 ```python
 driver.quit()
 ````
+
 Il est important de quitter à la fin de l'exécution afin de libérer la mémoire. Une bonne technique pour s'en assurer et la suivante :
 ```python
 try:
@@ -89,7 +120,9 @@ On localise les éléments d'intérêt avec la méthode `driver.find_element(By.
 ```python
 driver.find_element(By.ID, "cheese")
 ````
-![1](/assets/img/selenium-tags.png)
+
+![](/assets/img/selenium-tags.png#center)
+
 Il est aussi possible d'utiliser la méthode `find_element_by_class_name('xxxx')` - il existe une méthode de ce type pour chaque catégorie d'attribut.
 
 ### Chercher des éléments imbriqués (*nested*)
@@ -125,7 +158,7 @@ for element in range(len(elements)):
     elements = driver.find_elements_by_css_selector("span.name")
 ```
 
-Au cas où l'on utiliserait cette méthode sans réaliser une boucle[[ for]] pour en extraire le contenu, il faut préciser le niveau désiré par un index `[0]`, sans quoi [[selenium]] renverra une erreur.
+Au cas où l'on utiliserait cette méthode sans réaliser une boucle[[ for]] pour en extraire le contenu, il faut préciser le niveau désiré par un index `[0]`, sans quoi Selenium renverra une erreur.
 
 Le tableau suivant résume les sélecteurs disponibles[^2] :
 
@@ -144,7 +177,7 @@ xpath |	Locates elements matching an XPath expression
 
 Il est par ailleurs possible de sélectionner des éléments situés de manière relative à d'autres éléments sélectionnés. Dans le cas d'un formulaire de mot de passe :
 
-![2][/assets/img/selenium-user-pwd.png#center]
+![](/assets/img/selenium-user-pwd.png#center)
 
 ```python
 #from selenium.webdriver.support.relative_locator import with_tag_name
@@ -219,7 +252,13 @@ On peut utiliser le module [[pickle]] pour enregistrer les cookies en vue d'une 
 pickle.dump(driver.get_cookies(), open("cookies.pkl", "wb"))
 ````
 
-Les cookies peuvent être réutilisés avec [[pickle|pickle.load()]]. ==Attention toutefois à atteindre l'adresse désirée avec le webdriver avant d'ajouter les cookies==. Dans le cas contraire, on obtiendra une erreur de type `selenium.common.exceptions.InvalidCookieDomainException: Message: invalid cookie domain`.
+Les cookies peuvent être réutilisés avec [[pickle\|pickle.load()]]. 
+
+**Attention toutefois à atteindre l'adresse désirée avec le webdriver avant d'ajouter les cookies**. Dans le cas contraire, on obtiendra une erreur de type :
+
+`selenium.common.exceptions.InvalidCookieDomainException: Message: invalid cookie domain`
+
+On ajoute les cookies avec la méthode `.add_cookie(cookie)` : 
 
 ```python
 driver.get(self.website)
