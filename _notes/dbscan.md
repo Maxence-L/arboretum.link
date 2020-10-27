@@ -1,5 +1,5 @@
 ---
-title: dbscan
+title: Dbscan
 tags: Apprentissage-non-supervisé, ml-pratique
 etat: printemps
 ---

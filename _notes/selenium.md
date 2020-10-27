@@ -138,7 +138,7 @@ On peut accélérer l'opération en spécifiant les niveaux recherchés :
 cheddar = driver.find_element_by_css_selector("#cheese #cheddar")
 ````
 
-Si l'on veut obtenir une liste d'éléments contenus dans un sélecteur [[CSS]], ==il faut mettre "element" au pluriel== :
+Si l'on veut obtenir une liste d'éléments contenus dans un sélecteur [[CSS]], **il faut mettre "element" au pluriel** :
 ```python
 <ol id=cheese>
  <li id=cheddar>…

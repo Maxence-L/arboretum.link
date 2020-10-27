@@ -10,8 +10,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/selenium.md",
-            "mode": "source"
+            "file": "_notes/Geonamescache.md",
+            "mode": "preview"
           }
         }
       }
@@ -64,7 +64,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/selenium.md"
+                "file": "_notes/Geonamescache.md"
               }
             }
           },
@@ -74,7 +74,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/selenium.md"
+                "file": "_notes/Geonamescache.md"
               }
             }
           }
@@ -86,12 +86,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
-    "_notes/selenium.md",
-    "_notes/configparse.md",
-    "_notes/norme-vecteur.md",
-    "_notes/loi-normale.md",
-    "_notes/test.md",
-    "_notes/list-comprehension.md",
-    "_notes/centroide.md"
+    "_notes/Geonamescache.md",
+    "_notes/Calculer des distances terrestres.md",
+    "_notes/df.append().md",
+    "_notes/Format datetime.md",
+    "_notes/series.str.split().md",
+    "_notes/pd.factorize.md",
+    "_notes/df.to_sql().md",
+    "_notes/dbscan.md",
+    "_notes/Untitled 1.md",
+    "_notes/Untitled.md"
   ]
 }

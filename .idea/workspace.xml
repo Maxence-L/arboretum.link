@@ -24,10 +24,12 @@
   <component name="ChangeListManager">
     <list default="true" id="3e416042-0831-410e-bc48-ad8738bffa8b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.obsidian/workspace" beforeDir="false" afterPath="$PROJECT_DIR$/.obsidian/workspace" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/content.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/content.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_notes/dbscan.md" beforeDir="false" afterPath="$PROJECT_DIR$/_notes/dbscan.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_notes/pd.factorize.md" beforeDir="false" afterPath="$PROJECT_DIR$/_notes/pd.factorize.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_notes/selenium.md" beforeDir="false" afterPath="$PROJECT_DIR$/_notes/selenium.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_notes/test.md" beforeDir="false" afterPath="$PROJECT_DIR$/_notes/test.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/highlight.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/highlight.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +88,7 @@
       <workItem from="1603304310141" duration="4481000" />
       <workItem from="1603370957245" duration="2600000" />
       <workItem from="1603705856973" duration="18523000" />
-      <workItem from="1603740766001" duration="2280000" />
+      <workItem from="1603740766001" duration="5418000" />
     </task>
     <servers />
   </component>

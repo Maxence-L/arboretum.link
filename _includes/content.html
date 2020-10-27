@@ -113,6 +113,7 @@
 
         {%- assign url = internal_url_alt_array[forloop.index0] -%}
         {%- assign alt_title = internal_titles_alt_array[forloop.index0] -%}
+
         {%- if url == nil -%}
 
             {%- assign link_text = '<a style="background-color:#ffffc4;" href="' | append: 'javascript:void(0)' | append: '">' | append: alt_title | append: '</a>' -%}
@@ -133,12 +134,13 @@
 
             {%- assign excerpt = post[0].content | markdownify | strip_html | truncate: 500 | newline_to_br -%}
 
-            {%- assign link_text = '<span class="tooltip"><a href="' | append: url | append: '">' | append: alt_title | append: '</a><span class="right bottom"><span class="tooltip-title">' | append: title | append: '</span><br/><span class="tooltip-excerpt">' | append: excerpt | append: '</span><i></i></span></span>' -%}
+            {%- assign link_text = '<span class="tooltip"><a href="' | append: url | append: '">' | append: alt_title | append: '</a><span class="right bottom"><span class="tooltip-title">' | append: post[0].title | append: '</span><br/><span class="tooltip-excerpt">' | append: excerpt | append: '</span><i></i></span></span>' -%}
 
         {%- endif -%}
 
-            {%- assign bracket_link = '[[' | append: title | append: internal_link_delimiter | append: alt_title | append: ']]' -%}
-            {%- assign replaced_content = replaced_content | replace: bracket_link,link_text -%}
+            {%- assign bracket_link = '[[' | append: title | append: '|' | append: alt_title | append: ']]' -%}
+            {{link_text}}
+            {%- assign replaced_content = replaced_content | replace: bracket_link, link_text -%}
 
     {%- endfor -%}
 
