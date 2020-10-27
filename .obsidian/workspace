@@ -10,8 +10,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/pd.concat().md",
-            "mode": "preview"
+            "file": "_notes/Geonamescache.md",
+            "mode": "source"
           }
         }
       }
@@ -64,7 +64,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/pd.concat().md"
+                "file": "_notes/Geonamescache.md"
               }
             }
           },
@@ -74,7 +74,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/pd.concat().md"
+                "file": "_notes/Geonamescache.md"
               }
             }
           }
@@ -86,6 +86,8 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "_notes/Geonamescache.md",
+    "_notes/df.duplicated().md",
     "_notes/pd.concat().md",
     "assets/img/pd.concat-table.png",
     "_notes/pd.factorize.md",
@@ -93,8 +95,6 @@
     "_notes/series.str.split().md",
     "assets/img/Capture d’écran 2020-10-27 à 17.00.12.png",
     "_notes/Untitled.md",
-    "_notes/Untitled 1.md",
-    "_notes/Se connecter à une base SQL.md",
-    "about.md"
+    "_notes/Untitled 1.md"
   ]
 }

@@ -5,7 +5,7 @@ etat: printemps
 ---
 Retourne un [[dataframe]] rempli de booléens, True si l'entrée existe en double (est dupliquée), False si la ligne est unique. 
 
-Utile, par exemple dans le cas de données temporelles, pour savoir si les données sont propres. Comme [[df.isnull()|.isnull]] On peut l'utiliser avec [[df.any()]] ou [[df.sum()]] pour avoir une vue synthétique.
+Utile, par exemple dans le cas de données temporelles, pour savoir si les données sont propres. Comme [[df.isnull()\|.isnull]] On peut l'utiliser avec [[df.any()]] ou [[df.sum()]] pour avoir une vue synthétique.
 
 ```python
 df.duplicated()

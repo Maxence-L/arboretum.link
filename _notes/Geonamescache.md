@@ -55,22 +55,12 @@ Si l'on connait la clé, on peut aussi directement accéder au dictionnaire aff�
 gc.get_cities_by_name(city_name)
 ````
 
-Pour extraire les données des dictionnaires et les transférer à un dataframe :
+On peut extraire de la manière suivante les villes contenues dans le dictionnaire :
 
 ```python
-gc = GeonamesCache()
 cities = gc.get_cities()
-num_cities = len(cities)
-
-city_list = [city for city in cities.values()]
-array_city_list = np.array(city_list)
-df_city = pd.DataFrame(data=array_city_list[0], index=[0])
-
-for i in range(1,len(array_city_list)):
-    df_city = df_city.append(array_city_list[i], ignore_index = True)
-    if i % 500 == 0 :
-        print(i)
-		
-df_city.to_csv('cities_file.csv')
+us_cities = [city for city in cities.values()
+             if city['countrycode'] == 'US']
+num_us_cities = len(us_cities)
+print(f"GeoNamesCache holds data for {num_us_cities} US cities.")
 ````
-
