@@ -2,4 +2,4 @@
 
 # Arboretum.link
 
-Un jardin digital utilisant un thème `simply-jekyll`modifié.
+Un jardin digital utilisant un thème `simply-jekyll` modifié pour s'intégrer avec obsidian.
