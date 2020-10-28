@@ -1,5 +1,5 @@
 ---
-title: datetime
+title: Format datetime
 tags: pandas
 etat : hiver
 ---

@@ -22,4 +22,6 @@ Par conséquent, les notes peuvent prendre un des quatres état suivants :
 - Été : la note est considérée comme complète (*evergreen*).
 - Automne : la note est à retravailler, à la lumière des nouvelles informations acquises.
 
-Le site utilise [[Jekyll]], ainsi que le modèle [[simply-jekyll::https://github.com/raghuveerdotnet/simply-jekyll]], que j'ai modifié et traduit en français, disponible sur [[Github::https://github.com/Maxence-L/arborio]]. Il n'est pas indexé par Google, ce qui en fait un site semi-privé, je suppose.
+Le site utilise [[Jekyll]], ainsi que le modèle [[simply-jekyll::https://github.com/raghuveerdotnet/simply-jekyll]], que j'ai modifié et traduit en français, disponible sur [[Github::https://github.com/Maxence-L/arborio]] dans une version stable. Ce site est lui dans une version de test permanente, certaines nouvelles fonctionnalités peuvent donc comporter des bugs.
+
+Il n'est pas indexé par Google, ce qui en fait un site semi-privé, je suppose.

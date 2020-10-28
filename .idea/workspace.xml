@@ -22,7 +22,33 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e416042-0831-410e-bc48-ad8738bffa8b" name="Default Changelist" comment="" />
+    <list default="true" id="3e416042-0831-410e-bc48-ad8738bffa8b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/_notes/Fonction lambda.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_notes/List comprehension.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_notes/Loi normale.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_notes/Norme d'un vecteur.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_notes/Packager un projet python.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_notes/Théorème de Bayes.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_notes/df.append() - ajouter une ligne.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_notes/sys.exit().md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.obsidian/workspace" beforeDir="false" afterPath="$PROJECT_DIR$/.obsidian/workspace" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/content.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/content.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_notes/Format datetime.md" beforeDir="false" afterPath="$PROJECT_DIR$/_notes/Format datetime.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_notes/Geonamescache.md" beforeDir="false" afterPath="$PROJECT_DIR$/_notes/Geonamescache.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_notes/Theoreme-de-bayes.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_notes/Untitled.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_notes/df.append().md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_notes/df.to_sql().md" beforeDir="false" afterPath="$PROJECT_DIR$/_notes/df.to_sql().md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_notes/list-comprehension.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_notes/loi-normale.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_notes/norme-vecteur.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_notes/packager-un-projet-python.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_notes/pd.concat().md" beforeDir="false" afterPath="$PROJECT_DIR$/_notes/pd.concat().md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_notes/spacy.md" beforeDir="false" afterPath="$PROJECT_DIR$/_notes/spacy.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_notes/sys.exit.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_notes/test.md" beforeDir="false" afterPath="$PROJECT_DIR$/_notes/test.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,11 +65,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1iXqinBlGrRKyIfzRGAJBJSaM9N" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
@@ -80,7 +110,7 @@
       <workItem from="1603304310141" duration="4481000" />
       <workItem from="1603370957245" duration="2600000" />
       <workItem from="1603705856973" duration="18523000" />
-      <workItem from="1603740766001" duration="7678000" />
+      <workItem from="1603740766001" duration="10126000" />
     </task>
     <servers />
   </component>
@@ -98,6 +128,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="952" y="415" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1603727830413">

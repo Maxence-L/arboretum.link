@@ -4,13 +4,22 @@ title: test
 
 
 
-Voici un test : sklearn écrit comme arparse
 
-[[skllearn\|arglparse]]
+[[argparse;:lll]]
+
+[[argparse;:lll]]
+
+[[argparse;:lll]]
+
+[[sklearn;:lff]]
+
+
+[[df.to_sql();:sql]]
+
 
 arparse normal
 
-[[selenium#navigation]]
+
 
 
 

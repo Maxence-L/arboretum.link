@@ -8,7 +8,7 @@ La *list comprehension* permet de construire des [[listes]] issues d'opérations
 
 La syntaxe est la suivante : 
 
-[[[expression for item in iterable]::srs]]
+`[expression for item in iterable]`
 
 ```python
 [x*x for x in range(5)]

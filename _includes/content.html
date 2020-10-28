@@ -17,7 +17,7 @@
 
     {%- assign content_array = content | split:'[[' -%}
     {%- assign external_link_delimiter = '::' -%}
-    {%- assign internal_link_delimiter = '|' -%}
+    {%- assign internal_link_delimiter = ';:' -%}
 
 
     {%- assign link_joiner_delimiter = '$@' -%}
@@ -142,7 +142,7 @@
 
         {%- endif -%}
 
-            {%- assign bracket_link = '[[' | append: title | append: '|' | append: alt_title | append: ']]' -%}
+            {%- assign bracket_link = '[[' | append: title | append: internal_link_delimiter | append: alt_title | append: ']]' -%}
             {%- assign replaced_content = replaced_content | replace: bracket_link, link_text -%}
 
     {%- endfor -%}

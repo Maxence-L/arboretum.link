@@ -15,7 +15,7 @@ frames = (df1, df2, df3)
 result = pd.concat(frames)
 ```
 
-- On peut passer *axis=0* ou *1* en paramêtre si l'on veut réaliser une concaténation verticale ou horizontale. **A noter qu'il est aussi possible d'utiliser [[df.append()]] pour réaliser une concaténation verticale (axis=0)**
+- On peut passer *axis=0* ou *1* en paramètre si l'on veut réaliser une concaténation verticale ou horizontale. **A noter qu'il est aussi possible d'utiliser [[df.append()]] pour réaliser une concaténation verticale (axis=0)**
 - On peut préciser *keys=\['x', 'y', 'z']* si l'on veut que l'index garde la trace des tables initiales :
 La concaténation de table simple consiste à ajouter les lignes ou les colonnes d'un [[dataframe]]) un autre.
 
@@ -27,7 +27,7 @@ frames = (df1, df2, df3)
 result = pd.concat(frames)
 ```
 
-- On peut passer *axis=0* ou *1* en paramêtre si l'on veut réaliser une concaténation verticale ou horizontale. **A noter qu'il est aussi possible d'utiliser [[df.append()]] pour réaliser une concaténation verticale (axis=0)**
+- On peut passer *axis=0* ou *1* en paramètre si l'on veut réaliser une concaténation verticale ou horizontale. **A noter qu'il est aussi possible d'utiliser [[df.append()]] pour réaliser une concaténation verticale (axis=0)**
 - On peut préciser *keys=\['x', 'y', 'z']* si l'on veut que l'index garde la trace des tables initiales :
 
  - On peut préciser *join='outer'* ou *'inner'* si les dataframes ne sont pas exactement raccord. Outer fera une union des deux dfs, inner une intersection, sur la base des valeurs de l'index.

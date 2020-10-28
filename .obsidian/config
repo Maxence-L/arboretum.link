@@ -15,5 +15,6 @@
   "attachmentFolderPath": "assets/img",
   "newFileLocation": "folder",
   "newFileFolderPath": "_notes",
-  "enabledPlugins": []
+  "enabledPlugins": [],
+  "useMarkdownLinks": true
 }

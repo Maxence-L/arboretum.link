@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/list-comprehension.md",
+            "file": "_notes/List comprehension.md",
             "mode": "source"
           }
         }
@@ -64,7 +64,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/list-comprehension.md"
+                "file": "_notes/List comprehension.md"
               }
             }
           },
@@ -74,7 +74,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/list-comprehension.md"
+                "file": "_notes/List comprehension.md"
               }
             }
           }
@@ -86,15 +86,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
-    "_notes/list-comprehension.md",
+    "_notes/List comprehension.md",
+    "_notes/listes.md",
     "_notes/Geonamescache.md",
-    "_notes/df.duplicated().md",
-    "_notes/pd.concat().md",
-    "assets/img/pd.concat-table.png",
-    "_notes/pd.factorize.md",
-    "_notes/selenium.md",
-    "_notes/series.str.split().md",
-    "assets/img/Capture d’écran 2020-10-27 à 17.00.12.png",
-    "_notes/Untitled.md"
+    "_notes/Format datetime.md",
+    "_notes/Fonction lambda.md",
+    "_notes/df.to_sql().md",
+    "_notes/df.query().md",
+    "_notes/df.isin().md",
+    "_notes/df.fillna().md",
+    "assets/img/spacy-model.png"
   ]
 }
