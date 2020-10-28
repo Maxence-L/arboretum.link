@@ -1,9 +1,8 @@
 ---
-title: pd.concat()
+title: pd.concat() - ajouter des lignes et des colonnes
 tags: pandas
 etat : printemps
 ---
-
 
 La concaténation de table simple consiste à ajouter les lignes ou les colonnes d'un [[dataframe]]) un autre.
 
@@ -15,7 +14,7 @@ frames = (df1, df2, df3)
 result = pd.concat(frames)
 ```
 
-- On peut passer *axis=0* ou *1* en paramètre si l'on veut réaliser une concaténation verticale ou horizontale. **A noter qu'il est aussi possible d'utiliser [[df.append()]] pour réaliser une concaténation verticale (axis=0)**
+- On peut passer *axis=0* ou *1* en paramètre si l'on veut réaliser une concaténation verticale ou horizontale. **A noter qu'il est aussi possible d'utiliser [[df.append() - ajouter une ligne\|df.append()]] pour réaliser une concaténation verticale (axis=0)**
 - On peut préciser *keys=\['x', 'y', 'z']* si l'on veut que l'index garde la trace des tables initiales :
 La concaténation de table simple consiste à ajouter les lignes ou les colonnes d'un [[dataframe]]) un autre.
 

@@ -1,5 +1,5 @@
 ---
-title: df.append()
+title: df.append() - ajouter une ligne
 tags: pandas
 etat: hiver
 ---

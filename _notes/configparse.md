@@ -1,7 +1,7 @@
 ---
-title : Créer un fichier de configuration avec ConfigParse
-tags : stdlib
-toc : true
+title:  Créer un fichier de configuration avec ConfigParse
+tags: stdlib
+toc: true
 etat: printemps
 --- 
 

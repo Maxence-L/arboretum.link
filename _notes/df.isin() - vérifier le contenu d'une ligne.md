@@ -1,10 +1,10 @@
 ---
-title: df.isin()
+title: df.isin() - vérifier le contenu d'une ligne
 tags: pandas
 etat: printemps
 ---
 
-df.isin(*liste*) permet de vérifier pour chaque ligne du [[dataframe]] (ou de la colonne, si l'on appelle la méthode dessus) si elle contient un des éléments spécifiés en paramètres.
+df.isin(*liste*) permet de vérifier pour chaque ligne du [[dataframe]] (ou de la colonne, si l'on appelle la méthode dessus) si elle contient un des éléments spécifiés en paramètres et renvoie un booléen en fonction de la réponse.
 
 **En fonction de l'objet passé en paramètre (dict, Series, Dataframe...), le matching ne se fera pas de la même manière.** Voir la doc[^1] pour plus de précisions, notamment si l'on utilise autre chose qu'une liste.
 

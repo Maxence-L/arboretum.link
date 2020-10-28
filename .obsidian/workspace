@@ -10,8 +10,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/List comprehension.md",
-            "mode": "source"
+            "file": "_notes/Calculer des distances terrestres.md",
+            "mode": "preview"
           }
         }
       }
@@ -64,7 +64,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/List comprehension.md"
+                "file": "_notes/Calculer des distances terrestres.md"
               }
             }
           },
@@ -74,7 +74,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/List comprehension.md"
+                "file": "_notes/Calculer des distances terrestres.md"
               }
             }
           }
@@ -86,15 +86,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
-    "_notes/List comprehension.md",
-    "_notes/listes.md",
-    "_notes/Geonamescache.md",
-    "_notes/Format datetime.md",
-    "_notes/Fonction lambda.md",
-    "_notes/df.to_sql().md",
-    "_notes/df.query().md",
-    "_notes/df.isin().md",
-    "_notes/df.fillna().md",
-    "assets/img/spacy-model.png"
+    "_notes/Calculer des distances terrestres.md",
+    "_notes/Untitled.md",
+    "_notes/df.isin() - vérifier le contenu d'une ligne.md",
+    "_notes/pd.cut() - créer une variable catégorielle.md",
+    "_notes/pd.factorize - transformer une variable str en int.md",
+    "_notes/df.groupby() -.md",
+    "_notes/df.groupby().md",
+    "_notes/test.md",
+    "_notes/Théorème de Bayes.md",
+    "_notes/sys.exit().md"
   ]
 }

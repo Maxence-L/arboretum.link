@@ -1,5 +1,5 @@
 ---
-title: df.query()
+title: df.query() - filtrer un dataframe
 tags: pandas
 etat: hiver
 ---

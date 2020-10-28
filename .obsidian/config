@@ -7,7 +7,7 @@
     "graph": true,
     "backlink": true,
     "command-palette": true,
-    "markdown-importer": true,
+    "markdown-importer": false,
     "word-count": true,
     "outline": true,
     "custom-css": true
@@ -16,5 +16,6 @@
   "newFileLocation": "folder",
   "newFileFolderPath": "_notes",
   "enabledPlugins": [],
-  "useMarkdownLinks": true
+  "useMarkdownLinks": false,
+  "alwaysUpdateLinks": false
 }

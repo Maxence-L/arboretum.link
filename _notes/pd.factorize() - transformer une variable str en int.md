@@ -1,5 +1,5 @@
 ---
-title: pd.factorize()
+title: pd.factorize() - transformer une variable str en int
 tags: pandas
 etat: printemps
 ---

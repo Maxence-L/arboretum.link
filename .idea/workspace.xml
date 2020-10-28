@@ -23,31 +23,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e416042-0831-410e-bc48-ad8738bffa8b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/_notes/Fonction lambda.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_notes/List comprehension.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_notes/Loi normale.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_notes/Norme d'un vecteur.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_notes/Packager un projet python.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_notes/Théorème de Bayes.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_notes/df.append() - ajouter une ligne.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_notes/sys.exit().md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_notes/pd.cut() - créer une variable catégorielle.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.obsidian/config" beforeDir="false" afterPath="$PROJECT_DIR$/.obsidian/config" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.obsidian/workspace" beforeDir="false" afterPath="$PROJECT_DIR$/.obsidian/workspace" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_includes/content.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/content.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_notes/Format datetime.md" beforeDir="false" afterPath="$PROJECT_DIR$/_notes/Format datetime.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_notes/Geonamescache.md" beforeDir="false" afterPath="$PROJECT_DIR$/_notes/Geonamescache.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_notes/Theoreme-de-bayes.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_notes/Untitled.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_notes/df.append().md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_notes/df.to_sql().md" beforeDir="false" afterPath="$PROJECT_DIR$/_notes/df.to_sql().md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_notes/list-comprehension.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_notes/loi-normale.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_notes/norme-vecteur.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_notes/packager-un-projet-python.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_notes/pd.concat().md" beforeDir="false" afterPath="$PROJECT_DIR$/_notes/pd.concat().md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_notes/spacy.md" beforeDir="false" afterPath="$PROJECT_DIR$/_notes/spacy.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_notes/sys.exit.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/post.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/post.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_notes/test.md" beforeDir="false" afterPath="$PROJECT_DIR$/_notes/test.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.md" beforeDir="false" afterPath="$PROJECT_DIR$/about.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +62,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/img" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -111,6 +95,8 @@
       <workItem from="1603370957245" duration="2600000" />
       <workItem from="1603705856973" duration="18523000" />
       <workItem from="1603740766001" duration="10126000" />
+      <workItem from="1603885743377" duration="601000" />
+      <workItem from="1603886914955" duration="1970000" />
     </task>
     <servers />
   </component>

@@ -17,7 +17,7 @@
 
     {%- assign content_array = content | split:'[[' -%}
     {%- assign external_link_delimiter = '::' -%}
-    {%- assign internal_link_delimiter = ';:' -%}
+    {%- assign internal_link_delimiter = '|' -%}
 
 
     {%- assign link_joiner_delimiter = '$@' -%}
@@ -98,9 +98,6 @@
             {%- assign bracket_link = '[[' | append: title | append: ']]' -%}
             {%- assign replaced_content = replaced_content | replace: bracket_link,link_text -%}
 
-    {%- assign bracket_link = '[[' | append: internal_link[0] | append: internal_link_delimiter | append: internal_link[1] | append: ']]' -%}
-    {%- assign link_text = '<span class="tooltip"><a href="' | append: url | append: '">' | append: internal_link[1] | append: '</a><span class="right bottom"><span class="tooltip-title">' | append: internal_link[1] | append: '</span><br/><span class="tooltip-excerpt">' | append: excerpt | append: '</span><i></i></span></span>' -%}
-    {%- assign replaced_content = replaced_content | replace: bracket_link,link_text -%}
 
     {%- endfor -%}
 
@@ -129,12 +126,7 @@
         {%- else -%}
 
             {%- assign post = site.notes | where: 'title',title -%}
-
-            {%- if post[0].title == nil -%}
-
-                {%- assign post = site.posts | where: 'title',title -%}
-
-            {%- endif -%}
+            {%- assign gggg = site.notes | where: 'title', 'pd.cut() - créer une variable catégorielle'-%}
 
             {%- assign excerpt = post[0].content | markdownify | strip_html | truncate: 500 | newline_to_br -%}
 
@@ -142,7 +134,7 @@
 
         {%- endif -%}
 
-            {%- assign bracket_link = '[[' | append: title | append: internal_link_delimiter | append: alt_title | append: ']]' -%}
+            {%- assign bracket_link = '[[' | append: title | append: '|' | append: alt_title | append: ']]' -%}
             {%- assign replaced_content = replaced_content | replace: bracket_link, link_text -%}
 
     {%- endfor -%}

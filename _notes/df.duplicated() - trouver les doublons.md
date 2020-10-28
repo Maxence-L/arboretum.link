@@ -1,5 +1,5 @@
 ---
-title: df.duplicated()
+title: df.duplicated() - trouver les doublons
 tags: pandas
 etat: printemps
 ---
