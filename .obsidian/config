@@ -17,5 +17,6 @@
   "newFileFolderPath": "_notes",
   "enabledPlugins": [],
   "useMarkdownLinks": false,
-  "alwaysUpdateLinks": false
+  "alwaysUpdateLinks": false,
+  "newLinkFormat": "relative"
 }

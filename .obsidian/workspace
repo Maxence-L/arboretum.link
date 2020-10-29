@@ -4,14 +4,14 @@
     "type": "split",
     "children": [
       {
-        "id": "f95a7adb4dd3baf0",
+        "id": "275512b7bf90931e",
         "type": "leaf",
         "active": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/Calculer des distances terrestres.md",
-            "mode": "preview"
+            "file": "_notes/Créer un fichier de configuration avec ConfigParse.md",
+            "mode": "source"
           }
         }
       }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": ""
+                "query": "group"
               }
             }
           }
@@ -64,7 +64,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Calculer des distances terrestres.md"
+                "file": "_notes/Créer un fichier de configuration avec ConfigParse.md"
               }
             }
           },
@@ -74,7 +74,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Calculer des distances terrestres.md"
+                "file": "_notes/Créer un fichier de configuration avec ConfigParse.md"
               }
             }
           }
@@ -86,15 +86,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
-    "_notes/Calculer des distances terrestres.md",
-    "_notes/Untitled.md",
-    "_notes/df.isin() - vérifier le contenu d'une ligne.md",
+    "_notes/configparse.md",
+    "_notes/df.append() - ajouter une ligne.md",
+    "_notes/df.isna(), df.isnull() - trouver les valeurs manquantes.md",
+    "_notes/Packager un projet python.md",
+    "_notes/Geonamescache.md",
+    "_notes/pd.concat() - ajouter des lignes et des colonnes.md",
     "_notes/pd.cut() - créer une variable catégorielle.md",
-    "_notes/pd.factorize - transformer une variable str en int.md",
-    "_notes/df.groupby() -.md",
-    "_notes/df.groupby().md",
-    "_notes/test.md",
-    "_notes/Théorème de Bayes.md",
-    "_notes/sys.exit().md"
+    "_notes/pd.factorize() - transformer une variable str en int.md",
+    "_notes/Se connecter à une base SQL.md",
+    "_notes/Selenium.md"
   ]
 }

@@ -15,9 +15,9 @@ Les étapes de construction d'un modèle sont les suivantes :
 
 1. Définition du modèle : c'est le moment où l'on choisit quel algorithme l'on utilisera pour analyser les données.
 
-2. Ajustement du modèle (*model fit*) aux données et définition des paramètres. Dans le cas d'une régression, par exemple, cela revient à calculer la valeur de $$\beta$$. 
+2. Ajustement du modèle (*model fit*) aux données et définition des paramètres. Dans le cas d'une régression, par exemple, cela revient à calculer la valeur de $\beta$. 
 
-3. Prédiction : on utilise le modèle pour produire une estimation des de la variable cible. Toujours de le cas d'une régression, cela correspond au calcul de $$\beta X$$.
+3. Prédiction : on utilise le modèle pour produire une estimation des de la variable cible. Toujours de le cas d'une régression, cela correspond au calcul de $\beta X$.
 
 4. Evaluation : On calcule la précision et divers indicateurs sur la fiabilité de la prédiction en fonction des paramètres de départ.
 
@@ -27,7 +27,7 @@ L'utilisation de sklearn est la suivante pour chaque étape :
 
 2.  On utilise la méthode `fit()` en passant les paramètres du modèle (données, valeurs diverses...)
 
-3. On utilise `predict()` en passant les données-cibles de test. Le résultat est soit une estimation de la valeur de $$Y$$ ou de sa classe, dans le cas d'un algorithme de [[classification]].
+3. On utilise `predict()` en passant les données-cibles de test. Le résultat est soit une estimation de la valeur de $Y$ ou de sa classe, dans le cas d'un algorithme de [[classification]].
 
 4. On peut évaluer la prédiction au moyen de [[sklearn.metrics]] en séparant les données avec [[sklearn.model_selection.train_test_split]]
 

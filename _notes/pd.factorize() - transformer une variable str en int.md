@@ -50,7 +50,7 @@ type(data_series.factorize())
 > tuple
 `````
 
-On peut dès lors insérer le premier élément dans un [[pd.Dataframe]] en spécifiant l'index `[0]` :
+On peut dès lors insérer le premier élément dans un [[dataframe]] en spécifiant l'index `[0]` :
 
 ```python
 df['color_index'] = data_series.factorize()[0]

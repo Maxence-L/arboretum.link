@@ -8,5 +8,3 @@ Retourne un [[dataframe]] rempli de booléens, True si l'entrée existe et False
 df.isnull()
 ```
 
-![[Pasted image.png]]
-![[Pasted image 1.png]]
