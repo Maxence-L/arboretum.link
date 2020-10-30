@@ -5,7 +5,7 @@ etat: printemps
 toc: true
 ---
 
-Les données tabulaires peuvent se présenter sous deux aspects : long et large. 
+Les données tabulaires peuvent se présenter sous deux aspects : "long" ou "large". 
 
 ## Définition
 
