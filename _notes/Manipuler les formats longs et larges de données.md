@@ -5,7 +5,7 @@ etat: printemps
 toc: true
 ---
 
-Les données tabulaire peuvent se présenter sous deux aspects : long et large. 
+Les données tabulaires peuvent se présenter sous deux aspects : long et large. 
 
 ## Définition
 
@@ -219,3 +219,6 @@ Quelle méthode est utile pour transposer un [[dataframe]] ?
 [[df.transpose()::srs]]
 
 Comment passer plusieurs fonctions d'agrégation dans `pivot_tables()` ?
+
+[[Sous forme de dictionnaire, en associant la colonne à transformer avec la fonction::srs]]
+
