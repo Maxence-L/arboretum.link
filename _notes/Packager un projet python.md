@@ -17,7 +17,9 @@ Organiser son code sous la forme d'un package a plusieurs avantages[^1] :
 - La recherche et l'installation au moyen d'un gestionnaire de packages, de type [[pip]] ou [[conda]].
 
 ## La structure d'un projet
+
 ### Arborescence
+
 On structure un projet de la manière suivante :
 ````
 projet
@@ -38,11 +40,12 @@ projet
 Les fichiers relatifs à l'installation et au déploiement du package sont situés à la racine de l'arborescence ; les fichiers relatifs au fonctionnement du package lui-même sont dans le dossier `nom_du_package`.
 
 ### Les fichiers relatifs au fonctionnement du package
+
 On retrouve dans le dossier `nom_du_package` trois fichiers : `utils.py`, `__main__.py` et `__init__.py`.
 
 #### \_\_main__.py
 
-`__main.py__` est le fichier par défaut qui sera exécuté par python lors de l'utilisation du package. Il contient donc les indications relatives à la mise en oeuvre du programme. On y ajoute souvent une fonction `main()` ainsi qu'une exécution conditionnelle s’il est exécuté en tant que [[__main__]] (ce qui devrait être le cas) :
+`__main.py__` est le fichier par défaut qui sera exécuté par python lors de l'utilisation du package. Il contient donc les indications relatives à la mise en œuvre du programme. On y ajoute souvent une fonction `main()` ainsi qu'une exécution conditionnelle s’il est exécuté en tant que [[__main__]] (ce qui devrait être le cas) :
 ```python
 def main():
 	print('hello world')
@@ -52,11 +55,13 @@ if __name__ == '__main__':
 ````
 
 #### \_\_init__.py
+
 Les dossiers contenant un script [[__init__]].py sont considérés par python comme étant des packages et les modules qu'ils contiennent deviennent importables[^2] s'ils ont été installés.
 
 [^2]: https://stackoverflow.com/questions/448271/what-is-init-py-for
 
 Par exemple, si l'on a :
+
 ````
 |__ nom_du_package
      |
@@ -75,7 +80,7 @@ On pourra importer `database.py` avec la phrase suivante :
 import utils.database
 ````
 
-Si `database.py`était situé dans le dossier `nom_du_package`, on aurait pu l'importer avec :
+Si `database.py` était situé dans le dossier `nom_du_package`, on aurait pu l'importer avec :
 ```python
 import .database
 ````
@@ -87,6 +92,7 @@ Par ailleurs, il est possible d'inclure du code dans `__init__.py`qui sera exéc
 `utils.py`correspond aux modules supplémentaires - il est conseillé de ne pas concentrer son programme dans un seul script si celui-ci dépasse une certaine taille.
 
 ### Les fichiers relatifs au déploiement du package
+
 Comme on peut le voir dans l'arborescence, un certain nombre de fichiers sont présents afin d'aider le packaging du projet et sa distribution :
 
 ```
@@ -149,7 +155,7 @@ Thumbs.db
 
 Comme on s'en doute en regardant ci-dessus, on peut spécifier les extensions avec un astérisque en préfixe (ex : \*.exe) et les noms des fichiers ou dossiers - écrits simplement, en entier (ex : script.py).
 
-On peut trouver un [[exemplaire plus complet::https://github.com/github/gitignore/blob/master/Python.gitignore]] sur github.
+On peut trouver un [[exemplaire plus complet::https://github.com/github/gitignore/blob/master/Python.gitignore]] sur Github.
 
 #### requirements.txt
 
@@ -248,7 +254,7 @@ name=("# meta parameters"
 On peut les installer avec la commande `pip install -e "test"`.
 
 ##### Les données supplémentaires
-Par défaut, le package ne comprend que les fichiers .py servant à son exécution. On peut toutefois ajouter des fichiers de données, comme une base sqlite ou un fichier de configuration, par exemple.
+Par défaut, le package ne comprend que les fichiers .py servant à son exécution. On peut toutefois ajouter des fichiers de données, comme une base [[sqlite3]] ou un fichier de configuration, par exemple.
 
 ```python
 name=(
@@ -258,11 +264,13 @@ name=(
 
 
 ## Ajout de tests unitaires au package
+
 https://python-packaging.readthedocs.io/en/latest/testing.html
 
 ## Création d'une distribution installable
 
 ### Distribution source (*sdist*)
+
 Une fois que les fichiers précédemment cités sont dans le package, on peut créer la distribution source avec la commande `sdist` (*source distribution*).[^8]
 
 [^8]: https://docs.python.org/3/distutils/introduction.html#distutils-simple-example

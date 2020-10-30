@@ -15,7 +15,7 @@ On peut accéder à des variables externes en précisant @ devant son nom :
 df_q = df('population > @max_value')
 ```
 
-Afin d'éviter les problèmes de parsing lorsque l'on utilise plusieurs conditons, il peut être utile d'utiliser des parenthèses :
+Afin d'éviter les problèmes de parsage lorsque l'on utilise plusieurs conditions, il peut être utile d'utiliser des parenthèses :
 
 ```python
 df_q = df.query('(population > @max_value) or (population < @min_value)')

@@ -5,7 +5,7 @@ etat: printemps
 ---
 Cette méthode est utile pour passer d'une variable textuelle à une variable numérique. Elle peut être utilisée comme une méthode de classe `pd.factorize(values)` ou comme une méthode appelée sur un objet [[series]] ou [[dataframe]].
 
-La méthode retourne un [[tuple]] comportant deux éléments: 
+La méthode retourne un [[tuple]] comportant deux éléments :
 
 - `uniques` : Un array numérique où chaque chiffre correspond à un facteur
 

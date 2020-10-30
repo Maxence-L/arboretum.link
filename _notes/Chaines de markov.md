@@ -4,7 +4,7 @@ tag: Probabilités
 etat: hiver
 ---
 
-Les chaines de markov sont des modèles mathématiques modélisant pour un objet le fait de passer d'un état à un autre.
+Les chaines de Markov sont des modèles mathématiques modélisant pour un objet le fait de passer d'un état à un autre.
 
 Par exemple, un humain peut avoir plusieurs états possibles : manger, dormir, travailler, se divertir. Chaque heure, on inspecte dans quel état est l'humain. Une chaîne de Markov donnera la probabilité de passer d'un de ces états à un autre.
 

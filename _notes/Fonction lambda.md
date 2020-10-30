@@ -6,6 +6,7 @@ etat: hiver
 
 Une fonction lambda prend la forme suivante : `objet = lambda paramètres : expression`.
 Ce type d'écriture permet de spécifier rapidement des fonctions simples et de rendre le code plus facile à lire.
+
 ```python
 x = lambda a, b : a * b
 print(x(5, 6))
@@ -22,4 +23,4 @@ print(fun(z))
 > True
 ```
 
-Elle est facilement couplable avec une méthode [[pd.apply()]]
+Les fonctions lambda sont fréquemment utilisées avec une méthode [[pd.apply()]].

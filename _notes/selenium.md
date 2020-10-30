@@ -4,7 +4,7 @@ toc: true
 tags: web-scraping
 etat: été
 ---
-Selenium est un outil émulant un navigateur et permettant de simuler automatiquement l'interaction d'un utilisateur avec un site web depuis un navigateur. Il est utilisé pour le test de sites webs mais peut être aussi exploité pour le scraping.
+Selenium est un outil émulant un navigateur et permettant de simuler automatiquement l'interaction d'un utilisateur avec un site web depuis un navigateur. Il est utilisé pour le test de sites web mais peut être aussi exploité pour le scraping.
 
 ## Installation
  
@@ -13,9 +13,11 @@ Bien qu'il soit possible d'utiliser d'autres navigateurs, on utilisera Chrome po
 ```bash
 brew cask install chromedriver
 ````
+
 [^1]: https://intoli.com/blog/running-selenium-with-headless-chrome/
 
 On peut à présent paramétrer chrome :
+
 ```python
 from selenium import webdriver
 
@@ -29,6 +31,7 @@ driver = webdriver.Chrome(chrome_options=options)
 ```
 
 Un premier test :
+
 ```python
 driver = webdriver.Chrome(chrome_options=options)
 driver.get('http://pythonscraping.com/pages/javascript/ajaxDemo.html')
@@ -73,7 +76,7 @@ def __start_webdriver():
 
 
 ## Navigation
-Atteindre une url :
+Atteindre une URL :
 ```python
 driver.get("https://selenium.dev")
 ````
@@ -115,7 +118,7 @@ finally:
 ## Recherche du contexte
 L'objet *webdriver* correspond au navigateur, il contiendra les pages chargées.
 
-On localise les éléments d'intérêt avec la méthode `driver.find_element(By.XX, "cheese")` de l'instance *WebDriver*. Cette méthode retourne un objet de type *WebElement*. À la place de `XX`, on peut préciser l'attribut recherché : XPath, nom de class (`CLASS_NAME`), etc.
+On localise les éléments d'intérêt avec la méthode `driver.find_element(By.XX, "cheese")` de l'instance *WebDriver*. Cette méthode retourne un objet de type *WebElement*. À la place de `XX`, on peut préciser l'attribut recherché : XPath, nom de classe (`CLASS_NAME`), etc.
 
 ```python
 driver.find_element(By.ID, "cheese")
@@ -134,11 +137,13 @@ cheddar = cheese.find_element_by_id("cheddar")
 ````
 
 On peut accélérer l'opération en spécifiant les niveaux recherchés :
+
 ```python
 cheddar = driver.find_element_by_css_selector("#cheese #cheddar")
 ````
 
 Si l'on veut obtenir une liste d'éléments contenus dans un sélecteur [[CSS]], **il faut mettre "element" au pluriel** :
+
 ```python
 <ol id=cheese>
  <li id=cheddar>…
@@ -151,6 +156,7 @@ mucho_cheese = driver.find_elements_by_css_selector("#cheese li")
 ````
 
 Cela permet notamment de réaliser une [[itération]] sur la [[liste]] d'éléments obtenue :
+
 ```python
 elements = driver.find_elements_by_css_selector("span.name")
 for element in range(len(elements)):
@@ -188,32 +194,42 @@ emailAddressField = driver.find_element(with_tag_name("input").above(passwordFie
 Les méthodes sont *.above() .below() .toLeftOff() .toRightOf() .near()*.
 
 ## Interactions
+
 On remplit un champ avec du texte de la façon suivante :
+
 ```python
 name = "Charles"
 driver.find_element(By.NAME, "name").send_keys(name)
 ````
+
 Drag-drop :
+
 ```python
 source = driver.find_element(By.ID, "source")
 target = driver.find_element(By.ID, "target")
 ActionChains(driver).drag_and_drop(source, target).perform()
 ````
+
 Et, bien sûr, **cliquer sur un élément :**
+
 ```python
 driver.find_element(By.CSS_SELECTOR, "input[type='submit']").click()
 ````
 
 ## Attente
+
 Utiliser `time.sleep()` permet de passer les temps d'attente, notamment pour l'affichage de certains pop-ups ou éléments de la page.
 
 Plus de précisions peuvent être trouvées ici :
+
 https://www.selenium.dev/documentation/en/webdriver/waits/
 
 ou p. 169 du livre "Web Scraping with Python".
 
 ## Récupération les informations
+
 On peut utiliser `.text`pour obtenir la valeur string d'un élément :
+
 ```python
 print(driver.find_element_by_id('content').text)
 ````
@@ -223,6 +239,7 @@ Attention toutefois : si l'on a utilisé ```.find_elements``` (avec un s), l'obj
 Si l'information à récupérer est le nom de la classe, on pourra appeler ```.get_attribute("class")``` avec le nom de l'attribut à la place de `class`.
 
 On peut aussi accéder à l'attribut *.page_source* pour obtenir la page html, qui pourra être parsée avec [[BeautifulSoup]] :
+
 ```python
 pageSource = driver.page_source
 bs = BeautifulSoup(pageSource, 'html.parser')
@@ -230,6 +247,7 @@ print(bs.find(id='content').get_text())
 ````
 
 ## Gestion des exceptions et des erreurs
+
 La structure des sites webs visités peut être parfois imprévisible et il faut donc que le programme s'adapte et évite de rencontrer une erreur, ce qui fera planter le *driver*.
 
 On peut donc réaliser une gestion des erreurs avec des [[try ... except ... finally]]. 
@@ -245,6 +263,7 @@ import selenium.common.exceptions as selexcep!t
 On peut ensuite utiliser les erreurs, comme `selexcept.NoSuchElementException`.
 
 ## Gestion des cookies
+
 On peut utiliser le module [[pickle]] pour enregistrer les cookies en vue d'une réutilisation lors de futures sessions.
 
 ```python

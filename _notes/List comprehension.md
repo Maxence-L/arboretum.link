@@ -4,7 +4,7 @@ tags: stdlib
 toc: false
 etat: hiver
 ---
-La *list comprehension* permet de construire des [[listes]] issues d'opérations itératives directement lors de la définition de celles-ci. Les list comprehensions sont généralement plus rapide et élégantes.
+La *list comprehension* permet de construire des [[listes]] issues d'opérations itératives directement lors de la définition de celles-ci. Les *list comprehensions* sont généralement plus rapide et élégantes.
 
 La syntaxe est la suivante : 
 

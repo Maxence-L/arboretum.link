@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/Créer un fichier de configuration avec ConfigParse.md",
+            "file": "_notes/Manipuler les formats longs et larges de données.md",
             "mode": "source"
           }
         }
@@ -48,7 +48,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 308.0036334991455
+    "width": 303.5036334991455
   },
   "right": {
     "id": "15b808a1e515cd90",
@@ -64,7 +64,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Créer un fichier de configuration avec ConfigParse.md"
+                "file": "_notes/Manipuler les formats longs et larges de données.md"
               }
             }
           },
@@ -74,7 +74,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Créer un fichier de configuration avec ConfigParse.md"
+                "file": "_notes/Manipuler les formats longs et larges de données.md"
               }
             }
           }
@@ -86,15 +86,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
-    "_notes/configparse.md",
-    "_notes/df.append() - ajouter une ligne.md",
-    "_notes/df.isna(), df.isnull() - trouver les valeurs manquantes.md",
-    "_notes/Packager un projet python.md",
-    "_notes/Geonamescache.md",
-    "_notes/pd.concat() - ajouter des lignes et des colonnes.md",
-    "_notes/pd.cut() - créer une variable catégorielle.md",
-    "_notes/pd.factorize() - transformer une variable str en int.md",
-    "_notes/Se connecter à une base SQL.md",
-    "_notes/Selenium.md"
+    "_notes/Manipuler les formats longs et larges de données.md",
+    "assets/img/Capture d’écran 2020-10-30 à 18.31.42.png",
+    "assets/img/melt-id-vars.png",
+    "assets/img/pd_concat-table.png",
+    "assets/img/Capture d’écran 2020-10-30 à 18.26.39.png",
+    "assets/img/manipulation-melt.png",
+    "assets/img/norme-L2.png",
+    "assets/img/Capture d’écran 2020-10-30 à 18.20.16.png",
+    "assets/img/Capture d’écran 2020-10-30 à 18.18.47.png",
+    "_notes/Ecrire un script shell.md"
   ]
 }

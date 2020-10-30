@@ -5,12 +5,14 @@ toc: true
 etat: printemps
 ---
 
-BeautifulSoup permet de parser les fichiers html et d'en extraire le contenu de manière ordonnée, en suivant les tags de la page.
+BeautifulSoup permet de parser les fichiers Html et d'en extraire le contenu de manière ordonnée, en suivant les tags de la page.
 
 La doc : https://www.crummy.com/software/BeautifulSoup/bs4/doc/
 
 ## Installation
+
 On l'importe de la manière suivante :
+
 ```python
 from bs4 import BeautifulSoup
 ```
@@ -22,16 +24,17 @@ On peut ensuite parser un document html, produit notamment par le package [[requ
 soup = BeautifulSoup(r.text, 'lxml')
 ```
 
-Plusieurs parsers sont possibles : si l'on désire utilise [[lxml]], plutôt qu'[[html5lib]], il faut l'importer.
+Plusieurs parseurs sont possibles : si l'on désire utilise [[lxml]], plutôt qu'[[html5lib]], il faut l'importer.
 
 ## Navigation
-La méthode *.find_all()* permet de chercher par tag html (premier argument), mais aussi par [classe CSS](https://www.crummy.com/software/BeautifulSoup/bs4/doc/#searching-by-css-class) (second argument) :
+
+La méthode *.find_all()* permet de chercher par tag Html (premier argument), mais aussi par [classe CSS](https://www.crummy.com/software/BeautifulSoup/bs4/doc/#searching-by-css-class) (second argument) :
 
 ```python
 summaries = soup.find_all("div", {"class":"course-summary-card"})
 ```
 
-L'objet ainsi créé contient un objet string composé des tags de premier niveau désirés et qui peut être parcouru de manière récursive. Pour le visualiser, il est plus aisé d'utiliser *.prettify()* associé à *print()*. Si l'on désire voir le premier élément div de summaries :
+L'objet ainsi créé contient un objet string composé des tags de premier niveau désirés et qui peut être parcouru de manière récursive. Pour le visualiser, il est plus aisé d'utiliser *.prettify()* associé à *print()*. Si l'on désire voir le premier élément div de `summaries` :
 
 ```python
 print(summaries[0].prettify())
@@ -73,7 +76,7 @@ Utiliser *.select_one()* renvoie le premier élément rencontré qui correspond 
 
 ## Extraction
 
-On peut extraire les données en bouclant dans les arbres de tags html de la page étudiée. Un exemple :
+On peut extraire les données en bouclant dans les arbres de tags Html de la page étudiée. Un exemple :
 
 ```python
 courses = []

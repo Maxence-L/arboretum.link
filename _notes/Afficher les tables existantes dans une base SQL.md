@@ -21,4 +21,4 @@ Dans le cas d'[[SQLite]], avec le module [[sqlite3]] :
 ````
 
 
-Les noms des tables sont stockés dans ```sqlite_master``` sous la colonne ```name```: on peut donc les requêter et obtenir le résultat avec ```.fetchall()``` appelé sur un objet ```.connection()```
+Les noms des tables sont stockés dans `sqlite_master` sous la colonne `name` : on peut donc les requêter et obtenir le résultat avec `.fetchall()` appelé sur un objet `.connection()`

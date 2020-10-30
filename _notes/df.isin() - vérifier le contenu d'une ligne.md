@@ -37,7 +37,7 @@ df.isin([0, 2])
 > dog        False       True
 ````
 
-Cette méthode est utile pour réaliser des selections conditionnelles :
+Cette méthode est utile pour réaliser des sélections conditionnelles :
 
 ```python
 df[df['num_legs'].isin([2])]

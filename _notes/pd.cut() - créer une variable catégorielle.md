@@ -4,7 +4,7 @@ tags: pandas
 etat: printemps
 ---
 
-pd.cut() assigne pour chaque ligne d'une variable quantitative une étiquette correspondant à un interval donné.
+pd.cut() assigne pour chaque ligne d'une variable quantitative une étiquette correspondant à un intervalle donné.
 
 La [syntaxe](https://pandas.pydata.org/docs/reference/api/pandas.cut.html) est la suivante : 
 
@@ -29,7 +29,7 @@ df['age_cat'] = pd.cut(df['age'],
     right=True)
 ```
 
-- `bins` correspond aux intervales de classification : [0,5], [5,10], [10,15] ...
+- `bins` correspond aux intervalles de classification : [0,5], [5,10], [10,15] ...
 
 - `labels` correspond aux étiquettes à apposer sur la ligne catégorisée - l'occurrence il s'agit de l'âge maximal de la catégorie. 
 

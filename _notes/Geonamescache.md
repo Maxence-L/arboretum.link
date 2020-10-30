@@ -8,6 +8,7 @@ Geonamescache[^1] est une bibliothèque contenant un grand nombre de nom de lieu
 [^1]: https://github.com/yaph/geonamescache
 
 On l'installe ainsi :
+
 ```python
 !pip install geonamescache
 from geonamescache import GeonamesCache
@@ -66,6 +67,7 @@ print(f"GeoNamesCache holds data for {num_us_cities} US cities.")
 ````
 
 Pour obtenir un dictionnaire `{nom: caractéristiques}` des villes, on exploite le [[Dict comprehension]] :
+
 ```python
 cities = {city['name']:city for city in gc.get_cities().values() if city['countrycode'] == 'GB'}
 ```

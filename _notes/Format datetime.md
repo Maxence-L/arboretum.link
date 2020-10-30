@@ -30,7 +30,7 @@ parsed_date.second
 > 0
 ```
 
-Voir l'aide de pd.to_datetime() pour plus de détails, mais il est possible de spécifier le format en argument afin de pallier les difficultés liées, par exemple, aux date américaines :
+Voir l'aide de pd.to_datetime() pour plus de détails, mais il est possible de spécifier le format en argument afin de pallier les difficultés liées, par exemple, aux dates américaines :
 
 ```python
 parsed_date = pd.to_datetime('5/3/2017 5:30')

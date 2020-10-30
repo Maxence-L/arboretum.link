@@ -7,7 +7,9 @@ toc: true
 Il est possible de se connecter à une base de données [[SQL]] avec le package [[sqlite3]] ou [[sql alchemy]].
 
 ## SQLite
+
 Dans le cas de [[sqlite3]], associé à une base [[SQLite]]:
+
 ```python
 import sqlite3
 # connect to the database
@@ -21,7 +23,8 @@ c = db_name.cursor()
 c.execute("DROP TABLE IF EXISTS gdp")
 ```
 
-Lorsque les changement nécessaires ont été réalisés, on enregistre (commit) les changement :
+Lorsque les modifications nécessaires ont été réalisées, on enregistre (commit) les changements :
+
 ```python
 db_name.commit()
 ````
@@ -46,10 +49,10 @@ db_name = create_engine('data.db')
 
 Noter que l'on peut se connecter à une base SQLite avec SQL Alchemy.
 
-
 ## Charger une base dans un objet pandas
 
 Pandas possède une fonction [[pd.read_sql()]] permettant d'effectuer des requêtes SQL :
+
 ```python
 # run a query
 pd.read_sql('SELECT * FROM population_data', db_name)
