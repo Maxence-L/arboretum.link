@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/Manipuler les formats longs et larges de données.md",
+            "file": "_notes/Manipuler les données regroupées en une seule colonne.md",
             "mode": "source"
           }
         }
@@ -64,7 +64,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Manipuler les formats longs et larges de données.md"
+                "file": "_notes/Manipuler les données regroupées en une seule colonne.md"
               }
             }
           },
@@ -74,7 +74,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Manipuler les formats longs et larges de données.md"
+                "file": "_notes/Manipuler les données regroupées en une seule colonne.md"
               }
             }
           }
@@ -86,15 +86,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "_notes/Untitled.md",
     "_notes/Manipuler les formats longs et larges de données.md",
-    "assets/img/Capture d’écran 2020-10-30 à 18.31.42.png",
+    "assets/img/Capture d’écran 2020-10-31 à 00.45.33.png",
     "assets/img/melt-id-vars.png",
-    "assets/img/pd_concat-table.png",
-    "assets/img/Capture d’écran 2020-10-30 à 18.26.39.png",
-    "assets/img/manipulation-melt.png",
-    "assets/img/norme-L2.png",
-    "assets/img/Capture d’écran 2020-10-30 à 18.20.16.png",
-    "assets/img/Capture d’écran 2020-10-30 à 18.18.47.png",
-    "_notes/Ecrire un script shell.md"
+    "_notes/Mise à l'échelle des données - standardisation et normalisation.md",
+    "assets/img/Capture d’écran 2020-10-31 à 00.43.06.png",
+    "assets/img/Capture d’écran 2020-10-31 à 00.42.00.png",
+    "_notes/Indépendance linéaire.md",
+    "assets/img/Capture d’écran 2020-10-30 à 18.31.42.png",
+    "assets/img/pd_concat-table.png"
   ]
 }

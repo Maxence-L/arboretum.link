@@ -1,7 +1,7 @@
 ---
 title : Manipuler les formats longs et larges de données
 tags: pandas
-etat: printemps
+etat: été
 toc: true
 ---
 
@@ -186,14 +186,83 @@ tall_players_fifa = fifa_players.pivot_table(index='nationality',
 
 ## "Fondre" un jeu de données - format large vers format long
 
+### df.melt()
+
 Le passage d'un jeu de données large en long se fait avec la fonction `df.melt()` :
 
 ![df.melt](../assets/img/manipulation-melt.png#center)
 
-La méthode `df.melt()` prend comme principal argument `id_vars`. On peut y passer plusieurs identifiants sous forme de liste, comme pour les valeurs, choisies avec l'argument `value_vars`. On peut spécifier le nom des colonnes relatives aux valeurs au moyen des arguments `var_name` et `value_name` :
+Comme on le voit, le tableau se réorganise selon la forme suivante : 
+
+**[identifiant] [attribut] [valeur]**
+
+Dans ce cas, on peut avoir une définition sur plusieurs colonnes d'[identifiant] et d'[attribut] , par exemple **[nom, prénom] [cheveux, couleurs] [valeur]**.
+
+La méthode `df.melt()` qui réalise cette transformation prend comme principal argument `id_vars`, pour définir les colonnes **identifiants**, et `value_vars`, pour définir les colonnes **attributs** et **valeur**. Pour chacun de ces arguments, les noms des variables peuvent êtres passés sous forme de liste .
+
+On peut spécifier le nom des colonnes relatives aux valeurs au moyen des arguments `var_name` et `value_name` :
 
 ![](../assets/img/melt-id-vars.png#center)
 
+### pd.wide_to_long() : regex + melt
+
+Il peut arriver que le jeu de données comporte un grand nombre de colonnes où les noms suivent un motif, comme par exemple "Bénéfice2018", "Bénéfice2019", "Bénéfice2020", "TPS_Reports2018", "TPS_Reports2019", "TPS_Reports2020", etc.
+
+Dans ce cas, `pd.wide_to_long()` peut scinder les noms des colonnes (`TPS_Reports, 2019` par ex.) pour faciliter le passer au format long. On aura alors une colonne `variable` (contenant `TPS_Reports` et `Bénéfice`) et une colonne `Année` (contenant `2018`, `2019` etc.).
+
+La syntaxe est la suivante :
+
+![](../assets/img/pd.wide_to_long.png#center)
+
+Dans l'exemple ci-dessus :
+
+- `pd.wide_to_long()` prend le [[dataframe]] manipulé en argument, 
+
+- `stubnames`correspond au préfixe de la variable (`TPS_Reports` et `Bénéfice` dans notre premier exemple),
+
+- `i` à la colonne relative à l'index - on peut passer une liste de variables
+
+- `j` à celle de l'attribut de chaque ligne, qui est définit en prenant  `nom de la variable - stubname`
+
+Il est possible de passer des arguments supplémentaires :
+
+- `sep` donne au programme la clé de séparation (ex `sep='-'`)
+
+- `suffix` prend une [[expression régulière]] pour trouver la valeur de l'attribut (ex: `suffix='\w+'`)
+
+On a les données suivantes :
+
+```python
+new_books
+````
+
+|  title                 |  language |  publication date |  publication number | page number |
+|------------------------|:---------:|:-----------------:|---------------------|-------------|
+| Los Juegos del Hambre  | Spanish   | 5/25/2010         | 2                   | 374         |
+| Catching Fire          | English   | 5/25/2012         | 6                   | 391         |
+| Il canto della rivolta | Italian   | 6/8/2015          | 4                   | 390         |
+
+```python
+publication_features = pd.wide_to_long(books_hunger, 
+                                       stubnames=['publication', 'page'], 
+                                       i=['title', 'language'], 
+                                       j='feature', 
+                                       sep=' ', 
+                                       suffix='\w+')
+````
+
+| title                  | language | feature | publication | page  |
+|------------------------|----------|---------|-------------|-------|
+| Los Juegos del Hambre  | Spanish  | date    | 5/25/2010   | NaN   |
+|                        |          | number  | 2           | 374   |
+| Catching Fire          | English  | date    | 5/25/2012   | NaN   |
+|                        |          | number  | 6           | 391.0 |
+| Il canto della rivolta | Italian  | date    | 6/8/2015    | NaN   |
+|                        |          | number  | 4           | 390.0 |
+
+On l'aura remarqué, `title` et `language` sont passés sous forme d'index. 
+
+Pour les retrouver comme variable, on peut utiliser [[df.reset_index()]] avec l'option `drop=False`. Elle signifie que l'on désire passer les valeurs de l'index dans les colonnes du [[dataframe]]
 
 
 ## Ressources
@@ -201,7 +270,7 @@ La méthode `df.melt()` prend comme principal argument `id_vars`. On peut y pass
 - [Un tuto intéressant dans la doc pandas](https://pandas.pydata.org/docs/getting_started/intro_tutorials/07_reshape_table_layout.html?highlight=wide)
 - https://pandas.pydata.org/pandas-docs/stable/user_guide/reshaping.html
 
-## Questions :
+## Révisions
 Quels sont les trois principaux arguments de `.pivot()` ?
 
 [[`index`, `columns`, `values`::srs]]
@@ -220,5 +289,5 @@ Quelle méthode est utile pour transposer un [[dataframe]] ?
 
 Comment passer plusieurs fonctions d'agrégation dans `pivot_tables()` ?
 
-[[Sous forme de dictionnaire, en associant la colonne à transformer avec la fonction::srs]]
+[[En associant dans un `dict` la colonne à transformer avec la fonction::srs]]
 
