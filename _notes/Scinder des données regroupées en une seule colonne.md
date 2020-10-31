@@ -1,5 +1,5 @@
 ---
-title: Manipuler les données regroupées en une seule colonne
+title: Scinder les données regroupées en une seule colonne
 tags: pandas
 etat : hiver
 ---
