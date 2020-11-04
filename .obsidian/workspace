@@ -10,8 +10,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/Manipuler les données regroupées en une seule colonne.md",
-            "mode": "source"
+            "file": "_notes/spaCy.md",
+            "mode": "preview"
           }
         }
       }
@@ -40,15 +40,17 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "group"
+                "query": "spacy"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 303.5036334991455
+    "width": 237.5036334991455,
+    "collapsed": true
   },
   "right": {
     "id": "15b808a1e515cd90",
@@ -64,7 +66,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Manipuler les données regroupées en une seule colonne.md"
+                "file": "_notes/spaCy.md"
               }
             }
           },
@@ -74,27 +76,27 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Manipuler les données regroupées en une seule colonne.md"
+                "file": "_notes/spaCy.md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "lastOpenFiles": [
-    "_notes/Untitled.md",
+    "_notes/spaCy.md",
+    "_notes/Scinder et rassembler les données dans une colonne.md",
+    "_notes/Calculer des distances terrestres.md",
+    "_notes/Associer des noms de lieux à des coordonnées géographiques.md",
+    "_notes/Cartopy.md",
+    "_notes/Se connecter à une base SQL.md",
+    "_notes/List comprehension.md",
     "_notes/Manipuler les formats longs et larges de données.md",
-    "assets/img/Capture d’écran 2020-10-31 à 00.45.33.png",
-    "assets/img/melt-id-vars.png",
-    "_notes/Mise à l'échelle des données - standardisation et normalisation.md",
-    "assets/img/Capture d’écran 2020-10-31 à 00.43.06.png",
-    "assets/img/Capture d’écran 2020-10-31 à 00.42.00.png",
-    "_notes/Indépendance linéaire.md",
-    "assets/img/Capture d’écran 2020-10-30 à 18.31.42.png",
-    "assets/img/pd_concat-table.png"
+    "_notes/df.reset_index().md",
+    "_notes/Untitled.md"
   ]
 }

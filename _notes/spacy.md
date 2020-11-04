@@ -422,7 +422,7 @@ Chaque modèle définira dans ses métadonnées (`meta.json`) les composants de 
 ```
 
 > **A noter** :
-> On peut accéder aux noms des composants du pipeline en appelant `nlp.pipe.names` :
+> On peut accéder aux noms des composants du pipeline en appelant `nlp.pipe_names` :
 >
 > ```python
 > print(nlp.pipe_names)

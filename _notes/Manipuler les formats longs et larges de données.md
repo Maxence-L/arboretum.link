@@ -130,7 +130,7 @@ fifa_over_attack = fifa_players.pivot(index='name',
 | Cristiano Ronaldo | 89        | 82      | 93       | 84        | 83      | 89       |
 | L. Messi          | 96        | 92      | 92       | 88        | 92      | 70       |
 
-> **À noter :** Si le [[dataframe]] contient des doublons, [[df.pivot()]] retournera une [[ValueError]]. On peut les supprimer avec [[df.drop()]] ou [[df.drop_duplicates()]]
+> **À noter :** Si le [[dataframe]] contient des doublons, [[df.pivot()]] retournera une [[ValueError]]. On peut les détecter avec [[df.duplicates]] et les supprimer avec [[df.drop()]] ou [[df.drop_duplicates()]]
 
 ### [df.pivot_table()](https://pandas.pydata.org/pandas-docs/stable/user_guide/reshaping.html#pivot-tables) - pivot avec agrégation
 
@@ -196,7 +196,7 @@ Comme on le voit, le tableau se réorganise selon la forme suivante :
 
 **[identifiant] [attribut] [valeur]**
 
-Dans ce cas, on peut avoir une définition sur plusieurs colonnes d'[identifiant] et d'[attribut] , par exemple **[nom, prénom] [cheveux, couleurs] [valeur]**.
+Dans ce cas, on peut avoir une définition sur plusieurs colonnes d'[identifiant] et d'[attribut] , par exemple **[nom, prénom] [cheveux, couleurs] [valeur]**. Il peut être néanmoins utile de regrouper les identifiants en une seule colonne avec la méthode [[Scinder et rassembler les données dans une colonne\|.str.cat()]].
 
 La méthode `df.melt()` qui réalise cette transformation prend comme principal argument `id_vars`, pour définir les colonnes **identifiants**, et `value_vars`, pour définir les colonnes **attributs** et **valeur**. Pour chacun de ces arguments, les noms des variables peuvent êtres passés sous forme de liste .
 
