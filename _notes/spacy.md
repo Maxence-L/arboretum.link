@@ -175,7 +175,7 @@ On peut le remplacer par l'attribut que l'on désire chercher, par exemple `'LOW
 
 On ajoute le motif avec la méthode `.add(pattern_name, on_match, patterns*)`[^1](https://spacy.io/api/matcher#add)
 
-On peut utiliser (similaire au \[regex\]) des opérateurs :
+On peut utiliser (similaire au [[regex]]) des opérateurs :
 
 | - | Description |
 | --- | --- |
@@ -786,6 +786,41 @@ C'est en général dû au fait que l'on a fourni au modèle de nouvelles donnée
 Le modèle peut avoir du mal à détecter de manière fiable des données reposant sur un contexte.
 
 Il vaut donc mieux définir des étiquettes ne dépendant pas du contexte. Par exemple, pas "Chaussure_de_sport" ou "Chaussure_de_randonnées" mais simplement "Chaussure".
+
+#### Problèmes de tokenisation
+
+L'entrainement repose sur l'idée que l'on montre à Spacy une entity qui correspond à un token du texte. Si l'entity ne correspond à aucun token détecté, cela peut poser problème. 
+
+C'est souvent le cas avec les mots du langage qui ne correspondent pas à la rêgle de tokenisation du module `tagger` : par exemple, les mots ayant un `-` tiret, comme 'Jean-Claude'. 
+
+Il faut donc, dans ce cas là, définir un pattern[^1] pour trouver les mots correspondant et regrouper (`merge`) le span qui y correspond:
+
+[^1]: https://stackoverflow.com/questions/50752266/spacy-tokenize-quoted-string/50775597#50775597
+
+```python
+pattern = pattern = [{'IS_ALPHA': True}, {'ORTH': '-'}, {'IS_ALPHA': True}]
+matcher = Matcher(nlp.vocab)
+matcher.add('QUOTED', None, pattern)
+
+def mon_petit_tiret(doc):
+
+	matched_spans = []
+    matches = matcher(doc)
+    
+	for match_id, start, end in matches:
+        span = doc[start:end]
+        matched_spans.append(span)
+		
+    for span in matched_spans:  # merge into one token after collecting all matches
+        with doc.retokenize() as retokenizer:
+            retokenizer.merge(span)
+    return doc
+
+# On ajoute le module au pipeline :
+nlp.add_pipe(mon_petit_tiret, after='tagger')
+````
+
+
 
 #### En savoir plus sur l'analyse de données avec spaCy :
 
