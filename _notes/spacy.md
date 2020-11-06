@@ -679,7 +679,7 @@ doc = nlp.make_doc("Bonjour tout le monde")
 
 ## Entrainer un modèle d'étiquetage de données
 
-On peut utiliser spaCy pour modifier le modèle de reconnaissance d'attributs ou détecter des types de Named Entities. Cela permet d'améliorer les systèmes de règles de type regex mais nécessite un grand nombre de données étiquetées au préalable.
+On peut utiliser spaCy pour modifier le modèle de reconnaissance d'attributs ou détecter des types de Named Entities. Cela permet d'améliorer les systèmes de règles de type regex mais nécessite un grand nombre de données étiquetées au préalable. Un exellent modèle pour commencer est disponible sur [[github::https://github.com/explosion/spaCy/blob/master/examples/training/train_ner.py#L75]].
 
 ![model](/assets/img/spacy-model.png#center)
 
