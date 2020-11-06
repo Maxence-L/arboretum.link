@@ -134,7 +134,22 @@ Le résultat :
 | $1 billion | 44 | 54 | MONEY | Monetary values, including unit. |
 
 > **A noter** :
-> Il est possible de passer dans spaCy des règles [customisées de tokenisation](https://spacy.io/usage/linguistic-features#tokenization0)
+> Il est possible de passer dans spaCy des règles [customisées de tokenisation](https://spacy.io/usage/linguistic-features#tokenization0) au cas où l'on rencontrerai un problème lié à la mauvaise tokenisation des mots, qui empêcherait leur reconnaissance.
+
+Le composant correspondant à la reconnaissance des entités s'appelle `ner`. D'autres composants peuvent être utilisés :
+
+- `EntityRuler` : permet de reconnaitre des named entities dans des spans, c'est à dire des groupes de mots.
+```python
+from spacy.pipeline import EntityRuler
+nlp.add_pipe(entity_ruler, before="ner")
+````
+
+- `Spaczz` qui fait du "fuzzy matching", une technique plus permissive qui permet de compenser les fautes d'orthographe et de matcher plusieurs mots.
+````
+from spaczz.pipeline import SpaczzRuler
+nlp.add_pipe(spaczz_ruler, before="ner")
+````
+
 
 ### Matching
 
