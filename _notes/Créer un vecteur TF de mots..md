@@ -85,13 +85,13 @@ On voit que sklearn renvoie un objet de type `csr_matrix`, qui correspond à une
 tf_np_matrix = tf_matrix.toarray()
 print(tf_np_matrix)
 
-> [[0 0 0 ... 0 0 0]
+> [ [0 0 0 ... 0 0 0]
  [0 0 0 ... 0 0 0]
  [0 0 0 ... 0 0 0]
  ...
  [0 0 0 ... 0 0 0]
  [0 0 0 ... 0 0 0]
- [0 0 0 ... 0 0 0]]
+ [0 0 0 ... 0 0 0] ]
   ````
 
 

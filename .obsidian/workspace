@@ -10,8 +10,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/Associer des noms de lieux à des coordonnées géographiques.md",
-            "mode": "preview"
+            "file": "_notes/Créer un vecteur TF de mots..md",
+            "mode": "source"
           }
         }
       }
@@ -48,7 +48,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 237.5036334991455
+    "width": 190.5036334991455
   },
   "right": {
     "id": "15b808a1e515cd90",
@@ -64,7 +64,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Associer des noms de lieux à des coordonnées géographiques.md"
+                "file": "_notes/Créer un vecteur TF de mots..md"
               }
             }
           },
@@ -74,7 +74,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Associer des noms de lieux à des coordonnées géographiques.md"
+                "file": "_notes/Créer un vecteur TF de mots..md"
               }
             }
           }
@@ -86,15 +86,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
-    "_notes/Associer des noms de lieux à des coordonnées géographiques.md",
     "_notes/Créer un vecteur TF de mots..md",
+    "_notes/sqlite3.md",
+    "_notes/Norme d'un vecteur.md",
+    "_notes/Associer des noms de lieux à des coordonnées géographiques.md",
     "_notes/spaCy.md",
     "_notes/Untitled.md",
-    "_notes/sqlite3.md",
     "_notes/Str - méthodes.md",
     "_notes/set.md",
     "_notes/Comprehension.md",
-    "_notes/set().md",
-    "_notes/listes.md"
+    "_notes/set().md"
   ]
 }

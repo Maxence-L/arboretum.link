@@ -1,6 +1,6 @@
 ---
 title: sqlite3
-tags: SQL
+tags: sql
 etat: printemps
 ---
 
