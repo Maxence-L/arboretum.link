@@ -7,6 +7,8 @@ Cette note recense les bibliothèques python et les services permettant de trouv
 
 ## Geopy
 
+(A complêter...)
+
 ## Geonamescache
 
 Geonamescache[^1] est une bibliothèque contenant un dictionnaire regroupant grand nombre de nom de lieux, ainsi que leurs caractéristiques géographiques (point moyen, pays, nom, etc...).
@@ -86,7 +88,7 @@ Dans le cas d'un programme cherchant la localisation d'utilisateurs de l'applica
 
 ```python
 # Initialisationd des bibliothèques de géolocalisation
-geolocator = Nominatim(user_agent="ok_cupidon")
+geolocator = Nominatim(user_agent="geoloc-search")
 gc = GeonamesCache()
 
 # On récupère les villes anglaises de geonamescache

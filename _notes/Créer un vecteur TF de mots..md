@@ -73,4 +73,29 @@ print(tf_matrix)
 ...
 ````
 
+```python
+print(type(tf_matrix))
+
+> <class 'scipy.sparse.csr.csr_matrix'>
+````
+
+On voit que sklearn renvoie un objet de type `csr_matrix`, qui correspond à une matrice creuse. Il est recommandé, pour éviter les problèmes de compatibilité, de la convertir au format [[array]] :
+
+```python
+tf_np_matrix = tf_matrix.toarray()
+print(tf_np_matrix)
+
+> [[0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]]
+  ````
+
+
+
+
+
 [^1]: Exemple tiré de *Data Science Bookcamp*, de Leonard Apelstin, utilisant le `newsgroup` dataset (`from sklearn.datasets import fetch_20newsgroups`)
