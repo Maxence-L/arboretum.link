@@ -4,7 +4,7 @@ tags: NLP ml-pratique
 etat: hiver
 ---
 
-Une fois la [[tokenisation]] et la lemmatisation du texte réalisée, on peut passer à son éventuelle vectorisation avant analyse. Pour cela, on va simplement conter le nombre de mots dans le texte et reporter le résultat dans un vecteur dont chaque coordonnée correspondra à un mot.
+Une fois la [[tokenisation]] et la lemmatisation du texte réalisée, on peut passer à son éventuelle vectorisation avant analyse de [[similarité\|similarité]] ou utilisation pour calculer un score [[TFIDF]]. Pour cela, on va simplement conter le nombre de mots dans le texte et reporter le résultat dans un vecteur dont chaque coordonnée correspondra à un mot.
 
 ## L'enregistrement de la matrice TF sous forme de ligne creuse compressée (*Compressed Sparse Row - CSR*)
 

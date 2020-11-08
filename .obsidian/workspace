@@ -11,7 +11,7 @@
           "type": "markdown",
           "state": {
             "file": "_notes/Créer un vecteur TF de mots..md",
-            "mode": "source"
+            "mode": "preview"
           }
         }
       }
@@ -40,15 +40,17 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "compreh"
+                "query": "similarité"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 190.5036334991455
+    "width": 190.5036334991455,
+    "collapsed": true
   },
   "right": {
     "id": "15b808a1e515cd90",
@@ -87,14 +89,14 @@
   },
   "lastOpenFiles": [
     "_notes/Créer un vecteur TF de mots..md",
+    "_notes/np.flatnonzero().md",
+    "_notes/pd.concat() - ajouter des lignes et des colonnes.md",
+    "_notes/Untitled.md",
     "_notes/sqlite3.md",
     "_notes/Norme d'un vecteur.md",
     "_notes/Associer des noms de lieux à des coordonnées géographiques.md",
     "_notes/spaCy.md",
-    "_notes/Untitled.md",
     "_notes/Str - méthodes.md",
-    "_notes/set.md",
-    "_notes/Comprehension.md",
-    "_notes/set().md"
+    "_notes/set.md"
   ]
 }
