@@ -56,5 +56,7 @@ Renvoie un booléen `True` si l'objet `string` est non-vide et contient un carac
 
 #### Reférence :
 [str.split() - docs.python.org](https://docs.python.org/3/library/stdtypes.html?#str.split)
+
 [str.join() - docs.python.org](https://docs.python.org/3/library/stdtypes.html?#str.join)
+
 [str.isdigit() - docs.python.org](https://docs.python.org/3/library/stdtypes.html#str.isdigit)
