@@ -620,7 +620,7 @@ print([(ent.text, ent.label_, ent._.capital) for ent in doc.ents])
 
 #### Traitement des textes
 
-Si l'on désire traiter plusieurs textes, on fera appel à la fonction [nlp.pipe](https://spacy.io/api/language#pipe) plutôt que d'utiliser une [[list comprehension]].
+Si l'on désire traiter plusieurs textes, on fera appel à la fonction [nlp.pipe](https://spacy.io/api/language#pipe) plutôt que d'utiliser une [[Comprehension\|list comprehension]].
 
 ```python
 texts = ["This is a text", "These are lots of texts", "..."]

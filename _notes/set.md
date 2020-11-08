@@ -1,10 +1,12 @@
 ---
-title: set()
+title: set
 tags: stdlib
 etat: Printemps
 ---
 
-Les sets sont des objets similaires aux [[dictionnaires]] mais ne contenant pas de clé et ne disposant dont pas d'ordre, contrairement aux [[listes]][^1].
+Les sets sont des objets intermédiaires entre la [[liste]] et le [[dictionnaire]]. Il contient des éléments, sans clé et sans doublon[^1]. 
+
+Il est utile pour vérifier si un élément est présent dans une liste, par exemple?
 
 [^1]: https://www.w3schools.com/python/python_sets.asp
 

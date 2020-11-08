@@ -10,8 +10,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/spaCy.md",
-            "mode": "preview"
+            "file": "_notes/Str - méthodes.md",
+            "mode": "source"
           }
         }
       }
@@ -40,17 +40,15 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "spacy"
+                "query": "compreh"
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 237.5036334991455,
-    "collapsed": true
+    "width": 237.5036334991455
   },
   "right": {
     "id": "15b808a1e515cd90",
@@ -66,7 +64,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/spaCy.md"
+                "file": "_notes/Str - méthodes.md"
               }
             }
           },
@@ -76,12 +74,11 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/spaCy.md"
+                "file": "_notes/Str - méthodes.md"
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -89,15 +86,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
-    "_notes/spaCy.md",
-    "_notes/Scinder et rassembler les données dans une colonne.md",
-    "_notes/Calculer des distances terrestres.md",
+    "_notes/Untitled.md",
+    "_notes/Comprehension.md",
+    "_notes/set().md",
+    "_notes/listes.md",
     "_notes/Associer des noms de lieux à des coordonnées géographiques.md",
-    "_notes/Cartopy.md",
-    "_notes/Se connecter à une base SQL.md",
+    "_notes/spaCy.md",
     "_notes/List comprehension.md",
-    "_notes/Manipuler les formats longs et larges de données.md",
-    "_notes/df.reset_index().md",
-    "_notes/Untitled.md"
+    "_notes/Créer un fichier de configuration avec ConfigParse.md",
+    "_notes/Scinder et rassembler les données dans une colonne.md",
+    "_notes/Calculer des distances terrestres.md"
   ]
 }

@@ -1,10 +1,12 @@
 ---
-title: List comprehension
+title: Comprehension
 tags: stdlib
 toc: false
 etat: hiver
 ---
-La *list comprehension* permet de construire des [[listes]] issues d'opérations itératives directement lors de la définition de celles-ci. Les *list comprehensions* sont généralement plus rapide et élégantes.
+Les *comprehensions* permettent de construire des [[liste\|listes]], [[dictionnaire\|dictionnaires]] ou des [[set\|sets]] issus d'opérations itératives directement lors de la définition de celles-ci.
+
+## List comprehension
 
 La syntaxe est la suivante : 
 
@@ -40,4 +42,23 @@ print(transposed)
 # [ [1, 3, 5, 7], [2, 4, 6, 8] ]
 ```
 
-On peut réutiliser le même type de syntaxe pour le [[Dict comprehension]]
+## Dict comprehension
+
+Le principe est le même, voici la syntaxe :
+
+```python
+{x : 2*x for x in range(5)}
+````
+
+On remarquera l'ajout d'un index.
+
+## Set comprehension
+
+De même, sans index :
+
+```python
+{x*x for x in range(5)}
+````
+
+> À noter : 
+> Contrairement à une liste, un [[set]] ne comprend pas de doublon.
