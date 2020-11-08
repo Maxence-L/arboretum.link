@@ -6,7 +6,7 @@ etat: Printemps
 
 Les sets sont des objets intermédiaires entre la [[liste]] et le [[dictionnaire]]. Il contient des éléments, sans clé et sans doublon[^1]. 
 
-Il est utile pour vérifier si un élément est présent dans une liste, par exemple?
+Il est utile pour vérifier si un élément est présent dans une liste, par exemple.
 
 [^1]: https://www.w3schools.com/python/python_sets.asp
 
@@ -38,7 +38,52 @@ unique_numbers = set()
 unique_numbers.update(numbers)
 ```
 
-#### Le sets sont utiles pour la gestion des *doublons* :
+## Opérateurs
+`&` : retourne un set comprenant l'intersection de deux sets :
+
+```python
+set_a = {'a', 'b', 'c'}
+set_b = {'c', 'd', 'e'}
+
+set_a & set_b
+
+> {'c'}
+```
+
+`^` : retourne un set comprenant l'inverse de l'intersection de deux sets
+
+```python
+set_a = {'a', 'b', 'c'}
+set_b = {'c', 'd', 'e'}
+
+set_a & set_b
+
+> {'a','b','d','e'}
+```
+
+`|` : retourne un set comprenant l'union de deux sets :
+
+```python
+set_a = {'a', 'b', 'c'}
+set_b = {'c', 'd', 'e'}
+
+set_a | set_b
+
+> {'a','b','c','d','e'}
+```
+
+`-` : retourne un set comprenant tous les éléments du premier set qui ne sont pas dans le second.
+
+```python
+set_a = {'a', 'b', 'c'}
+set_b = {'c', 'd', 'e'}
+
+set_a - set_b
+
+> {'a','b'}
+```
+
+## Application : la gestion des *doublons* :
 
 Ils ne peuvent contenir deux fois la même valeur, ce qui en fait un outil très intéressant pour les situations où l'on veut supprimer facilement des doublons d'une liste. 
 

@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/Str - méthodes.md",
+            "file": "_notes/set.md",
             "mode": "preview"
           }
         }
@@ -64,7 +64,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Str - méthodes.md"
+                "file": "_notes/set.md"
               }
             }
           },
@@ -74,7 +74,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Str - méthodes.md"
+                "file": "_notes/set.md"
               }
             }
           }
@@ -86,6 +86,7 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "_notes/set.md",
     "_notes/Untitled.md",
     "_notes/Comprehension.md",
     "_notes/set().md",
@@ -94,7 +95,6 @@
     "_notes/spaCy.md",
     "_notes/List comprehension.md",
     "_notes/Créer un fichier de configuration avec ConfigParse.md",
-    "_notes/Scinder et rassembler les données dans une colonne.md",
-    "_notes/Calculer des distances terrestres.md"
+    "_notes/Scinder et rassembler les données dans une colonne.md"
   ]
 }
