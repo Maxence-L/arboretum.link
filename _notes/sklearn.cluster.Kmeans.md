@@ -20,8 +20,8 @@ L'algorithme est lancé ainsi :
 # Importation de KMeans :
 from sklearn.cluster import KMeans
 
-X = np.array([[1, 2], [1, 4], [1, 0],
-              [10, 2], [10, 4], [10, 0]])
+X = np.array([ [1, 2], [1, 4], [1, 0],
+              [10, 2], [10, 4], [10, 0] ])
 
 # Creating the classifier, with custom parameters :
 cluster_model = KMeans(n_clusters=2)
@@ -70,4 +70,5 @@ plt.ylabel('Inertia')
 plt.show()
 ```
 
-![](/assets/img/kmeans-coude.png#center)
+![Coude](../assets/img/kmeans-coude.png#center)
+

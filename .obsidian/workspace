@@ -88,14 +88,14 @@
   },
   "lastOpenFiles": [
     "_notes/sklearn.cluster.Kmeans.md",
-    "assets/img/Capture d’écran 2020-11-09 à 20.31.15.png",
-    "_notes/Untitled 1.md",
-    "_notes/sklearn.md",
-    "_notes/Untitled.md",
-    "_notes/Norme d'un vecteur.md",
+    "assets/img/kmeans-coude.png.png",
+    "assets/img/cartopy-projection.png",
     "_notes/spaCy.md",
-    "_notes/Créer un vecteur TF de mots..md",
-    "_notes/np.flatnonzero().md",
-    "_notes/pd.concat() - ajouter des lignes et des colonnes.md"
+    "_notes/pd.factorize() - transformer une variable str en int.md",
+    "_notes/Pickle.md",
+    "_notes/Scinder et rassembler les données dans une colonne.md",
+    "_notes/Valeurs propres.md",
+    "_notes/Untitled.md",
+    "_notes/Théorème de Bayes.md"
   ]
 }
