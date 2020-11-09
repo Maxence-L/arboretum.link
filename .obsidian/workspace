@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/sklearn.cluster.Kmeans.md",
+            "file": "_notes/Test Bootstrap.md",
             "mode": "source"
           }
         }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "kme"
+                "query": "test"
               }
             }
           }
@@ -64,7 +64,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/sklearn.cluster.Kmeans.md"
+                "file": "_notes/Test Bootstrap.md"
               }
             }
           },
@@ -74,7 +74,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/sklearn.cluster.Kmeans.md"
+                "file": "_notes/Test Bootstrap.md"
               }
             }
           }
@@ -87,15 +87,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
-    "_notes/sklearn.cluster.Kmeans.md",
-    "assets/img/kmeans-coude.png.png",
-    "assets/img/cartopy-projection.png",
-    "_notes/spaCy.md",
-    "_notes/pd.factorize() - transformer une variable str en int.md",
-    "_notes/Pickle.md",
-    "_notes/Scinder et rassembler les données dans une colonne.md",
-    "_notes/Valeurs propres.md",
+    "_notes/Test Bootstrap.md",
+    "assets/img/Capture d’écran 2020-11-09 à 20.58.22.png",
     "_notes/Untitled.md",
-    "_notes/Théorème de Bayes.md"
+    "_notes/Précision.md",
+    "assets/img/Capture d’écran 2020-11-09 à 20.52.40.png",
+    "_notes/Valeurs propres.md",
+    "_notes/Untitled 1.md",
+    "_notes/sklearn.metrics - Evaluer les modèles.md",
+    "_notes/sklearn.metrics - évaluer les modèles.md",
+    "_notes/sklearn.cluster.Kmeans - Kmeans facile.md"
   ]
 }

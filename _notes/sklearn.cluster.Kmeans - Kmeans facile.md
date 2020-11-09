@@ -1,6 +1,6 @@
 ---
-title: sklearn.cluster.Kmeans
-tags: ml-pratique
+title: sklearn.cluster.Kmeans - Kmeans facile
+tags: sklearn
 etat: printemps
 ---
 
@@ -8,7 +8,7 @@ etat: printemps
 
 #### Initialisation et usage :
 
-On spécifie avec `n_cluster=x` le nombre de centroids qui génèreront des clusters en conséquence.
+On spécifie avec `n_cluster=x` le nombre de [[centroide\|centroides]] qui génèreront des clusters en conséquence.
 
 ```python
 f = Kmeans(n_clusters = 2)
@@ -50,7 +50,7 @@ clusters = KMeans(n_clusters=K).fit_predict(data)
 
 #### Mesure de la précision
 
-`k_means_model.inertia_`retourne l'inertie associée à l'exécution de l'objet Kmeans.
+`k_means_model.inertia_`retourne l'[[inertie]] associée à l'exécution de l'objet Kmeans.
 
 De même,
 
