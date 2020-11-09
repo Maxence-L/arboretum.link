@@ -10,8 +10,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/Test Bootstrap.md",
-            "mode": "source"
+            "file": "_notes/Untitled 2.md",
+            "mode": "preview"
           }
         }
       }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "test"
+                "query": "datet"
               }
             }
           }
@@ -64,7 +64,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Test Bootstrap.md"
+                "file": "_notes/Untitled 2.md"
               }
             }
           },
@@ -74,12 +74,11 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Test Bootstrap.md"
+                "file": "_notes/Untitled 2.md"
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -87,15 +86,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
-    "_notes/Test Bootstrap.md",
-    "assets/img/Capture d’écran 2020-11-09 à 20.58.22.png",
-    "_notes/Untitled.md",
-    "_notes/Précision.md",
-    "assets/img/Capture d’écran 2020-11-09 à 20.52.40.png",
-    "_notes/Valeurs propres.md",
+    "_notes/Untitled 2.md",
+    "_notes/Itérateur.md",
+    "_notes/iter().md",
     "_notes/Untitled 1.md",
-    "_notes/sklearn.metrics - Evaluer les modèles.md",
-    "_notes/sklearn.metrics - évaluer les modèles.md",
-    "_notes/sklearn.cluster.Kmeans - Kmeans facile.md"
+    "_notes/if __name__ == '__main__'.md",
+    "_notes/Générateur.md",
+    "_notes/Untitled.md",
+    "_notes/filter().md",
+    "_notes/df.to_sql().md",
+    "_notes/dict.update().md"
   ]
 }

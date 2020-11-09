@@ -18,9 +18,7 @@ La procédure simule la distribution originale un grand nombre de fois à partir
 
 Par exemple, si l'on désire tester si la moyenne d'une variable aléatoire dont on ne dispose que d'un échantillon est égale à $x$, on va rééachantillonner avec remise 10 000 fois les données dont on dispose et calculer pour chaque échantillon sa valeur moyenne.
 
-![](/assets/img/distribution simulée.png#center)
-
-
+![](../assets/img/distribution-simulée.png#center)
 
 Une fois que les 10 000 moyennes sont calculées, on peut comparer leur distribution à la valeur $x$ de H0. Si cette valeur se trouve dans les queues de la distribution, tel que $P(moyenne >= \lvert x \rvert) <= \alpha$, on rejette le test : il est considéré comme trop improbable que la moyenne de la distribution obtenue soit uniquement due au hasard.
 
@@ -54,7 +52,8 @@ plt.xlabel('Binned Sample Mean')
 plt.ylabel('Relative Likelihood')
 plt.show()
 ```
-![[Pasted image 9.png]]
+
+![](../assets/img/sampled_data_boot.png)
 
 Comme on le voit, les moyennes se sont ordonnées normalement. On peut à présent calculer la p-valeur associée à une taille de 27cm +/- 10 cm (soit la différence entre la moyenne observée et la moyenne théorique). Elle correspond en conséquence à la probabilité d'observer une moyenne égale à celle observée si la moyenne réelle de l'échantillon est bien de 37.
 
