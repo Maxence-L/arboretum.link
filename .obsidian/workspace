@@ -10,8 +10,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/df.reset_index().md",
-            "mode": "preview"
+            "file": "_notes/Obtenir toutes les clés d'un dictionnaire.md",
+            "mode": "source"
           }
         }
       }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "reset"
+                "query": "zip"
               }
             }
           }
@@ -65,7 +65,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/df.reset_index().md"
+                "file": "_notes/Obtenir toutes les clés d'un dictionnaire.md"
               }
             }
           },
@@ -75,7 +75,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/df.reset_index().md"
+                "file": "_notes/Obtenir toutes les clés d'un dictionnaire.md"
               }
             }
           }
@@ -87,10 +87,10 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "_notes/Untitled 2.md",
     "_notes/df.reset_index().md",
     "_notes/np.linspace().md",
     "_notes/np.flatnonzero().md",
-    "_notes/Untitled 2.md",
     "_notes/Itérateur.md",
     "_notes/iter().md",
     "_notes/Untitled 1.md",

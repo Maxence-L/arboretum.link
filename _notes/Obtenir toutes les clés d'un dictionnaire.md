@@ -15,7 +15,7 @@ resultat = zip()
 ```
 
 - Lorsque l'on passe un seul itérable, ```zip()``` retourne un itérateur produisant un tuple pour chaque élément de l'itérable.
-- 
+
 ```python
 x = [1,2,3]
 resultat = zip(x)
