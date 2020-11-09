@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/Untitled 2.md",
+            "file": "_notes/df.reset_index().md",
             "mode": "preview"
           }
         }
@@ -40,11 +40,12 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "datet"
+                "query": "reset"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -64,7 +65,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Untitled 2.md"
+                "file": "_notes/df.reset_index().md"
               }
             }
           },
@@ -74,7 +75,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Untitled 2.md"
+                "file": "_notes/df.reset_index().md"
               }
             }
           }
@@ -86,15 +87,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "_notes/df.reset_index().md",
+    "_notes/np.linspace().md",
+    "_notes/np.flatnonzero().md",
     "_notes/Untitled 2.md",
     "_notes/Itérateur.md",
     "_notes/iter().md",
     "_notes/Untitled 1.md",
     "_notes/if __name__ == '__main__'.md",
     "_notes/Générateur.md",
-    "_notes/Untitled.md",
-    "_notes/filter().md",
-    "_notes/df.to_sql().md",
-    "_notes/dict.update().md"
+    "_notes/Untitled.md"
   ]
 }

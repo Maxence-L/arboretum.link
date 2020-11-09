@@ -1,6 +1,6 @@
 ---
 title: np.linspace(start, end, step)
-tags : numpy 
+tags : Numpy 
 etat : hiver
 ---
 
