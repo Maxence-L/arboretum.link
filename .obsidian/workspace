@@ -10,8 +10,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/Créer un vecteur TF de mots..md",
-            "mode": "preview"
+            "file": "_notes/sklearn.cluster.Kmeans.md",
+            "mode": "source"
           }
         }
       }
@@ -40,17 +40,15 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "similarité"
+                "query": "kme"
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 190.5036334991455,
-    "collapsed": true
+    "width": 274.5036334991455
   },
   "right": {
     "id": "15b808a1e515cd90",
@@ -66,7 +64,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Créer un vecteur TF de mots..md"
+                "file": "_notes/sklearn.cluster.Kmeans.md"
               }
             }
           },
@@ -76,11 +74,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Créer un vecteur TF de mots..md"
+                "file": "_notes/sklearn.cluster.Kmeans.md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -88,15 +87,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "_notes/sklearn.cluster.Kmeans.md",
+    "assets/img/Capture d’écran 2020-11-09 à 20.31.15.png",
+    "_notes/Untitled 1.md",
+    "_notes/sklearn.md",
+    "_notes/Untitled.md",
+    "_notes/Norme d'un vecteur.md",
+    "_notes/spaCy.md",
     "_notes/Créer un vecteur TF de mots..md",
     "_notes/np.flatnonzero().md",
-    "_notes/pd.concat() - ajouter des lignes et des colonnes.md",
-    "_notes/Untitled.md",
-    "_notes/sqlite3.md",
-    "_notes/Norme d'un vecteur.md",
-    "_notes/Associer des noms de lieux à des coordonnées géographiques.md",
-    "_notes/spaCy.md",
-    "_notes/Str - méthodes.md",
-    "_notes/set.md"
+    "_notes/pd.concat() - ajouter des lignes et des colonnes.md"
   ]
 }

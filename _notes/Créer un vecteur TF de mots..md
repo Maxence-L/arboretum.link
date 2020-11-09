@@ -6,9 +6,9 @@ etat: hiver
 
 Une fois la [[tokenisation]] et la lemmatisation du texte réalisée, on peut passer à son éventuelle vectorisation avant analyse de [[similarité\|similarité]] ou utilisation pour calculer un score [[TFIDF]]. Pour cela, on va simplement conter le nombre de mots dans le texte et reporter le résultat dans un vecteur dont chaque coordonnée correspondra à un mot.
 
-## L'enregistrement de la matrice TF sous forme de ligne creuse compressée (*Compressed Sparse Row - CSR*)
+## L'enregistrement de la matrice TF
 
-Si l'on analyse plusieurs textes (ce qui est généralement le cas), on aura alors une grande matrice, où chaque colonne correspondra à un mot et chaque ligne à un texte comparé.
+Si l'on analyse plusieurs textes (ce qui est généralement le cas), on aura alors une grande matrice, où chaque colonne correspondra à un mot et chaque ligne à un texte comparé. On l'appelle une matrice creuse compressée (*Compressed Sparse Row - CSR*).
 
 Cela donne une [[matrice creuse::https://en.wikipedia.org/wiki/Sparse_matrix]] (*sparse matrix*) où la plupart des éléments égaux à 0. Un exemple d'une telle matrice :
 

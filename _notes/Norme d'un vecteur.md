@@ -64,9 +64,9 @@ On peut alors normaliser un vecteur, c'est-à-dire lui donner une norme égale �
 
 ![norme L2](/assets/img/norme-L2.png#center)
 
-Cela permet de comparer les vecteurs sur la base de leur direction, et de calculer leur [[similarité cosinus]], par exemple.
+Cela permet de comparer les vecteurs sur la base de leur direction, et de calculer leur [[Similarité cosinus\|similarité cosinus]], par exemple.
 
-Toutefois, si l'on désire calculer la distance entre deux vecteurs normalisés, on ne peut utiliser la [[similarité cosinus]], qui n'est pas une distance, comme vu précédemment. La [[distance cosinus]] $1 - \vert cost(p,q)\vert$ est effectivement une mesure de distance, mais ne satisfait pas la propriété d'inégalité triangulaire.
+Toutefois, si l'on désire calculer la distance entre deux vecteurs normalisés, on ne peut utiliser la [[Similarité cosinus\|Similarité cosinus]], qui n'est pas une métrique : la [[distance cosinus]] $1 - \vert cos(p,q)\vert$ est effectivement une mesure de distance, mais ne satisfait pas la propriété d'inégalité triangulaire.
 
 Il sera préférable[^2] d'exploiter la *distance angulaire* :
 
