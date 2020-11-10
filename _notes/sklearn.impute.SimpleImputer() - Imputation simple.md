@@ -1,5 +1,5 @@
 ---
-title: sklearn.impute - Gérer les valeurs manquantes
+title: sklearn.impute.SimpleImputer() - Imputation simple
 tags: sklearn
 etat: printemps
 ---

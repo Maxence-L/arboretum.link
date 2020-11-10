@@ -23,7 +23,9 @@ Le module [sklearn.impute](https://scikit-learn.org/stable/modules/classes.html#
 
 La méthode la plus simple d'imputation consiste à remplacer une valeur manquante par la valeur la plus fréquente (dans le cas d'une variable qualitative), la moyenne ou la médians (variable quantitative).
 
-**Cette méthode fonctionne bien pour des techniques de régression mais pose problème pour d'autres cas, en créant un groupe important de valeurs autour d'un point précis.**
+**Cette méthode fonctionne bien pour des techniques de régression mais pose problème pour d'autres cas, en créant un groupe important de valeurs autour d'un point précis.** 
+
+Dans le cas des K-Means, on risque par conséquent de se retrouver avec un cluster d'observations comportant des valeurs manquantes ayant toutes la même valeur imputée, donc très proches.
 
 ![Effet de l'imputation](../assets/img/imputation-vm.png#center)
 
@@ -35,7 +37,7 @@ Voir [[sklearn.impute.SimpleImputer() - Imputation simple\|sklearn.impute]] pour
 
 ### Estimation
 
-Plusieurs méthodes d'estimation sont possibles pour remplacer les valeurs manquantes. L'idée est de chercher des observations complêtes proches pour servir de réference aux valeurs manquantes.
+Plusieurs méthodes d'estimation sont possibles pour remplacer les valeurs manquantes. L'idée est de chercher des observations complêtes proches pour servir de réference aux valeurs manquantes, ce qui évite l'effet d'aggrégation autour de la moyenne.
 
 - La régression linéaire
 
