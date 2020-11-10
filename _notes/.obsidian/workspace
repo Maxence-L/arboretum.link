@@ -1,0 +1,97 @@
+{
+  "main": {
+    "id": "180bcd3940385447",
+    "type": "split",
+    "children": [
+      {
+        "id": "9c3f63e71c32c016",
+        "type": "leaf",
+        "active": true,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "selenium.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "451b3bfaa1985e38",
+    "type": "split",
+    "children": [
+      {
+        "id": "4937555b70e28eb8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "79475627cfedcc77",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "b39950d848be4840",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": ""
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "b9059eca8929d4df",
+    "type": "split",
+    "children": [
+      {
+        "id": "d20493b3cc0215fd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5e1aac29cead8be9",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "selenium.md"
+              }
+            }
+          },
+          {
+            "id": "65a1d6dbecd57fc0",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "lastOpenFiles": [
+    "selenium.md",
+    "test.md",
+    "norme-vecteur.md",
+    "dbscan.md",
+    "list-comprehension.md",
+    "listes.md",
+    "loi-normale.md",
+    "sklearn.md",
+    "__file__.md"
+  ]
+}

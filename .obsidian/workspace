@@ -1,0 +1,101 @@
+{
+  "main": {
+    "id": "9703bdd4998ab8e3",
+    "type": "split",
+    "children": [
+      {
+        "id": "275512b7bf90931e",
+        "type": "leaf",
+        "active": true,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "_notes/sklearn.impute.SimpleImputer() - Imputation simple.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "85643e4960c76bd8",
+    "type": "split",
+    "children": [
+      {
+        "id": "9779d13d9a148908",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6957ca7d97a3375a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "2916b8a76fd850de",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "gérer"
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 274.5036334991455
+  },
+  "right": {
+    "id": "15b808a1e515cd90",
+    "type": "split",
+    "children": [
+      {
+        "id": "65b6707c9b86ace0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "86c06186390a27c9",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "_notes/sklearn.impute.SimpleImputer() - Imputation simple.md"
+              }
+            }
+          },
+          {
+            "id": "174f51443e3d0486",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "_notes/sklearn.impute.SimpleImputer() - Imputation simple.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "lastOpenFiles": [
+    "_notes/sklearn.impute.SimpleImputer() - Imputation simple.md",
+    "_notes/Que faire des valeurs manquantes (imputation).md",
+    "_notes/sklearn.impute - Gérer les valeurs manquantes.md",
+    "_notes/Associer des noms de lieux à des coordonnées géographiques.md",
+    "_notes/argparse.md",
+    "_notes/Afficher les tables existantes dans une base SQL.md",
+    "_notes/__repr__.md",
+    "_notes/__file__.md",
+    "_notes/A faire.md",
+    "_notes/Cartopy.md"
+  ]
+}

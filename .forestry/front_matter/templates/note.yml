@@ -1,0 +1,23 @@
+---
+label: Note
+hide_body: false
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: toc
+  type: text
+  config:
+    required: false
+  label: toc
+- name: tags
+  type: text
+  config:
+    required: false
+  label: tags
+pages:
+- _notes/__file__.md
+- _notes/selenium.md
+- _notes/sys.exit.md
