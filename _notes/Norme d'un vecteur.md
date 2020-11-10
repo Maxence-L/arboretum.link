@@ -28,7 +28,7 @@ $$d(p, q)=\sqrt{\sum_{i=1}^{d}\left\vert p_{i}-q_{i}\right\vert^{2}}$$
 ## Généralisation
 
 ### Les mesures de distance
-Les mesures de distance sont des éléments distincts des scores de [[similarité]] (comme le coefficient de corrélation par exemple). En particulier, la distance entre deux vecteurs croit à mesure que la similarité leur décroit.
+Les mesures de distance sont des éléments distincts des scores de [[Similarité]] (comme le coefficient de corrélation par exemple). En particulier, la distance entre deux vecteurs croit à mesure que la similarité leur décroit.
 
 Une mesure de distance est une **métrique** (*metric* en anglais) si elle vérifie les propriétés suivantes :
 

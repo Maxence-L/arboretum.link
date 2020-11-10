@@ -10,8 +10,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/Obtenir toutes les clés d'un dictionnaire.md",
-            "mode": "source"
+            "file": "_notes/Similarité.md",
+            "mode": "preview"
           }
         }
       }
@@ -40,16 +40,16 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "zip"
+                "query": "similarité"
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 274.5036334991455
+    "width": 274.5036334991455,
+    "collapsed": true
   },
   "right": {
     "id": "15b808a1e515cd90",
@@ -65,7 +65,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Obtenir toutes les clés d'un dictionnaire.md"
+                "file": "_notes/Similarité.md"
               }
             }
           },
@@ -75,7 +75,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Obtenir toutes les clés d'un dictionnaire.md"
+                "file": "_notes/Similarité.md"
               }
             }
           }
@@ -87,15 +87,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "_notes/Similarité.md",
+    "_notes/Norme d'un vecteur.md",
+    "_notes/Similarité cosinus.md",
+    "_notes/Inertie.md",
+    "_notes/Indépendance linéaire.md",
+    "_notes/Mise à l'échelle des données - standardisation et normalisation.md",
+    "_notes/similarité.md",
+    "_notes/Créer un vecteur TF de mots..md",
     "_notes/Untitled 2.md",
-    "_notes/df.reset_index().md",
-    "_notes/np.linspace().md",
-    "_notes/np.flatnonzero().md",
-    "_notes/Itérateur.md",
-    "_notes/iter().md",
-    "_notes/Untitled 1.md",
-    "_notes/if __name__ == '__main__'.md",
-    "_notes/Générateur.md",
-    "_notes/Untitled.md"
+    "_notes/df.reset_index().md"
   ]
 }
