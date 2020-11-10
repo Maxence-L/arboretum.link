@@ -15,7 +15,7 @@ Plusieurs options sont disponibles pour résoudre le problème :
 
 - Traiter la valeur manquante comme une valeur à part entière, contenant une certaine information. Dans le cas des variables numérique, on peut les découper en classe et y ajouter une classe "valeur manquante"
 
-La méthode [[sklearn]] gérant cet aspect de la préparation des données est [[sklearn.impute - Gérer les valeurs manquantes\|sklearn.impute]].
+Le module [sklearn.impute](https://scikit-learn.org/stable/modules/classes.html#module-sklearn.impute) sera utile pour l'aspect pratique de cette étape.
 
 ## Imputation simple
 
@@ -31,7 +31,7 @@ La méthode la plus simple d'imputation consiste à remplacer une valeur manquan
   Effet de l'imputation sur la distribution des données [1]
 </div>
 
-
+Voir [[sklearn.impute.SimpleImputer() - Imputation simple\|sklearn.impute]] pour la mise en oeuvre pratique.
 
 ### Estimation
 
@@ -47,9 +47,15 @@ Plusieurs méthodes d'estimation sont possibles pour remplacer les valeurs manqu
 
 - [[Arbre de décision]]
 
-- Classification (dans le cas de variable qualitative) - notamment par [[ADL]]
+- Classification (dans le cas de variable qualitative) - par [[ADL]], par exemple.
 
-- [K-Means] : On classe des individus 
+- [[K-Means]] : On crée des groupes d'individus et l'on impute à la valeur manquante la moyenne de son groupe. (utiliser [sklearn.impute.KNNImputer](https://scikit-learn.org/stable/modules/generated/sklearn.impute.KNNImputer.html))
+
+## Imputation multiple
+
+L'imputation multiple consiste à remplacer chaque valeur manquante par plusieurs valeurs plausibles. on obtient ainsi plusieurs tables de données complêtées sans valeur manquante et l'on ainsi comparer le résultat des analyses statistiques en fonction de la méthode d'imputation.
+
+Voir [sklearn.impute.IterativeImputer](https://scikit-learn.org/stable/modules/generated/sklearn.impute.IterativeImputer.html#sklearn.impute.IterativeImputer) pour une application pratique.
 
 #### Références
 [1] *Data Mining et Statistique Décisionnelle - L'intelligence des données*, Stéphane Tuffery, voir p. 46.

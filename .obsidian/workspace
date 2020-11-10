@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/Analyse discriminante linéaire.md",
+            "file": "_notes/Que faire des valeurs manquantes (imputation).md",
             "mode": "preview"
           }
         }
@@ -40,15 +40,17 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "discriminante"
+                "query": "gérer"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 274.5036334991455
+    "width": 274.5036334991455,
+    "collapsed": true
   },
   "right": {
     "id": "15b808a1e515cd90",
@@ -64,7 +66,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Analyse discriminante linéaire.md"
+                "file": "_notes/Que faire des valeurs manquantes (imputation).md"
               }
             }
           },
@@ -74,7 +76,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Analyse discriminante linéaire.md"
+                "file": "_notes/Que faire des valeurs manquantes (imputation).md"
               }
             }
           }
@@ -86,15 +88,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
-    "_notes/Analyse discriminante linéaire.md",
-    "_notes/Cartopy.md",
+    "_notes/Que faire des valeurs manquantes (imputation).md",
+    "_notes/sklearn.impute - Gérer les valeurs manquantes.md",
     "_notes/Associer des noms de lieux à des coordonnées géographiques.md",
     "_notes/argparse.md",
     "_notes/Afficher les tables existantes dans une base SQL.md",
-    "_notes/A faire.md",
-    "_notes/__file__.md",
     "_notes/__repr__.md",
-    "_notes/BeautifulSoup.md",
-    "_notes/Que faire des valeurs manquantes (imputation).md"
+    "_notes/__file__.md",
+    "_notes/A faire.md",
+    "_notes/Cartopy.md",
+    "_notes/Analyse discriminante linéaire.md"
   ]
 }
