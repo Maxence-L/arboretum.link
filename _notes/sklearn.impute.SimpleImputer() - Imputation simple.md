@@ -4,7 +4,7 @@ tags: sklearn
 etat: printemps
 ---
 
-.impute est une sous-bibliothèque de sklearn utile pour [[Gérer les valeurs manquantes|gérer les valeurs manquantes]].
+.impute est une sous-bibliothèque de sklearn utile pour [[Gérer les valeurs manquantes\|gérer les valeurs manquantes]].
 
 ### SimpleImputer()
 
