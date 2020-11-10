@@ -22,14 +22,14 @@ Comme les autres classes classes, elle s'utilise avec les méthodes .fit() et .t
 import numpy as np
 from sklearn.impute import SimpleImputer
 imp_mean = SimpleImputer(missing_values=np.nan, strategy='mean')
-imp_mean.fit([[7, 2, 3], [4, np.nan, 6], [10, 5, 9]])
+imp_mean.fit([ [7, 2, 3], [4, np.nan, 6], [10, 5, 9] ])
 
-X = [[np.nan, 2, 3], [4, np.nan, 6], [10, np.nan, 9]]
+X = [ [np.nan, 2, 3], [4, np.nan, 6], [10, np.nan, 9] ]
 print(imp_mean.transform(X))
 
-> 	[[ 7.   2.   3. ]
-	 [ 4.   3.5  6. ]
- 	 [10.   3.5  9. ]]
+> 	[	[ 7.   2.   3. ]
+	 	[ 4.   3.5  6. ]
+ 	 	[10.   3.5  9. ] ]
 ````
 
 A noter toutefois si l'on utilise des [[dataframe\|dataframes]] : .impute renvoie un aray et retire le nom des colonnes, il faut reconvertir le résultat et les rajouter par la suite.
