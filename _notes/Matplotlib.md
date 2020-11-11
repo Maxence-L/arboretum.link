@@ -18,9 +18,16 @@ import matplotlib.pyplot as plt
 
 ## Utilisation
 
+### Introduction
 Un graphique `plt` est créé à partir de deux types d'éléments : 
 
 - L'élément `Axes` représente le graphique et comprend tous les sous-éléments, comme les axes x et y, les points, la légende, le titre, etc.
 - L'élément `figure` représente l'image finale. Il sera utile pour déterminer la taille de l'image et le nombre d'éléments `Axes` compris dans le graphique.
 
-![](https://pbpython.com/images/matplotlib-anatomy.png)
+Les dénominations des éléments d'un graphique sont les suivantes :
+
+![](../assets/img/anatomy-of-a-figure.png#center)
+
+ Bien que l'on puisse uti
+
+

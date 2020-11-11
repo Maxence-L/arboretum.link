@@ -1,6 +1,6 @@
 ---
 title: Similarité cosinus
-tags: maths nlp
+tags: Maths
 etat: hiver
 ---
 

@@ -40,11 +40,12 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "homo"
+                "query": "snippets"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -87,14 +88,14 @@
   },
   "lastOpenFiles": [
     "_notes/Matplotlib.md",
+    "_notes/Snippets html.md",
     "assets/img/Pasted image 20201031170334.png",
+    "assets/img/Pasted image 20201112003718.png",
+    "_notes/Similarité cosinus.md",
     "_notes/Inertie.md",
     "about.md",
     "_notes/Similarité.md",
     "_notes/Untitled 2.md",
-    "_notes/Homoscédasticité et Hétéroscédasticité.md",
-    "_notes/Analyse discriminante linéaire.md",
-    "_notes/Détecter les valeurs extrêmes.md",
-    "assets/img/Capture d’écran 2020-11-11 à 18.49.54.png"
+    "_notes/Homoscédasticité et Hétéroscédasticité.md"
   ]
 }
