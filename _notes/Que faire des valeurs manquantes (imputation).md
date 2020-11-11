@@ -15,7 +15,7 @@ Plusieurs options sont disponibles pour résoudre le problème :
 
 - Traiter la valeur manquante comme une valeur à part entière, contenant une certaine information. Dans le cas des variables numérique, on peut les découper en classe et y ajouter une classe "valeur manquante"
 
-Le module [sklearn.impute](https://scikit-learn.org/stable/modules/classes.html#module-sklearn.impute) sera utile pour l'aspect pratique de cette étape.
+Le module [sklearn.impute](https://scikit-learn.org/stable/modules/classes.html#module-sklearn.impute) sera utile pour l'aspect pratique de cette étape. [[sklean]] propose un excellent tutoriel sur son site : [Imputation of missign values](https://scikit-learn.org/stable/modules/impute.html)
 
 ## Imputation simple
 
@@ -35,9 +35,11 @@ Dans le cas des K-Means, on risque par conséquent de se retrouver avec un clust
 
 Voir [[sklearn.impute.SimpleImputer() - Imputation simple\|sklearn.impute]] pour la mise en oeuvre pratique.
 
+## Imputation multivariée
+
 ### Estimation
 
-Plusieurs méthodes d'estimation sont possibles pour remplacer les valeurs manquantes. L'idée est de chercher des observations complêtes proches pour servir de réference aux valeurs manquantes, ce qui évite l'effet d'aggrégation autour de la moyenne.
+Plusieurs méthodes d'estimation multivariées sont possibles pour remplacer les valeurs manquantes. L'idée est de chercher des observations complêtes proches pour servir de réference aux valeurs manquantes, ce qui évite l'effet d'aggrégation autour de la moyenne.
 
 - La régression linéaire
 
@@ -53,11 +55,14 @@ Plusieurs méthodes d'estimation sont possibles pour remplacer les valeurs manqu
 
 - [[K-Means]] : On crée des groupes d'individus et l'on impute à la valeur manquante la moyenne de son groupe. (utiliser [sklearn.impute.KNNImputer](https://scikit-learn.org/stable/modules/generated/sklearn.impute.KNNImputer.html))
 
-## Imputation multiple
+### Estimation itérative
 
-L'imputation multiple consiste à remplacer chaque valeur manquante par plusieurs valeurs plausibles. on obtient ainsi plusieurs tables de données complêtées sans valeur manquante et l'on ainsi comparer le résultat des analyses statistiques en fonction de la méthode d'imputation.
+La méthode [sklearn.impute.IterativeImputer](https://scikit-learn.org/stable/modules/generated/sklearn.impute.IterativeImputer.html#sklearn.impute.IterativeImputer)  consiste à utiliser l'ensemble des variables complêtes pour imputer les valeurs manquantes d'une variable, puis à utiliser l'ensemble des variables (y compris la variable ayant reçu de nouvelles valeurs) pour estimer les valeurs manquantes de la prochaine variable.
 
-Voir [sklearn.impute.IterativeImputer](https://scikit-learn.org/stable/modules/generated/sklearn.impute.IterativeImputer.html#sklearn.impute.IterativeImputer) pour une application pratique.
+Un peut faire cette opération pour $n$ itérations, afin de lisser les divergences liées à l'ordre dans lesquelles les variables sont estimées. L'utilisation est expliquée sur le site [scikit-learn](https://scikit-learn.org/stable/modules/impute.html#multivariate-feature-imputation).
+
+
+
 
 #### Références
 [1] *Data Mining et Statistique Décisionnelle - L'intelligence des données*, Stéphane Tuffery, voir p. 46.
