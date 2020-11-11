@@ -10,8 +10,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/Détecter les valeurs extrêmes.md",
-            "mode": "source"
+            "file": "_notes/Homoscédasticité et Hétéroscédasticité.md",
+            "mode": "preview"
           }
         }
       }
@@ -40,11 +40,12 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "snip"
+                "query": "homo"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -64,7 +65,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Détecter les valeurs extrêmes.md"
+                "file": "_notes/Homoscédasticité et Hétéroscédasticité.md"
               }
             }
           },
@@ -74,7 +75,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Détecter les valeurs extrêmes.md"
+                "file": "_notes/Homoscédasticité et Hétéroscédasticité.md"
               }
             }
           }
@@ -86,15 +87,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "_notes/Homoscédasticité et Hétéroscédasticité.md",
+    "_notes/Analyse discriminante linéaire.md",
+    "_notes/Untitled 2.md",
     "_notes/Détecter les valeurs extrêmes.md",
     "assets/img/Capture d’écran 2020-11-11 à 18.49.54.png",
     "assets/img/Pasted image 20201031170334.png",
     "assets/img/Pasted image 20201111184908.png",
     "_notes/dbscan.md",
     "_notes/Snippets html.md",
-    "_notes/Que faire des valeurs manquantes (imputation).md",
-    "assets/img/Capture d’écran 2020-11-11 à 18.21.11.png",
-    "_notes/Untitled 2.md",
-    "_notes/sklearn.impute.SimpleImputer() - Imputation simple.md"
+    "_notes/Que faire des valeurs manquantes (imputation).md"
   ]
 }

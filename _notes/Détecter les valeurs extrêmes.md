@@ -39,6 +39,12 @@ Un bon article didactique sur le sujet : [Outlier Detection Using DBSCAN](https:
 ![](../assets/img/dbscan-outliers.png)
 
 ### Stochastic Outlier Selection (SOS)
+Cette méthode utilise une méthode proche de la similarité pour évaluer l'isolation des points et déterminer leur probabilité d'être des valeurs extrêmes. Un article explique plus en détail la méthode et son application : [Stochastic Outlier Selection](https://datascienceworkshops.com/blog/stochastic-outlier-selection/)
+
+### Reste...
+(à complêter) - https://scikit-learn.org/stable/modules/outlier_detection.html
+
+
 
 #### Références :
 [1] *Data Mining et Statistique Décisionnelle - L'intelligence des données*, Stéphane Tuffery, voir p. 46.

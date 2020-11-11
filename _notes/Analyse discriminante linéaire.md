@@ -24,30 +24,32 @@ Soit :
 
 - La probabilité $\pi_k$ qu'une observation aléatoire de $Y$ fasse partie de la classe $k$.
 
-- La *fonction de vraisemblance* $f_k(X) = P(X=x \vert Y=k)$  de $X$ pour une observation de $$Y$$ ayant la classe $$k$$. 
+- La *fonction de vraisemblance* $f_k(X) = P(X=x \vert Y=k)$  de $X$ pour une observation de $$Y$$ ayant la classe $k$. 
 
-> En d'autres termes, $$f_k(x)$$ sera élevée s'il existe une forte probabilité qu'une observation de la $$k^{eme}$$ classe soit égale à $$x$$. Inversement, si observer $$X = x$$ est peu probable pour une observation de classe $$k$$, alors $$f_k(x)$$ sera faible.
+> En d'autres termes, $f_k(x)$ sera élevée s'il existe une forte probabilité qu'une observation de la $k^{eme}$ classe soit égale à $x$. Inversement, si observer $X = x$ est peu probable pour une observation de classe $k$, alors $f_k(x)$ sera faible.
 
 
-On notera $$p_k(X) =P(Y=k \vert X)$$ la probabilité que la variable $$Y$$ soit de la classe $$k$$ sachant $$X$$.
+On notera $p_k(X) =P(Y=k \vert X)$ la probabilité que la variable $Y$ soit de la classe $k$ sachant $X$.
 
 Selon le [[Théorème de Bayes]], on a :
 
 $$p_k(X) = \dfrac{\pi_{k}f_{k}(x)}{ \sum_{t=1}^k \pi_{t} f_{t}(x)}$$
 
-Si l'on suppose que $$f_k(x)$$ suit une [[Loi normale]] de loi ($$\mu_k, \sigma^2_k$$) où $$\sigma^2 = \sigma^2_k$$ pour tout $$k$$ (hypothèse d'homoscédasticité), alors on peut estimer $$p_k(X)$$ pour chaque $$k$$ et assigner à $$Y$$ la classe $$k$$ pour laquelle $$p_k(X)$$ est la plus forte. 
+Si l'on suppose que $f_k(x)$ suit une [[Loi normale]] de loi ($\mu_k, \sigma^2_k$) où $\sigma^2 = \sigma^2_k$ pour tout $k$ ([[Homoscédasticité et Hétéroscédasticité\|hypothèse d'homoscédasticité]]), alors on peut estimer $p_k(X)$ pour chaque $k$ et assigner à $Y$ la classe $k$ pour laquelle $p_k(X)$ est la plus forte. 
 
 En d'autres termes, on assigne à chaque observation la classe la plus probable.
 
-Après manipulations[^1], l'ADL assigne la classe $$k$$ à l'observation $$X=x$$ pour laquelle $$\hat{\delta}_k(x)$$ est le plus grand, où :
+Après manipulations[^1], l'ADL assigne la classe $k$ à l'observation $X=x$ pour laquelle $\hat{\delta}_k(x)$ est le plus grand, où :
 
-[^1]: $$ln(p_k(X))$$ - Voir [ceci](https://web.archive.org/web/20190214175740/http://www.math.u-bordeaux.fr/~mchave100p/wordpress/wp-content/uploads/2013/10/Analyse_discrim.pdf) et ["An introduction to statistical learning](https://faculty.marshall.usc.edu/gareth-james/ISL/ISLR%20Seventh%20Printing.pdf) (Hastie et al.)", p. 139 pour la démonstration.]
+[^1]: $ln(p_k(X))$ - Voir [ceci](https://web.archive.org/web/20190214175740/http://www.math.u-bordeaux.fr/~mchave100p/wordpress/wp-content/uploads/2013/10/Analyse_discrim.pdf) et ["An introduction to statistical learning](https://faculty.marshall.usc.edu/gareth-james/ISL/ISLR%20Seventh%20Printing.pdf) (Hastie et al.)", p. 139 pour la démonstration.]
 
 $$\hat{\delta}_k(x) = x \cdot \frac{\hat{\mu}_k}{\hat{\sigma}^2} - \frac{\hat{\mu}^2_k}{2\hat{\sigma}^2} + log(\hat{\pi}_k)$$
 
 Le classificateur bayésien ainsi obtenu sépare les observations sur une ligne de partage, ce qui explique le nom d'*analyse discriminante linéaire*.
 
-Si $$k=2$$ et $$\pi_1 = \pi_2$$, alors le classificateur est à équidistance des deux moyennes :
+Il est recommandé de vérifier l'hypothèse de normalité et d'homoscédasticité avant de procéder à une ADL. On peut rectifier la normalité avec une [[Mise à l'échelle des données - standardisation et normalisation\|normalisation des données]] et l'[[Homoscédasticité et Hétéroscédasticité\|hétéroscédasticité]] avec l'utilisation d'une analyse discriminante quadratique, examinée plus bas.
+
+Si $k=2$ et $\pi_1 = \pi_2$, alors le classificateur est à équidistance des deux moyennes :
 
  ![](/assets/img/ld-discrimination1.png#center)
 
@@ -114,9 +116,9 @@ $$
 \hat{\delta}_{2}(\vec{x})-\hat{\delta}_{1}(\vec{x})=\vec{x}^{T} \hat{\Sigma}^{-1}\left(\overrightarrow{\hat{\mu}}_{2}-\overrightarrow{\hat{\mu}}_{1}\right)-\frac{1}{2}\left(\overrightarrow{\hat{\mu}}_{2}+\overrightarrow{\hat{\mu}}_{1}\right)^{T} \hat{\Sigma}^{-1}\left(\overrightarrow{\hat{\mu}}_{2}-\overrightarrow{\hat{\mu}}_{1}\right)+\log \left(\frac{\pi_{2}}{\pi_{1}}\right)
 $$
 
-où $$\vec{x}=(\operatorname{Lag} 1, \operatorname{Lag} 2)^{T}$$. 
+où $\vec{x}=(\operatorname{Lag} 1, \operatorname{Lag} 2)^{T}$. 
 
-Les coefficients correspondent au terme $$\hat{\Sigma}^{-1}\left(\overrightarrow{\hat{\mu}}_{2}-\overrightarrow{\hat{\mu}}_{1}\right)$$, ce qui correspond à la pente de la courbe suivante[^2] :
+Les coefficients correspondent au terme $\hat{\Sigma}^{-1}\left(\overrightarrow{\hat{\mu}}_{2}-\overrightarrow{\hat{\mu}}_{1}\right)$, ce qui correspond à la pente de la courbe suivante[^2] :
 
 [^2]: https://stats.stackexchange.com/questions/87479/what-are-coefficients-of-linear-discriminants-in-lda
 
@@ -124,7 +126,7 @@ Les coefficients correspondent au terme $$\hat{\Sigma}^{-1}\left(\overrightarrow
 ![](/assets/img/score_adl.png#center)
 
 
-Le score correspond ici à la multiplication entre $$X$$ et les coefficients :
+Le score correspond ici à la multiplication entre $X$ et les coefficients :
 `np.array(df.iloc[0,0:2])@lda.coef_.T`
 
 On peut regarder la [[matrice de confusion]] :
@@ -227,4 +229,3 @@ print(classification_report(y_test, pred, digits=3))
 
 On peut noter que l'analyse discriminante quadratique permet ici d'obtenir une précision de 60%, ce qui est particulièrement élevé dans le cas des marchés financiers. Par ailleurs, l'ADQ est plus efficace que l'ADL.
 
-----
