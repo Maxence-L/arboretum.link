@@ -10,8 +10,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/Homoscédasticité et Hétéroscédasticité.md",
-            "mode": "preview"
+            "file": "_notes/Matplotlib.md",
+            "mode": "source"
           }
         }
       }
@@ -44,8 +44,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -65,7 +64,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Homoscédasticité et Hétéroscédasticité.md"
+                "file": "_notes/Matplotlib.md"
               }
             }
           },
@@ -75,7 +74,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Homoscédasticité et Hétéroscédasticité.md"
+                "file": "_notes/Matplotlib.md"
               }
             }
           }
@@ -87,15 +86,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "_notes/Matplotlib.md",
+    "assets/img/Pasted image 20201031170334.png",
+    "_notes/Inertie.md",
+    "about.md",
+    "_notes/Similarité.md",
+    "_notes/Untitled 2.md",
     "_notes/Homoscédasticité et Hétéroscédasticité.md",
     "_notes/Analyse discriminante linéaire.md",
-    "_notes/Untitled 2.md",
     "_notes/Détecter les valeurs extrêmes.md",
-    "assets/img/Capture d’écran 2020-11-11 à 18.49.54.png",
-    "assets/img/Pasted image 20201031170334.png",
-    "assets/img/Pasted image 20201111184908.png",
-    "_notes/dbscan.md",
-    "_notes/Snippets html.md",
-    "_notes/Que faire des valeurs manquantes (imputation).md"
+    "assets/img/Capture d’écran 2020-11-11 à 18.49.54.png"
   ]
 }

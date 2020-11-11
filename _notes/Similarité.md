@@ -8,7 +8,7 @@ Le but des méthodes d'analyse de la similarité est de créer une mesure unique
 
 Ces techniques trouvent leur utilité en complément des algorithmes de [[clustering]], pour faciliter leur fonctionnement et pour évaluer leurs résultats.
 
-## Similarité et Distance de Jaccard
+## Similarité et distance de Jaccard
 
 Soit deux sets de vecteurs. La *Similarité de Jaccard* (*Jaccard Similarity* - $J(s_1,s2)$) des sets $s_1$ et $s_2$ est définie selon le ratio entre l'intersection et l'union des éléments de chaque vecteur compris dans le set :
 
@@ -43,7 +43,7 @@ X = [ 	[1, 0, 0],
 
 dist.pairwise(X)
 
-> array([[0.        , 0.66666667],
-       [0.66666667, 0.        ]])
+> array([	[0.        , 0.66666667],
+       		[0.66666667, 0.        ] ])
 ````
 
