@@ -11,7 +11,7 @@
           "type": "markdown",
           "state": {
             "file": "_notes/Matplotlib.md",
-            "mode": "source"
+            "mode": "preview"
           }
         }
       }
@@ -44,13 +44,11 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 274.5036334991455,
-    "collapsed": true
+    "width": 274.5036334991455
   },
   "right": {
     "id": "15b808a1e515cd90",
@@ -84,19 +82,18 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "lastOpenFiles": [
     "_notes/Matplotlib.md",
+    "assets/img/Pasted image 20201112190832.png",
+    "_notes/Argparse - créer une interface en ligne de commande.md",
+    "_notes/Créer un fichier de configuration avec ConfigParse.md",
+    "_notes/Argparse.md",
+    "_notes/argparse.md",
     "_notes/Snippets html.md",
     "assets/img/Pasted image 20201031170334.png",
     "assets/img/Pasted image 20201112003718.png",
-    "_notes/Similarité cosinus.md",
-    "_notes/Inertie.md",
-    "about.md",
-    "_notes/Similarité.md",
-    "_notes/Untitled 2.md",
-    "_notes/Homoscédasticité et Hétéroscédasticité.md"
+    "_notes/Similarité cosinus.md"
   ]
 }

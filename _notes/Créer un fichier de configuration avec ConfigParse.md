@@ -5,7 +5,7 @@ toc: true
 etat: printemps
 --- 
 
-ConfigParse est un module de python permettant de définir des paramètres d'un programme par défaut et de laisser les utilisateurs les modifier. Le module est particulièrement utile couplé à [[argparse]].
+ConfigParse est un module de python permettant de définir des paramètres d'un programme par défaut et de laisser les utilisateurs les modifier. Le module est particulièrement utile couplé à [[Argparse - créer une interface en ligne de commande\|Argparse]].
 
 ## Le fichier config.ini
 

@@ -7,6 +7,10 @@ Matplotlib est une bilbliothèque de visualisation de données qui s"intègre av
 
 Cet excellent article du blog Practical Business Python en fait un bonne porte d'entrée dans la bibliothèque : [Effectively Using Matplotlib](https://pbpython.com/effective-matplotlib.html)
 
+Un résumé des options possibles est présenté :
+
+![](../assets/img/matplotlib-sumup.png)
+
 ## Installation
 
 Le package s'appelle `matplotlib.pyplot` et s'écrit `plt` habituellement.
@@ -56,6 +60,30 @@ plt.style.use('ggplot')
 ```
 
 Un tuto est disponible sur le site de matplotlib, portant sur la modification du style des graphiques : [Customizing Matplotlib with style sheets and rcParams](https://matplotlib.org/3.3.2/tutorials/introductory/customizing.html).
+
+## Enregistrement du graphique
+
+On peut consulter les formats disponibles avec la commande `fig.canvas.get_supported_filetypes()` :
+
+```python
+fig.canvas.get_supported_filetypes()
+
+{'eps': 'Encapsulated Postscript',
+ 'jpeg': 'Joint Photographic Experts Group',
+ 'jpg': 'Joint Photographic Experts Group',
+ 'pdf': 'Portable Document Format',
+ 'pgf': 'PGF code for LaTeX',
+ 'png': 'Portable Network Graphics',
+ 'ps': 'Postscript',
+ 'raw': 'Raw RGBA bitmap',
+ 'rgba': 'Raw RGBA bitmap',
+ 'svg': 'Scalable Vector Graphics',
+ 'svgz': 'Scalable Vector Graphics',
+ 'tif': 'Tagged Image File Format',
+ 'tiff': 'Tagged Image File Format'}
+ ```
+
+On peut enregistrer avec `fig.savefig('fignale.png')`, et y passer de nombreuses [options](https://matplotlib.org/api/_as_gen/matplotlib.pyplot.savefig.html?highlight=savefig#matplotlib.pyplot.savefig).
 
 
 
