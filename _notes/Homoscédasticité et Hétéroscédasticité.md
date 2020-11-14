@@ -1,7 +1,7 @@
 ---
 title: Homoscédasticité et Hétéroscédasticité
 tags: Probabilités
-etat :hiver
+etat: hiver
 ---
 
 On appelle **homscédasticité** l'égalité de la variance d'une variable quelque soit l'échantillon qui y est puisé. Lorsque la variance diffère selon les échantillons, on parle alors d'**hétéroscédasticité**.

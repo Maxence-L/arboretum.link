@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/Matplotlib.md",
+            "file": "_notes/Nettoyer un texte avant analyse.md",
             "mode": "preview"
           }
         }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "snippets"
+                "query": "null"
               }
             }
           }
@@ -64,7 +64,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Matplotlib.md"
+                "file": "_notes/Nettoyer un texte avant analyse.md"
               }
             }
           },
@@ -74,7 +74,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Matplotlib.md"
+                "file": "_notes/Nettoyer un texte avant analyse.md"
               }
             }
           }
@@ -82,9 +82,12 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "lastOpenFiles": [
+    "_notes/Untitled 2.md",
+    "_notes/df.isna(), df.isnull() - trouver les valeurs manquantes.md",
     "_notes/Matplotlib.md",
     "assets/img/Pasted image 20201112190832.png",
     "_notes/Argparse - créer une interface en ligne de commande.md",
@@ -92,8 +95,6 @@
     "_notes/Argparse.md",
     "_notes/argparse.md",
     "_notes/Snippets html.md",
-    "assets/img/Pasted image 20201031170334.png",
-    "assets/img/Pasted image 20201112003718.png",
-    "_notes/Similarité cosinus.md"
+    "assets/img/Pasted image 20201031170334.png"
   ]
 }
