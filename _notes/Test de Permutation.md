@@ -11,7 +11,7 @@ Comme tous les tests, le test de permutation tente de répondre à la question :
 
 Pour répondre à cette question, on utilise deux hypothèses : H0, selon laquelle l'effet est uniquement dû à la chance, et H1, selon lequel l'effet existe. 
 
-La probabilité $P(Effet|H0)$ correspond à la [[p-valeur]] : **la probabilité que l'on constate le résultat observé sachant qu'en réalité il n'est dû qu'au hasard, sachant H0 vraie**, les données ayant une dispersion naturelle. Si la p-valeur est faible, alors on peut conclure que l'effet observé n'est dû qu'à la chance.
+La probabilité $P(Effet\|H0)$ correspond à la [[p-valeur]] : **la probabilité que l'on constate le résultat observé sachant qu'en réalité il n'est dû qu'au hasard, sachant H0 vraie**, les données ayant une dispersion naturelle. Si la p-valeur est faible, alors on peut conclure que l'effet observé n'est dû qu'à la chance.
 
 
 ## Théorie

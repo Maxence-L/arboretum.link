@@ -1,7 +1,7 @@
 ---
 title : Nettoyer un texte avant analyse
 tags : NLP
-etat :hiver
+etat : hiver
 ---
 
 Un snippet intéressant trouvé sur [Stackoverflow](https://stackoverflow.com/questions/62141647/remove-emojis-and-users-from-a-list-in-python-and-punctuation-nlp-problem-and) et qui comprend notamment les émojis :

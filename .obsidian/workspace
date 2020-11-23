@@ -10,8 +10,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/Nettoyer un texte avant analyse.md",
-            "mode": "preview"
+            "file": "_notes/Test de Permutation.md",
+            "mode": "source"
           }
         }
       }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "null"
+                "query": "lambda"
               }
             }
           }
@@ -64,7 +64,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Nettoyer un texte avant analyse.md"
+                "file": "_notes/Test de Permutation.md"
               }
             }
           },
@@ -74,7 +74,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Nettoyer un texte avant analyse.md"
+                "file": "_notes/Test de Permutation.md"
               }
             }
           }
@@ -86,15 +86,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
-    "_notes/Untitled 2.md",
-    "_notes/df.isna(), df.isnull() - trouver les valeurs manquantes.md",
-    "_notes/Matplotlib.md",
-    "assets/img/Pasted image 20201112190832.png",
-    "_notes/Argparse - créer une interface en ligne de commande.md",
-    "_notes/Créer un fichier de configuration avec ConfigParse.md",
-    "_notes/Argparse.md",
-    "_notes/argparse.md",
-    "_notes/Snippets html.md",
-    "assets/img/Pasted image 20201031170334.png"
+    "_notes/Test de Permutation.md",
+    "_notes/df.apply().md",
+    "_notes/test.md",
+    "_notes/spaCy.md",
+    "_notes/Nettoyer un texte avant analyse.md",
+    "_notes/Mise à l'échelle des données - standardisation et normalisation.md",
+    "_notes/iter().md",
+    "_notes/Selenium.md",
+    "_notes/Packager un projet python.md",
+    "_notes/Matplotlib.md"
   ]
 }

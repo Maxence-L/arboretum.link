@@ -1,7 +1,7 @@
 ---
-title:
+title: iter()
 tags : stdlib
-etat :hiver
+etat : hiver
 ---
 
 La fonction *iter()* retourne un objet **[[Différence itérable-itérateur-itération\|itérateur]]** à partir d'un objet compatible. Une liste, par exemple.

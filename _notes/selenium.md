@@ -285,6 +285,16 @@ for cookie in self.cookies:
 	self.driver.add_cookie(cookie)
 ````
 
+## Debugging
+
+Certains sites sont plus difficiles à scrapper que d'autres. On peut utiliser des méthodes très pratiques pour comprendre le problème, lorsque notre scrapper "plante" :
+
+- `.take_screenshot(filename.png)` : prend une capture d'écran de la page fautive au moment de l'erreur. On peut voir ainsi rapidement si l'élément cherché était ou non affiché.
+
+- `.driver.page_source` : retourne le code html de la page.
+
+- `traceback.print_exc(limit=1, chain=True)`: montre dans le terminal la chaine d'erreur rencontrée par Python.
+
 ## Petits scripts pratiques
 
 Pour scroller une page sans fin :
@@ -308,3 +318,14 @@ if new_height == last_height:
 	break
 	last_height = new_height
 ````
+
+Pour débuguer :
+
+```python
+def debug(self):
+	self.take_screenshot()
+
+	with open('profile.html', 'w') as file:
+		file.write(self.driver.page_source)
+		file.close()
+```
