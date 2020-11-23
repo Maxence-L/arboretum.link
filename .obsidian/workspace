@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/Test Bootstrap.md",
+            "file": "_notes/sqlite3.md",
             "mode": "source"
           }
         }
@@ -64,7 +64,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Test Bootstrap.md"
+                "file": "_notes/sqlite3.md"
               }
             }
           },
@@ -74,7 +74,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Test Bootstrap.md"
+                "file": "_notes/sqlite3.md"
               }
             }
           }
@@ -86,15 +86,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
-    "_notes/Test Bootstrap.md",
+    "_notes/sqlite3.md",
+    "_notes/Str - méthodes.md",
+    "_notes/sys.exit().md",
+    "_notes/test.md",
     "_notes/Test de Permutation.md",
+    "_notes/Test Bootstrap.md",
     "_notes/Théorème de Bayes.md",
     "_notes/Untitled 1.md",
     "_notes/Untitled.md",
-    "_notes/df.apply().md",
-    "_notes/test.md",
-    "_notes/spaCy.md",
-    "_notes/Nettoyer un texte avant analyse.md",
-    "_notes/Mise à l'échelle des données - standardisation et normalisation.md"
+    "_notes/df.apply().md"
   ]
 }

@@ -61,11 +61,13 @@ Comme on le voit, les moyennes se sont ordonnées normalement. On peut à prése
 
 ```python
 number_extreme_values = 0
+
 for sample_mean in sample_means:
     if not 17 < sample_mean < 37:
         number_extreme_values += 1
 
 p_value =  number_extreme_values / len(sample_means)
+
 print(f"P-value is approximately {p_value:.2f}")
 
 > P-value is approximately 0.10
