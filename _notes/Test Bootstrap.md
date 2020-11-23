@@ -22,7 +22,7 @@ Par exemple, si l'on désire tester si la moyenne d'une variable aléatoire dont
 
 Une fois que les 10 000 moyennes sont calculées, on peut comparer leur distribution à la valeur $x$ de H0. Si cette valeur se trouve dans les queues de la distribution, tel que $P(moyenne >= \lvert x \rvert) <= \alpha$, on rejette le test : il est considéré comme trop improbable que la moyenne de la distribution obtenue soit uniquement due au hasard.
 
-A noter, étant donné que la distribution de l'échantillon peut être [[skewness|asymétrique]], i est préférable de prendre la moyenne des p-valeurs et non chacune (gauche et droite).
+A noter, étant donné que la distribution de l'échantillon peut être [[skewness\|asymétrique]], i est préférable de prendre la moyenne des p-valeurs et non chacune (gauche et droite).
 
 En conséquence, on sélectionnera $P(moyenne >= \lvert x \rvert) <= \alpha$ et non $P(moyenne >= x ) <= \alpha/2$ ET $P(moyenne <= x ) <= \alpha/2$
 
@@ -42,12 +42,14 @@ assert fish_lengths.mean() == 27
 On peut à présent réaliser 150k rééchantillonages avec remise et observer le résultat graphiquement :
 ```python
 np.random.seed(0)
-sample_means = [np.random.choice(fish_lengths,
-                                size=20,
-                                replace=True).mean()
-               for _ in range(150000)]
-likelihoods, bin_edges, _ = plt.hist(sample_means, bins='auto',
-                                      edgecolor='black', density=True)
+sample_means = [np.random.choice(fish_lengths, size=20, replace=True).mean()
+                for _ in range(150000)]
+				
+likelihoods, bin_edges, _ = plt.hist(sample_means, 
+									bins='auto',
+									edgecolor='black', 
+									density=True)
+									
 plt.xlabel('Binned Sample Mean')
 plt.ylabel('Relative Likelihood')
 plt.show()

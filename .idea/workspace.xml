@@ -22,16 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e416042-0831-410e-bc48-ad8738bffa8b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.obsidian/workspace" beforeDir="false" afterPath="$PROJECT_DIR$/.obsidian/workspace" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/content.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/content.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_notes/Nettoyer un texte avant analyse.md" beforeDir="false" afterPath="$PROJECT_DIR$/_notes/Nettoyer un texte avant analyse.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_notes/iter().md" beforeDir="false" afterPath="$PROJECT_DIR$/_notes/iter().md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_notes/selenium.md" beforeDir="false" afterPath="$PROJECT_DIR$/_notes/selenium.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_notes/test.md" beforeDir="false" afterPath="$PROJECT_DIR$/_notes/test.md" afterDir="false" />
-    </list>
+    <list default="true" id="3e416042-0831-410e-bc48-ad8738bffa8b" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -98,6 +89,7 @@
       <workItem from="1603885743377" duration="601000" />
       <workItem from="1603886914955" duration="1970000" />
       <workItem from="1605651344564" duration="689000" />
+      <workItem from="1606149375779" duration="131000" />
     </task>
     <servers />
   </component>

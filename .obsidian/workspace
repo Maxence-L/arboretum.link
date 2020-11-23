@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/Test de Permutation.md",
+            "file": "_notes/Test Bootstrap.md",
             "mode": "source"
           }
         }
@@ -64,7 +64,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Test de Permutation.md"
+                "file": "_notes/Test Bootstrap.md"
               }
             }
           },
@@ -74,7 +74,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Test de Permutation.md"
+                "file": "_notes/Test Bootstrap.md"
               }
             }
           }
@@ -86,9 +86,9 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "_notes/Test Bootstrap.md",
     "_notes/Test de Permutation.md",
     "_notes/Théorème de Bayes.md",
-    "_notes/Test Bootstrap.md",
     "_notes/Untitled 1.md",
     "_notes/Untitled.md",
     "_notes/df.apply().md",
