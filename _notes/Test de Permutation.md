@@ -20,7 +20,7 @@ Si l'échantillon testé est issu de la même distribution que l'autre, la diff�
 
 Si la répartition de notre échantillon testé est significativement différente des échantillons tirés, alors il est possible de conclure qu'il vient d'une distribution différente.
 
- ## Exemple expliqué
+## Exemple expliqué
 
 Imaginons que l'on a acheté un sac de billes contenant en grande majorité des billes bleues et quelques billes rouges. Un ami possède un sac de billes contenant en majorité des billes rouges et quelques billes bleues. Les sacs de billes viennent-ils du même vendeur ? 
 
