@@ -55,7 +55,22 @@ Cette normalisation est particulièrement utile dans le domaine du [[NLP]], et d
 
 ## Transformation Box-Cox
 
-La transformation Box-Cox est une méthode très flexible permettant de donner une forme normale à une série de données. Elle la transformation de la variable $x$ est indexée à $\lambda$ ainsi :
+La transformation Box-Cox fait partie des transformations appelées ["*power transform*"](http://onlinestatbook.com/2/transformations/tukey.html). Elles utilisent la puissance ou le log pour transformer rendre linéaire une courbe exponentielle. 
+
+![log-transform](/assets/img/log_transform.png#center)
+<div align="center">
+	Population américaine. La courbe de droite est exprimée sur une échelle logarithmique. <a href="http://onlinestatbook.com/2/transformations/tukey.html"> Source </a>
+</div>
+
+L'analyse des données est ainsi facilitée, le [[coefficient de corrélation]] se rapprochant de 1 et les variations suivant une loi normale.
+
+![](/assets/img/transform_corr.png#center)
+
+<div align="center">
+	Population américaine. La courbe de droite est exprimée sur une échelle logarithmique. <a href="http://onlinestatbook.com/2/transformations/tukey.html"> Source </a>
+</div>
+
+C'est une méthode très flexible permettant de donner une forme normale à une série de données. Elle la transformation de la variable $x$ est indexée à $\lambda$ ainsi :
 
 $$
 x_{\lambda}^{\prime}=\frac{x^{\lambda}-1}{\lambda}
@@ -78,10 +93,11 @@ x_{\lambda}^{\prime}=\left\{\begin{array}{ll}
 \end{array}\right.
 $$
 
-On peut alors faire varier $\lambda$ afin de trouver la valeur pour laquelle la distribution s'approche le plus d'une loi normale au moyen d'un [[test de normalité]]. Cette étape est réalisée de manière algorithmique par l'ordinateur (utiliser sklearn.preprocessing.power_transform).
+On peut alors faire varier $\lambda$ afin de trouver la valeur pour laquelle la distribution s'approche le plus d'une loi normale au moyen d'un [[test de normalité]]. Cette étape est réalisée de manière algorithmique par l'ordinateur (utiliser [sklearn.preprocessing.power_transform](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.power_transform.html?highlight=box%20cox)).
 
 ## Reférences :
 - [[Feature Scaling::https://en.wikipedia.org/wiki/Feature_scaling]] (Wikipedia)
 - *Chapitre 10, p.303, [[The Data Science Manual, Skienna]]*
 - *52., p38, [[Les Datasciences en 100 Questions, Y. Benzaki]]*
 - [Vector Math for 3D Computer Graphic](https://chortle.ccsu.edu/VectorLessons/vectorIndex.html#07) (chortle.ccsu.edu)
+- *Online Statistics Education* - disponible sur [onlinestatbook.com](http://onlinestatbook.com/2/transformations/box-cox.html)

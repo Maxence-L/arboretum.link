@@ -11,7 +11,7 @@
           "type": "markdown",
           "state": {
             "file": "_notes/Mise à l'échelle des données - standardisation et normalisation.md",
-            "mode": "preview"
+            "mode": "source"
           }
         }
       }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "normalité",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -49,7 +49,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -97,14 +98,14 @@
   },
   "lastOpenFiles": [
     "_notes/Mise à l'échelle des données - standardisation et normalisation.md",
-    "_notes/test.md",
-    "_notes/Untitled.md",
-    "_notes/Untitled 1.md",
-    "_notes/Snippets html.md",
     "assets/img/Pasted image 20201031170334.png",
-    "assets/img/Pasted image 20201202011442.png",
-    "_notes/set.md",
-    "_notes/sqlite3.md",
-    "_notes/Str - méthodes.md"
+    "assets/img/Pasted image 20201202135340.png",
+    "assets/img/Pasted image 20201202133930.png",
+    "assets/img/Pasted image 20201202135436.png",
+    "_notes/Snippets html.md",
+    "assets/img/Pasted image 20201202133901.png",
+    "_notes/csv.md",
+    "_notes/test.md",
+    "_notes/Untitled.md"
   ]
 }

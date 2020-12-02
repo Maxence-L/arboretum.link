@@ -25,3 +25,12 @@ def create_db(self):
      finally:
          pass
 ````
+
+Si l'on utilise le package [[pandas]], on peut ouvrir des fichiers .csv avec la fonction `pd.read_csv(filename)`:
+
+```python
+import pandas as pd 
+data = pd.read_csv("filename.csv") 
+````
+
+Des [options](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html) sont disponibles pour définir des paramêtres d'importation (séparateur, header, etc...).
