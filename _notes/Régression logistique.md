@@ -1,3 +1,6 @@
 ---
 title: Régression logistique
-tags : 
+tags : Apprentissage-supervisé
+etat : hiver
+---
+

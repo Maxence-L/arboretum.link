@@ -4,9 +4,15 @@ tags: Maths
 etat : Printemps
 ---
 
-La mise à l'échelle consiste à altérer les données afin de réduire leur variance ou leur valeur absolue. Elle est utile lorsque les variables d'un jeu de données ont des ordres de grandeur différents qui peuvent fausser les estimations des algorithmes d'apprentissage automatique.
+La mise à l'échelle consiste à altérer les données afin de réduire leur variance ou leur valeur absolue. Elle est utile pour les cas suivants :
 
-Par exemple, les classificateurs utilisant la distance euclidienne seront affectés si un des composant est distribué sur un espace beaucoup plus grand que les autres. De même, il sera difficile de comparer les coefficients d'une régression linéaire si les variables sur lesquels ils s'appliquent n'ont pas d'échelle comparable. Enfin, le [[gradient descent]] est plus rapide si les données partagent la même échelle. (*rescaled*).
+- Lorsque les variables d'un jeu de données ont des ordres de grandeur différents, ces derniers peuvent fausser les estimations des algorithmes d'apprentissage automatique.
+
+- Les classificateurs utilisant la distance euclidienne seront affectés si un des composant est distribué sur un espace beaucoup plus grand que les autres. 
+
+- Il sera difficile de comparer les coefficients d'une régression linéaire si les variables sur lesquels ils s'appliquent n'ont pas d'échelle comparable. 
+
+- Le [[gradient descent]] est plus rapide si les données partagent la même échelle. (*rescaled*).
 
 ## Normalisation 'Min-Max'
 

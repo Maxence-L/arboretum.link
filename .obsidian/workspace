@@ -10,8 +10,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/Analyse discriminante.md",
-            "mode": "preview"
+            "file": "_notes/Mise à l'échelle des données - standardisation et normalisation.md",
+            "mode": "source"
           }
         }
       }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "logisti",
+                "query": "norma",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -70,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Analyse discriminante.md",
+                "file": "_notes/Mise à l'échelle des données - standardisation et normalisation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -85,7 +85,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Analyse discriminante.md"
+                "file": "_notes/Mise à l'échelle des données - standardisation et normalisation.md"
               }
             }
           }
@@ -97,10 +97,10 @@
     "collapsed": true
   },
   "lastOpenFiles": [
-    "_notes/Analyse discriminante linéaire.md",
-    "_notes/Régression logistique.md",
-    "_notes/Untitled 2.md",
     "_notes/Mise à l'échelle des données - standardisation et normalisation.md",
+    "_notes/Régression logistique.md",
+    "_notes/Analyse discriminante linéaire.md",
+    "_notes/Untitled 2.md",
     "assets/img/Pasted image 20201031170334.png",
     "assets/img/Pasted image 20201202135340.png",
     "assets/img/Pasted image 20201202133930.png",
