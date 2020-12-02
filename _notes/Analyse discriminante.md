@@ -1,10 +1,9 @@
 ---
 title: Analyse discriminante
-created: '2020-10-08T15:49:59.253Z'
-modified: '2020-10-23T20:08:24.866Z'
+tags : Apprentissage-supervisé
 ---
 
-L'analyse discriminante est une méthode de classification proche de la [[régression logistique]]. 
+L'analyse discriminante est une méthode de classification proche de la [[Régression logistique\|régression logistique]]. 
 
 Elle est appelée en anglais *linear discriminant analysis*.
 
@@ -61,9 +60,9 @@ Si $k=2$ et $\pi_1 = \pi_2$, alors le classificateur est à équidistance des de
 
 ## Quand l'utiliser ?
 
-- Lorsque les classes sont séparées distinctement, l'estimation de paramètres peut être instable dans le cas la [[régression logistique::Régression logistique]]. L'ADL ne rencontrera pas ce type de problème.
+- Lorsque les classes sont séparées distinctement, l'estimation de paramètres peut être instable dans le cas la [[Régression logistique\|régression logistique]]. L'ADL ne rencontrera pas ce type de problème.
 
-- Si n est faible est que la distribution des prédicteurs X suit approximativement une loi normale, l'ADL est plus stable que la [[régression logistique]].
+- Si n est faible est que la distribution des prédicteurs X suit approximativement une loi normale, l'ADL est plus stable que la [[Régression logistique\|régression logistique]].
 
 - Lorsque nous la variable réponse prend plus de deux classes, l'ADL est plus appropriée.
 
