@@ -62,16 +62,16 @@ La transformation Box-Cox fait partie des transformations appelées ["*power tra
 	Population américaine. La courbe de droite est exprimée sur une échelle logarithmique. <a href="http://onlinestatbook.com/2/transformations/tukey.html"> Source </a>
 </div>
 
-L'analyse des données est ainsi facilitée, le [[coefficient de corrélation]] se rapprochant de 1 et les variations suivant une loi normale.
+L'analyse des données est ainsi facilitée, le [[coefficient de corrélation]] se rapprochant de 1 et les variations suivant une loi normale :
 
 ![](/assets/img/transform_corr.png#center)
 
 <div align="center">
-	Population américaine. La courbe de droite est exprimée sur une échelle logarithmique. <a href="http://onlinestatbook.com/2/transformations/tukey.html"> Source </a>
+	Coefficient de corrélation en fonction de lambda.	
+	<a href="http://onlinestatbook.com/2/transformations/tukey.html"> Source </a>
 </div>
 
-C'est une méthode très flexible permettant de donner une forme normale à une série de données. Elle la transformation de la variable $x$ est indexée à $\lambda$ ainsi :
-
+La transformation Box-Plot est une version particulière de *power transform* adaptée à la normalisation des données :
 $$
 x_{\lambda}^{\prime}=\frac{x^{\lambda}-1}{\lambda}
 $$
