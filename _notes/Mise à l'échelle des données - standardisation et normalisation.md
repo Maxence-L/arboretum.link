@@ -53,6 +53,33 @@ Cette normalisation est particulièrement utile dans le domaine du [[NLP]], et d
 
 [^1]: Quelle est l'expression française pour 'unit-vector normalization' ?
 
+## Transformation Box-Cox
+
+La transformation Box-Cox est une méthode très flexible permettant de donner une forme normale à une série de données. Elle la transformation de la variable $x$ est indexée à $\lambda$ ainsi :
+
+$$
+x_{\lambda}^{\prime}=\frac{x^{\lambda}-1}{\lambda}
+$$
+
+Une observation minutieuse nous indique que lorsque $\lambda$ est égal à $0$, la transformation Box-Cox aboutit à une indétermination : elle est égale à 0/0.
+
+Au fur et à mesure que  $\lambda \rightarrow 0$, la transformation tend vers : 
+
+$$
+x_{\lambda}^{\prime}=\frac{e^{\lambda \log (x)}-1}{\lambda} \approx \frac{\left(1+\lambda \log (x)+\frac{1}{2} \lambda^{2} \log (x)^{2}+\cdots\right)-1}{\lambda} \rightarrow \log (x)
+$$
+
+On donne donc à la transformation les valeurs suivantes en fonction de $\lambda$ :
+
+$$
+x_{\lambda}^{\prime}=\left\{\begin{array}{ll}
+\log \left(x\right) & \text { si } \lambda=0 \\
+\left(x^{\lambda}-1\right) / \lambda & \text { sinon }
+\end{array}\right.
+$$
+
+On peut alors faire varier $\lambda$ afin de trouver la valeur pour laquelle la distribution s'approche le plus d'une loi normale au moyen d'un [[test de normalité]]. Cette étape est réalisée de manière algorithmique par l'ordinateur (utiliser sklearn.preprocessing.power_transform).
+
 ## Reférences :
 - [[Feature Scaling::https://en.wikipedia.org/wiki/Feature_scaling]] (Wikipedia)
 - *Chapitre 10, p.303, [[The Data Science Manual, Skienna]]*
