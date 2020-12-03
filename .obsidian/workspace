@@ -10,8 +10,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/Analyse discriminante.md",
-            "mode": "preview"
+            "file": "_notes/Développement des fonctions usuelles.md",
+            "mode": "source"
           }
         }
       }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "discri",
+                "query": "box",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -54,7 +54,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 274.5036334991455
+    "width": 274.5036334991455,
+    "collapsed": true
   },
   "right": {
     "id": "15b808a1e515cd90",
@@ -70,7 +71,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Analyse discriminante.md",
+                "file": "_notes/Développement des fonctions usuelles.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -85,7 +86,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Analyse discriminante.md"
+                "file": "_notes/Développement des fonctions usuelles.md"
               }
             }
           }
@@ -97,15 +98,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "_notes/Développement des fonctions usuelles.md",
+    "_notes/Mise à l'échelle des données - standardisation et normalisation.md",
     "_notes/Analyse discriminante.md",
     "_notes/Similarité cosinus.md",
-    "_notes/Mise à l'échelle des données - standardisation et normalisation.md",
     "_notes/Régression logistique.md",
     "_notes/Analyse discriminante linéaire.md",
     "_notes/Untitled 2.md",
     "assets/img/Pasted image 20201031170334.png",
     "assets/img/Pasted image 20201202135340.png",
-    "assets/img/Pasted image 20201202133930.png",
-    "assets/img/Pasted image 20201202135436.png"
+    "assets/img/Pasted image 20201202133930.png"
   ]
 }

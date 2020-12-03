@@ -63,19 +63,30 @@ L'analyse des données est ainsi facilitée, le [[coefficient de corrélation]] 
 </div>
 
 La transformation Box-Plot est une version particulière de *power transform* adaptée à la normalisation des données :
+
 $$
 x_{\lambda}^{\prime}=\frac{x^{\lambda}-1}{\lambda}
 $$
 
 Une observation minutieuse nous indique que lorsque $\lambda$ est égal à $0$, la transformation Box-Cox aboutit à une indétermination : elle est égale à 0/0.
 
-Au fur et à mesure que  $\lambda \rightarrow 0$, la transformation tend vers : 
+Quelle est la limite de la transformation lorsque  $\lambda \rightarrow 0$ ?
+
+On a :
 
 $$
-x_{\lambda}^{\prime}=\frac{e^{\lambda \log (x)}-1}{\lambda} \approx \frac{\left(1+\lambda \log (x)+\frac{1}{2} \lambda^{2} \log (x)^{2}+\cdots\right)-1}{\lambda} \rightarrow \log (x)
+x_{\lambda}^{\prime}=\frac{e^{\lambda \log (x)}-1}{\lambda}
 $$
 
-On donne donc à la transformation les valeurs suivantes en fonction de $\lambda$ :
+$\lambda$ tendant vers $0$, on peut effectuer [[Développement des fonctions usuelles\|approximer]] la valeur $e^{\lambda \log (x)}$ par le développement de l'exponentielle :
+
+$$
+\frac{e^{\lambda \log (x)}-1}{\lambda} \approx \frac{\left(1+\lambda \log (x)+\frac{1}{2} \lambda^{2} \log (x)^{2}+\cdots\right)-1}{\lambda}
+$$
+
+Qui tend vers $log(x)$ lorsque $\lambda \rightarrow 0$.
+
+Pour plus de simplicité, on donne donc à la transformation les valeurs suivantes en fonction de $\lambda$ :
 
 $$
 x_{\lambda}^{\prime}=\left\{\begin{array}{ll}
