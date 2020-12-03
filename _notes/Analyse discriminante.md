@@ -1,6 +1,7 @@
 ---
 title: Analyse discriminante
 tags : Apprentissage-supervisé
+etat : printemps
 ---
 
 L'analyse discriminante est une méthode de classification proche de la [[Régression logistique\|régression logistique]]. 

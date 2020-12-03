@@ -10,8 +10,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/Mise à l'échelle des données - standardisation et normalisation.md",
-            "mode": "source"
+            "file": "_notes/Analyse discriminante.md",
+            "mode": "preview"
           }
         }
       }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "norma",
+                "query": "discri",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -70,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Mise à l'échelle des données - standardisation et normalisation.md",
+                "file": "_notes/Analyse discriminante.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -85,7 +85,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Mise à l'échelle des données - standardisation et normalisation.md"
+                "file": "_notes/Analyse discriminante.md"
               }
             }
           }
@@ -97,6 +97,8 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "_notes/Analyse discriminante.md",
+    "_notes/Similarité cosinus.md",
     "_notes/Mise à l'échelle des données - standardisation et normalisation.md",
     "_notes/Régression logistique.md",
     "_notes/Analyse discriminante linéaire.md",
@@ -104,8 +106,6 @@
     "assets/img/Pasted image 20201031170334.png",
     "assets/img/Pasted image 20201202135340.png",
     "assets/img/Pasted image 20201202133930.png",
-    "assets/img/Pasted image 20201202135436.png",
-    "_notes/Snippets html.md",
-    "assets/img/Pasted image 20201202133901.png"
+    "assets/img/Pasted image 20201202135436.png"
   ]
 }

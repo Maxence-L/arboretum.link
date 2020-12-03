@@ -43,21 +43,6 @@ ou $x$ est la variable de départ, $\mu$ est sa moyenne et $\sigma$ son écart-t
 
 Cette transformation assigne à la variable une majorité de valeurs comprises entre $[-1, 1]$, le résultat étant moins dépendant des valeurs aberrantes, contrairement à la normalisation min-max.
 
-## Normalisation au vecteur unitaire[^1]
-
-Si ce qui nous intéresse se rapporte à la *direction* du point $p$ et non à sa distance à l'origine, on peut utiliser la normalisation à l'unité :
-
-$$ \frac{p}{L_2(p)}$$
-
-où
-
-$$L_2(p) = \sqrt{\sum\limits_{k=0}^n p^2_i}$$
-
-Voir la note sur la [[Norme d'un vecteur]] pour une explication plus détaillée sur le sujet.
-
-Cette normalisation est particulièrement utile dans le domaine du [[NLP]], et de la [[classification]] en général.
-
-[^1]: Quelle est l'expression française pour 'unit-vector normalization' ?
 
 ## Transformation Box-Cox
 
@@ -100,6 +85,26 @@ x_{\lambda}^{\prime}=\left\{\begin{array}{ll}
 $$
 
 On peut alors faire varier $\lambda$ afin de trouver la valeur pour laquelle la distribution s'approche le plus d'une loi normale au moyen d'un [[test de normalité]]. Cette étape est réalisée de manière algorithmique par l'ordinateur (utiliser [sklearn.preprocessing.power_transform](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.power_transform.html?highlight=box%20cox)).
+
+
+## Normalisation au vecteur unitaire[^1]
+
+Si ce qui nous intéresse se rapporte à la *direction* du point $p$ et non à sa distance à l'origine, on peut utiliser la normalisation à l'unité.
+
+> **A noter** : Cette dénomination correspond à la [[Norme d'un vecteur\|norme d'un vecteur]] et non à la loi normale.
+
+$$ \frac{p}{L_2(p)}$$
+
+où
+
+$$L_2(p) = \sqrt{\sum\limits_{k=0}^n p^2_i}$$
+
+Voir la note sur la [[Norme d'un vecteur]] pour une explication plus détaillée sur le sujet.
+
+Cette normalisation est particulièrement utile dans le domaine du [[NLP]], et de la [[classification]] en général.
+
+[^1]: Quelle est l'expression française pour 'unit-vector normalization' ?
+
 
 ## Reférences :
 - [[Feature Scaling::https://en.wikipedia.org/wiki/Feature_scaling]] (Wikipedia)
