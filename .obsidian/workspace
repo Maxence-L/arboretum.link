@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/Développement des fonctions usuelles.md",
+            "file": "refs.md",
             "mode": "source"
           }
         }
@@ -49,13 +49,11 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 274.5036334991455,
-    "collapsed": true
+    "width": 274.5036334991455
   },
   "right": {
     "id": "15b808a1e515cd90",
@@ -71,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Développement des fonctions usuelles.md",
+                "file": "refs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -86,7 +84,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Développement des fonctions usuelles.md"
+                "file": "refs.md"
               }
             }
           }
@@ -98,6 +96,7 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "_notes/Untitled 3.md",
     "_notes/Développement des fonctions usuelles.md",
     "_notes/Mise à l'échelle des données - standardisation et normalisation.md",
     "_notes/Analyse discriminante.md",
@@ -106,7 +105,6 @@
     "_notes/Analyse discriminante linéaire.md",
     "_notes/Untitled 2.md",
     "assets/img/Pasted image 20201031170334.png",
-    "assets/img/Pasted image 20201202135340.png",
-    "assets/img/Pasted image 20201202133930.png"
+    "assets/img/Pasted image 20201202135340.png"
   ]
 }

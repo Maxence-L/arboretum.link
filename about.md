@@ -15,11 +15,13 @@ Le but est de ce site est de me forcer à en améliorer la qualité de ces notes
 
 Les notes que vous trouverez ici sont donc perpétuellement en cours d'amélioration et son mises à jour quotidiennement. Mémoriser des concepts est un processus itératif au cours duquel je me corrige et je complète mes connaissances. 
 
-Par conséquent, les notes peuvent prendre un des quatres état suivants :
+Par conséquent, les notes peuvent prendre un des états suivants :
 
 - Hiver : la note est créée et quelques informations sont là, mais l'essentiel reste à faire (< 20%).
 - Printemps : la note bourgeonne mais n'est toujours pas complète.
 - Été : la note est considérée comme complète ou presque (> 80%).
 - Automne : la note est à retravailler, à la lumière des nouvelles informations acquises.
 
-Le site utilise [[Jekyll::https://jekyllrb.com/]], ainsi que le modèle [[simply-jekyll::https://github.com/raghuveerdotnet/simply-jekyll]], que j'ai modifié pour être compatible avec le logiciel [[Obsidian::https://obsidian.md]] et traduit en français, disponible sur [[Github::https://github.com/Maxence-L/arborio]] dans une version stable. Ce site est lui dans une version de test permanente, certaines nouvelles fonctionnalités peuvent donc comporter des bugs.
+Le site utilise [[Jekyll::https://jekyllrb.com/]], ainsi que le modèle [[simply-jekyll::https://github.com/raghuveerdotnet/simply-jekyll]], que j'ai modifié pour être compatible avec le logiciel [[Obsidian::https://obsidian.md]] et traduit en français, disponible sur [[Github::https://github.com/Maxence-L/arborio]] dans une version stable. Ce site est lui dans une version de test permanente, certaines fonctionnalités peuvent donc comporter des bogues.
+
+Un tracking rudimentaire et anonymisé est réalisé avec [Insights](https://getinsights.io/).
