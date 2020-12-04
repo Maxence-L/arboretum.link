@@ -1,5 +1,5 @@
 ---
-title: sklearn.cluster.Kmeans - Kmeans facile
+title: sklearn.cluster.Kmeans
 tags: sklearn
 etat: printemps
 ---

@@ -10,8 +10,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/K-neighbors.md",
-            "mode": "preview"
+            "file": "_notes/Régression logistique.md",
+            "mode": "source"
           }
         }
       }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "sklearn",
+                "query": "snipp",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -49,8 +49,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -70,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/K-neighbors.md",
+                "file": "_notes/Régression logistique.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -85,7 +84,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/K-neighbors.md"
+                "file": "_notes/Régression logistique.md"
               }
             }
           }
@@ -97,15 +96,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
-    "_notes/K-means.md",
-    "_notes/sklearn.cluster.Kmeans - Kmeans facile.md",
-    "_notes/Inertie.md",
-    "_notes/Norme d'un vecteur.md",
+    "_notes/Régression logistique.md",
+    "about.md",
     "_notes/Snippets html.md",
-    "_notes/Untitled 3.md",
-    "_notes/Valeurs propres.md",
-    "assets/img/Capture d’écran 2020-12-04 à 16.18.58.png",
-    "_notes/centroide.md",
-    "_notes/sklearn.md"
+    "assets/img/Capture d’écran 2020-12-04 à 23.15.26.png",
+    "_notes/sklearn.cluster.Kmeans - Kmeans facile.md",
+    "_notes/K-neighbors.md",
+    "assets/img/Pasted image 20201031170334.png",
+    "assets/img/Pasted image 20201202133930.png",
+    "assets/img/Pasted image 20201202135340.png",
+    "assets/img/Pasted image 20201204182918.png"
   ]
 }
