@@ -10,7 +10,7 @@ $$
 \mathbf{C}=\frac{\mathbf{x}_{1}+\mathbf{x}_{2}+\cdots+\mathbf{x}_{k}}{k}
 $$
 
-Cette notion est utilisée pour calculer le centre des clusters pour l'algorithme [[K-Means]].
+Cette notion est utilisée pour calculer le centre des clusters pour l'algorithme [[K-neighbors]].
 
 ---
 [^1]: https://en.wikipedia.org/wiki/Centroid

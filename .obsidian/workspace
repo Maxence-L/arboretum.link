@@ -10,8 +10,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "refs.md",
-            "mode": "source"
+            "file": "_notes/K-neighbors.md",
+            "mode": "preview"
           }
         }
       }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "box",
+                "query": "sklearn",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -49,7 +49,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -69,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "refs.md",
+                "file": "_notes/K-neighbors.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,7 +85,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "refs.md"
+                "file": "_notes/K-neighbors.md"
               }
             }
           }
@@ -96,15 +97,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "_notes/K-means.md",
+    "_notes/sklearn.cluster.Kmeans - Kmeans facile.md",
+    "_notes/Inertie.md",
+    "_notes/Norme d'un vecteur.md",
+    "_notes/Snippets html.md",
     "_notes/Untitled 3.md",
-    "_notes/Développement des fonctions usuelles.md",
-    "_notes/Mise à l'échelle des données - standardisation et normalisation.md",
-    "_notes/Analyse discriminante.md",
-    "_notes/Similarité cosinus.md",
-    "_notes/Régression logistique.md",
-    "_notes/Analyse discriminante linéaire.md",
-    "_notes/Untitled 2.md",
-    "assets/img/Pasted image 20201031170334.png",
-    "assets/img/Pasted image 20201202135340.png"
+    "_notes/Valeurs propres.md",
+    "assets/img/Capture d’écran 2020-12-04 à 16.18.58.png",
+    "_notes/centroide.md",
+    "_notes/sklearn.md"
   ]
 }

@@ -53,7 +53,7 @@ Plusieurs méthodes d'estimation multivariées sont possibles pour remplacer les
 
 - Classification (dans le cas de variable qualitative) - par [[ADL]], par exemple.
 
-- [[K-Means]] : On crée des groupes d'individus et l'on impute à la valeur manquante la moyenne de son groupe. (utiliser [sklearn.impute.KNNImputer](https://scikit-learn.org/stable/modules/generated/sklearn.impute.KNNImputer.html))
+- [[K-neighbors]] : On crée des groupes d'individus et l'on impute à la valeur manquante la moyenne de son groupe. (utiliser [sklearn.impute.KNNImputer](https://scikit-learn.org/stable/modules/generated/sklearn.impute.KNNImputer.html))
 
 ### Estimation itérative
 

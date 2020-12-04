@@ -23,15 +23,15 @@ Les étapes de construction d'un modèle sont les suivantes :
 
 L'utilisation de sklearn est la suivante pour chaque étape :
 
-1. On choisit la classe correspondant à l'algorithme désiré dans la bibliothèque de [sklearn](https://scikit-learn.org/stable/user_guide.html) et l'on crée un objet en l'initialisant.
+1. On choisit la classe correspondant à l'algorithme désiré dans la bibliothèque de [sklearn](https://scikit-learn.org/stable/user_guide.html) et l'on crée un objet `model` en l'initialisant.
 
-2.  On utilise la méthode `fit()` en passant les paramètres du modèle (données, valeurs diverses...)
+2.  On utilise la méthode `model.fit()` en passant les paramètres du modèle (données, valeurs diverses...)
 
-3. On utilise `predict()` en passant les données-cibles de test. Le résultat est soit une estimation de la valeur de $Y$ ou de sa classe, dans le cas d'un algorithme de [[classification]].
+3. On utilise `model.predict()` en passant les données-cibles de test. Le résultat est soit une estimation de la valeur de $Y$ ou de sa classe, dans le cas d'un algorithme de [[classification]].
 
 4. On peut évaluer la prédiction au moyen de [[sklearn.metrics]] en séparant les données avec [[sklearn.model_selection.train_test_split]]
 
-Exemple dans le cas des [[K-Means]] :
+Exemple dans le cas des [[K-neighbors]] :
 
 ```python
 # Importation de KMeans :

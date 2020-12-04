@@ -4,11 +4,13 @@ tags: sklearn
 etat: printemps
 ---
 
-`sklearn.cluster.Kmeans` applique l'algorithme des [[K-Means]].
+`sklearn.cluster.Kmeans` applique l'algorithme des [[K-neighbors]].
+
+L'algorithme K-means est un algorithme de [[classification]] catégorisant les observations en fonction de leur distance au point moyen ([[Centroïde\|centroïde]]) de la classe. La catégorisation des points peut changer au fur et à mesure des itérations, jusqu'à convergence. 
 
 #### Initialisation et usage :
 
-On spécifie avec `n_cluster=x` le nombre de [[centroide\|centroides]] qui génèreront des clusters en conséquence.
+On spécifie avec `n_cluster=x` le nombre de [[Centroide\|centroides]] qui génèreront des clusters en conséquence.
 
 ```python
 f = Kmeans(n_clusters = 2)

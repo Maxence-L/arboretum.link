@@ -4,7 +4,7 @@ tags: Apprentissage-non-supervisé, ml-pratique
 etat: printemps
 ---
 
-L'algorithme DBSCAN sert à classifier des données. Il est particulièrement utile lorsque les données se regroupent par forme de densité importante en prenant des formes diverses qui ne sont pas reconnaissables par un [[K-means]] classique, se fondant sur les centroïdes des formes.
+L'algorithme DBSCAN sert à classifier des données. Il est particulièrement utile lorsque les données se regroupent par forme de densité importante en prenant des formes diverses qui ne sont pas reconnaissables par un [[K-neighbors]] classique, se fondant sur les centroïdes des formes.
 
 Initialisation avec [[sklearn.cluster.DBSCAN]] : 
 ```python
@@ -53,7 +53,7 @@ Comme on peut le voir, les clusters sont correctement regroupés :
 
 ![dbscan-clusters.png](/assets/img/dbscan-clusters.png#center)
 
-#### DBSCAN vs [[K-means]]
+#### DBSCAN vs [[K-neighbors]]
 
 - DBSCAN est utile dans le cas où les groupes de données sont denses et ont des formes courbées. 
 
