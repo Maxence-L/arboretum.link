@@ -28,7 +28,7 @@ $$
   Estimation (en bleu) de la probabilité de défaut en fonction du solde du compte en banque. A gauche, régression linéaire, à droite, régression logistique. Source : ISLR (Tibshirani et al.).
 </div>
 
-*Méthode d'estimation par le maximum de vraisemblance : à complêter (je viens de déménager et mon livre d'économétrie est encore dans un carton)*
+*Méthode d'estimation par le maximum de vraisemblance : à compléter.
 
 A noter que l'on peut utiliser les mêmes techniques de [[Régularisation\|régularisation]] que pour la [[Régression linéaire\|régression linéaire]].
 
@@ -70,13 +70,16 @@ X_train, X_test, y_train, y_test = train_test_split(digits.data, digits.target)
 lr = LogisticRegression()
 lr.fit(X_train,y_train)
 
-# Training accuracy :
+# Précision d'entrainement :
 lr.score(X_train,y_train))
 
-# Testing accuracy :
+# Précision de test :
 lr.score(X_test, Y_test))
 
-# Predicted probabilities for the first observation :
+# Probabilités estimées pour la première observation :
 lr.predict_proba(X_test[0])
+
+# Régularisation
+
 ````
 
