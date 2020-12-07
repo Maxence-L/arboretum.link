@@ -4,7 +4,7 @@ tags : Apprentissage-supervisé
 etat : printemps
 ---
 
-La régression logistique est une forme de régression estimant la probabilité qu'une variable binaire soit égale à 1 sachant $X$ : $Pr(Y = 1 \vert X = x)$. 
+La régression logistique estime la probabilité qu'une variable binaire soit égale à 1 sachant $X$ : $Pr(Y = 1 \vert X = x)$. 
 
 En y ajoutant un seuil de décision, on en fait un [[Classificateur linéaire\|classificateur linéaire]] permettant de séparer deux classes. Pour des solutions à plus de deux classes, on lui préfère en général l'[[Analyse discriminante\|analyse discriminante]][^1].
 
@@ -14,15 +14,13 @@ Grand classique de l'économétrie, longtemps envié, rarement dépassé !
 
 ## Explication du modèle
 
-La [[Régression linéaire\|régression linéaire]] classique ne permet pas d'estimer une probabilité, ses résultats n'étant pas bornés entre 0 et 1. 
-
-On résout ce problème en utilisant la fonction logistique, dont les résultats sont compris entre $0$ et $1$ pour tout $X$, ce qui permet de modéliser $p(X)$  :
+La [[Régression linéaire\|régression linéaire]] classique ne permet pas d'estimer une probabilité, ses résultats n'étant pas bornés entre 0 et 1. On résout ce problème en utilisant la fonction logistique, dont les résultats sont compris entre $0$ et $1$ pour tout $X$, ce qui permet de modéliser $p(X)$  :
 
 $$
 p(X)=\frac{e^{\beta_{0}+\beta_{1} X}}{1+e^{\beta_{0}+\beta_{1} X}}
 $$
 
-![](assets/img/linearvslogistic.png#center)
+![](/assets/img/linearvslogistic.png#center)
 
 <div align="center">
   Estimation (en bleu) de la probabilité de défaut en fonction du solde du compte en banque. A gauche, régression linéaire, à droite, régression logistique. Source : ISLR (Tibshirani et al.).

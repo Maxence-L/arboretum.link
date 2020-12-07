@@ -53,7 +53,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 274.5036334991455
+    "width": 274.5036334991455,
+    "collapsed": true
   },
   "right": {
     "id": "15b808a1e515cd90",
@@ -97,6 +98,7 @@
   },
   "lastOpenFiles": [
     "_notes/Régression logistique.md",
+    "_notes/Régularisation.md",
     "assets/img/Capture d’écran 2020-12-05 à 01.01.31.png",
     "about.md",
     "_notes/Snippets html.md",
@@ -104,7 +106,6 @@
     "_notes/sklearn.cluster.Kmeans - Kmeans facile.md",
     "_notes/K-neighbors.md",
     "assets/img/Pasted image 20201031170334.png",
-    "assets/img/Pasted image 20201202133930.png",
-    "assets/img/Pasted image 20201202135340.png"
+    "assets/img/Pasted image 20201202133930.png"
   ]
 }
