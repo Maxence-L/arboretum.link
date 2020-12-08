@@ -11,7 +11,7 @@
           "type": "markdown",
           "state": {
             "file": "_notes/Régression logistique.md",
-            "mode": "source"
+            "mode": "preview"
           }
         }
       }
@@ -53,8 +53,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 274.5036334991455,
-    "collapsed": true
+    "width": 274.5036334991455
   },
   "right": {
     "id": "15b808a1e515cd90",

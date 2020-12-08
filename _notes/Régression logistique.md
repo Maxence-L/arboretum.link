@@ -28,7 +28,7 @@ $$
 
 *Méthode d'estimation par le maximum de vraisemblance : à compléter.
 
-A noter que l'on peut utiliser les mêmes techniques de [[Régularisation\|régularisation]] que pour la [[Régression linéaire\|régression linéaire]].
+> **A noter :** On peut utiliser les mêmes techniques de [[Régularisation\|régularisation]] que pour la [[Régression linéaire\|régression linéaire]].
 
 ### Classification
 
