@@ -14,7 +14,9 @@ Louer un serveur n'est pas gratuit et une concurrence féroce a lieu sur ce marc
 
 Contabo race maîtresse ? Ils bradent la RAM et les perfomances CPU sont acceptables. Par contre, l'interface de gestion date des années 2000 et les options sont considérablement limitées.
 
-On pourrait citer les acteurs comme [Deepnote](deepnote.com) ou [Google Colab](https://colab.research.google.com/) ou [Datalore](https://datalore.jetbrains.com/), récents sur le marché et vendant une machine + un notebook jupyter. Ces solutions ne sont, à mon sens, pas encore matures pour des usages avancés nécéssitant une grande flexibilité et restent assez coûteuses pour l'utilisateur. Par ailleurs, je suppose que ces acteurs tenteront de développer des API spécifiques à leur service (tout comme Obsidian a développé un dialecte Markown qui lui est propre) qui restreindront les possibilités de changement et augmentera leur pouvoir de marché.
+On pourrait citer les nouveaux entrants comme [Deepnote](https://deepnote.com), [Google Colab](https://colab.research.google.com/) ou [Datalore](https://datalore.jetbrains.com/), récents sur le marché et vendant une machine associée à un notebook jupyter. Ces solutions ne sont, à mon sens, pas encore matures pour des usages avancés nécéssitant une grande flexibilité et restent assez coûteuses pour l'utilisateur. Par ailleurs, je suppose que ces acteurs tenteront de développer des API spécifiques à leur service[^1] qui restreindront les possibilités de changement et augmentera leur pouvoir de marché.
+
+[^1]: Tout comme Obsidian a développé un dialecte Markown qui lui est propre
 
 Pour mettre en place un serveur, voir mon repo sur [Github](https://github.com/Maxence-L/debian-datascience-setup). Bref, voici comment se connecter en SSH, en cas d'oubli :
 
