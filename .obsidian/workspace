@@ -10,8 +10,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/Régression logistique.md",
-            "mode": "preview"
+            "file": "_notes/Détecter la langue d'un texte.md",
+            "mode": "source"
           }
         }
       }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "snipp",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Régression logistique.md",
+                "file": "_notes/Détecter la langue d'un texte.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,7 +84,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Régression logistique.md"
+                "file": "_notes/Détecter la langue d'un texte.md"
               }
             }
           }
@@ -96,6 +96,8 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "_notes/Untitled 4.md",
+    "_notes/df.duplicated() - trouver les doublons.md",
     "_notes/Régression logistique.md",
     "_notes/Régularisation.md",
     "assets/img/Capture d’écran 2020-12-05 à 01.01.31.png",
@@ -103,8 +105,6 @@
     "_notes/Snippets html.md",
     "assets/img/Capture d’écran 2020-12-04 à 23.15.26.png",
     "_notes/sklearn.cluster.Kmeans - Kmeans facile.md",
-    "_notes/K-neighbors.md",
-    "assets/img/Pasted image 20201031170334.png",
-    "assets/img/Pasted image 20201202133930.png"
+    "_notes/K-neighbors.md"
   ]
 }
