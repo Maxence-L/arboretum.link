@@ -16,8 +16,8 @@ import langid
 
 # On écrit d'abord une petite fonction afin de vérifier que la valeur analysée est bien textuelle et comprend plus de quelques caractères :
 
-def lang_detect(text, str_limit) :
-    if isinstance(text, str) and len(text) > 10 :
+def lang_detect(text, str_limit=10) :
+    if isinstance(text, str) and len(text) > str_limit :
 	
 	# la méthode à utiliser est langid.classify(text)
 	# Elle retourne un tuple (langue estimée, probabilité non-normalisée associée)
