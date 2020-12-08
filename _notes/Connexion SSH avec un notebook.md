@@ -29,7 +29,7 @@ ssh username@ip
 Une fois connecté ont démarre le notebook (ici jupyterLab) et on lui donne le port sur lequel envoyer les données :
 
 ```bash
-jupyter notebook --no-browser --port=8080
+jupyter lab --no-browser --port=8080
 ````
 
 On peut à présent ouvrir un nouveau tunnel SSH sur notre machine locale et lui dire de passer les informations du port 8080 de la machine distante sur le port équivalent de notre machine locale :
