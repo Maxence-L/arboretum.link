@@ -37,7 +37,9 @@ L'approche *Bag-of-words* consiste à attribuer à chaque document un vecteur de
 ![](/assets/img/bag-of-word.png)
 
 <div align="center">
+	
   Source : <a href=https://https://www.oreilly.com/library/view/applied-text-analysis/9781491963036/ch04.html>Applied Text Analysis with Python</a>
+	
 </div>
 
 ## Quels packages sont disponibles ? 
