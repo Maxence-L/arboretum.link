@@ -57,7 +57,7 @@ La vectorisation la plus simple : on attribue à chaque élément du vecteur une
 
 ![](/assets/img/fréquence.png)
 <div align="center">
-  Source : <a href=https://https://www.oreilly.com/library/view/applied-text-analysis/9781491963036/ch04.html>Applied Text Analysis with Python</a>
+  Source : <a href="https://https://www.oreilly.com/library/view/applied-text-analysis/9781491963036/ch04.html">Applied Text Analysis with Python</a>
 </div>
 
 Scikit learn propose la méthode `CountVectorizer`du module `sklearn.feature_extraction`. Le modèle utilisé tokenise et normalise les textes par la même occasion. On passe dans `.fit` un itérable, une liste de strings ou de de fichiers et  crée un dictionnaire du corpus.
