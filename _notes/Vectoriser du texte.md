@@ -16,7 +16,15 @@ De nombreuses méthodes existent. Parmi les plus simples on a :
 - One-hot-encoding
 - TF-IDF : *Term Frequency–Inverse Document Frequency* (fréquence lexicale, fréquence inverse textuelle)
 
-D'autres approches exploitant les réseaux de neurones existent, appelées "représentations distribuées[^1]" (*distributed representations*)
+D'autres approches exploitant les réseaux de neurones existent, appelées "représentations distribuées[^1]" (*distributed representations*). Elles se fondent sur le contexte ou la similarité sémantique entre les mots.
+
+![context_vector](/assets/img/context_vector.png#center)
+<div align="center">
+	
+Un vecteur contextuel issu d'un vecteur lexical.  <a href="https://www.aclweb.org/anthology/W06-2501.pdf">Source.</a>
+	
+</div>
+
 
 [^1]: https://hal.archives-ouvertes.fr/tel-02504543/document
 
@@ -34,7 +42,7 @@ D'autres approches exploitant les réseaux de neurones existent, appelées "repr
 
 L'approche *Bag-of-words* consiste à attribuer à chaque document un vecteur de longueur égale à la taille du vocabulaire du corpus de textes analysés. Pour simplifier le calcul, on peut ordonner la liste selon l'ordre alphabétique ou créer un dictionnaire reliant chaque mot à sa position dans une liste.
 
-![](/assets/img/bag-of-word.png)
+![](/assets/img/bag-of-word.png#center)
 
 <div align="center">
 	
@@ -55,7 +63,7 @@ Les exemples inclus ici utilisent scikit-learn, mais on peut aller voir [cet art
 
 La vectorisation la plus simple : on attribue à chaque élément du vecteur une valeur égale au nombre de récurrences dans le texte du mot correspondant. On peut soit garder des nombres entiers soit [[Norme d'un vecteur\|normaliser le vecteur]].
 
-![](/assets/img/fréquence.png)
+![](/assets/img/fréquence.png#center)
 <div align="center">
   Source : <a href="https://https://www.oreilly.com/library/view/applied-text-analysis/9781491963036/ch04.html">Applied Text Analysis with Python</a>
 </div>

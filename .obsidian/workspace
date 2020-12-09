@@ -11,7 +11,7 @@
           "type": "markdown",
           "state": {
             "file": "_notes/Vectoriser du texte.md",
-            "mode": "source"
+            "mode": "preview"
           }
         }
       }
@@ -98,14 +98,14 @@
   },
   "lastOpenFiles": [
     "_notes/Vectoriser du texte.md",
+    "assets/img/Pasted image 20201202135340.png",
+    "assets/img/Pasted image 20201202133930.png",
+    "assets/img/Capture d’écran 2020-12-10 à 00.15.44.png",
+    "assets/img/Pasted image 20201031170334.png",
     "assets/img/Pasted image 20201209225555.png",
     "_notes/spacy.md",
     "_notes/spaCy.md",
     "_notes/Snippets html.md",
-    "assets/img/Pasted image 20201209221719.png",
-    "_notes/Créer un vecteur TF de mots..md",
-    "_notes/Connexion SSH avec un notebook.md",
-    "_notes/df.duplicated() - trouver les doublons.md",
-    "_notes/Untitled 4.md"
+    "assets/img/Pasted image 20201209221719.png"
   ]
 }
