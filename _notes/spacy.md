@@ -1,5 +1,5 @@
 ---
-title: spaCy
+title: Spacy
 tags: NLP ml-pratique
 toc: true
 etat: été
@@ -105,7 +105,7 @@ Le résultat :
 
 > **A noter** :
 > Il est possible de sélectionner une tranche (_slice_) de plusieurs mots en en spécifiant l'index : `doc[0:3]`.
-> Une bonne pratique est de le stocker dans un objet [Span](spaCy#span).
+> Une bonne pratique est de le stocker dans un objet [Span](Spacy#span).
 
 ### Named entities
 

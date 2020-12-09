@@ -10,8 +10,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/Connexion SSH avec un notebook.md",
-            "mode": "source"
+            "file": "_notes/Vectoriser du texte.md",
+            "mode": "preview"
           }
         }
       }
@@ -69,8 +69,8 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Connexion SSH avec un notebook.md",
-                "collapseAll": false,
+                "file": "_notes/Vectoriser du texte.md",
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "backlinkCollapsed": false,
@@ -84,11 +84,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Connexion SSH avec un notebook.md"
+                "file": "_notes/Vectoriser du texte.md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -96,15 +97,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "_notes/Vectoriser du texte.md",
+    "assets/img/Pasted image 20201209225555.png",
+    "_notes/spacy.md",
+    "_notes/spaCy.md",
+    "_notes/Snippets html.md",
+    "assets/img/Pasted image 20201209221719.png",
+    "_notes/Créer un vecteur TF de mots..md",
     "_notes/Connexion SSH avec un notebook.md",
     "_notes/df.duplicated() - trouver les doublons.md",
-    "_notes/Untitled 4.md",
-    "_notes/Régression logistique.md",
-    "_notes/Régularisation.md",
-    "assets/img/Capture d’écran 2020-12-05 à 01.01.31.png",
-    "about.md",
-    "_notes/Snippets html.md",
-    "assets/img/Capture d’écran 2020-12-04 à 23.15.26.png",
-    "_notes/sklearn.cluster.Kmeans - Kmeans facile.md"
+    "_notes/Untitled 4.md"
   ]
 }

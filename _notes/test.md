@@ -8,15 +8,15 @@ title: test
 [[df.to_sql()\|sql]]
 
 
-[[spaCy#^466265\|paragraphe]]
+[[Spacy#^466265\|paragraphe]]
 
-[[spaCy#Analyse de données]]
+[[Spacy#Analyse de données]]
 
-[Spacy](spacy#analyse-de-données)
+[Spacy](Spacy#analyse-de-donn%C3%A9es)
 
-[[spacy#analyse-de-données]]
+[[Spacy#analyse-de-données]]
 
-[[spaCy#named-entities\|jjjj]]
+[[Spacy#named-entities\|jjjj]]
 
 
 
