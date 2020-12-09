@@ -4,7 +4,7 @@ tags : Réseau
 etat : hiver
 ---
 
-Utiliser un notebook jupyter déporté sur un serveur a pour avantage d'externaliser les calculs et d'éviter de trop surcharger sa machine, qui n'est pas forcément optimisée pour des charges lourdes en RAM ou en CPU.
+Utiliser un notebook jupyter déporté sur un serveur a pour avantage d'externaliser les calculs et d'éviter de trop surcharger sa machine, qui n'est pas forcément optimisée pour des charges lourdes en RAM ou en CPU. Par ailleurs, l'usage de Kite sur Jupyterlab est plus fluide et rapide si l'on utilise un serveur distant, celui-ci n'étant pas surchargé de processus, contrairement à un ordinateur de bureau.
 
 Louer un serveur n'est pas gratuit et une concurrence féroce a lieu sur ce marché sur le marché des "petits" VPS. il semble que deux stratégies émergent :
 
