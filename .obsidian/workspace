@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/Vectoriser du texte.md",
+            "file": "_notes/Similarité.md",
             "mode": "preview"
           }
         }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "similarité",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -49,7 +49,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -69,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Vectoriser du texte.md",
+                "file": "_notes/Similarité.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,7 +85,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Vectoriser du texte.md"
+                "file": "_notes/Similarité.md"
               }
             }
           }
@@ -97,6 +98,8 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "_notes/Similarité.md",
+    "_notes/Similarité cosinus.md",
     "_notes/Vectoriser du texte.md",
     "assets/img/Pasted image 20201202135340.png",
     "assets/img/Pasted image 20201202133930.png",
@@ -104,8 +107,6 @@
     "assets/img/Pasted image 20201031170334.png",
     "assets/img/Pasted image 20201209225555.png",
     "_notes/spacy.md",
-    "_notes/spaCy.md",
-    "_notes/Snippets html.md",
-    "assets/img/Pasted image 20201209221719.png"
+    "_notes/spaCy.md"
   ]
 }
