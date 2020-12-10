@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/Similarité.md",
+            "file": "_notes/df.drop() - retirer une colonne d'un dataset.md",
             "mode": "preview"
           }
         }
@@ -40,17 +40,16 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "similarité",
+                "query": "dbsc",
                 "matchingCase": false,
                 "explainSearch": false,
-                "collapseAll": false,
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -70,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Similarité.md",
+                "file": "_notes/df.drop() - retirer une colonne d'un dataset.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -85,7 +84,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Similarité.md"
+                "file": "_notes/df.drop() - retirer une colonne d'un dataset.md"
               }
             }
           }
@@ -98,15 +97,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "_notes/df.drop() - retirer une colonne d'un dataset.md",
+    "_notes/Untitled 4.md",
+    "_notes/K-neighbors.md",
+    "_notes/dbscan.md",
     "_notes/Similarité.md",
     "_notes/Similarité cosinus.md",
     "_notes/Vectoriser du texte.md",
     "assets/img/Pasted image 20201202135340.png",
     "assets/img/Pasted image 20201202133930.png",
-    "assets/img/Capture d’écran 2020-12-10 à 00.15.44.png",
-    "assets/img/Pasted image 20201031170334.png",
-    "assets/img/Pasted image 20201209225555.png",
-    "_notes/spacy.md",
-    "_notes/spaCy.md"
+    "assets/img/Capture d’écran 2020-12-10 à 00.15.44.png"
   ]
 }

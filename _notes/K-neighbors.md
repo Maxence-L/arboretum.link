@@ -56,8 +56,8 @@ On retrouve cet algorithme dans [[sklean]] avec [sklean.neighbors.KNeighborsClas
 ```python
 from sklearn.neighbors import KNeighborsClassifier
 
-# Create and fit the model
-knn = KNeighborsClassifier()
+# Create and fit the model with 6 neighbors
+knn = KNeighborsClassifier(n_neigbors=6)
 knn.fit(X_train, y_train)
 
 # Predict on the test features, print the results
