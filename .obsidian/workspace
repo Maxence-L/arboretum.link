@@ -98,14 +98,14 @@
   },
   "lastOpenFiles": [
     "_notes/Séparer les données entre des données d'entrainement et de test.md",
+    "_notes/K-neighbors.md",
+    "_notes/series.str.split().md",
+    "assets/img/Pasted image 20201211021326.png",
+    "_notes/sklearn.cluster.Kmeans.md",
     "_notes/df.drop() - retirer une colonne d'un dataset.md",
     "_notes/df.apply().md",
     "_notes/Untitled 4.md",
-    "_notes/K-neighbors.md",
     "_notes/dbscan.md",
-    "_notes/Similarité.md",
-    "_notes/Similarité cosinus.md",
-    "_notes/Vectoriser du texte.md",
-    "assets/img/Pasted image 20201202135340.png"
+    "_notes/Similarité.md"
   ]
 }

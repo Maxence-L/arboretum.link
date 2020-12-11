@@ -15,8 +15,7 @@ train_test_split(X, y,
 				test_size = float, 
 				random_state= int, 
 				shuffle = bool, 
-				stratify = array)`
-
+				stratify = array)
 ````
 
 - `test_size` correspond à la proportion (entre 0 et 1) de données prélevées pour les données de test.
@@ -42,7 +41,7 @@ y = digits.target
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state=42, stratify=y)
 
 # Create a k-NN classifier with 7 neighbors: knn
-knn = KNeighborsClassifier(n_neigbors)
+knn = KNeighborsClassifier(n_neigbors=7)
 
 # Fit the classifier to the training data
 knn.fit(X_train, y_train)
