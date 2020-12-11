@@ -1,7 +1,7 @@
 ---
-title : df.drop() - retirer une colonne d'un dataset
-tags : pandas
-etat :hiver
+title: df.drop() - retirer une colonne d'un dataset
+tags: pandas
+etat: hiver
 ---
 
 Méthode permettant de retirer une colonne d'un dataset. En pratique, on peut s'en servir pour séparer un jeu de données entre variable objectif et variables explicatives.
