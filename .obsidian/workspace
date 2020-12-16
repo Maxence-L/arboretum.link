@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/Séparer les données entre des données d'entrainement et de test.md",
+            "file": "_notes/Heatmaps.md",
             "mode": "preview"
           }
         }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "dbsc",
+                "query": "régression",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -49,7 +49,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -69,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Séparer les données entre des données d'entrainement et de test.md",
+                "file": "_notes/Heatmaps.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,7 +85,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Séparer les données entre des données d'entrainement et de test.md"
+                "file": "_notes/Heatmaps.md"
               }
             }
           }
@@ -97,15 +98,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "_notes/Heatmaps.md",
+    "assets/img/Pasted image 20201031170334.png",
+    "assets/img/Pasted image 20201202133930.png",
+    "assets/img/Pasted image 20201202135340.png",
+    "assets/img/Pasted image 20201215234052.png",
+    "_notes/Untitled 4.md",
+    "refs.md",
     "_notes/Séparer les données entre des données d'entrainement et de test.md",
     "_notes/K-neighbors.md",
-    "_notes/series.str.split().md",
-    "assets/img/Pasted image 20201211021326.png",
-    "_notes/sklearn.cluster.Kmeans.md",
-    "_notes/df.drop() - retirer une colonne d'un dataset.md",
-    "_notes/df.apply().md",
-    "_notes/Untitled 4.md",
-    "_notes/dbscan.md",
-    "_notes/Similarité.md"
+    "_notes/series.str.split().md"
   ]
 }

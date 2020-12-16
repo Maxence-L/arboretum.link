@@ -5,4 +5,6 @@ permalink: /refs/
 content-type: eg
 ---
 
-Cette page a pour but de parler des livres et des réferences en lignes que j'utilise au quotidien.
+Quels livres pour la Data Science ? Il existe une profusion d'ouvrages sur le sujet, ayant pour la plupart des approches différentes.
+
+### An Introduction to Statistical Learning
