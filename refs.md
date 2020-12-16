@@ -79,6 +79,15 @@ Les ouvrages sur le sujet sont donc souvent centrés sur les statistiques (et no
 
 Un livre d'exercices en apparence simples sur Python, mais dont la résolution est expliquée en détail et approfondie à chaque fois. Une excellente manière de s'entrainer au quotidien et de découvrir certaines fonctionnalités méconnues ou des solutions habiles à certaines questions.
 
+### *Data Science : cours et exercices*, Amini et al.
 
+Un livre approchant la théorie et les algorithmes de la Data Science, publié dans une nouvelle collection chez Eyrolles. 
 
+L'ouvrage est à la fois très théorique mais assez superficiel sur de nombreux sujets. Tous les problèmes sont approchés par la voie mathématique, sans que l'on explique comment choisir entre les solutions possibles et sans démonstrations. 
+
+Par exemple, la régression ridge est mentionnée sans expliquer pourquoi l'utiliser plutôt qu'une autre ou ses spécificités pratiques. de même, de nombreuses solutions pointues sont exposées, mais pas les techniques liées aux arbres de décision, très utilisés dans le domaine. On aurait préféré un chapitre sur ce sujet plutôt que sur la "visualisation interactive d'information", d'autant que le livre est imprimé en noir et blanc sur un papier mat.
+
+Le livre est donc parfois lacunaire et réservé à des lecteurs expérimentés.
+
+On remerciera toutefois les auteurs d'avoir utilisé un maximum de termes français, les ouvrages d'origine francophones sur la Data Science étant rares.
 
