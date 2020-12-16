@@ -34,7 +34,7 @@ reg.fit(X_train, y_train)
 
 ### Evaluation
 
-On calcule le [[R2]] avec la méthode `.score` et l'écart-type de l'erreur au carré avec `sklearn.metrics - mean_squared_error`.
+On calcule le [[R2]] avec la méthode `.score` et l'écart-type de l'erreur moyenne au carré avec `sklearn.metrics - mean_squared_error`.
 
 ```python
 from sklearn.metrics import mean_squared_error
@@ -47,7 +47,11 @@ print("Root Mean Squared Error: {}".format(rmse))
 
 ### Evaluation par [[validation croisée]]
 
-Pour éviter que le split ait une trop forte influence sur le résultat, on partage les données en plusieurs segment et l'on réalise l'estimation sur chacun d'entre eux. On mesure ensuite le [[R2]] moyen.
+Pour éviter que le split ait une trop forte influence sur le résultat, on partage les données en $k$ segments et l'on estime le vecteur $\beta$ sur chacun d'entre eux. On mesure ensuite le [[R2]] moyen. 
+
+Avant de se lancer dans une évaluation avec un $k$ élevé, il est indiqué d'estimer le temps que chaque évaluation prend au moyen de la commande `%timeit`  :
+
+`%timeit cross_val_score(reg,X,y, cv= 3)`
 
 ```python
 from sklearn.model_selection import cross_val_score

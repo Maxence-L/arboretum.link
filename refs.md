@@ -17,7 +17,7 @@ Cet ouvrage reste toutefois superficiel à certains égards : une maîtrise comp
 
 ### *The Data Science Design Manual* - Steven S. Skienna
 
-Un excellent livre pour découvrir la Data Science. Je l'ai lu d'une traite lorsque j'ai commencé à étudier le sujet. Skienna est un professeur brillant dont on aimerait être l'élève, qui sait traiter de sujets pointus tout en expliquant leur utilité et leur contexte.
+Un excellent livre pour découvrir la Data Science. Je l'ai lu d'une traite lorsque j'ai commencé à étudier le sujet. Skienna est un brillant professeur dont on aimerait être l'élève et qui sait traiter de sujets pointus tout en expliquant leur utilité et leur contexte.
 
 L'ouvrage contient des explications généralement peu mathématiques mais très imagées, des exemples, des cas pratiques et des exercices. Je me surprend souvent à y revenir après avoir lu en détail l'aspect mathématique d'une méthode, afin de la recontextualiser ou de me rappeler ce que j'aurais pu éviter.
 
@@ -31,11 +31,11 @@ Datacamp est un site de tutoriels sur la Data Science et l'analyse de données e
 
 En pratique, il contient de nombreux tutoriels de programmation sur les méthodes de base. Je suis assez sceptique de cette technique d'apprentissage : les tutoriels sont denses et les concepts statistiques inexpliqués. 
 
-Il conviendra donc bien à des personnes très au point d'un de vue mathématique, à l'aise en programmation mais souhaitant des exemples de bonnes pratiques en Data Science. Je conseille de prendre des notes au cours des tutoriels pour pouvoir réutiliser le code ensuite, comme ce que je fais avec ce site et [Obsidian](obsidian.md) au quotidien. Cela double toutefois la durée annoncée des tutoriels !
+Il conviendra donc bien à des personnes très au point d'un de vue mathématique, à l'aise en programmation mais souhaitant des exemples de pratiques standard en Data Science du point de vue de la programmation. Je conseille de prendre des notes au cours des tutoriels pour pouvoir réutiliser le code ensuite, comme ce que je fais avec ce site et [Obsidian](obsidian.md) au quotidien. Cela double toutefois la durée annoncée des tutoriels !
 
 A noter que l'approche est parfois différente selon les tutoriels et que leur code commence à vieillir. Les "projets guidés" sont inutiles et très fastidieux de mon point de vue.
 
-### Udacity
+### *Udacity*
 
 Udacity est un site proposant des formations rapides pour une grande diversité de métiers "tech", notamment en programmation. J'ai profité des offres "1 mois gratuit" pour explorer leur curriculum.
 
@@ -43,7 +43,7 @@ Udacity est un site proposant des formations rapides pour une grande diversité 
 
 L'aspect mathématique/probabiliste est très mal abordé : je ne vois pas quelle connaissance du test bootstrap un élève pourra tirer d'une vidéo de 5 minutes sur le sujet. Les forêts aléatoires sont appliquées sans que l'on explique le concept, tout est survolé, mais pour un prix stratosphérique en comparaison à Datacamp.
 
-### Datascience Bookcamp, Leonard Apelstin
+### *Datascience Bookcamp, Leonard Apelstin*
 
 J'ai acheté ce livre qui semblait donner une explication en détail des tests de type bootstrap et de leur application en programmation. Il n'est pas encore terminé, il reste un chapitre à écrire et l'auteur ne semble pas avoir fait de mise à jour depuis mars 2020.
 
@@ -81,7 +81,7 @@ Un livre d'exercices en apparence simples sur Python, mais dont la résolution e
 
 ### *Data Science : cours et exercices*, Amini et al.
 
-Un livre approchant la théorie et les algorithmes de la Data Science, publié dans une nouvelle collection chez Eyrolles. 
+Un livre approchant la théorie et les algorithmes de la Data Science, publié dans une nouvelle collection chez Eyrolles et que j'ai découvert dans la librairie éponyme.
 
 L'ouvrage est à la fois très théorique mais assez superficiel sur de nombreux sujets. Tous les problèmes sont approchés par la voie mathématique, sans que l'on explique comment choisir entre les solutions possibles et sans démonstrations. 
 
