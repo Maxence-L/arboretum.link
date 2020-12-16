@@ -3,9 +3,12 @@ layout: post
 title: Reférences
 permalink: /refs/
 content-type: eg
+toc : true
 ---
 
 Cette page référence les ressources que j'utilise ou que j'ai utilisé et mes impressions à leur sujet.
+
+## Data Science
 
 ### *An Introduction to Statistical Learning* - Tibshirani et al.
 
@@ -22,6 +25,30 @@ Un excellent livre pour découvrir la Data Science. Je l'ai lu d'une traite lors
 L'ouvrage contient des explications généralement peu mathématiques mais très imagées, des exemples, des cas pratiques et des exercices. Je me surprend souvent à y revenir après avoir lu en détail l'aspect mathématique d'une méthode, afin de la recontextualiser ou de me rappeler ce que j'aurais pu éviter.
 
 Le livre  est disponible sur Amazon à un prix modique compte tenu de la qualité de l'ouvrage (relié et couleurs), l'auteur a apparemment [mis en ligne ses cours](https://www3.cs.stonybrook.edu/~skiena/data-manual/lectures/), qui promettent d'être très intéressants.
+
+### *Datascience Bookcamp, Leonard Apelstin*
+
+J'ai acheté ce livre qui semblait donner une explication en détail des tests de type bootstrap et de leur application en programmation. Il n'est pas encore terminé, il reste un chapitre à écrire et l'auteur ne semble pas avoir fait de mise à jour depuis mars 2020.
+
+Le livre est centré sur l'application de concepts de machine learning : on crée l'algorithme avec [[numpy]] puis il est donné la bibliothèque spécialisée facilitant le travail. C'est un bon "pont" entre la théorie et la pratique, étant beaucoup plus détaillé que les articles de blogs sur les sujets qu'il aborde. Le chapitre sur l'étude textuelle a le mérite d'accompagner le lecteur pas-à-pas et est une excellente introduction sur le sujet.
+
+On peut regretter toutefois que le code soit difficile à exécuter : la bibliothèque géographique utilisée est obsolète, le chapitre sur le NLP demande beaucoup de mémoire vive et fait facilement planter les machines avec moins de 8 Go de RAM.
+
+L'éditeur, Manning, fait continuellement des promotions : achetez le à -50%.
+
+### *Data Science : cours et exercices*, Amini et al.
+
+Un livre approchant la théorie et les algorithmes de la Data Science, publié dans une nouvelle collection chez Eyrolles et que j'ai découvert dans la librairie éponyme.
+
+L'ouvrage est à la fois très théorique mais assez superficiel sur de nombreux sujets. Tous les problèmes sont approchés par la voie mathématique, sans que l'on explique comment choisir entre les solutions possibles et sans démonstrations. 
+
+Par exemple, la régression ridge est mentionnée sans expliquer pourquoi l'utiliser plutôt qu'une autre ou ses spécificités pratiques. de même, de nombreuses solutions pointues sont exposées, mais pas les techniques liées aux arbres de décision, très utilisés dans le domaine. On aurait préféré un chapitre sur ce sujet plutôt que sur la "visualisation interactive d'information", d'autant que le livre est imprimé en noir et blanc sur un papier mat.
+
+Le livre est donc parfois lacunaire et réservé à des lecteurs expérimentés.
+
+On remerciera toutefois les auteurs d'avoir utilisé un maximum de termes français, les ouvrages d'origine francophones sur la Data Science étant rares.
+
+## Sites web, tutos
 
 ### *[Datacamp](https://datacamp.com)*
 
@@ -43,15 +70,8 @@ Udacity est un site proposant des formations rapides pour une grande diversité 
 
 L'aspect mathématique/probabiliste est très mal abordé : je ne vois pas quelle connaissance du test bootstrap un élève pourra tirer d'une vidéo de 5 minutes sur le sujet. Les forêts aléatoires sont appliquées sans que l'on explique le concept, tout est survolé, mais pour un prix stratosphérique en comparaison à Datacamp.
 
-### *Datascience Bookcamp, Leonard Apelstin*
 
-J'ai acheté ce livre qui semblait donner une explication en détail des tests de type bootstrap et de leur application en programmation. Il n'est pas encore terminé, il reste un chapitre à écrire et l'auteur ne semble pas avoir fait de mise à jour depuis mars 2020.
-
-Le livre est centré sur l'application de concepts de machine learning : on crée l'algorithme avec [[numpy]] puis il est donné la bibliothèque spécialisée facilitant le travail. C'est un bon "pont" entre la théorie et la pratique, étant beaucoup plus détaillé que les articles de blogs sur les sujets qu'il aborde. Le chapitre sur l'étude textuelle a le mérite d'accompagner le lecteur pas-à-pas et est une excellente introduction sur le sujet.
-
-On peut regretter toutefois que le code soit difficile à exécuter : la bibliothèque géographique utilisée est obsolète, le chapitre sur le NLP demande beaucoup de mémoire vive et fait facilement planter les machines avec moins de 8 Go de RAM.
-
-L'éditeur, Manning, fait continuellement des promotions : achetez le à -50%.
+## Maths
 
 ### [*Introduction to Linear Algebra for Applied Machine Learning with Python*](https://pabloinsente.github.io/intro-linear-algebra), Pablo Caceres
 
@@ -61,17 +81,25 @@ Les puristes reprocheront probablement à l'auteur son manque de rigueur, mais j
 
 Il ne manque que des exercices, corrigés. C'est néanmoins une bonne ressource pour ensuite aborder des ouvrages plus sérieux.
 
+### *Linear Algebra*, Jim Hefferson
+
+(à complêter)
+
+## Probabilités
+
 ### *Bayesian Statistics the Fun Way*, Will Kurt
 
 De même que la ressource précedente, j'ai choisi cet ouvrage pour me remettre à jour en probabilités. L'approche est très didactique et ne présuppose pas de connaissances particulière dans le domaine, ce qui est très agréable compte tenu du grand nombre de livres présupposant que le lecteur vient tout juste de sortir de Terminale S ou de troisième année de Licence.
 
 Les exercices sont simples et aident à appliquer les idées présentées, le ton est léger et l'on a pas vraiment l'impression de lire un livre de probabilités. Le contenu n'est toutefois pas immense et une fois fini, d'autres ouvrages devront prendre le relais. C'est en résumé un bon livre pour un lycéen (parlant anglais couramment cela dit...) ou un professionnel souhaitant se remettre à jour ou entretenir ses connaissances. L'édition (No Starch Press) est excellente.
 
+## Programmation
+
 ### *Book of R*, Tilman M. Davies
 
-Le livre grâce auquel j'ai réellement compris le fonctionnement de R et qui m'a permis de m'en sortir avec langage. R présente deux inconvénients : il est utilisé principalement par des statisticiens et comprend des packages extrêmement utilisés (le tidyverse) dont la syntaxe diffère du langage.
+Le livre grâce auquel j'ai réellement compris le fonctionnement de R et qui m'a permis d'être efficace professionnellement avec ce langage. R présente deux inconvénients : il est utilisé principalement par des statisticiens et comprend des packages extrêmement utilisés (le tidyverse) dont la syntaxe diffère du langage.
 
-Les ouvrages sur le sujet sont donc souvent centrés sur les statistiques (et non la programmation), et l'utilisation systématique de dplyr complique l'acquisition des bases de la manipulation d'objets dans R, deux langages cohabitant en permanence.
+Les ouvrages sur le sujet sont donc souvent centrés sur les statistiques (et non la programmation), et l'utilisation systématique de dplyr complique l'acquisition des bases de la manipulation d'objets dans R, un langage et un idiome cohabitant en permanence.
 
 *Book of R* est d'abord centré sur R et permet d'apprendre les concepts comme n'importe quel langage orienté-objet sans ambiguité. Le ton de l'auteur est assez froid mais les explications sont claires tout comme les exercices. J'eu apprécié qu'il fut publié au moment de mes études !
 
@@ -79,15 +107,5 @@ Les ouvrages sur le sujet sont donc souvent centrés sur les statistiques (et no
 
 Un livre d'exercices en apparence simples sur Python, mais dont la résolution est expliquée en détail et approfondie à chaque fois. Une excellente manière de s'entrainer au quotidien et de découvrir certaines fonctionnalités méconnues ou des solutions habiles à certaines questions.
 
-### *Data Science : cours et exercices*, Amini et al.
 
-Un livre approchant la théorie et les algorithmes de la Data Science, publié dans une nouvelle collection chez Eyrolles et que j'ai découvert dans la librairie éponyme.
-
-L'ouvrage est à la fois très théorique mais assez superficiel sur de nombreux sujets. Tous les problèmes sont approchés par la voie mathématique, sans que l'on explique comment choisir entre les solutions possibles et sans démonstrations. 
-
-Par exemple, la régression ridge est mentionnée sans expliquer pourquoi l'utiliser plutôt qu'une autre ou ses spécificités pratiques. de même, de nombreuses solutions pointues sont exposées, mais pas les techniques liées aux arbres de décision, très utilisés dans le domaine. On aurait préféré un chapitre sur ce sujet plutôt que sur la "visualisation interactive d'information", d'autant que le livre est imprimé en noir et blanc sur un papier mat.
-
-Le livre est donc parfois lacunaire et réservé à des lecteurs expérimentés.
-
-On remerciera toutefois les auteurs d'avoir utilisé un maximum de termes français, les ouvrages d'origine francophones sur la Data Science étant rares.
 

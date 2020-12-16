@@ -1,6 +1,6 @@
 ---
 title: Spacy
-tags: NLP ml-pratique
+tags: NLP
 toc: true
 etat: été
 ---

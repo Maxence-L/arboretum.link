@@ -1,6 +1,6 @@
 ---
 title : Régularisation
-tags: apprentissage-supervisé
+tags: Apprentissage-supervisé
 etat : hiver
 ---
 
@@ -105,5 +105,7 @@ for alpha in alpha_space:
 # Display the plot
 display_plot(ridge_scores, ridge_scores_std)
 ````
+
+Le résultat :
 
 ![](/assets/img/ridge_loop.png#center)

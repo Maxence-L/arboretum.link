@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/Régularisation.md",
+            "file": "_notes/Spacy.md",
             "mode": "source"
           }
         }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Régularisation.md",
+                "file": "_notes/Spacy.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,7 +84,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Régularisation.md"
+                "file": "_notes/Spacy.md"
               }
             }
           }
@@ -92,19 +92,18 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "lastOpenFiles": [
-    "_notes/Régularisation.md",
-    "assets/img/Pasted image 20201216172840.png",
+    "_notes/Spacy.md",
+    "_notes/Données de test.md",
+    "_notes/sklearn.metrics - Evaluer les modèles.md",
+    "_notes/sklearn.cluster.Kmeans.md",
+    "_notes/sklearn.md",
+    "_notes/scipy.spatial.distance.euclidian() - Calculer la distance euclidienne.md",
+    "_notes/set.md",
     "refs.md",
-    "_notes/Régression linéaire.md",
-    "assets/img/Pasted image 20201216133355.png",
-    "_notes/Régression logistique.md",
-    "_notes/régression linéaire.md",
-    "_notes/Untitled 4.md",
-    "_notes/Heatmaps.md",
-    "assets/img/Pasted image 20201031170334.png"
+    "_notes/Régularisation.md",
+    "assets/img/Pasted image 20201216172840.png"
   ]
 }
