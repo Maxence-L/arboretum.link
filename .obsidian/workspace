@@ -10,8 +10,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "refs.md",
-            "mode": "preview"
+            "file": "_notes/Régularisation.md",
+            "mode": "source"
           }
         }
       }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "régula",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "refs.md",
+                "file": "_notes/Régularisation.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,7 +84,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "refs.md"
+                "file": "_notes/Régularisation.md"
               }
             }
           }
@@ -96,6 +96,8 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "_notes/Régularisation.md",
+    "assets/img/Pasted image 20201216172840.png",
     "refs.md",
     "_notes/Régression linéaire.md",
     "assets/img/Pasted image 20201216133355.png",
@@ -103,8 +105,6 @@
     "_notes/régression linéaire.md",
     "_notes/Untitled 4.md",
     "_notes/Heatmaps.md",
-    "assets/img/Pasted image 20201031170334.png",
-    "assets/img/Pasted image 20201202133930.png",
-    "assets/img/Pasted image 20201202135340.png"
+    "assets/img/Pasted image 20201031170334.png"
   ]
 }

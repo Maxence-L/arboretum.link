@@ -31,7 +31,7 @@ Datacamp est un site de tutoriels sur la Data Science et l'analyse de données e
 
 En pratique, il contient de nombreux tutoriels de programmation sur les méthodes de base. Je suis assez sceptique de cette technique d'apprentissage : les tutoriels sont denses et les concepts statistiques inexpliqués. 
 
-Il conviendra donc bien à des personnes très au point d'un de vue mathématique, à l'aise en programmation mais souhaitant des exemples de pratiques standard en Data Science du point de vue de la programmation. Je conseille de prendre des notes au cours des tutoriels pour pouvoir réutiliser le code ensuite, comme ce que je fais avec ce site et [Obsidian](obsidian.md) au quotidien. Cela double toutefois la durée annoncée des tutoriels !
+Il conviendra donc bien à des personnes très au point d'un de vue mathématique, à l'aise en programmation mais souhaitant des exemples de pratiques standard en Data Science du point de vue de la programmation. Je conseille de prendre des notes au cours des tutoriels pour pouvoir réutiliser le code ensuite, comme ce que je fais avec ce site (beaucoup d'exemples sur python viennent de Datacamp) et [Obsidian](obsidian.md) au quotidien. Cela double toutefois la durée annoncée des tutoriels !
 
 A noter que l'approche est parfois différente selon les tutoriels et que leur code commence à vieillir. Les "projets guidés" sont inutiles et très fastidieux de mon point de vue.
 
