@@ -10,8 +10,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/Heatmaps.md",
-            "mode": "preview"
+            "file": "refs.md",
+            "mode": "source"
           }
         }
       }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "régression",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -49,8 +49,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -70,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Heatmaps.md",
+                "file": "refs.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -85,12 +84,11 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Heatmaps.md"
+                "file": "refs.md"
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -98,15 +96,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "refs.md",
+    "_notes/Régression linéaire.md",
+    "assets/img/Pasted image 20201216133355.png",
+    "_notes/Régression logistique.md",
+    "_notes/régression linéaire.md",
+    "_notes/Untitled 4.md",
     "_notes/Heatmaps.md",
     "assets/img/Pasted image 20201031170334.png",
     "assets/img/Pasted image 20201202133930.png",
-    "assets/img/Pasted image 20201202135340.png",
-    "assets/img/Pasted image 20201215234052.png",
-    "_notes/Untitled 4.md",
-    "refs.md",
-    "_notes/Séparer les données entre des données d'entrainement et de test.md",
-    "_notes/K-neighbors.md",
-    "_notes/series.str.split().md"
+    "assets/img/Pasted image 20201202135340.png"
   ]
 }
