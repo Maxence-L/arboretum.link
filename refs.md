@@ -53,7 +53,7 @@ On peut regretter toutefois que le code soit difficile à exécuter : la bibliot
 
 L'éditeur, Manning, fait continuellement des promotions : achetez le à -50%.
 
-### [Introduction to Linear Algebra for Applied Machine Learning with Python](https://pabloinsente.github.io/intro-linear-algebra), Pablo Insente
+### [Introduction to Linear Algebra for Applied Machine Learning with Python](https://pabloinsente.github.io/intro-linear-algebra), Pablo Caceres
 
 Un article très long récapitulant d'une manière inhabituellement vivante les principaux concepts de l'algèbre linéaire, dans la perspective de son application pour le machine learning.
 
