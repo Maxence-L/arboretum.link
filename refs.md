@@ -47,17 +47,38 @@ L'aspect mathématique/probabiliste est très mal abordé : je ne vois pas quell
 
 J'ai acheté ce livre qui semblait donner une explication en détail des tests de type bootstrap et de leur application en programmation. Il n'est pas encore terminé, il reste un chapitre à écrire et l'auteur ne semble pas avoir fait de mise à jour depuis mars 2020.
 
-Le livre est centré sur l'application de concepts de machine learning : on crée l'algorithme avec [[numpy]] puis il est donné la bibliothèque spécialisée facilitant le travail. C'est un bon "pont" entre la théorie et la pratique, étant beaucoup plus détaillé que les articles de blogs sur les sujets qu'il aborde. 
+Le livre est centré sur l'application de concepts de machine learning : on crée l'algorithme avec [[numpy]] puis il est donné la bibliothèque spécialisée facilitant le travail. C'est un bon "pont" entre la théorie et la pratique, étant beaucoup plus détaillé que les articles de blogs sur les sujets qu'il aborde. Le chapitre sur l'étude textuelle a le mérite d'accompagner le lecteur pas-à-pas et est une excellente introduction sur le sujet.
 
 On peut regretter toutefois que le code soit difficile à exécuter : la bibliothèque géographique utilisée est obsolète, le chapitre sur le NLP demande beaucoup de mémoire vive et fait facilement planter les machines avec moins de 8 Go de RAM.
 
 L'éditeur, Manning, fait continuellement des promotions : achetez le à -50%.
 
-### [Introduction to Linear Algebra for Applied Machine Learning with Python](https://pabloinsente.github.io/intro-linear-algebra), Pablo Caceres
+### [*Introduction to Linear Algebra for Applied Machine Learning with Python*](https://pabloinsente.github.io/intro-linear-algebra), Pablo Caceres
 
-Un article très long récapitulant d'une manière inhabituellement vivante les principaux concepts de l'algèbre linéaire, dans la perspective de son application pour le machine learning.
+Un article très long récapitulant d'une manière inhabituellement vivante les principaux concepts de l'algèbre linéaire, dans la perspective de son application pour le machine learning. Je l'ai lu pour me rafraichir les idées sur le sujet.
 
 Les puristes reprocheront probablement à l'auteur son manque de rigueur, mais j'ai beaucoup apprécié cet article pour remettre à jour mes connaissances sur le sujet, d'autant qu'il aborde des concepts plutôt avancés, comme les [valeurs-propres](https://pabloinsente.github.io/intro-linear-algebra#eigenthings) ou la [décomposition en valeurs singulières](https://pabloinsente.github.io/intro-linear-algebra#singular-value-decomposition).
 
-Il ne manque que des exercices, corrigés. C'est néanmoins une bonne ressource pour ensuite aborder des ouvrages plus sérieux sur le sujet.
+Il ne manque que des exercices, corrigés. C'est néanmoins une bonne ressource pour ensuite aborder des ouvrages plus sérieux.
+
+### *Bayesian Statistics the Fun Way*, Will Kurt
+
+De même que la ressource précedente, j'ai choisi cet ouvrage pour me remettre à jour en probabilités. L'approche est très didactique et ne présuppose pas de connaissances particulière dans le domaine, ce qui est très agréable compte tenu du grand nombre de livres présupposant que le lecteur vient tout juste de sortir de Terminale S ou de troisième année de Licence.
+
+Les exercices sont simples et aident à appliquer les idées présentées, le ton est léger et l'on a pas vraiment l'impression de lire un livre de probabilités. Le contenu n'est toutefois pas immense et une fois fini, d'autres ouvrages devront prendre le relais. C'est en résumé un bon livre pour un lycéen (parlant anglais couramment cela dit...) ou un professionnel souhaitant se remettre à jour ou entretenir ses connaissances. L'édition (No Starch Press) est excellente.
+
+### *Book of R*, Tilman M. Davies
+
+Le livre grâce auquel j'ai réellement compris le fonctionnement de R et qui m'a permis de m'en sortir avec langage. R présente deux inconvénients : il est utilisé principalement par des statisticiens et comprend des packages extrêmement utilisés (le tidyverse) dont la syntaxe diffère du langage.
+
+Les ouvrages sur le sujet sont donc souvent centrés sur les statistiques (et non la programmation), et l'utilisation systématique de dplyr complique l'acquisition des bases de la manipulation d'objets dans R, deux langages cohabitant en permanence.
+
+*Book of R* est d'abord centré sur R et permet d'apprendre les concepts comme n'importe quel langage orienté-objet sans ambiguité. Le ton de l'auteur est assez froid mais les explications sont claires tout comme les exercices. J'eu apprécié qu'il fut publié au moment de mes études !
+
+### *Python Workout*, Reuven M. Lerner
+
+Un livre d'exercices en apparence simples sur Python, mais dont la résolution est expliquée en détail et approfondie à chaque fois. Une excellente manière de s'entrainer au quotidien et de découvrir certaines fonctionnalités méconnues ou des solutions habiles à certaines questions.
+
+
+
 
