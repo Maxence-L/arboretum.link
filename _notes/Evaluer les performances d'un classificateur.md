@@ -1,7 +1,8 @@
 ---
-title : Evaluer les performances d'un modèle
+title : Evaluer les performances d'un classificateur
 tags : ml-pratique
 etat : printemps
+toc : true
 ---
 
 ## Le cas de la classification
