@@ -92,7 +92,7 @@ $$
 
 Un modèle parfait présente un score F égal à 1.
 
-##### $F Bêta
+##### F Bêta
 La moyenne harmonique du score F peut être pondérée afin de de donner plus d'importance à un indicateur. On parle alors de score *F-beta* ($F_\beta$). Il se calcule ainsi :
 
 $$
@@ -121,7 +121,9 @@ Une astuce pour améliorer la précision au prix d'une baisse du rappel et de pr
 
 Par exemple, un patient proche de la limite de décision obtiendra une réponse de type "risque de cancer" plutôt que "cancer", limitant ainsi le risque de mauvais diagnostic.
 
+## Courbe ROC
 
+*Receiver-Operator Characteristic**
 
 
 
