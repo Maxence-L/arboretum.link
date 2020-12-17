@@ -31,9 +31,31 @@ Selon les nécessités de l'étude, on peut chercher à optimiser certains élé
 - Dans le cas de la justice, par exemple, il peut être plus important de minimiser le nombre de faux positifs (innocent condamnés) que de vrai positifs. 
 - Pendant une épidémie, on cherchera à minimiser le nombre de faux négatifs afin d'éviter que la maladie se répande.
 
+#### Dans sklearn :
+Le module [sklearn.metrics](https://scikit-learn.org/stable/modules/classes.html?highlight=metrics#module-sklearn.metrics) contient de nombreuses mesures pour évaluer les modèles. La matrice de confusion est accessible avec `from sklearn.metrics import confusion_matrix`.
+
+```python
+from sklearn.metrics import confusion_matrix
+y_true = [2, 0, 2, 2, 0, 1]
+y_pred = [0, 0, 2, 2, 0, 2]
+
+confusion_matrix(y_true, y_pred)
+
+array([ [2, 0, 0],
+        [0, 0, 1],
+        [1, 0, 2] ])
+````
+
+Il existe par ailleurs une méthode pour l'afficher de manière plus "propre" : [sklearn.metrics.plot_confusion_matrix](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.plot_confusion_matrix.html#sklearn.metrics.plot_confusion_matrix). 
+
+Voici un exemple issu du [tutoriel dédié sur le site de sklearn](https://scikit-learn.org/stable/auto_examples/model_selection/plot_confusion_matrix.html#sphx-glr-auto-examples-model-selection-plot-confusion-matrix-py) : 
+
+![](/assets/img/normalized_confusion.png#center)
+
+
 ## La justesse, la précision et le rappel
 
-On dérive de la matrice de confusion trois mesures : la justesse (*accuracy[^1]*); la précision et le rappel. Chaque mesure est [importante pour saisir l'efficacité](http://www.bouletcorp.com/2015/03/01/le-mythe-de-la-caverne/) d'un modèle de classification.
+On dérive de la matrice de confusion trois mesures : la justesse (*accuracy[^1]*), la précision et le rappel. Chaque mesure est [importante pour saisir l'efficacité](http://www.bouletcorp.com/2015/03/01/le-mythe-de-la-caverne/) d'un modèle de classification.
 
 [^1]: Traduction française selon [Google, Inc](https://developers.google.com/machine-learning/crash-course/classification/accuracy?hl=fr)
 
@@ -119,6 +141,32 @@ Une astuce pour améliorer la précision au prix d'une baisse du rappel et de pr
 
 Par exemple, un patient proche de la limite de décision obtiendra une réponse de type "risque de cancer" plutôt que "cancer", limitant ainsi le risque de mauvais diagnostic.
 
+#### Dans sklearn :
+
+Un [excellent guide](https://scikit-learn.org/stable/modules/model_evaluation.html#metrics-and-scoring-quantifying-the-quality-of-predictions) existe pour présenter les mesures disponibles dans le module `sklearn.metrics`.
+
+Habituellement, on utilisera `classification_report()`qui produit les principales mesures présentées ci-dessus :
+
+```python
+from sklearn.metrics import classification_report
+y_true = [0, 1, 2, 2, 0]
+y_pred = [0, 0, 2, 1, 0]
+target_names = ['class 0', 'class 1', 'class 2']
+
+print(classification_report(y_true, y_pred, target_names=target_names))
+
+>             precision    recall  f1-score   support
+
+     class 0       0.67      1.00      0.80         2
+     class 1       0.00      0.00      0.00         1
+     class 2       1.00      0.50      0.67         2
+
+    accuracy                           0.60         5
+   macro avg       0.56      0.50      0.49         5
+weighted avg       0.67      0.60      0.59         5
+````
+
+
 ## Courbe ROC
 
 Les algorithmes de classification possèdent généralement des paramètres pouvant être ajustés par l'utilisateur afin d'obtenir les caractéristiques désirées, notamment le critère de classification. 
@@ -142,3 +190,36 @@ La courbe ROC représente le dilemme rencontré par le critère de classificatio
 ### *AUC : Area under curve*
 
 L'AUC correspond à l'aire située sous la courbe et est utilisée pour mesurer la qualité de la prédiction du classificateur ou le comparer à d'autre. Le classificateur parfait possède une AUC de $100\% \times 100\% = 1$ : plus le classificateur est performant, plus son AUC se rapproche de 1.
+
+#### Dans sklearn :
+
+On utilisera [`roc_curve()`](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.roc_auc_score.html#sklearn.metrics.roc_auc_score) :
+
+```python
+import numpy as np
+from sklearn.metrics import roc_curve
+y = np.array([1, 1, 2, 2])
+
+scores = np.array([0.1, 0.4, 0.35, 0.8])
+
+fpr, tpr, thresholds = roc_curve(y, scores, pos_label=2)
+
+# Taux de faux positifs
+fpr
+> array([0. , 0. , 0.5, 0.5, 1. ])
+
+# Taux de vrai positifs
+tpr
+> array([0. , 0.5, 0.5, 1. , 1. ])
+
+# Critère de décision
+thresholds
+> array([1.8 , 0.8 , 0.4 , 0.35, 0.1 ])
+```
+
+L'utilisateur parcimonieux de son temps pourra exploiter [`plot_roc_curve()`](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.plot_roc_curve.html) pour s'épargner la manipulation sur matplotlib.
+
+Un exemple de courbe ROC avec [[validation croisée]], issue d'un [guide sur le site de sklearn](https://scikit-learn.org/stable/auto_examples/model_selection/plot_roc_crossval.html#sphx-glr-auto-examples-model-selection-plot-roc-crossval-py) :
+
+![](/assets/img/roc_cross_valid.png#center)
+
