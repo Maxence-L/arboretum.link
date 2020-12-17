@@ -154,7 +154,8 @@ y_pred = [0, 0, 2, 1, 0]
 target_names = ['class 0', 'class 1', 'class 2']
 
 print(classification_report(y_true, y_pred, target_names=target_names))
-
+```
+```
 >             precision    recall  f1-score   support
 
      class 0       0.67      1.00      0.80         2
