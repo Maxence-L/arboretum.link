@@ -20,9 +20,9 @@ Les notes peuvent prendre un des états suivants :
 - Hiver : la note est créée et quelques informations sont là, mais l'essentiel reste à faire (< 20%).
 - Printemps : la note bourgeonne mais n'est toujours pas complète.
 - Été : la note est considérée comme complète ou presque (> 80%).
-- Automne : la note est à retravailler, à la lumière des nouvelles informations acquises.
+- Automne : la note est à retravailler.
 
-Le site utilise [[Jekyll::https://jekyllrb.com/]], ainsi que le modèle [[simply-jekyll::https://github.com/raghuveerdotnet/simply-jekyll]], que j'ai modifié pour être compatible avec le logiciel [[Obsidian::https://obsidian.md]], disponible sur [[Github::https://github.com/Maxence-L/notenote.link]] dans une version stable. Ce site est lui dans une version de test permanente, certaines fonctionnalités peuvent donc comporter des bogues et l'apparence est personnalisée pour me faciliter la lecture.
+Le site utilise [[Jekyll::https://jekyllrb.com/]], ainsi que le modèle [[notenote.link::https://github.com/Maxence-L/notenote.link]] issu de[[simply-jekyll::https://github.com/raghuveerdotnet/simply-jekyll]], que j'ai modifié pour être compatible avec le logiciel [[Obsidian::https://obsidian.md]]. Ce site est lui dans une version de test permanente, certaines fonctionnalités peuvent donc comporter des bogues.
 
 N'hésitez pas à ouvrir un [ticket](https://github.com/Maxence-L/arboretum.link/issues) sur github si vous constatez une erreur ! 
 
