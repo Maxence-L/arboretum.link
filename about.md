@@ -15,7 +15,7 @@ Les notes que vous trouverez ici sont donc perpétuellement en cours d'améliora
 
 Le web étant essentiellement en anglais, traduire en français des sujets techniques me permet de réfléchir au sens des mots que j'utilise, et donc de mieux m'approprier ces connaissances.
 
-Par conséquent, les notes peuvent prendre un des états suivants :
+Les notes peuvent prendre un des états suivants :
 
 - Hiver : la note est créée et quelques informations sont là, mais l'essentiel reste à faire (< 20%).
 - Printemps : la note bourgeonne mais n'est toujours pas complète.
