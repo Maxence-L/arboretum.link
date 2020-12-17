@@ -5,8 +5,6 @@ etat : printemps
 toc : true
 ---
 
-## Le cas de la classification
-
 Comment évaluer une classification ? Plusieurs outils existent pour aider le practicien à comprendre le résultat d'un modèle.
 
 ### La matrice de confusion
