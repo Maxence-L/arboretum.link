@@ -197,26 +197,29 @@ L'AUC correspond à l'aire située sous la courbe et est utilisée pour mesurer 
 On utilisera [`roc_curve()`](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.roc_auc_score.html#sklearn.metrics.roc_auc_score) :
 
 ```python
-import numpy as np
+# Import necessary modules
 from sklearn.metrics import roc_curve
-y = np.array([1, 1, 2, 2])
 
-scores = np.array([0.1, 0.4, 0.35, 0.8])
+# Compute predicted probabilities: y_pred_prob
+y_pred_prob = logreg.predict_proba(X_test)[:,1]
 
-fpr, tpr, thresholds = roc_curve(y, scores, pos_label=2)
+# Generate ROC curve values: fpr, tpr, thresholds
+fpr, tpr, thresholds = roc_curve(y_test, y_pred_prob)
 
-# Taux de faux positifs
-fpr
-> array([0. , 0. , 0.5, 0.5, 1. ])
+# fpr : Taux de faux positifs
+# tpr : Taux de vrai positifs
+# thresholds : Critère de décision
 
-# Taux de vrai positifs
-tpr
-> array([0. , 0.5, 0.5, 1. , 1. ])
-
-# Critère de décision
-thresholds
-> array([1.8 , 0.8 , 0.4 , 0.35, 0.1 ])
+# Plot ROC curve
+plt.plot([0, 1], [0, 1], 'k--')
+plt.plot(fpr, tpr, label='Logistic Regression')
+plt.xlabel('False Positive Rate')
+plt.ylabel('True Positive Rate')
+plt.title('ROC Curve')
+plt.show()
 ```
+
+![](/assets/img/roc_curve_plt.png#center)
 
 L'utilisateur parcimonieux de son temps pourra exploiter [`plot_roc_curve()`](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.plot_roc_curve.html) pour s'épargner la manipulation sur matplotlib.
 

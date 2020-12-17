@@ -49,8 +49,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -98,14 +97,14 @@
   },
   "lastOpenFiles": [
     "_notes/Evaluer les performances d'un classificateur.md",
+    "about.md",
+    "refs.md",
+    "assets/img/roc_curve_plt.png",
+    "assets/img/roc_cross_valid.png",
+    "assets/img/Pasted image 20201218001616.png",
     "assets/img/Pasted image 20201217233917.png",
     "assets/img/Pasted image 20201217231953.png",
     "assets/img/Capture d’écran 2020-12-17 à 16.49.25.png",
-    "_notes/Evaluer les performances d'un modèle.md",
-    "refs.md",
-    "about.md",
-    "_notes/ZSnippets html.md",
-    "assets/img/Pasted image 20201202135340.png",
-    "assets/img/Pasted image 20201202133930.png"
+    "_notes/Evaluer les performances d'un modèle.md"
   ]
 }
