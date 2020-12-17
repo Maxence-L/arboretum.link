@@ -91,7 +91,7 @@ $$
 
 Un modèle parfait présente un score F égal à 1.
 
-##### $F_\beta$
+##### $F Bêta
 La moyenne harmonique du score F peut être pondérée afin de de donner plus d'importance à un indicateur. On parle alors de score *F-beta* ($F_\beta$). Il se calcule ainsi :
 
 $$
