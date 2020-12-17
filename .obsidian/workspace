@@ -10,8 +10,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "refs.md",
-            "mode": "preview"
+            "file": "_notes/Evaluer les performances d'un modèle.md",
+            "mode": "source"
           }
         }
       }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "refs.md",
+                "file": "_notes/Evaluer les performances d'un modèle.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,7 +84,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "refs.md"
+                "file": "_notes/Evaluer les performances d'un modèle.md"
               }
             }
           }
@@ -96,9 +96,9 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "_notes/Evaluer les performances d'un modèle.md",
     "refs.md",
     "about.md",
-    "_notes/Evaluer les performances d'un modèle.md",
     "_notes/ZSnippets html.md",
     "assets/img/Pasted image 20201202135340.png",
     "assets/img/Pasted image 20201202133930.png",

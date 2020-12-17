@@ -101,8 +101,21 @@ F_{\beta} &=\left(1+\beta^{2}\right) \times \frac{\text { précision } \times \t
 \end{aligned}
 $$
 
-Le choix de $\beta$ déterminera le poids que l'on souhaite donner à chacun des deux mesures :
+> Le choix de $\beta$ déterminera le poids que l'on souhaite donner à chacune des deux mesures. Un $\beta$ inférieur à 1 privilégiera la précision (si $\beta =0$ , alors $F_\beta = Précision$ et supérieur à 1 le rappel.
 
-- Un $\beta$ inférieur à 1 privilégiera 
+En pratique lors de la sélection de modèle, si l'on veut **minimiser les faux positifs**, on sélectionnera un $\beta$ inférieur à 1. Une forte précision implique un faible taux de faux positifs.
+
+En revanche, si l'on veut **miniser les faux négatifs**, on sélectionnera un $\beta$ supérieur à 1. Un fort rappel implique un faible taux de faux négatifs.
+
+> À noter :
+> - La justesse est trompeuse lorsque les classes ont des tailles significativement différentes.
+>  
+> - Le rappel est égal à la justesse si les classes sont équilibrées. Il peut donc être utile de rééquilibrer les classes lors de l'entrainement d'un modèle.
+>  
+> - Une forte précision est difficile à atteindre si les classes sont déséquilibrées.
+>  
+> - Le score F est meilleur que chaque mesure, mais les quatres mesures sont nécessaire à l'évaluation d'un classificateur.
+
+
 
 
