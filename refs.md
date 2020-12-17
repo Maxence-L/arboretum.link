@@ -10,7 +10,7 @@ Cette page référence les ressources que j'utilise ou que j'ai utilisé et mes 
 
 ## Data Science
 
-### *An Introduction to Statistical Learning* - Tibshirani et al.
+### *An Introduction to Statistical Learning*, Tibshirani et al.
 
 Un livre de référence pour tout débutant approchant la Data Science. Une partie de la popularité de cet ouvrage tient du fait qu'il est [disponible en ligne gratuitement](http://faculty.marshall.usc.edu/gareth-james/ISL/) et qu'il est souvent recommandé par des practiciens plus expérimentés. Ses graphiques très expressifs et les explications simples permettent de comprendre rapidement les concepts enseignés.
 
@@ -18,7 +18,7 @@ Le livre contient de nombreux exemples et exercices de programmation avec R et u
 
 Cet ouvrage reste toutefois superficiel à certains égards : une maîtrise complête des méthodes, notamment mathématique présentées nécessitera d'aller chercher plus loin que ce qui y est présenté. Il reste une bonne référence, rapide à prendre en main, au quotidien.
 
-### *The Data Science Design Manual* - Steven S. Skienna
+### *The Data Science Design Manual*, Steven S. Skienna
 
 Un excellent livre pour découvrir la Data Science. Je l'ai lu d'une traite lorsque j'ai commencé à étudier le sujet. Skienna est un brillant professeur dont on aimerait être l'élève et qui sait traiter de sujets pointus tout en expliquant leur utilité et leur contexte.
 

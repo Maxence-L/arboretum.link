@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/Spacy.md",
+            "file": "_notes/Evaluer les performances d'un modèle.md",
             "mode": "source"
           }
         }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "régula",
+                "query": "recall",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Spacy.md",
+                "file": "_notes/Evaluer les performances d'un modèle.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,7 +84,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Spacy.md"
+                "file": "_notes/Evaluer les performances d'un modèle.md"
               }
             }
           }
@@ -92,18 +92,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "lastOpenFiles": [
-    "_notes/Spacy.md",
-    "_notes/Données de test.md",
-    "_notes/sklearn.metrics - Evaluer les modèles.md",
-    "_notes/sklearn.cluster.Kmeans.md",
-    "_notes/sklearn.md",
-    "_notes/scipy.spatial.distance.euclidian() - Calculer la distance euclidienne.md",
-    "_notes/set.md",
+    "_notes/Evaluer les performances d'un modèle.md",
+    "_notes/ZSnippets html.md",
+    "assets/img/Pasted image 20201202135340.png",
+    "assets/img/Pasted image 20201202133930.png",
+    "assets/img/Pasted image 20201031170334.png",
+    "assets/img/Capture d’écran 2020-12-17 à 14.09.54.png",
     "refs.md",
-    "_notes/Régularisation.md",
-    "assets/img/Pasted image 20201216172840.png"
+    "_notes/Précision et rappel.md",
+    "_notes/Untitled 4.md",
+    "_notes/Spacy.md"
   ]
 }
