@@ -116,6 +116,12 @@ En revanche, si l'on veut **miniser les faux négatifs**, on sélectionnera un $
 >  
 > - Le score F est meilleur que chaque mesure, mais les quatres mesures sont nécessaire à l'évaluation d'un classificateur.
 
+Une astuce pour améliorer la précision au prix d'une baisse du rappel et de prévoir une option "je ne sais pas" pour le modèle, qui lui permet de ne classifier que les cas faciles et non les cas difficiles pour lesquels la probabilité de faux positif est plus élevée. 
+
+Par exemple, un patient proche de la limite de décision obtiendra une réponse de type "risque de cancer" plutôt que "cancer", limitant ainsi le risque de mauvais diagnostic.
+
+
+
 
 
 
