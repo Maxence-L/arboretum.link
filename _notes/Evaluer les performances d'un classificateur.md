@@ -199,6 +199,7 @@ On utilisera [`roc_curve()`](https://scikit-learn.org/stable/modules/generated/s
 ```python
 # Import necessary modules
 from sklearn.metrics import roc_curve
+from sklearn.linear_model import LogisticRegression
 
 # Compute predicted probabilities: y_pred_prob
 y_pred_prob = logreg.predict_proba(X_test)[:,1]
@@ -226,4 +227,30 @@ L'utilisateur parcimonieux de son temps pourra exploiter [`plot_roc_curve()`](ht
 Un exemple de courbe ROC avec [[validation croisée]], issue d'un [guide sur le site de sklearn](https://scikit-learn.org/stable/auto_examples/model_selection/plot_roc_crossval.html#sphx-glr-auto-examples-model-selection-plot-roc-crossval-py) :
 
 ![](/assets/img/roc_cross_valid.png#center)
+
+Le score AUC se calculer avec `roc_auc_score(y_test, y_pred_prob)`.
+
+On peut par ailleurs calculer automatiquement les score AUC lors d'une validation croisée :
+
+```python
+# Import necessary modules
+from sklearn.model_selection import cross_val_score
+from sklearn.metrics import roc_auc_score
+
+# Compute predicted probabilities: y_pred_prob
+y_pred_prob = logreg.predict_proba(X_test)[:,1]
+
+# Compute and print AUC score
+print("AUC: {}".format(roc_auc_score(y_test, y_pred_prob)))
+
+# Compute cross-validated AUC scores: cv_auc
+cv_auc = cross_val_score(logreg, X, y, cv=5, scoring='roc_auc')
+
+# Print list of AUC scores
+print("AUC scores computed using 5-fold cross-validation: {}".format(cv_auc))
+
+> AUC: 0.8254806777079764
+> AUC scores computed using 5-fold cross-validation: [0.80148148 0.8062963  0.81481481 0.86245283 0.8554717 ]
+````
+
 
