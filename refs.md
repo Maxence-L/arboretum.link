@@ -56,9 +56,11 @@ On remerciera toutefois les auteurs d'avoir utilisé un maximum de termes franç
 
 Datacamp est un site de tutoriels sur la Data Science et l'analyse de données en général. L'abonnement est assez cher, mais baisse lors d'offres promotionnelles, notamment fin novembre. On peut faire baisser encore plus les prix en prenant un VPN et en se localisant dans un pays à faibles revenus (ex: Inde ou Ukraine, par exemple) - l'abonnement en réduction pour une année passe alors à 99$.
 
-En pratique, il contient de nombreux tutoriels de programmation sur les méthodes de base. Je suis assez sceptique de cette technique d'apprentissage : les tutoriels sont denses et les concepts statistiques inexpliqués. 
+En pratique, il contient de nombreux tutoriels de programmation sur les méthodes de base. Je suis assez sceptique de cette technique d'apprentissage : si l'on aborde beaucoup de librairies et de concepts statistiques, ils sont assez peu expliqués. Il suffit la plupart du temps de coller le code des slides ou de l'adapter à la marge.
 
-Il conviendra donc bien à des personnes très au point d'un de vue mathématique, à l'aise en programmation mais souhaitant des exemples de pratiques standard en Data Science du point de vue de la programmation. Je conseille de prendre des notes au cours des tutoriels pour pouvoir réutiliser le code ensuite, comme ce que je fais avec ce site (beaucoup d'exemples sur python viennent de Datacamp) et [Obsidian](obsidian.md) au quotidien. Cela double toutefois la durée annoncée des tutoriels !
+Il conviendra donc bien à des personnes très au point du point de vue de la théorie, à l'aise en programmation mais souhaitant des exemples de pratiques standard en Data Science du point de vue de la programmation. Fuyez si vous comptez apprendre à programmer cette manière !
+
+Je conseille de prendre des notes et de faire des recherches annexes tout en suivant des tutoriels pour pouvoir réutiliser le code ensuite, comme ce que je fais avec ce site (beaucoup d'exemples sur python viennent de Datacamp) et [Obsidian](obsidian.md) au quotidien. Ce site me permet surtout de savoir quoi étudier et non comme référence d'apprentissage.
 
 A noter que l'approche est parfois différente selon les tutoriels et que leur code commence à vieillir. Les "projets guidés" sont inutiles et très fastidieux de mon point de vue.
 
@@ -66,7 +68,7 @@ A noter que l'approche est parfois différente selon les tutoriels et que leur c
 
 Udacity est un site proposant des formations rapides pour une grande diversité de métiers "tech", notamment en programmation. J'ai profité des offres "1 mois gratuit" pour explorer leur curriculum.
 
-**A fuir**. Les exercices sont intéressants car assez ardus et les explications inexistantes, ce qui oblige l'élève que je suis à chercher par lui-même le contenu. 
+Mon avis : **à fuir**. Les exercices sont intéressants car assez ardus et les explications inexistantes, ce qui oblige l'élève que je suis à chercher par lui-même le contenu. 
 
 L'aspect mathématique/probabiliste est très mal abordé : je ne vois pas quelle connaissance du test bootstrap un élève pourra tirer d'une vidéo de 5 minutes sur le sujet. Les forêts aléatoires sont appliquées sans que l'on explique le concept, tout est survolé, mais pour un prix stratosphérique en comparaison à Datacamp.
 
