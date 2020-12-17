@@ -7,7 +7,7 @@ toc : true
 
 Comment évaluer une classification ? Plusieurs outils existent pour aider le practicien à comprendre le résultat d'un modèle.
 
-### La matrice de confusion
+## La matrice de confusion
 Les possibilités pour un modèle de classification sont au nombre de quatre :
 
 - Faux positif (*False positive*)  : on classifie un patient comme bien portant alors qu'il est bien malade. Correspond à une erreur de type I.
@@ -31,13 +31,13 @@ Selon les nécessités de l'étude, on peut chercher à optimiser certains élé
 - Dans le cas de la justice, par exemple, il peut être plus important de minimiser le nombre de faux positifs (innocent condamnés) que de vrai positifs. 
 - Pendant une épidémie, on cherchera à minimiser le nombre de faux négatifs afin d'éviter que la maladie se répande.
 
-### La justesse, la précision et le rappel
+## La justesse, la précision et le rappel
 
 On dérive de la matrice de confusion trois mesures : la justesse (*accuracy[^1]*); la précision et le rappel. Chaque mesure est [importante pour saisir l'efficacité](http://www.bouletcorp.com/2015/03/01/le-mythe-de-la-caverne/) d'un modèle de classification.
 
 [^1]: Traduction française selon [Google, Inc](https://developers.google.com/machine-learning/crash-course/classification/accuracy?hl=fr)
 
-#### Justesse
+### Justesse
 La justesse désigne la part de prédictions correctes sur l'ensemble des prédictions réalisées par le modèle :
 
 $$
@@ -48,7 +48,7 @@ La justesse permet d'identifier un classificateur trop aléatoire. Elle ne refl�
 
  Par exemple, si 99% des patients venant pour une migraine n'ont rien et que 1% ont un cancer, un modèle systématiquement comme résultat "rien" aura 99% de réussite (justesse = 0.99) malgré qu'il ne réalise en réalité aucune prédiction.
 
-#### Précision
+### Précision
 La précision est une mesure de base et se définit ainsi : 
 
 $$
@@ -61,7 +61,7 @@ La précision permet d'exclure les classificateurs insensibles : classifier 100%
 
 Toutefois, un classificateur trop parcimonieux détectant à coup sûr seulement 10% des patients cancéreux obtiendra une précision de $\frac{0.001}{0.001+0} = 1$, alors que 90% des cas qu'il fallait classifier sont ignorés.
 
-#### Rappel 
+### Rappel 
 
 On utilise donc comme complément le rappel (*recall*), aussi appelé *sensitivité* pour une classe $i$ se définit ainsi :
 
@@ -75,7 +75,7 @@ Un rappel élevé implique que la classificateur présente peu de faux négatifs
 
 > **À noter** : Si l'on a plus de deux classes, il est utile de calculer le score de rappel pour chacune d'entre elles, certaines classes pouvant être mieux identifiées que d'autres.
 
-#### Score F
+### Score F
 
 Le *F-score* combine la précision et le rappel, permettant d'obtenir une mesure unique plus facilement interprétable (bien que l'on ne puisse à mon avis faire l'économie du rappel et de la précision). 
 
@@ -90,7 +90,7 @@ $$
 
 Un modèle parfait présente un score F égal à 1.
 
-##### F Bêta
+### F Bêta
 La moyenne harmonique du score F peut être pondérée afin de de donner plus d'importance à un indicateur. On parle alors de score *F-beta* ($F_\beta$). Il se calcule ainsi :
 
 $$
@@ -130,7 +130,7 @@ La courbe ROC (*Receiver-Operator Characteristic*) permet de visualiser le résu
 ![](../assets/img/roc_curve.png#center)
 
 <div align="center">
-  Courbe ROC. Source : MartinThoma, Wikipedia
+  Courbe ROC. Source : utilisateur MartinThoma, Wikipedia
 </div>
 
 La courbe ROC représente, pour chaque valeur que prend le paramètre du modèle, le taux de vrai et de faux positifs. Si les classes sont parfaitement séparées et que le classificateur se trouve entre les deux, on obtient un point $(FP,VP) = (0,1)$ correspondant à un classificateur parfait.
