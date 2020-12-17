@@ -121,8 +121,24 @@ Par exemple, un patient proche de la limite de décision obtiendra une réponse 
 
 ## Courbe ROC
 
-*Receiver-Operator Characteristic**
+Les algorithmes de classification possèdent généralement des paramètres pouvant être ajustés par l'utilisateur afin d'obtenir les caractéristiques désirées, notamment le critère de classification. 
 
+Par exemple, dans le cas d'une [[Régression logistique\| régression logistique]], à partir de quelle limite $p$ classifie t-on l'observation dans la classe $i$ ?
 
+La courbe ROC (*Receiver-Operator Characteristic*) permet de visualiser le résultat issu des ajustements possibles afin de choisir le paramètre convenant à l'utilisateur.
 
+![](../assets/img/roc_curve.png#center)
 
+<div align="center">
+  Courbe ROC. Source : MartinThoma, Wikipedia
+</div>
+
+La courbe ROC représente, pour chaque valeur que prend le paramètre du modèle, le taux de vrai et de faux positifs. Si les classes sont parfaitement séparées et que le classificateur se trouve entre les deux, on obtient un point $(FP,VP) = (0,1)$ correspondant à un classificateur parfait.
+
+En conséquence, plus le coude de la courbe se rapproche de ce point, plus le classficateur est performant. Cela permet par ailleurs de comparer les méthodes de classification, comme sur le graphique. La droite diagonale correspond à un classificateur aléatoire.
+
+La courbe ROC représente le dilemme rencontré par le critère de classification : si l'on est plus généreux pour augmenter le taux de vrai positif, on risque en conséquence d'augmenter le taux de faux positifs. On peut donc visualiser la relation entre les deux valeurs et trouver la valeur qui représente le meilleurs compromis pour l'utilisateur.
+
+### *AUC : Area under curve*
+
+L'AUC correspond à l'aire située sous la courbe et est utilisée pour mesurer la qualité de la prédiction du classificateur ou le comparer à d'autre. Le classificateur parfait possède une AUC de $100\% \times 100\% = 1$ : plus le classificateur est performant, plus son AUC se rapproche de 1.
