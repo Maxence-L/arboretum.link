@@ -20,9 +20,9 @@ D'autres approches exploitant les réseaux de neurones existent, appelées "repr
 
 ![context_vector](/assets/img/context_vector.png#center)
 <div align="center">
-	
+	<p>
 Un vecteur contextuel issu d'un vecteur lexical.  <a href="https://www.aclweb.org/anthology/W06-2501.pdf">Source.</a>
-	
+	</p>
 </div>
 
 
@@ -45,9 +45,9 @@ L'approche *Bag-of-words* consiste à attribuer à chaque document un vecteur de
 ![](/assets/img/bag-of-word.png#center)
 
 <div align="center">
-	
+	<p>
   Source : <a href="https://https://www.oreilly.com/library/view/applied-text-analysis/9781491963036/ch04.html">Applied Text Analysis with Python</a>
-	
+	</p>
 </div>
 
 ## Quels packages sont disponibles ? 
@@ -65,7 +65,9 @@ La vectorisation la plus simple : on attribue à chaque élément du vecteur une
 
 ![](/assets/img/fréquence.png#center)
 <div align="center">
+	<p>
   Source : <a href="https://https://www.oreilly.com/library/view/applied-text-analysis/9781491963036/ch04.html">Applied Text Analysis with Python</a>
+</p>
 </div>
 
 Scikit learn propose la méthode `CountVectorizer`du module `sklearn.feature_extraction`. Le modèle utilisé tokenise et normalise les textes par la même occasion. On passe dans `.fit` un itérable, une liste de strings ou de de fichiers et  crée un dictionnaire du corpus.

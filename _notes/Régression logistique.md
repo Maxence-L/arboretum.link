@@ -38,7 +38,9 @@ Dans le cadre de la fonction logistique $p(X)=\frac{e^{\beta_{0}+\beta_{1} X}}{1
 
 ![linear boundary](/assets/img/linearboundary.png#center)
 <div align="center">
+	<p>
   Source : scikit-learn.org
+</p>
 </div>
 
 Il existe certains cas où les faux négatifs (ou les faux positifs) sont problématiques. Par exemple, condamner un innocent (faux positif) ou ne pas détecter une appendicite (faux négatif).

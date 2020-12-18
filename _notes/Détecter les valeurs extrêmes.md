@@ -24,7 +24,9 @@ Dans ce cas, plusieurs options sont possibles :
 ![](../assets/img/ecarts-types-normale.png)
 
 <div align="center">
+	<p>
 Ecarts types de la loi normale [1]
+</p>
 </div>
 
 ## Techniques plus avancées

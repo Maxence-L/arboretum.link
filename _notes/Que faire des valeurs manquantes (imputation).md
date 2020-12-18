@@ -30,7 +30,9 @@ Dans le cas des K-Means, on risque par conséquent de se retrouver avec un clust
 ![Effet de l'imputation](../assets/img/imputation-vm.png#center)
 
 <div align="center">
+	<p>
   Effet de l'imputation sur la distribution des données [1]
+</p>
 </div>
 
 Voir [[sklearn.impute.SimpleImputer() - Imputation simple\|sklearn.impute]] pour la mise en oeuvre pratique.
@@ -46,7 +48,9 @@ Plusieurs méthodes d'estimation multivariées sont possibles pour remplacer les
 ![](../assets/img/regression-imputation.png#center)
 
 <div align="center">
+	<p>
   Imputation par la moyenne et par une régression [1]
+</p>
 </div>
 
 - [[Arbre de décision]]

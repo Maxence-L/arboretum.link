@@ -17,7 +17,9 @@ Cette mesure sert par la suite à déterminer le nombre optimal de clusters, au 
 
 ![elbow](/assets/img/kmeanselbow.png#center)
 <div align="center">
+	<p>
   Inertie de la classification en fonction du nombre de clusters
+</p>
 </div>
 
 Quelques remarques :
@@ -46,7 +48,9 @@ Dans le cas des K-neigbors, on cherche les K points les plus proches du point à
 ![kneighbors](/assets/img/kneigbors.png#center)
 
 <div align="center">
+	<p>
  Source : <a href="https://fr.wikipedia.org/wiki/M%C3%A9thode_des_k_plus_proches_voisins">Wikipedia</a>
+</p>
 </div>
 
 L'échantillon de test (cercle vert) pourrait être classé soit dans la première classe de carré bleu ou la seconde classe de triangles rouges. Si k = 3 (cercle en ligne pleine) il est affecté à la seconde classe car il y a deux triangles et seulement un carré dans le cercle considéré. Si k = 5 (cercle en ligne pointillée) il est affecté à la première classe (3 carrés face à deux triangles dans le cercle externe).

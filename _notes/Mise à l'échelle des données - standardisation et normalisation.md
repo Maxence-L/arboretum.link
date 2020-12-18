@@ -50,7 +50,9 @@ La transformation Box-Cox fait partie des transformations appelées ["*power tra
 
 ![log-transform](/assets/img/log_transform.png#center)
 <div align="center">
+	<p>
 	Population américaine. La courbe de droite est exprimée sur une échelle logarithmique. <a href="http://onlinestatbook.com/2/transformations/tukey.html"> Source </a>
+</p>
 </div>
 
 L'analyse des données est ainsi facilitée, le [[coefficient de corrélation]] se rapprochant de 1 et les variations suivant une loi normale :
@@ -58,8 +60,10 @@ L'analyse des données est ainsi facilitée, le [[coefficient de corrélation]] 
 ![](/assets/img/transform_corr.png#center)
 
 <div align="center">
+	<p>
 	Coefficient de corrélation en fonction de lambda.	
 	<a href="http://onlinestatbook.com/2/transformations/tukey.html"> Source </a>
+</p>
 </div>
 
 La transformation Box-Plot est une version particulière de *power transform* adaptée à la normalisation des données :
