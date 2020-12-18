@@ -146,7 +146,7 @@ En revanche, si l'on veut **miniser les faux négatifs**, on sélectionnera un $
 
 Une astuce pour améliorer la précision au prix d'une baisse du rappel et de prévoir une option "je ne sais pas" pour le modèle, qui lui permet de ne classifier que les cas faciles et non les cas difficiles pour lesquels la probabilité de faux positif est plus élevée. 
 
-Par exemple, un patient proche de la limite de décision obtiendra une réponse de type "risque de cancer" plutôt que "cancer", limitant ainsi le risque de mauvais diagnostic.
+Par exemple, un patient proche de la limite de décision obtiendra une réponse de type "risque de cancer" plutôt que "cancer", limitant ainsi le risque de mauvais diagnostic et incitera le practicien à effectuer des tests plus détaillés.
 
 #### Dans sklearn :
 
@@ -177,7 +177,7 @@ weighted avg       0.67      0.60      0.59         5
 
 ## Courbe ROC
 
-Les algorithmes de classification possèdent généralement des paramètres pouvant être ajustés par l'utilisateur afin d'obtenir les caractéristiques désirées, notamment le critère de classification. 
+Les algorithmes de classification possèdent généralement des hyperparamètres pouvant être ajustés par l'utilisateur afin de s'approcher des résultats désirés.
 
 Par exemple, dans le cas d'une [[Régression logistique\| régression logistique]], à partir de quelle limite $p$ classifie t-on l'observation dans la classe $i$ ?
 
@@ -186,7 +186,9 @@ La courbe ROC (*Receiver-Operator Characteristic*) permet de visualiser le résu
 ![](../assets/img/roc_curve.png#center)
 
 <div align="center">
-  Courbe ROC. Source : utilisateur MartinThoma, Wikipedia
+	<p>
+  "Courbe ROC. Source : utilisateur MartinThoma, Wikipedia"
+	</p>
 </div>
 
 La courbe ROC représente, pour chaque valeur que prend le paramètre du modèle, le taux de vrai et de faux positifs. Si les classes sont parfaitement séparées et que le classificateur se trouve entre les deux, on obtient un point $(FP,VP) = (0,1)$ correspondant à un classificateur parfait.
