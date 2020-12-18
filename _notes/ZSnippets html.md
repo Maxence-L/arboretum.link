@@ -1,5 +1,7 @@
 Centrer un paragraphe :
 
 <div align="center">
-  my text here.
+	<p>
+  Courbe ROC. Source : utilisateur MartinThoma, Wikipedia
+	</p>
 </div>

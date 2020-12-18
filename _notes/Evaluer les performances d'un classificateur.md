@@ -30,7 +30,10 @@ Ces possibilités sont traditionnellement représentées dans une *matrice de co
 
 ![](/assets/img/confusion-graph.png#center)
 <div align="center">
-  Résultat d'une classification attribuant le genre masculin à tous les individus dont la taille est supérieur à 168cm. Source: The Data Science Design Manual, S. Skienna.
+	<p>
+  Résultat d'une classification attribuant le genre masculin à tous les individus dont la taille est supérieur à 168cm. /n 
+		Source: The Data Science Design Manual, S. Skienna.
+</p>
 </div>
 
 En reprenant les exemples précédemment cités :
@@ -187,11 +190,11 @@ La courbe ROC (*Receiver-Operator Characteristic*) permet de visualiser le résu
 
 <div align="center">
 	<p>
-  "Courbe ROC. Source : utilisateur MartinThoma, Wikipedia"
+  Courbe ROC. Source : utilisateur MartinThoma, Wikipedia
 	</p>
 </div>
 
-La courbe ROC représente, pour chaque valeur que prend le paramètre du modèle, le taux de vrai et de faux positifs. Si les classes sont parfaitement séparées et que le classificateur se trouve entre les deux, on obtient un point $(FP,VP) = (0,1)$ correspondant à un classificateur parfait.
+La courbe ROC représente, pour chaque valeur que prend le paramètre du modèle, le taux de vrai et de faux positifs. Si les classes sont parfaitement séparées et que le classificateur se trouve entre les deux, on obtient un point $(FP,VP) = (0,1)$ situé en haut à gauche du cadran correspondant à un classificateur parfait.
 
 En conséquence, plus le coude de la courbe se rapproche de ce point, plus le classficateur est performant. Cela permet par ailleurs de comparer les méthodes de classification, comme sur le graphique. La droite diagonale correspond à un classificateur aléatoire.
 
