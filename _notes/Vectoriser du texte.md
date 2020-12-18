@@ -59,7 +59,7 @@ L'approche *Bag-of-words* consiste à attribuer à chaque document un vecteur de
 
 Les exemples inclus ici utilisent scikit-learn, mais on peut aller voir [cet article](https://www.oreilly.com/library/view/applied-text-analysis/9781491963036/ch04.html) pour plus d'exemples.
 
-## Vectorisation fréquencielle
+## Vectorisation fréquentielle
 
 La vectorisation la plus simple : on attribue à chaque élément du vecteur une valeur égale au nombre de récurrences dans le texte du mot correspondant. On peut soit garder des nombres entiers soit [[Norme d'un vecteur\|normaliser le vecteur]].
 
@@ -70,9 +70,9 @@ La vectorisation la plus simple : on attribue à chaque élément du vecteur une
 </p>
 </div>
 
-Scikit learn propose la méthode `CountVectorizer`du module `sklearn.feature_extraction`. Le modèle utilisé tokenise et normalise les textes par la même occasion. On passe dans `.fit` un itérable, une liste de strings ou de de fichiers et  crée un dictionnaire du corpus.
+Scikit-learn propose la méthode `CountVectorizer` du module `sklearn.feature_extraction`. Le modèle utilisé tokenise et normalise les textes par la même occasion. On passe dans `.fit` un itérable, une liste de strings ou de fichiers et crée un dictionnaire du corpus.
 
-La méthode `.transform()` change chaque document en un array *sparce* et les combine dans une matrice : 
+La méthode `.transform()` change chaque document en un array *sparce* et les combine dans une matrice :
 
 ```pythpn
 from sklearn.feature_extraction.text import CountVectorizer
@@ -81,7 +81,7 @@ vectorizer = CountVectorizer()
 vectors = vectorizer.fit_transform(corpus)
 ````
 
-> A noter : Pour des corpus de grande taille, on peut utiliser `HashingVectorizer` qui hashe le mot à son index, réduisant ainsi la mémoire utilisée (toutes les informations n'ont pas besoin d'être chargées dans la mémoire). Il n'y a toutefois pas de réversion au stade précédent dans ce cas `.inverse_transform` et l'on ne peut pas pondérer par fréquence inverse.
+> À noter : Pour des corpus de grande taille, on peut utiliser `HashingVectorizer` qui hache le mot à son index, réduisant ainsi la mémoire utilisée (toutes les informations n'ont pas besoin d'être chargées dans la mémoire). Il n'y a toutefois pas de réversion au stade précédent dans ce cas `.inverse_transform` et l'on ne peut pas pondérer par fréquence inverse.
 
 ## One-hot-encoding
 
@@ -180,7 +180,7 @@ print(tf_np_matrix)
   ````
 
 
-Réferences :
+Références :
 
 - [Applied Text Analysis with Python, Benjamin Bengfort, Rebecca Bilbro, Tony Ojeda](https://www.oreilly.com/library/view/applied-text-analysis/9781491963036/)
 - [*Data Science Bookcamp*, de Leonard Apelstin](https://www.manning.com/books/data-science-bookcamp)

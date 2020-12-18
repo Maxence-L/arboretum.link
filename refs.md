@@ -22,9 +22,9 @@ Cet ouvrage reste toutefois superficiel à certains égards : une maîtrise comp
 
 Un excellent livre pour découvrir la Data Science. Je l'ai lu d'une traite lorsque j'ai commencé à étudier le sujet. Skienna est un brillant professeur dont on aimerait être l'élève et qui sait traiter de sujets pointus tout en expliquant leur utilité et leur contexte.
 
-L'ouvrage contient des explications généralement peu mathématiques mais très imagées, des exemples, des cas pratiques et des exercices. Je me surprend souvent à y revenir après avoir lu en détail l'aspect mathématique d'une méthode, afin de la recontextualiser ou de me rappeler ce que j'aurais pu éviter.
+L'ouvrage contient des explications généralement peu mathématiques mais très imagées, des exemples, des cas pratiques et des exercices. Je me surprends souvent à y revenir après avoir lu en détail l'aspect mathématique d'une méthode, afin de la recontextualiser ou de me rappeler ce que j'aurais pu éviter.
 
-Le livre  est disponible sur Amazon à un prix modique compte tenu de la qualité de l'ouvrage (relié et couleurs), l'auteur a apparemment [mis en ligne ses cours](https://www3.cs.stonybrook.edu/~skiena/data-manual/lectures/), qui promettent d'être très intéressants.
+Le livre est disponible sur Amazon à un prix modique compte tenu de la qualité de l'ouvrage (relié et couleurs), l'auteur a apparemment [mis en ligne ses cours](https://www3.cs.stonybrook.edu/~skiena/data-manual/lectures/), qui promettent d'être très intéressants.
 
 ### *Datascience Bookcamp, Leonard Apelstin*
 
@@ -46,7 +46,7 @@ De même, de nombreuses solutions pointues sont exposées, mais pas les techniqu
 
 [^1] "Apprentissage machine - de la théorie à la pratique - Massih-Ressa Amini" (2015) par exemple.
 
-Le livre est donc parfois lacunaire et réservé à des lecteurs expérimentés. Il présente toutefois l'intérêt de donner la définition formelle de certaines méthodes d'apprentissage, ce qui peut en faire une bonne référence si l'on désire mettre en oeuvre certaines techniques avancées.
+Le livre est donc parfois lacunaire et réservé à des lecteurs expérimentés. Il présente toutefois l'intérêt de donner la définition formelle de certaines méthodes d'apprentissage, ce qui peut en faire une bonne référence si l'on désire mettre en œuvre certaines techniques avancées.
 
 ## Sites web, tutos
 
@@ -62,7 +62,7 @@ Il conviendra donc bien à des personnes très au point du point de vue de la th
 
 Je conseille de prendre des notes et de faire des recherches annexes tout en suivant des tutoriels pour pouvoir réutiliser le code ensuite, comme ce que je fais avec ce site (beaucoup d'exemples sur python viennent de Datacamp) et [Obsidian](obsidian.md) au quotidien. Ce site me permet surtout de savoir quoi étudier et non comme référence d'apprentissage.
 
-A noter que l'approche est parfois différente selon les tutoriels et que leur code commence à vieillir. Les "projets guidés" sont inutiles et très fastidieux de mon point de vue.
+À noter que l'approche est parfois différente selon les tutoriels et que leur code commence à vieillir. Les "projets guidés" sont inutiles et très fastidieux de mon point de vue.
 
 ### *Udacity*
 
@@ -91,9 +91,9 @@ Il ne manque que des exercices, corrigés. C'est néanmoins une bonne ressource 
 
 ### *Bayesian Statistics the Fun Way*, Will Kurt
 
-De même que la ressource précedente, j'ai choisi cet ouvrage pour me remettre à jour en probabilités. L'approche est très didactique et ne présuppose pas de connaissances particulière dans le domaine, ce qui est très agréable compte tenu du grand nombre de livres présupposant que le lecteur vient tout juste de sortir de Terminale S ou de troisième année de Licence.
+De même que la ressource précédente, j'ai choisi cet ouvrage pour me remettre à jour en probabilités. L'approche est très didactique et ne présuppose pas de connaissances particulière dans le domaine, ce qui est très agréable compte tenu du grand nombre de livres présupposant que le lecteur vient tout juste de sortir de Terminale S ou de troisième année de Licence.
 
-Les exercices sont simples et aident à appliquer les idées présentées, le ton est léger et l'on a pas vraiment l'impression de lire un livre de probabilités. Le contenu n'est toutefois pas immense et une fois fini, d'autres ouvrages devront prendre le relais. C'est en résumé un bon livre pour un lycéen (parlant anglais couramment cela dit...) ou un professionnel souhaitant se remettre à jour ou entretenir ses connaissances. L'édition (No Starch Press) est excellente.
+Les exercices sont simples et aident à appliquer les idées présentées, le ton est léger et l'on n’a pas vraiment l'impression de lire un livre de probabilités. Le contenu n'est toutefois pas immense et une fois fini, d'autres ouvrages devront prendre le relais. C'est en résumé un bon livre pour un lycéen (parlant anglais couramment cela dit...) ou un professionnel souhaitant se remettre à jour ou entretenir ses connaissances. L'édition (No Starch Press) est excellente.
 
 ## Programmation
 
@@ -103,11 +103,8 @@ Le livre grâce auquel j'ai réellement compris le fonctionnement de R et qui m'
 
 Les ouvrages sur le sujet sont donc souvent centrés sur les statistiques (et non la programmation), et l'utilisation systématique de dplyr complique l'acquisition des bases de la manipulation d'objets dans R, un langage et un idiome cohabitant en permanence.
 
-*Book of R* est d'abord centré sur R et permet d'apprendre les concepts comme n'importe quel langage orienté-objet sans ambiguité. Le ton de l'auteur est assez froid mais les explications sont claires tout comme les exercices. J'eu apprécié qu'il fut publié au moment de mes études !
+*Book of R* est d'abord centré sur R et permet d'apprendre les concepts comme n'importe quel langage orienté-objet sans ambiguïté. Le ton de l'auteur est assez froid mais les explications sont claires tout comme les exercices. J'eu apprécié qu'il fut publié au moment de mes études !
 
 ### *Python Workout*, Reuven M. Lerner
 
 Un livre d'exercices en apparence simples sur Python, mais dont la résolution est expliquée en détail et approfondie à chaque fois. Une excellente manière de s'entrainer au quotidien et de découvrir certaines fonctionnalités méconnues ou des solutions habiles à certaines questions.
-
-
-

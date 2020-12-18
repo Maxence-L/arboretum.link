@@ -21,7 +21,7 @@ myset == mysetset
 > True
 ```
 
-A noter toutefois que les doubels accolades ne fonctionnent que pour ajouter des éléments singuliers (1,2,3...) et non des variables : `myset = {numbers}` ne fonctionnera pas, ou alors il faudra ajouter un [[unpacker]] : `*` : `myset = {*numbers}`
+À noter toutefois que les doubles accolades ne fonctionnent que pour ajouter des éléments singuliers (1,2,3...) et non des variables : `myset = {numbers}` ne fonctionnera pas, ou alors il faudra ajouter un [[unpacker]] : `*` : `myset = {*numbers}`
 
 On ajoute une valeur au moyen de la méthode `.add()`. Si l'on désire en ajouter plus d'une, il faut utiliser `.update()`
 
@@ -39,6 +39,7 @@ unique_numbers.update(numbers)
 ```
 
 ## Opérateurs
+
 `&` : retourne un set comprenant l'intersection de deux sets :
 
 ```python
@@ -85,9 +86,10 @@ set_a - set_b
 
 ## Application : la gestion des *doublons* :
 
-Ils ne peuvent contenir deux fois la même valeur, ce qui en fait un outil très intéressant pour les situations où l'on veut supprimer facilement des doublons d'une liste. 
+Ils ne peuvent contenir deux fois la même valeur, ce qui en fait un outil très intéressant pour les situations où l'on veut supprimer facilement des doublons d'une liste.
 
 Exemple :
+
 ```python
 numbers = [10, 20, 30, 40, 30, 40, 50]
 print(len(numbers))
@@ -104,6 +106,7 @@ numbers_bis = set([10, 20, 100, 60, 30, 40, 50])
 ````
 
 On peut utiliser \| pour retourner l'union de deux sets :
+
 ```python
 all_numbers = numbers_bis | numbers
 

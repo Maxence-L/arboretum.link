@@ -56,6 +56,7 @@ En effet, comme on le constate, une augmentation de $x_i$ de une unité ne corre
 Néanmoins, on peut toujours comparer les effets $\beta_i$ entre eux (à condition que les variables soient [[Mise à l'échelle des données - standardisation et normalisation\|normalisées]]) et le signe de $\beta_i$ nous laisse une indication pertinente à propos de l'effet de la variable $X_i$ sur $p(X)$.
 
 ## Utilisation avec scikit-learn
+
 On utilise [sklearn.linear_model.LogisticRegression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html). :
 
  ```python

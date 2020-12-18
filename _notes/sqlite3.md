@@ -13,7 +13,7 @@ Un bon tuto : https://www.sqlitetutorial.net/sqlite-python/
 
 Il faut d'abord connecter une base de données SQLite au programme que l'on exécute. Si aucune base ne correspond au nom spécifié, SQLite créera automatiquement une nouvelle base de données.
 
-On crée un objet de ctype `Connection` avec `.connect('data_name.db')` :
+On crée un objet de type `Connection` avec `.connect('data_name.db')` :
 
 ```python
 import sqlite3
@@ -51,7 +51,7 @@ c = db_name.cursor()
 c.execute("DROP TABLE IF EXISTS gdp")
 ```
 
-Lorsque les changement nécessaires ont été réalisés, on enregistre (commit) les changement :
+Lorsque les changements nécessaires ont été réalisés, on enregistre (commit) les changements :
 ```python
 db_name.commit()
 ````

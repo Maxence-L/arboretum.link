@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/ZSnippets html.md",
+            "file": "_notes/Validation croisée et grid search.md",
             "mode": "source"
           }
         }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "</div>",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -49,8 +49,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -70,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/ZSnippets html.md",
+                "file": "_notes/Validation croisée et grid search.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -85,7 +84,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/ZSnippets html.md"
+                "file": "_notes/Validation croisée et grid search.md"
               }
             }
           }
@@ -97,15 +96,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "_notes/Validation croisée et grid search.md",
+    "_notes/Séparer les données entre des données d'entrainement et de test.md",
+    "_notes/Validation croisée.md",
     "_notes/ZSnippets html.md",
-    "_notes/Vectoriser du texte.md",
-    "_notes/Régression logistique.md",
-    "_notes/Que faire des valeurs manquantes (imputation).md",
-    "_notes/Mise à l'échelle des données - standardisation et normalisation.md",
-    "_notes/K-neighbors.md",
+    "assets/img/Capture d’écran 2020-12-18 à 17.14.57.png",
+    "_notes/Régression linéaire.md",
     "_notes/Evaluer les performances d'un classificateur.md",
-    "_notes/Détecter les valeurs extrêmes.md",
-    "_notes/Norme d'un vecteur.md",
-    "_notes/np.linspace().md"
+    "_notes/Optimiser les hyperparamêtres d'un modèle.md",
+    "_notes/Vectoriser du texte.md",
+    "_notes/Régression logistique.md"
   ]
 }

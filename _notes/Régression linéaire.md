@@ -32,7 +32,7 @@ reg = LinearRegression()
 reg.fit(X_train, y_train)
 ````
 
-### Evaluation
+### Évaluation
 
 On calcule le [[R2]] avec la méthode `.score` et l'écart-type de l'erreur moyenne au carré avec `sklearn.metrics - mean_squared_error`.
 
@@ -45,7 +45,7 @@ rmse = np.sqrt(mean_squared_error(y_test, y_pred))
 print("Root Mean Squared Error: {}".format(rmse))
 ````
 
-### Evaluation par [[validation croisée]]
+### Évaluation par [[Validation croisée et grid search\|validation croisée]]
 
 Pour éviter que le split ait une trop forte influence sur le résultat, on partage les données en $k$ segments et l'on estime le vecteur $\beta$ sur chacun d'entre eux. On mesure ensuite le [[R2]] moyen. 
 

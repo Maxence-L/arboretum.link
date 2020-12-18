@@ -5,7 +5,7 @@ etat: hiver
 ---
 Les valeurs manquantes d'une observation posent problème pour son utilisation et son évaluation dans un modèle. Elles doivent être remplacées ou supprimées.
 
-Si une variable comprend un grand nombre de valeurs manquantes, il convient d'interroger un expert métier sur l'origine de cette perte d'information, qui peut, en soit, révèler une information.  
+Si une variable comprend un grand nombre de valeurs manquantes, il convient d'interroger un expert métier sur l'origine de cette perte d'information, qui peut, en soit, révéler une information.  
 
 Plusieurs options sont disponibles pour résoudre le problème :
 
@@ -35,13 +35,13 @@ Dans le cas des K-Means, on risque par conséquent de se retrouver avec un clust
 </p>
 </div>
 
-Voir [[sklearn.impute.SimpleImputer() - Imputation simple\|sklearn.impute]] pour la mise en oeuvre pratique.
+Voir [[sklearn.impute.SimpleImputer() - Imputation simple\|sklearn.impute]] pour la mise en œuvre pratique.
 
 ## Imputation multivariée
 
 ### Estimation
 
-Plusieurs méthodes d'estimation multivariées sont possibles pour remplacer les valeurs manquantes. L'idée est de chercher des observations complêtes proches pour servir de réference aux valeurs manquantes, ce qui évite l'effet d'aggrégation autour de la moyenne.
+Plusieurs méthodes d'estimation multivariées sont possibles pour remplacer les valeurs manquantes. L'idée est de chercher des observations complètes proches pour servir de réference aux valeurs manquantes, ce qui évite l'effet d'agrégation autour de la moyenne.
 
 - La régression linéaire
 
@@ -61,12 +61,10 @@ Plusieurs méthodes d'estimation multivariées sont possibles pour remplacer les
 
 ### Estimation itérative
 
-La méthode [sklearn.impute.IterativeImputer](https://scikit-learn.org/stable/modules/generated/sklearn.impute.IterativeImputer.html#sklearn.impute.IterativeImputer)  consiste à utiliser l'ensemble des variables complêtes pour imputer les valeurs manquantes d'une variable, puis à utiliser l'ensemble des variables (y compris la variable ayant reçu de nouvelles valeurs) pour estimer les valeurs manquantes de la prochaine variable.
+La méthode [sklearn.impute.IterativeImputer](https://scikit-learn.org/stable/modules/generated/sklearn.impute.IterativeImputer.html#sklearn.impute.IterativeImputer)  consiste à utiliser l'ensemble des variables complètes pour imputer les valeurs manquantes d'une variable, puis à utiliser l'ensemble des variables (y compris la variable ayant reçu de nouvelles valeurs) pour estimer les valeurs manquantes de la prochaine variable.
 
 Un peut faire cette opération pour $n$ itérations, afin de lisser les divergences liées à l'ordre dans lesquelles les variables sont estimées. L'utilisation est expliquée sur le site [scikit-learn](https://scikit-learn.org/stable/modules/impute.html#multivariate-feature-imputation).
 
-
-
-
 #### Références
+
 [1] *Data Mining et Statistique Décisionnelle - L'intelligence des données*, Stéphane Tuffery, voir p. 46.

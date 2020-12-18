@@ -58,7 +58,7 @@ Pandas possède une fonction [[pd.read_sql()]] permettant d'effectuer des requê
 pd.read_sql('SELECT * FROM population_data', db_name)
 ```
 
-On peut uploader des données à une base de données [[SQL]] ou [[sqlite3]]au moyen de [[df.to_sql()]]
+On peut téléverser des données à une base de données [[SQL]] ou [[sqlite3]]au moyen de [[df.to_sql()]]
 ```python
 df.to_sql(name='my_table', con=cxtn, if_exists='replace', index=False)
 ````

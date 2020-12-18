@@ -26,7 +26,7 @@ $$
 
 [^1]: *Identité* : $d(x,y) = 0$ si et seulement si $x=y$.
 
-Cette mesure est utile pour comparer la différence brut de lexique entre deux texte, par exemple. 
+Cette mesure est utile pour comparer la différence brut de lexique entre deux textes, par exemple. 
 
 Elle est aussi utile pour comparer le résultat de deux algorithmes de clustering non-supervisé : plus il sera similaire, plus $d(s_1,s_2)$ sera faible (beaucoup d'éléments font partie des mêmes groupes de classification)
 

@@ -16,7 +16,7 @@ La probabilité $P(Effet\|H0)$ correspond à la [[p-valeur]] : **la probabilité
 
 ## Théorie
 
-Si l'échantillon testé est issu de la même distribution que l'autre, la différence entre les deux échantillons n'est pas sensée être significative. On va donc mélanger les deux échantillons - comme s'ils étaient issus de la même distribution - et tirer deux nouveaux échantillons un grand nombre de fois, dont on comparera les caractéristiques.
+Si l'échantillon testé est issu de la même distribution que l'autre, la différence entre les deux échantillons n'est pas censée être significative. On va donc mélanger les deux échantillons - comme s'ils étaient issus de la même distribution - et tirer deux nouveaux échantillons un grand nombre de fois, dont on comparera les caractéristiques.
 
 Si la répartition de notre échantillon testé est significativement différente des échantillons tirés, alors il est possible de conclure qu'il vient d'une distribution différente.
 
@@ -24,11 +24,11 @@ Si la répartition de notre échantillon testé est significativement différent
 
 Imaginons que l'on a acheté un sac de billes contenant en grande majorité des billes bleues et quelques billes rouges. Un ami possède un sac de billes contenant en majorité des billes rouges et quelques billes bleues. Les sacs de billes viennent-ils du même vendeur ? 
 
-Pour répondre à cette question, on va mélanger les deux sacs de billes et les diviser à nouveau un grand nombre de fois, puis comparer les proportions obtenues pour chaque itération avec la répartition rencontrée dans les sac de billes initiaux. 
+Pour répondre à cette question, on va mélanger les deux sacs de billes et les diviser à nouveau un grand nombre de fois, puis comparer les proportions obtenues pour chaque itération avec la répartition rencontrée dans les sacs de billes initiaux. 
 
-Si cette répartition initiale est rencontrée régulièrement, il y a peu de chances que les sacs viennent d'un échantillon différent. Si au contraire, leur répartion est plus rare, il y une plus faible chance que cela soit soit dû au hasard, ce qui nous inciterait donc à conclure qu'ils viennent de vendeurs différents.
+Si cette répartition initiale est rencontrée régulièrement, il y a peu de chances que les sacs viennent d'un échantillon différent. Si au contraire, leur répartition est plus rare, il y une plus faible chance que cela soit dû au hasard, ce qui nous inciterait donc à conclure qu'ils viennent de vendeurs différents.
 
-En pratique, on observe la proportion de billes bleues (ou la moyenne si l'on veut) et l'on réalise la différence en valeur absolue entre les deux tirages des billes mélangées. A la fin de l'itération, on observe la proportion de tirages présentent une différence plus importante que l'échantillon de départ, ce qui nous donne notre p-valeur.
+En pratique, on observe la proportion de billes bleues (ou la moyenne si l'on veut) et l'on réalise la différence en valeur absolue entre les deux tirages des billes mélangées. À la fin de l'itération, on observe la proportion de tirages présentent une différence plus importante que l'échantillon de départ, ce qui nous donne notre p-valeur.
 
 ## Application dans python
 

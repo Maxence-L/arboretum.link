@@ -4,7 +4,7 @@ tags : Probabilités
 etat : printemps
 ---
 
-La règle de Tukey, propose de retirer les valeurs comprises hors de l'intervale :
+La règle de Tukey, propose de retirer les valeurs comprises hors de l'intervalle :
 
 \[Q1 - 1.5 x IQR ; Q3 +1.5 x IQR]
 

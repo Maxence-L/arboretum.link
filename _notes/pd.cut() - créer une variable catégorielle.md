@@ -36,7 +36,7 @@ df['age_cat'] = pd.cut(df['age'],
 - `right` correspond à la la borne à prendre en compte. `right = True` pour une borne supérieure.
 > **À  noter** : la liste `labels` doit contenir `len(bins) - 1` étiquettes, du fait de la présence d'une borne inférieure et d'une borne supérieure dans `bins`, contrairement à `labels`.
 
-On peut ensuite créer un diagrame en bâtons facilement, avec [[df.groupby() -\|df.groupby()]] :
+On peut ensuite créer un diagramme en bâtons facilement, avec [[df.groupby() -\|df.groupby()]] :
 
 ```python
 ages.groupby('age_cat').sum().plot.bar()

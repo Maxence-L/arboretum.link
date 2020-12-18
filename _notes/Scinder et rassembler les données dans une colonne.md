@@ -77,6 +77,7 @@ Cela peut être utile avec la fonction [[Manipuler les formats longs et larges d
 ## df.explode() - Scinder une colonne en lignes supplémentaires
 
 ### Scinder une liste
+
 La fonction `df.explode()` scinde une colonne de longueur $n$ contenant une **liste** de $k$ valeurs et produit une colonne de taille $n \cdot k$ :
 
 ```python

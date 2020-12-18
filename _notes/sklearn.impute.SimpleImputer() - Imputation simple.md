@@ -8,11 +8,11 @@ etat: printemps
 
 ### SimpleImputer()
 
-Elle contient notamment la classe SimpleImputer(). Celle-ci permet de réaliser les principales opération d'imputation, comme le remplacement par la moyenne ou la médiane. 
+Elle contient notamment la classe SimpleImputer(). Celle-ci permet de réaliser les principales opérations d'imputation, comme le remplacement par la moyenne ou la médiane. 
 
-Comme les autres classes classes, elle s'utilise avec les méthodes .fit() et .transform()
+Comme les autres classes, elle s'utilise avec les méthodes .fit() et .transform()
 
-- .fit(X) 'calibre' la classe sur les données X. Dans le cas d'une imputation par moyenne, elle attribue donc à chaque colonne de X une moyenne qui reservira lors de l'imputation
+- .fit(X) 'calibre' la classe sur les données X. Dans le cas d'une imputation par moyenne, elle attribue donc à chaque colonne de X une moyenne qui resservira lors de l'imputation
 
 - .transform(X') applique l'imputation des valeurs manquantes selon les paramètres précisés lors de l'initialisation de la classe, ainsi que les données passées dans .fit(). On peut passer des données alternatives dans .transform() : l'imputation se fera sur la base des paramètres des données passées dans .fit()
 

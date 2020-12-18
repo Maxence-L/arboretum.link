@@ -228,7 +228,7 @@ ou p. 169 du livre "Web Scraping with Python".
 
 ## Récupération les informations
 
-On peut utiliser `.text`pour obtenir la valeur string d'un élément :
+On peut utiliser `.text` pour obtenir la valeur string d'un élément :
 
 ```python
 print(driver.find_element_by_id('content').text)
@@ -287,7 +287,7 @@ for cookie in self.cookies:
 
 ## Debugging
 
-Certains sites sont plus difficiles à scrapper que d'autres. On peut utiliser des méthodes très pratiques pour comprendre le problème, lorsque notre scrapper "plante" :
+Certains sites sont plus difficiles à scraper que d'autres. On peut utiliser des méthodes très pratiques pour comprendre le problème, lorsque notre scraper "plante" :
 
 - `.take_screenshot(filename.png)` : prend une capture d'écran de la page fautive au moment de l'erreur. On peut voir ainsi rapidement si l'élément cherché était ou non affiché.
 

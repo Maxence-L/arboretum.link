@@ -4,15 +4,15 @@ tags: Apprentissage-supervisé
 etat : hiver
 ---
 
-La régularisation consiste à modifier la fonction de coût d'une régression. Le but est de changer le comportement de l'estimateur des moindres carrés afin de pénaliser les coefficients trops importants ou de réduire le nombre de variables explicatives au strict mininum.
+La régularisation consiste à modifier la fonction de coût d'une régression. Le but est de changer le comportement de l'estimateur des moindres carrés afin de pénaliser les coefficients trop importants ou de réduire le nombre de variables explicatives au strict minimum.
 
 ## Application avec [[sklearn]]
 
-Le module `sklearn.linear_model` contient des modèles prenant en compte les principales formules de régularisation. L'usage n'est pas différent de la mise en oeuvre d'une [[Régression linéaire\|régression linéaire]] classique.
+Le module `sklearn.linear_model` contient des modèles prenant en compte les principales formules de régularisation. L'usage n'est pas différent de la mise en œuvre d'une [[Régression linéaire\|régression linéaire]] classique.
 
 ### Lasso
 
-On utilise la classe `Lasso`. La pénalité est précisée avec `alpha` et l'on peut normaliser automatiquement les variable avec `normalize=True`. A noter que l'attribut `alpha` peut être modifié en y accédant avec `.alpha`.
+On utilise la classe `Lasso`. La pénalité est précisée avec `alpha` et l'on peut normaliser automatiquement les variables avec `normalize=True`. À noter que l'attribut `alpha` peut être modifié en y accédant avec `.alpha`.
 
 ```python
 from sklearn.linear_model import Lasso

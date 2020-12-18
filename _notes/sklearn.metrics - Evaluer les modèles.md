@@ -8,7 +8,7 @@ sklearn.metrics contient un très grand nombre de méthodes visant à réaliser 
 
 L'aide de [[sklearn]] sur le [sujet des mesures](https://scikit-learn.org/stable/modules/model_evaluation.html#model-evaluation) est disponible sur le site, tout comme la liste des [méthodes disponibles](https://scikit-learn.org/stable/modules/classes.html#module-sklearn.metrics). Les liens vers la page d'aide spécifique de chaque méthode est dans le titre.
 
-Il est possible de réaliser des coupes dans les données avec [[sklearn.model_selection.train_test_split]] afin de réiterer la mesure de la performance du modèle avec des permutations différentes de données. Cela permet d'obtenir une estimation moyenne de la performance du modèle.
+Il est possible de réaliser des coupes dans les données avec [[sklearn.model_selection.train_test_split]] afin de réitérer la mesure de la performance du modèle avec des permutations différentes de données. Cela permet d'obtenir une estimation moyenne de la performance du modèle.
 
 ### Utilisation
 

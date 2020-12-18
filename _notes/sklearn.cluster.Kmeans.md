@@ -52,7 +52,7 @@ clusters = KMeans(n_clusters=K).fit_predict(data)
 
 #### Mesure de la précision
 
-`k_means_model.inertia_`retourne l'[[inertie]] associée à l'exécution de l'objet Kmeans.
+`k_means_model.inertia_` retourne l'[[inertie]] associée à l'exécution de l'objet Kmeans.
 
 De même,
 

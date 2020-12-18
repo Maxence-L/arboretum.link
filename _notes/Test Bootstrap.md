@@ -6,9 +6,9 @@ etat : été
 
 Les tests classiques tel que le test de Student nécessitent un minimum de calculs, les hypothèses concernant la distribution théorique des données ne sont pas toujours vérifiée. Bien souvent, nous ne connaissons pas la variance théorique et une approximation par la loi des grands nombres n'est pas possible.
 
- L'intérêt des tests utilisant le rééchantillonage est de tirer parti de la puissance de calcul des ordinateurs modernes pour réaliser des simulations agnostiques sur la forme que peut prendre le jeu de données.
+ L'intérêt des tests utilisant l'échantillonnage est de tirer parti de la puissance de calcul des ordinateurs modernes pour réaliser des simulations agnostiques sur la forme que peut prendre le jeu de données.
  
- ## Théorie
+## Théorie
  
  Le Bootstrapping consiste à tester les moments d'un échantillon en le rééchantillonnant aléatoirement avec remise un grand nombre de fois et en analysant la distribution des résultats. La méthode utilisée relève des [[techniques de Monte-Carlon]] et est similaire au [[Test de Permutation]].
 
@@ -16,7 +16,7 @@ La procédure simule la distribution originale un grand nombre de fois à partir
 
 ## Exemple expliqué :
 
-Par exemple, si l'on désire tester si la moyenne d'une variable aléatoire dont on ne dispose que d'un échantillon est égale à $x$, on va rééachantillonner avec remise 10 000 fois les données dont on dispose et calculer pour chaque échantillon sa valeur moyenne.
+Par exemple, si l'on désire tester si la moyenne d'une variable aléatoire dont on ne dispose que d'un échantillon est égale à $x$, on va échantillonner avec remise 10 000 fois les données dont on dispose et calculer pour chaque échantillon sa valeur moyenne.
 
 ![](../assets/img/distribution-simulée.png#center)
 
@@ -76,7 +76,7 @@ print(f"P-value is approximately {p_value:.2f}")
 La p-valeur associée est de 0.10. On ne rejete pas l'hypothèse H0 : la taille moyenne des poissons est de 37cm, au niveau $\alpha = 0.05$
 
 ## Pourquoi un boostrap et non un test de student ?
-Un test de student suppose que, bien que l'on ne connaisse pas la variance réelle de l'échantillon testé, la distribution suit une loi normale. Le bootstrap ne suit pas cette affirmation et utilise la fonction de densité de l'échantillon observée.
+Un test de student suppose que, bien que l'on ne connaisse pas la variance réelle de l'échantillon testé, la distribution suit une loi normale. Le bootstrap ne suit pas cette affirmation et utilise la fonction de densité de l'échantillon observé.
 
 En pratique, le bootstrap fonctionne bien si l'on dispose d'un échantillon suffisamment grand pour ne pas avoir trop de biais dans la fonction de densité et un écart représentatif des valeurs possibles dans l'échantillon.
 
