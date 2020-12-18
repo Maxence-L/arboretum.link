@@ -5,7 +5,13 @@ etat : printemps
 toc : true
 ---
 
-Comment évaluer une classification ? Plusieurs outils existent pour aider le practicien à comprendre le résultat d'un modèle.
+Comment évaluer une classification ? Selon le contexte, on le but de la classification peut être différent. Par exemple :
+
+- Un système de justice peut chercher à établir la culpabilité d'un suspect mais en évitant au maximum de condamner un innocent.
+- Un fabricant de voiture cherchera lors de son contrôle qualité des freins à identifier absolument toutes les pièces défecteuses au prix de devoir changer certaines pièces correctes mais identifiées comme à risque.
+- Un médecin peut chercher à identifier les malades tout en évitant de prescrire un traitement à des personnes présentant des symptômes mais n'étant pas atteint.
+
+Plusieurs outils existent pour aider le practicien à comprendre le résultat d'un modèle et à sélectionner les paramêtres qui correspondent à son objectif.
 
 ## La matrice de confusion
 Les possibilités pour un modèle de classification sont au nombre de quatre :
@@ -27,9 +33,10 @@ Ces possibilités sont traditionnellement représentées dans une *matrice de co
   Résultat d'une classification attribuant le genre masculin à tous les individus dont la taille est supérieur à 168cm. Source: The Data Science Design Manual, S. Skienna.
 </div>
 
-Selon les nécessités de l'étude, on peut chercher à optimiser certains éléments plutôt que d'autres :
-- Dans le cas de la justice, par exemple, il peut être plus important de minimiser le nombre de faux positifs (innocent condamnés) que de vrai positifs. 
-- Pendant une épidémie, on cherchera à minimiser le nombre de faux négatifs afin d'éviter que la maladie se répande.
+En reprenant les exemples précédemment cités :
+- Dans le cas de la justice, par exemple, il peut être plus important de minimiser le nombre de **faux positifs** (innocents condamnés) que de **vrai positifs** (coupables inculpés). 
+- Le fabricant de voitures cherchera à minimiser le nombre de **faux négatifs** lors du contrôle qualité des freins afin d'éviter les accidents mortels. Le nombre de **vrais négatifs** sera moins important.
+- Le médecin devra équilibrer le taux de **faux positifs** avec celui de **vrai positifs**, en fonction du bénéfice/risque général du traitement et de ses effets secondaire.
 
 #### Dans sklearn :
 Le module [sklearn.metrics](https://scikit-learn.org/stable/modules/classes.html?highlight=metrics#module-sklearn.metrics) contient de nombreuses mesures pour évaluer les modèles. La matrice de confusion est accessible avec `from sklearn.metrics import confusion_matrix`.

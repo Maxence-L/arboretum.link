@@ -40,13 +40,13 @@ L'éditeur, Manning, fait continuellement des promotions : achetez le à -50%.
 
 Un livre approchant la théorie et les algorithmes de la Data Science, publié dans une nouvelle collection chez Eyrolles et que j'ai découvert dans la librairie éponyme.
 
-L'ouvrage est à la fois très théorique mais assez superficiel sur de nombreux sujets. Tous les problèmes sont approchés par la voie mathématique, sans que l'on explique comment choisir entre les solutions possibles et sans démonstrations. 
+L'ouvrage est à la fois très théorique mais assez superficiel sur de nombreux sujets. Tous les problèmes sont approchés par la voie mathématique, sans réelles démonstrations ou discussion sur les différences entre les méthodes proposées. Par exemple, la régression ridge est mentionnée sans expliquer pourquoi l'utiliser plutôt qu'une autre technique de régularisation.
 
-Par exemple, la régression ridge est mentionnée sans expliquer pourquoi l'utiliser plutôt qu'une autre ou ses spécificités pratiques. de même, de nombreuses solutions pointues sont exposées, mais pas les techniques liées aux arbres de décision, très utilisés dans le domaine. On aurait préféré un chapitre sur ce sujet plutôt que sur la "visualisation interactive d'information", d'autant que le livre est imprimé en noir et blanc sur un papier mat.
+De même, de nombreuses solutions pointues sont exposées, mais pas les techniques liées aux arbres de décision, très utilisés dans le domaine. J'aurais préféré un chapitre sur ce sujet plutôt que sur la "visualisation interactive d'information", d'autant que le livre est imprimé en noir et blanc sur un papier mat. Cet oubli est peut-être est dû à l'auteur principal du livre, qui dans ses ouvrages précédents[^1] sur le sujet n'aborde pas non plus les forêts aléatoires.
 
-Le livre est donc parfois lacunaire et réservé à des lecteurs expérimentés.
+[^1] "Apprentissage machine - de la théorie à la pratique - Massih-Ressa Amini" (2015) par exemple.
 
-On remerciera toutefois les auteurs d'avoir utilisé un maximum de termes français, les ouvrages d'origine francophones sur la Data Science étant rares.
+Le livre est donc parfois lacunaire et réservé à des lecteurs expérimentés. Il présente toutefois l'intérêt de donner la définition formelle de certaines méthodes d'apprentissage, ce qui peut en faire une bonne référence si l'on désire mettre en oeuvre certaines techniques avancées.
 
 ## Sites web, tutos
 
