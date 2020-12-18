@@ -63,28 +63,15 @@ print(knn.score(X_test, y_test))
 
 ## Validation croisée
 
-La validation croisée est la généralisation de la séparation des données à l'ensemble du jeu disponible, afin d'éviter un biais lié au choix des données test. Plusieurs méthodes existent :
+La validation croisée est la généralisation de la séparation des données à l'ensemble du jeu disponible, afin d'éviter un biais lié au choix des données test. On divise dans ce cas les données en $k$ segments. Une fois les $k$ segments obtenus, on entraine le modèle pour prédire la variable objectif de chaque segment à partir des données des autres segments.
 
-### 
+![](/assets/img/kfoldcv.png#center)
 
-
-
-
-### Avec sklearn :
-
-Pour les besoins de l'exemple, on utilise les [[K-neighbors]] :
-
-```python
-from sklearn.model_selection import GriSec
-param_grid = {'n_neighbors': np.arange(1, 50)}
-knn = KNeighborsClassifier()
-
-knn_cv
-GridSearchCV(knn, param_grid, cv=5)
-
-knn_cv.fit(X, y)
-knn_cv.best_params_
-````
+<div align="center">
+	<p>
+  Une représentation d'une validation croisée sur 5 découpes. Chaque découpe est utilisée comme jeu de validation et le reste sert à entrainer le modèle. L'erreur du modèle est estimée en calculant l'erreur moyenne pour les 5 estimations. Source : ISLR.
+	</p>
+</div>
 
 ## Ajuster les (hyper)paramètres avec la *grid search*
 
@@ -108,3 +95,19 @@ Par exemple, pour un modèle dont les méta-paramètres sont *Alpha* et *C*, la 
 </div>
 
 Dans ce cas, la valeur maximum mesurée (0.726) se situe pour *C* = 0.3 et *Alpha* = 0.2. Nous choisirons donc ce paramètre pour le modèle final.
+
+### Avec sklearn :
+
+Pour les besoins de l'exemple, on utilise les [[K-neighbors]]. La méthode [`GridSearchCV` ](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html?highlight=grid%20search%20cv#sklearn.model_selection.GridSearchCV) applique une *grid search* et une validation croisée (5 découpes par défaut, mais modifiable en paramêtre).
+
+```python
+from sklearn.model_selection import GridSearchCV
+param_grid = {'n_neighbors': np.arange(1, 50)}
+knn = KNeighborsClassifier()
+
+knn_cv
+GridSearchCV(knn, param_grid, cv=5)
+
+knn_cv.fit(X, y)
+knn_cv.best_params_
+````
