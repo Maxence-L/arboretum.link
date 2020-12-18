@@ -78,7 +78,7 @@ La justesse permet d'identifier un classificateur trop aléatoire. Elle ne refl�
  Par exemple, si 99% des patients venant pour une migraine n'ont rien et que 1% ont un cancer, un modèle systématiquement comme résultat "rien" aura 99% de réussite (justesse = 0.99) malgré qu'il ne réalise en réalité aucune prédiction.
 
 ### Précision
-La précision est une mesure de base et se définit ainsi : 
+La précision (*precision*) est une mesure de base et se définit ainsi : 
 
 $$
 Précision = \frac{VP}{VP+FP}
@@ -135,14 +135,14 @@ En pratique lors de la sélection de modèle, si l'on veut **minimiser les faux 
 
 En revanche, si l'on veut **miniser les faux négatifs**, on sélectionnera un $\beta$ supérieur à 1. Un fort rappel implique un faible taux de faux négatifs.
 
-> À noter :
-> - La justesse est trompeuse lorsque les classes ont des tailles significativement différentes.
+> Remarques :
+> - Comme on l'a vu dans l'exemple, la justesse est trompeuse lorsque les classes ont des tailles significativement différentes.
 >  
 > - Le rappel est égal à la justesse si les classes sont équilibrées. Il peut donc être utile de rééquilibrer les classes lors de l'entrainement d'un modèle.
 >  
 > - Une forte précision est difficile à atteindre si les classes sont déséquilibrées.
 >  
-> - Le score F est meilleur que chaque mesure, mais les quatres mesures sont nécessaire à l'évaluation d'un classificateur.
+> - Le score F est plus synthétique que chaque mesure, mais l'examination des quatres mesures est nécessaire à l'évaluation d'un classificateur.
 
 Une astuce pour améliorer la précision au prix d'une baisse du rappel et de prévoir une option "je ne sais pas" pour le modèle, qui lui permet de ne classifier que les cas faciles et non les cas difficiles pour lesquels la probabilité de faux positif est plus élevée. 
 
