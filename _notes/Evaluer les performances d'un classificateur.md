@@ -37,11 +37,13 @@ Ces possibilités sont traditionnellement représentées dans une *matrice de co
 </div>
 
 En reprenant les exemples précédemment cités :
-- Dans le cas de la justice, par exemple, il peut être plus important de minimiser le nombre de **faux positifs** (innocents condamnés) que de **vrai positifs** (coupables inculpés). 
+
+- Dans le cas de la justice, par exemple, il peut être plus important de minimiser le nombre de **faux positifs** (innocents condamnés) que de **vrai positifs** (coupables inculpés).
 - Le fabricant de voitures cherchera à minimiser le nombre de **faux négatifs** lors du contrôle qualité des freins afin d'éviter les accidents mortels. Le nombre de **vrais négatifs** sera moins important.
-- Le médecin devra équilibrer le taux de **faux positifs** avec celui de **vrai positifs**, en fonction du bénéfice/risque général du traitement et de ses effets secondaire.
+- Le médecin devra équilibrer le taux de **faux positifs** avec celui de **vrai positifs**, en fonction du bénéfice/risque général du traitement et de ses effets secondaires.
 
 #### Dans sklearn :
+
 Le module [sklearn.metrics](https://scikit-learn.org/stable/modules/classes.html?highlight=metrics#module-sklearn.metrics) contient de nombreuses mesures pour évaluer les modèles. La matrice de confusion est accessible avec `from sklearn.metrics import confusion_matrix`.
 
 ```python
@@ -70,6 +72,7 @@ On dérive de la matrice de confusion trois mesures : la justesse (*accuracy[^1]
 [^1]: Traduction française selon [Google, Inc](https://developers.google.com/machine-learning/crash-course/classification/accuracy?hl=fr)
 
 ### Justesse
+
 La justesse désigne la part de prédictions correctes sur l'ensemble des prédictions réalisées par le modèle :
 
 $$
@@ -81,6 +84,7 @@ La justesse permet d'identifier un classificateur trop aléatoire. Elle ne refl�
  Par exemple, si 99% des patients venant pour une migraine n'ont rien et que 1% ont un cancer, un modèle systématiquement comme résultat "rien" aura 99% de réussite (justesse = 0.99) malgré qu'il ne réalise en réalité aucune prédiction.
 
 ### Précision
+
 La précision (*precision*) est une mesure de base et se définit ainsi : 
 
 $$
@@ -103,7 +107,7 @@ $$
 
 Il correspond à la proportion d'observations appartenant à la classe $i$ correctement détectées. 
 
-Un rappel élevé implique que la classificateur présente peu de faux négatifs. En revanche, le rappel ne mesure pas le taux de faux positifs : il sera égal à un si le classificateur assigne tous les patients à la catégorie "cancéreux" : $\frac{0.01}{0.01+0} = 1$
+Un rappel élevé implique que le classificateur présente peu de faux négatifs. En revanche, le rappel ne mesure pas le taux de faux positifs : il sera égal à un si le classificateur assigne tous les patients à la catégorie "cancéreux" : $\frac{0.01}{0.01+0} = 1$
 
 > **À noter** : Si l'on a plus de deux classes, il est utile de calculer le score de rappel pour chacune d'entre elles, certaines classes pouvant être mieux identifiées que d'autres.
 
@@ -123,7 +127,8 @@ $$
 Un modèle parfait présente un score F égal à 1.
 
 ### F Bêta
-La moyenne harmonique du score F peut être pondérée afin de de donner plus d'importance à un indicateur. On parle alors de score *F-beta* ($F_\beta$). Il se calcule ainsi :
+
+La moyenne harmonique du score F peut être pondérée afin de donner plus d'importance à un indicateur. On parle alors de score *F-beta* ($F_\beta$). Il se calcule ainsi :
 
 $$
 \begin{aligned}
@@ -139,17 +144,18 @@ En pratique lors de la sélection de modèle, si l'on veut **minimiser les faux 
 En revanche, si l'on veut **miniser les faux négatifs**, on sélectionnera un $\beta$ supérieur à 1. Un fort rappel implique un faible taux de faux négatifs.
 
 > Remarques :
+
 > - Comme on l'a vu dans l'exemple, la justesse est trompeuse lorsque les classes ont des tailles significativement différentes.
 >  
 > - Le rappel est égal à la justesse si les classes sont équilibrées. Il peut donc être utile de rééquilibrer les classes lors de l'entrainement d'un modèle.
 >  
 > - Une forte précision est difficile à atteindre si les classes sont déséquilibrées.
 >  
-> - Le score F est plus synthétique que chaque mesure, mais l'examination des quatres mesures est nécessaire à l'évaluation d'un classificateur.
+> - Le score F est plus synthétique que chaque mesure, mais l'examination des quatre mesures est nécessaire à l'évaluation d'un classificateur.
 
 Une astuce pour améliorer la précision au prix d'une baisse du rappel et de prévoir une option "je ne sais pas" pour le modèle, qui lui permet de ne classifier que les cas faciles et non les cas difficiles pour lesquels la probabilité de faux positif est plus élevée. 
 
-Par exemple, un patient proche de la limite de décision obtiendra une réponse de type "risque de cancer" plutôt que "cancer", limitant ainsi le risque de mauvais diagnostic et incitera le practicien à effectuer des tests plus détaillés.
+Par exemple, un patient proche de la limite de décision obtiendra une réponse de type "risque de cancer" plutôt que "cancer", limitant ainsi le risque de mauvais diagnostic et incitera le praticien à effectuer des tests plus détaillés.
 
 #### Dans sklearn :
 
@@ -182,7 +188,7 @@ weighted avg       0.67      0.60      0.59         5
 
 Les algorithmes de classification possèdent généralement des hyperparamètres pouvant être ajustés par l'utilisateur afin de s'approcher des résultats désirés.
 
-Par exemple, dans le cas d'une [[Régression logistique\| régression logistique]], à partir de quelle limite $p$ classifie t-on l'observation dans la classe $i$ ?
+Par exemple, dans le cas d'une [[Régression logistique\| régression logistique]], à partir de quelle limite $p$ classifie-t-on l'observation dans la classe $i$ ?
 
 La courbe ROC (*Receiver-Operator Characteristic*) permet de visualiser le résultat issu des ajustements possibles afin de choisir le paramètre convenant à l'utilisateur.
 
@@ -196,9 +202,9 @@ La courbe ROC (*Receiver-Operator Characteristic*) permet de visualiser le résu
 
 La courbe ROC représente, pour chaque valeur que prend le paramètre du modèle, le taux de vrai et de faux positifs. Si les classes sont parfaitement séparées et que le classificateur se trouve entre les deux, on obtient un point $(FP,VP) = (0,1)$ situé en haut à gauche du cadran correspondant à un classificateur parfait.
 
-En conséquence, plus le coude de la courbe se rapproche de ce point, plus le classficateur est performant. Cela permet par ailleurs de comparer les méthodes de classification, comme sur le graphique. La droite diagonale correspond à un classificateur aléatoire.
+En conséquence, plus le coude de la courbe se rapproche de ce point, plus le classificateur est performant. Cela permet par ailleurs de comparer les méthodes de classification, comme sur le graphique. La droite diagonale correspond à un classificateur aléatoire.
 
-La courbe ROC représente le dilemme rencontré par le critère de classification : si l'on est plus généreux pour augmenter le taux de vrai positif, on risque en conséquence d'augmenter le taux de faux positifs. On peut donc visualiser la relation entre les deux valeurs et trouver la valeur qui représente le meilleurs compromis pour l'utilisateur.
+La courbe ROC représente le dilemme rencontré par le critère de classification : si l'on est plus généreux pour augmenter le taux de vrai positif, on risque en conséquence d'augmenter le taux de faux positifs. On peut donc visualiser la relation entre les deux valeurs et trouver la valeur qui représente le meilleur compromis pour l'utilisateur.
 
 ### *AUC : Area under curve*
 
@@ -242,7 +248,7 @@ Un exemple de courbe ROC avec [[Validation croisée et grid search\|validation c
 
 Le score AUC se calculer avec `roc_auc_score(y_test, y_pred_prob)`.
 
-On peut par ailleurs calculer automatiquement les score AUC lors d'une validation croisée :
+On peut par ailleurs calculer automatiquement les scores AUC lors d'une validation croisée :
 
 ```python
 # Import necessary modules

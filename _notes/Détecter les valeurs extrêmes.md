@@ -19,7 +19,7 @@ Dans ce cas, plusieurs options sont possibles :
 
 - Découper le variable contenant des valeurs extrêmes en classe, ce qui affecte les observations atypiques à une classe bien spécifique.
 
-- "Winsoriser" la variable concernée, c'est à dire remplacer les variables au delà du 99ème centile et le premier centile par ce centile. Il est aussi possibl d'utiliser les écarts-types, en excluant les valeurs situées au delà de trois écarts-types.
+- "Winsoriser" la variable concernée, c’est-à-dire remplacer les variables au-delà du 99ème centile et le premier centile par ce centile. Il est aussi possible d'utiliser les écarts-types, en excluant les valeurs situées au-delà de trois écarts-types.
 
 ![](../assets/img/ecarts-types-normale.png)
 
@@ -31,10 +31,10 @@ Ecarts types de la loi normale [1]
 
 ## Techniques plus avancées
 
-Des algorithmes de détection des valeurs extrêmes sont disponibles, utiles lorsque les observations de suivent pas une loi normale.
+Des algorithmes de détection des valeurs extrêmes sont disponibles, utiles lorsque les observations ne suivent pas une loi normale.
 
 ### DBSCAN
-On peut utiliser l'algorithme [[dbscan]] pour détecter les observations isolées dans notre distribution et reliées à aucun groupe de densité. Cette méthode se prête bien à l'analyse de données géographique, mais est toutefois un pe limitée. 
+On peut utiliser l'algorithme [[dbscan]] pour détecter les observations isolées dans notre distribution et reliées à aucun groupe de densité. Cette méthode se prête bien à l'analyse de données géographique, mais est toutefois un peu limitée. 
 
 Un bon article didactique sur le sujet : [Outlier Detection Using DBSCAN](https://data-blog.gbif.org/post/outlier-detection-using-dbscan/)
 

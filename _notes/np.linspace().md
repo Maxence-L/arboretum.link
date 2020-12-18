@@ -6,7 +6,7 @@ etat : hiver
 
 
 
-`np.linspace(start, end, step)` crée un array numpy de taille `step` et le peuple de nombre distribué de manière uniforme entre `start`et `end`.
+`np.linspace(start, end, step)` crée un array numpy de taille `step` et le peuple de nombre distribué de manière uniforme entre `start` et `end`.
 
 ```python
 import numpy as np

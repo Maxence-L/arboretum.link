@@ -296,6 +296,7 @@ python setup.py bdist_wheel
 Si l'on désire que le package soit installable sur différents OS, il faut créer une distribution pour chacun. Des options supplémentaires sont disponible dans la [documentation officielle](https://docs.python.org/3/distutils/builtdist.html).
 
 ## Upload vers Pypi
+
 (à compléter)
 ## Utiliser un package maison
 ### Création de l'environnement virtuel

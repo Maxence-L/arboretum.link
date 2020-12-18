@@ -33,4 +33,4 @@ import pandas as pd
 data = pd.read_csv("filename.csv") 
 ````
 
-Des [options](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html) sont disponibles pour définir des paramêtres d'importation (séparateur, header, etc...).
+Des [options](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html) sont disponibles pour définir des paramètres d'importation (séparateur, header, etc...).

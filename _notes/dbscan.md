@@ -36,7 +36,7 @@ L'algorithme DBSCAN fonctionne ainsi :
 
 La méthode *sklearn.cluster* utilisée est [[sklearn.cluster.DBSCAN]].
 
- Note : `epsilon`correspond à l'option `eps`.
+ Note : `epsilon` correspond à l'option `eps`.
  
 ```python
 from sklearn.cluster import DBSCAN
@@ -59,7 +59,7 @@ Comme on peut le voir, les clusters sont correctement regroupés :
 
 - L'algorithme ne nécessite pas de trouver le nombre optimal de clusters.
 
-- Il est possible de filter les outliers situés à l'extérieur des clusters. **Dans ce cas, DBSCAN leur donne un ID de -1 : il ne peut être regroupé dans un des clusters existant**
+- Il est possible de filtrer les outliers situés à l'extérieur des clusters. **Dans ce cas, DBSCAN leur donne un ID de -1 : il ne peut être regroupé dans un des clusters existant**
 
 - DBSCAN ne peut être appliqué à de nouvelles données, comme dans le cas des K-Means. Il faut combiner des anciennes et les nouvelles données puis refaire tourner l'algorithme.
 
@@ -85,6 +85,6 @@ clusters = DBSCAN(eps=1, min_samples=3,
 
 L'algorithme DBSCAN étant utile pour calculer des clusters de données réparties avec une densité similaire et définie au préalable, il peut être difficile de déterminer en avance le paramètre `epsilon`, notamment lorsque les données changent.
 
-Par exemple, si l'on cherche à identifier les villes dans un pays, on rencontrera un problème : les habitations ne sont pas réparties aussi densément en fonction des régions. Si l'on souhaite réutiliser le modèle pour un pays différent, il faudra ré-estimer `eps` et `min_samples`pour ce pays en particulier. 
+Par exemple, si l'on cherche à identifier les villes dans un pays, on rencontrera un problème : les habitations ne sont pas réparties aussi densément en fonction des régions. Si l'on souhaite réutiliser le modèle pour un pays différent, il faudra ré-estimer `eps` et `min_samples` pour ce pays en particulier. 
 
 Un savoir spécifique au secteur analysé devra être ajouté, du fait qu'il n'existe pas de méthode supérieure pour déterminer la valeur correcte des paramètres.

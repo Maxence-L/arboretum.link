@@ -11,6 +11,7 @@ Elle se couple bien à une [[Fonction lambda\|fonction lambda]] ad-hoc.
 ## Utilisation de la fonction
 
 ## Cas d'usage
+
 ### Appliquer apply() à une seule colonne[^1] :
 
 [^1]: https://stackoverflow.com/questions/34962104/how-can-i-use-the-apply-function-for-a-single-column

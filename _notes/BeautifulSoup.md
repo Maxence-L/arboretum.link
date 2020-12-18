@@ -18,6 +18,7 @@ from bs4 import BeautifulSoup
 ```
 
 ## Parsing
+
 On peut ensuite parser un document html, produit notamment par le package [[requests]] :
 
 ```python

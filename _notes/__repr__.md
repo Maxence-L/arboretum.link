@@ -4,7 +4,7 @@ tags: stdlib
 etat : printemps
 ---
 
-__repr__() , pour "representation", est une [[Méthode spéciale\|méthode spéciale]] similaire mais pas équivalente à [[__str__()]]. Elle est appelée lorsque l'utilisateur tape le nom de l'objet, typiquement dans la console :
+__repr__() , pour "représentation", est une [[Méthode spéciale\|méthode spéciale]] similaire mais pas équivalente à [[__str__()]]. Elle est appelée lorsque l'utilisateur tape le nom de l'objet, typiquement dans la console :
 
 ```python
 import datetime
@@ -26,7 +26,7 @@ class Car:
         return '__repr__ for Car'
 ```
 
-Cette méthode spéciale est particulièrement utile pour le débugage : dans le cas de [[datetime]], elle renvoie les paramètres qui permettent d'obtenir l'instance spécifique de la classe.
+Cette méthode spéciale est particulièrement utile pour le débogage : dans le cas de [[datetime]], elle renvoie les paramètres qui permettent d'obtenir l'instance spécifique de la classe.
 
 Il est donc important que la valeur retournée soit **claire** et ne comporte **pas d'ambiguité**.
 

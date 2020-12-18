@@ -122,6 +122,7 @@ Cette normalisation est particulièrement utile dans le domaine du [[NLP]], et d
 
 
 ## Reférences :
+
 - [[Feature Scaling::https://en.wikipedia.org/wiki/Feature_scaling]] (Wikipedia)
 - *Chapitre 10, p.303, [[The Data Science Manual, Skienna]]*
 - *52., p38, [[Les Datasciences en 100 Questions, Y. Benzaki]]*

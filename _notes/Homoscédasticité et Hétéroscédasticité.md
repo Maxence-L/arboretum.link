@@ -8,7 +8,7 @@ On appelle **homscédasticité** l'égalité de la variance d'une variable quelq
 
 ## Tester l'homoscédasticité
 
-L'homoscédasticité peut être vérifiée avec le test de Levene (non sensible à la non-normalité - à privilégier), de Barlett (à priviléger si la distribution est normale) ou de Fisher (moins robuste en l'absence de normalité - déconseillé). 
+L'homoscédasticité peut être vérifiée avec le test de Levene (non sensible à la non-normalité - à privilégier), de Barlett (à privilégier si la distribution est normale) ou de Fisher (moins robuste en l'absence de normalité - déconseillé). 
 
 Ces tests ont en commun d'examiner l'hypothèse nulle de l'égalité des variances :
 

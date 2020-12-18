@@ -3,7 +3,7 @@ title : Cartopy
 tags: Cartographie
 etat: été
 ---
-Cartopy est un package permetant de réaliser des projections cartographiques. Il succède à Basemap et s'intègre aux visualisations de Matplotlib.
+Cartopy est un package permettant de réaliser des projections cartographiques. Il succède à Basemap et s'intègre aux visualisations de Matplotlib.
 
 > **À noter :** Cartopy a tendance à faire planter les notebooks.
 

@@ -6,7 +6,7 @@ etat : printemps
 
 L'inertie, dans le cadre du [[clustering]] par [[K-neighbors]], correspond à somme du carré de la distance entre les points de chaque cluster et leur point moyen.
 
-Le but de l'algoithme [[K-neighbors]] est de minimser l'inertie des clusters formés :
+Le but de l'algoithme [[K-neighbors]] est de minimiser l'inertie des clusters formés :
 
 $$\sum^{n}_{i=0}min(\lvert\lvert x_{i}-\mu_{j}\rvert\rvert^{2})$$
 

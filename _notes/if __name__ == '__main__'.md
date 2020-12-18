@@ -7,6 +7,7 @@ Lorsque python lit un fichier source, il initialise certaines variables qui sero
 Cela permet de différencier l'exécution d'un code en fonction de l'usage qui en est fait.
 
 #### Exemple :
+
 fichier foo.py
 ```python
 print("before import")

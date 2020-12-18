@@ -7,7 +7,7 @@ etat: printemps
 La fonction zip() prend en paramètre un ou des itérables, et retourne un [[Différence itérable-itérateur-itération\|itérateur]] sous forme de tuple, basé sur les objets itérables passés.
 
 - Lorsque l'on ne passe aucun paramètre, ```zip()``` ne retourne qu'un itérateur vide
-- 
+
 ```python
 resultat = zip()
 

@@ -34,8 +34,10 @@ result = pd.concat(frames)
 ![](/assets/img/pd_concat-table.png#center)
 
 Pour plus d'exemples et de possilités :
+
 https://pandas.pydata.org/pandas-docs/stable/user_guide/merging.html
  - On peut préciser *join='outer'* ou *'inner'* si les dataframes ne sont pas exactement raccord. Outer fera une union des deux dfs, inner une intersection, sur la base des valeurs de l'index.
 
 Pour plus d'exemples et de possilités :
+
 https://pandas.pydata.org/pandas-docs/stable/user_guide/merging.html

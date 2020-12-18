@@ -4,7 +4,7 @@ tags: python-stdlib
 toc: 'false'
 etat: printemps
 ---
-[[Variable globale]] renvoyant le chemin  relatif vers le fichier
+[[Variable globale]] renvoyant le chemin relatif vers le fichier
 
 Si on a un package organisé ainsi :
 

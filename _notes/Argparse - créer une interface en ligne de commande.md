@@ -8,6 +8,7 @@ etat : été
 Argparse est un module de python permettant au programme d'interagir avec la ligne de commande. on peut, par exemple, passer des valeurs de variables et spécifier quelle fonction on désire exécuter.
 
 ## Installation
+
 Le module s'appelle `argparse` et est inclus dans la bibliothèque standard de python[^1].
 
 [^1]: https://docs.python.org/3/library/argparse.html#name-or-flags
@@ -47,7 +48,7 @@ positional_arg.py Peter 23
 > Peter is 23 years old
 ````
 
-- Les *arguments optionnels* sont définis en ajoutant le préfixe `--`. Ils peuvent bénéficier de commandes raccourcies en une lettre, avec `-`comme préfixe (ex : `-o, --options`). Il est nécessaire de taper leur nom en ligne de commande si l'on veut les utiliser.
+- Les *arguments optionnels* sont définis en ajoutant le préfixe `--`. Ils peuvent bénéficier de commandes raccourcies en une lettre, avec `-` comme préfixe (ex : `-o, --options`). Il est nécessaire de taper leur nom en ligne de commande si l'on veut les utiliser.
 
 - *required = True* permet de définir des arguments optionnels obligatoires.
 
@@ -102,7 +103,7 @@ if args.now:
     print(f"Now: {now}")
 ````
 
-A noter que l'on peut y accéder à la manière d'un dictionnaire en utilisant [[vars()]] :
+À noter que l'on peut y accéder à la manière d'un dictionnaire en utilisant [[vars()]] :
 ```python
 args_obj = vars(parser.parse_args())
 ````
