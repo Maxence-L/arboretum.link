@@ -4,14 +4,14 @@
     "type": "split",
     "children": [
       {
-        "id": "275512b7bf90931e",
+        "id": "8bac68cce8df5250",
         "type": "leaf",
         "active": true,
         "state": {
           "type": "markdown",
           "state": {
             "file": "_notes/SELECTionner des données SQL.md",
-            "mode": "preview"
+            "mode": "source"
           }
         }
       }
@@ -53,8 +53,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 274.5036334991455,
-    "collapsed": true
+    "width": 274.5036334991455
   },
   "right": {
     "id": "15b808a1e515cd90",
@@ -98,6 +97,7 @@
   },
   "lastOpenFiles": [
     "_notes/SELECTionner des données SQL.md",
+    "_notes/Untitled 5.md",
     "_notes/Créer une table SQL.md",
     "about.md",
     "_notes/ZSnippets html.md",
@@ -105,7 +105,6 @@
     "_notes/Insérer des données dans un tableau SQL.md",
     "_notes/Se connecter à une base SQL.md",
     "_notes/SQLite3.md",
-    "assets/img/Capture d’écran 2020-12-27 à 17.43.29.png",
-    "_notes/Untitled 5.md"
+    "assets/img/Capture d’écran 2020-12-27 à 17.43.29.png"
   ]
 }

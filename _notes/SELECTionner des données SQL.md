@@ -33,16 +33,14 @@ FROM teachers
 ORDER BY salary DESC;
 `````
 
-````
-first_name	last_name	salary
----------- 	--------- 	------
-Lee 		Reynolds 	65000
-Samuel 		Cole 		43500
-Betty 		Diaz 		43500
-Kathleen 	Roush 		38500
-Janet 		Smith 		36200
-Samantha 	Bush 		36200
-````
+| first_name | last_name | salary |
+|------------|-----------|--------|
+| Lee        | Reynolds  | 65000  |
+| Samuel     | Cole      | 43500  |
+| Betty      | Diaz      | 43500  |
+| Kathleen   | Roush     | 38500  |
+| Janet      | Smith     | 36200  |
+| Samantha   | Bush      | 36200  |
 
 ### Quel ordre est donné aux variables textuelles ?
 L'ordre dépend des paramètres linguistiques du serveur (le paramètre *locale*) et le jeu de caractère utilisé (UTF-8, par exemple). On peut consulter ces paramètres avec la commande `SHOW ALL` et inspecter la valeur `lc_collate`.
@@ -68,13 +66,11 @@ FROM teachers
 WHERE school = 'Myers Middle School';
 ````
 
-````
-last_name	school				hire_date
----------	------				---------
-Cole		Myers Middle School	2005-08-01
-Bush		Myers Middle School	2011-10-30
-Diaz		Myers Middle School	2005-08-30
-````
+| last_name | school              | hire_date  |
+|-----------|---------------------|------------|
+| Cole      | Myers Middle School | 2005-08-01 |
+| Bush      | Myers Middle School | 2011-10-30 |
+| Diaz      | Myers Middle School | 2005-08-30 |
 
 Les opérateurs suivants sont disponibles :
 
@@ -167,12 +163,10 @@ FROM teachers;
 
 Le résultat est le suivant :
 
-```SQL
-school
-------------------
-F.D. Roosevelt HS
-Myers Middle School
-````
+| school              |
+|---------------------|
+| F.D. Roosevelt HS   |
+| Myers Middle School |
 
 On peut aussi appliquer `DISTINCT` à plusieurs colonnes ; les lignes retournées correspondent aux paires uniques.
 
@@ -181,12 +175,10 @@ SELECT DISTINCT school, salary
 FROM teachers:
 ````
 
-```
-school 					salary
--------------------		------
-Myers Middle School		43500
-Myers Middle School		36200
-F.D. Roosevelt HS		65000
-F.D. Roosevelt HS		38500
-F.D. Roosevelt HS		36200
-````
+| school              | salary |
+|---------------------|--------|
+| Myers Middle School | 43500  |
+| Myers Middle School | 36200  |
+| F.D. Roosevelt HS   | 65000  |
+| F.D. Roosevelt HS   | 38500  |
+| F.D. Roosevelt HS   | 36200  |
