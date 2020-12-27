@@ -10,8 +10,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/SQLite3.md",
-            "mode": "preview"
+            "file": "_notes/Créer une table SQL.md",
+            "mode": "source"
           }
         }
       }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/SQLite3.md",
+                "file": "_notes/Créer une table SQL.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,7 +84,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/SQLite3.md"
+                "file": "_notes/Créer une table SQL.md"
               }
             }
           }
@@ -96,15 +96,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "_notes/Créer une table SQL.md",
+    "_notes/Type de données SQL.md",
+    "_notes/Untitled 5.md",
     "_notes/sqlite3.md",
     "_notes/Se connecter à une base SQL.md",
     "_notes/Afficher les tables existantes dans une base SQL.md",
     "_notes/Untitled 4.md",
     "_notes/Validation croisée et grid search.md",
     "assets/img/Capture d’écran 2020-12-18 à 19.09.14.png",
-    "_notes/Séparer les données entre des données d'entrainement et de test.md",
-    "_notes/Validation croisée.md",
-    "_notes/ZSnippets html.md",
-    "assets/img/Capture d’écran 2020-12-18 à 17.14.57.png"
+    "_notes/Séparer les données entre des données d'entrainement et de test.md"
   ]
 }
