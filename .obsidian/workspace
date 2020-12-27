@@ -10,8 +10,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/Validation croisée et grid search.md",
-            "mode": "preview"
+            "file": "_notes/Afficher les tables existantes dans une base SQL.md",
+            "mode": "source"
           }
         }
       }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Validation croisée et grid search.md",
+                "file": "_notes/Afficher les tables existantes dans une base SQL.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,7 +84,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Validation croisée et grid search.md"
+                "file": "_notes/Afficher les tables existantes dans une base SQL.md"
               }
             }
           }
@@ -96,6 +96,8 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "_notes/Afficher les tables existantes dans une base SQL.md",
+    "_notes/Untitled 4.md",
     "_notes/Validation croisée et grid search.md",
     "assets/img/Capture d’écran 2020-12-18 à 19.09.14.png",
     "_notes/Séparer les données entre des données d'entrainement et de test.md",
@@ -103,8 +105,6 @@
     "_notes/ZSnippets html.md",
     "assets/img/Capture d’écran 2020-12-18 à 17.14.57.png",
     "_notes/Régression linéaire.md",
-    "_notes/Evaluer les performances d'un classificateur.md",
-    "_notes/Optimiser les hyperparamêtres d'un modèle.md",
-    "_notes/Vectoriser du texte.md"
+    "_notes/Evaluer les performances d'un classificateur.md"
   ]
 }
