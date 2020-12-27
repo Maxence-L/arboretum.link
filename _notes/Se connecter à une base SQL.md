@@ -1,14 +1,14 @@
 ---
 title: Se connecter à une base SQL
-tags: sql
+tags: SQL
 etat: printemps
 toc: true
 ---
-Il est possible de se connecter à une base de données [[SQL]] avec le package [[sqlite3]] ou [[sql alchemy]].
+Il est possible de se connecter à une base de données [[SQL]] avec le package [[SQLite3]] ou [[sql alchemy]].
 
 ## SQLite
 
-Dans le cas de [[sqlite3]], associé à une base [[SQLite]]:
+Dans le cas de [[SQLite3]], associé à une base [[SQLite]]:
 
 ```python
 import sqlite3
@@ -58,7 +58,7 @@ Pandas possède une fonction [[pd.read_sql()]] permettant d'effectuer des requê
 pd.read_sql('SELECT * FROM population_data', db_name)
 ```
 
-On peut téléverser des données à une base de données [[SQL]] ou [[sqlite3]]au moyen de [[df.to_sql()]]
+On peut téléverser des données à une base de données [[SQL]] ou [[SQLite3]]au moyen de [[df.to_sql()]]
 ```python
 df.to_sql(name='my_table', con=cxtn, if_exists='replace', index=False)
 ````

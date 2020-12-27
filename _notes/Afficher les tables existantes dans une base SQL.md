@@ -1,10 +1,10 @@
 ---
 title: Afficher les tables existantes dans une base SQL
-tags: sql
+tags: SQL
 etat: printemps
 ---
 
-Dans le cas d'[[SQLite]], avec le module [[sqlite3]] :
+Dans le cas d'[[SQLite]], avec le module [[SQLite3]] :
 
 
 ```python
