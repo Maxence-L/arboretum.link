@@ -120,7 +120,35 @@ Les opérateurs `LIKE` et `ILIKE` permettent de passer des opérateurs de filtra
 
 Deux opérateurs sont disponibles :
 
-- Pourcentage (`%`) : 
+- Pourcentage (`%`) : Apparie un ou plusieurs caractères supplémentaires. `LIKE 'c%'` appariera `croissant` ou `courtisant`. `LIKE '%tion%'` appariera `sélectionner` ou `attentionné`.
+
+- [Trait bas](http://gdt.oqlf.gouv.qc.ca/ficheOqlf.aspx?Id_Fiche=9472174) (`_`) : Apparie un seul caractère. `LIKE '_ach_'` appariera `Vache` et `Hache` par exemple mais pas `Vaches` ou `Haches`.
+
+Exemple d'utilisation avec `WHERE` :
+```SQL
+SELECT first_name
+FROM teachers
+WHERE first_name LIKE 'sam%';
+````
+
+### Opérateurs AND et OR
+Il est possible de combiner des filtres avec les conditions `AND` et `OR`.
+
+```SQL
+SELECT * FROM teachers
+WHERE school = 'Myers Middle School'
+		AND salary < 40000;
+
+SELECT * FROM teachers
+WHERE last_name = 'Cole'
+		OR last_name = 'Bush';
+
+SELECT * FROM teachers
+WHERE school = 'F.D. Roosevelt HS'
+	AND (salary < 38000 OR salary > 40000);
+````
+
+> A noter : Il faut énoncer une condition à la fois. C'est fastidieux, surtout si l'on a plusieurs valeurs à sélectionner.
 
 ### Retirer les doublon
 

@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "about.md",
+            "file": "_notes/SELECTionner des données SQL.md",
             "mode": "preview"
           }
         }
@@ -70,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "about.md",
+                "file": "_notes/SELECTionner des données SQL.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -85,7 +85,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "about.md"
+                "file": "_notes/SELECTionner des données SQL.md"
               }
             }
           }
@@ -97,8 +97,8 @@
     "collapsed": true
   },
   "lastOpenFiles": [
-    "about.md",
     "_notes/SELECTionner des données SQL.md",
+    "about.md",
     "_notes/ZSnippets html.md",
     "_notes/Créer une table SQL.md",
     "_notes/Afficher les tables existantes dans une base SQL.md",
