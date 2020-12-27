@@ -28,4 +28,3 @@ CREATE TABLE employee (
 - `first_name`, `last_name` et `team` correspondent à des variables texte de longueur précisée entre parenthèses.
 - `hire_date` est de type `date` et permet de représenter des données temporelles.
 - `salary` est au format `numeric`.
-
