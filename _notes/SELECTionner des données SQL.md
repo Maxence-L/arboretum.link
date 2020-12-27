@@ -1,13 +1,13 @@
 ---
 title : SELECTionner des données SQL
-tags : PostgreSQL
+tags : SQL
 etat : hiver
 toc : true
 ---
 
 ## Introduction
 ### Obtenir l'intégralité du tableau
-La commande `SELECT` permet de sélectionner les données d'un tableau. L'usage le plus simple retournant l'intégralité d'un tableau :
+La commande `SELECT` permet de sélectionner les données d'un tableau. L'instruction la plus simple retournant l'intégralité d'un tableau :
 
 ```SQL
 SELECT * FROM my_table;
@@ -16,7 +16,7 @@ SELECT * FROM my_table;
 - Le nom du tableau est précisé avec le mot-clé `FROM`
 - L'opérateur `*` retourne tous les éléments disponibles.
 
-### Obtenir un sous-ensemble du tableau
+### Obtenir un sous-ensemble des colonnes du tableau
 On remplace `*`par le nom des colonnes qui nous intéresse :
 
 ```SQL
@@ -44,7 +44,7 @@ Janet 		Smith 		36200
 Samantha 	Bush 		36200
 ````
 
-### Quel ordre est donné aux colonnes textuelles ?
+### Quel ordre est donné aux variables textuelles ?
 L'ordre dépend des paramètres linguistiques du serveur (le paramètre *locale*) et le jeu de caractère utilisé (UTF-8, par exemple). On peut consulter ces paramètres avec la commande `SHOW ALL` et inspecter la valeur `lc_collate`.
 
 Pour le jeu UTF-8, l'ordre est le suivant :
@@ -78,13 +78,19 @@ Diaz		Myers Middle School	2005-08-30
 
 Les opérateurs suivants sont disponibles :
 
-![](/assets/img/SQL_operators.png)
-
-<div align="center">
-	<p>
-  Source : Anthony DeBarros - Practical SQL
-	</p>
-</div>
+| Opérateur | Fonction                                         | Exemple                              |
+|-----------|--------------------------------------------------|--------------------------------------|
+| =         | égal à                                           | WHERE school ='Baker Middle'         |
+| <> or !=  | non égal à                                       | WHERE school <> 'Baker Middle'       |
+| >         | Supérieur à                                      | WHERE salary > 20000                 |
+| <         | Inférieur à                                      | WHERE salary < 60500                 |
+| >=        | Supérieur ou égal à                              | WHERE salary >= 20000                |
+| <=        | Inférieur ou égal à                              | WHERE salary <= 60500                |
+| BETWEEN   | Dans l'intervalle                                | WHERE salary BETWEEN 20000 AND 40000 |
+| IN        | Apparie un des valeurs d'un jeu                  | WHERE last_name IN ('Bush',"'Roush') |
+| LIKE      | Apparie selon un modèle                          | WHERE first_name LIKE ' Sam%'        |
+| ILIKE     | Apparie selon un modèle  (insensible à la casse) | WHERE first_name ILIKE sam%'         |
+| NOT       | Inverse d'une condition                          | WHERE first_name NOT ILIKE sam%'     |
 
 Un exemple :
 ```SQL

@@ -1,6 +1,6 @@
 ---
 title : Créer un tableau (table) SQL
-tags : PostgreSQL
+tags : SQL
 etat :hiver
 ---
 
