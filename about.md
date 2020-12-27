@@ -13,7 +13,9 @@ J'ai parfois du mal à me souvenir d'éléments purement techniques : une formul
 
 Les notes que vous trouverez ici sont donc perpétuellement en cours d'amélioration et son mises à jour quotidiennement. Mémoriser des concepts est un processus itératif au cours duquel je me corrige et je complète mes connaissances. 
 
-Le web étant essentiellement en anglais, traduire en français des sujets techniques me permet de réfléchir au sens des mots que j'utilise, et donc de mieux m'approprier ces connaissances.
+Le web étant essentiellement en anglais, traduire en français[^1] des sujets techniques me permet de réfléchir au sens des mots que j'utilise, et donc de mieux m'approprier ces connaissances.
+
+[^1] : Je recommande à ce sujet le [Grand dictionnaire terminologique](http://gdt.oqlf.gouv.qc.ca/) québècois, une arme de terreur particulièrement efficace dans les réunions où le franglish règne.
 
 Les notes peuvent prendre un des états suivants :
 

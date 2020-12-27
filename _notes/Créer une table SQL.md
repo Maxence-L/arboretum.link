@@ -1,6 +1,6 @@
 ---
 title : Créer un tableau (table) SQL
-tags : SQL
+tags : PostgreSQL
 etat :hiver
 ---
 
@@ -28,3 +28,5 @@ CREATE TABLE employee (
 - `first_name`, `last_name` et `team` correspondent à des variables texte de longueur précisée entre parenthèses.
 - `hire_date` est de type `date` et permet de représenter des données temporelles.
 - `salary` est au format `numeric`.
+
+Une fois la table créée on peut [[Insérer des données dans un tableau SQL\| y insérer des données]].
