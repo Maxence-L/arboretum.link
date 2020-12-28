@@ -84,28 +84,35 @@ select * from supervisor_salaries;
 
 ### Exporter toutes les données du tableau
 
-
-
-```SQL
-
-
-## Export
-On peut enregistrer un tableau SQL avec `COPY ... TO ... WITH ...` :
+L'export du tableau complet, le plus simple, se fait avec ``COPY table_name TO '/path/' WITH (options*);`
 
 ```SQL
-# On crée une base
-CREATE TABLE char\_data\_types (  
-    char\_column char(10),  
- 	varchar\_column varchar(10),  
- 	text\_column text  
-);  
-  
-INSERT INTO char\_data\_types  
-VALUES  
- ('abc', 'abc', 'abc'),  
- ('defghi', 'defghi', 'defghi');
- 
-# On la sauvegarde
-COPY char\_data\_types TO '/Users/Me/scripts/typetest.txt'  
+-- Export au format CSV
+COPY supervisor_salaries 
+TO '/Users/Me/scripts/test.txt'
 WITH (FORMAT CSV, HEADER, DELIMITER '|');
 ````
+
+### Exporter certaines colonnes seulement
+
+Dans ce cas, on ajoute le nom des colonnes entre parenthèses : `COPY table_name (col1,col3,col4)``
+
+```SQL
+COPY supervisor_salaries (tow, county, supervisor)
+TO '/Users/Me/scripts/test.txt'
+WITH (FORMAT CSV, HEADER, DELIMITER '|');
+````
+
+### Exporter les résultats d'une requête
+
+On exporte les résultats d'une requête en la précisant entre parenthèses : `COPY (full_request)`
+
+```SQL
+COPY (
+	SELECT supervisor, salary, benefits
+	FROM supervisor_salary
+	WHERE salary BETWEEN 30000 AND 50000)
+TO '/Users/Me/scripts/test.txt'
+WITH (FORMAT CSV, HEADER, DELIMITER '|');
+````
+
