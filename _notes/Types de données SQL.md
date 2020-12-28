@@ -2,6 +2,7 @@
 title : Types de données SQL
 tags : SQL
 etat : hiver
+toc : true
 ---
 
 Cette note a pour but d'expliquer les types de données rencontrée dans un tableau.
@@ -98,3 +99,45 @@ Conseils pour l'usage de type "nombre" :
 - Si la base contient moins d'un million de lignes, toujours utiliser un grand format (`bigint`) par exemple).
 
 ## Date et heure
+
+Avoir un format temporel dédié permet de faire de manipuler les dates de manière aisée sans avoir à se préoccuper des problème de calendrier (années bissextiles par exemple) ou de zonage.
+
+Les types suivants sont disponibles :
+
+- `timestamp`: Enregistre l'heure et la date. Il est préférable d'ajouter `WITH TIME ZONE` afin de pouvoir comparer des observations entre elles.
+- `date` : Enregistre seulement...la date.
+- `time` : Enregistre l'heure. A utiliser `WITH TIME ZONE`.
+- `interval` : Permet de représenter une unité de temps sous la forme d'une quantité. N'enregistre pas le début ou la fin, seulement l'intervale entre les deux.
+
+Exemple :
+
+```SQL
+CREATE TABLE date_time_types  
+(  
+    timestamp_column timestamp with time zone,  
+ 	interval_column interval  
+);  
+  
+INSERT INTO date_time_types  
+VALUES  
+ ('2018-12-31 01:00 EST','2 days'),  
+ ('2018-12-31 01:00 -8','1 month'),  
+ ('2018-12-31 01:00 Australia/Melbourne','1 century'),  
+ (now(),'1 week');  
+  
+SELECT * FROM date_time_types;
+````
+
+|timestamp_column|interval_column|
+|-|-|
+|2018-12-31 06:00:00.000000|0 years 0 mons 2 days 0 hours 0 mins 0.00 secs|
+|2018-12-31 09:00:00.000000|0 years 1 mons 0 days 0 hours 0 mins 0.00 secs|
+|2018-12-30 14:00:00.000000|100 years 0 mons 0 days 0 hours 0 mins 0.00 secs|
+|2020-12-28 01:17:51.457367|0 years 0 mons 7 days 0 hours 0 mins 0.00 secs|
+
+## Divers
+
+- `boolean` : `True`ou `False``
+- `geometry` ou `geography` permet d'enregistrer des coordonnées géométriques (vecteurs...) ou géographiques.
+- `JSON` - [pour les JSON](https://stackoverflow.com/questions/9207404/whats-best-sql-datatype-for-storing-json-string)
+
