@@ -1,7 +1,7 @@
 ---
 title : Types de données SQL
 tags : SQL
-etat : hiver
+etat : été
 toc : true
 ---
 
