@@ -163,7 +163,7 @@ FROM teachers;
 
 Le résultat est le suivant :
 
-| school              |
+| school|
 |---------------------|
 | F.D. Roosevelt HS   |
 | Myers Middle School |

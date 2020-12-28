@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/SELECTionner des données SQL.md",
+            "file": "_notes/Types de données SQL.md",
             "mode": "source"
           }
         }
@@ -53,7 +53,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 274.5036334991455
+    "width": 274.5036334991455,
+    "collapsed": true
   },
   "right": {
     "id": "15b808a1e515cd90",
@@ -69,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/SELECTionner des données SQL.md",
+                "file": "_notes/Types de données SQL.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,7 +85,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/SELECTionner des données SQL.md"
+                "file": "_notes/Types de données SQL.md"
               }
             }
           }
@@ -96,15 +97,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
-    "_notes/SELECTionner des données SQL.md",
+    "_notes/Types de données SQL.md",
     "_notes/Untitled 5.md",
+    "_notes/Type de données SQL.md",
+    "_notes/SELECTionner des données SQL.md",
     "_notes/Créer une table SQL.md",
     "about.md",
     "_notes/ZSnippets html.md",
     "_notes/Afficher les tables existantes dans une base SQL.md",
     "_notes/Insérer des données dans un tableau SQL.md",
-    "_notes/Se connecter à une base SQL.md",
-    "_notes/SQLite3.md",
-    "assets/img/Capture d’écran 2020-12-27 à 17.43.29.png"
+    "_notes/Se connecter à une base SQL.md"
   ]
 }
