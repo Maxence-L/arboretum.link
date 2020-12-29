@@ -119,5 +119,6 @@ SQL vient avec des fonctions permettant d'obtenir des statistiques descriptives 
 
 - Moyenne : `AVG()`
 - Percentiles (et donc médiane) : `percentile_cont(n)` pour des percentiles continus et `percentile_dic(n)` pour des percentiles discrets (égal à la valeur d'une observation)
+- ...
 
 

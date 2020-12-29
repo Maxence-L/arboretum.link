@@ -10,8 +10,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/Opérations mathématiques avec SQL.md",
-            "mode": "preview"
+            "file": "_notes/JOINdre des tables SQL entre elles.md",
+            "mode": "source"
           }
         }
       }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "sql",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -49,8 +49,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -70,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Opérations mathématiques avec SQL.md",
+                "file": "_notes/JOINdre des tables SQL entre elles.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -85,7 +84,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Opérations mathématiques avec SQL.md"
+                "file": "_notes/JOINdre des tables SQL entre elles.md"
               }
             }
           }
@@ -97,6 +96,7 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "_notes/Untitled.md",
     "_notes/Opérations mathématiques avec SQL.md",
     "_notes/Importer et exporter des données CSV dans une base SQL.md",
     "_notes/SELECTionner des données SQL.md",
@@ -105,7 +105,6 @@
     "_notes/Sauvegarder un tableau SQL au format CSV.md",
     "_notes/Importer des données CSV dans une base SQL.md",
     "_notes/Modifier le type d'une colonne SQL.md",
-    "_notes/Types de données SQL.md",
-    "_notes/Untitled 5.md"
+    "_notes/Types de données SQL.md"
   ]
 }
