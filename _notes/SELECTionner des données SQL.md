@@ -6,7 +6,7 @@ toc : true
 ---
 
 ## Introduction
-### Obtenir l'intégralité du tableau
+### Obtenir l'intégralité du tableau : `*`
 La commande `SELECT` permet de sélectionner les données d'un tableau. L'instruction la plus simple retournant l'intégralité d'un tableau :
 
 ```SQL
@@ -16,14 +16,14 @@ SELECT * FROM my_table;
 - Le nom du tableau est précisé avec le mot-clé `FROM`
 - L'opérateur `*` retourne tous les éléments disponibles.
 
-### Obtenir un sous-ensemble des colonnes du tableau
+### Obtenir un sous-ensemble des colonnes du tableau : `(col1, col2, ...)`
 On remplace `*`par le nom des colonnes qui nous intéresse :
 
 ```SQL
 SELECT some_column, another_column, amazing_colum FROM table_name;
 ````
 
-### Changer le nom des colonnes affichées
+### Changer le nom des colonnes affichées : `AS`
 
 On peut changer le nom des colonnes affichées avec `AS "col_new_name"` :
 
@@ -37,7 +37,7 @@ SELECT col1253556 AS "First_name" FROM table_name;
 |Peter|
 |...|
 
-## Ordonner le résultat de la sélection
+## Ordonner le résultat de la sélection avec `ORDER BY`
 
 On donne un ordre à la section avec la commande `ORDER BY col`, exprimée après la commande `SELECT`. Par défaut, l'ordre est ascendant, mais l'on peut préciser `DESC` si l'on désire un ordre descendant.
 
@@ -70,7 +70,7 @@ Pour le jeu UTF-8, l'ordre est le suivant :
 
 Par conséquent, le mot `Arboretum`sera devant le mot `arboretum` en ordre descendant.
 
-## Filtrer les lignes de la sélection
+## Filtrer les lignes de la sélection avec `WHERE`
 
 On ajoute une ou plusieurs conditions relatives aux lignes à afficher avec la commande `WHERE` :
 
