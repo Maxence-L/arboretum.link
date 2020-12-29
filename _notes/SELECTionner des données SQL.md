@@ -1,7 +1,7 @@
 ---
 title : SELECTionner des données SQL
 tags : SQL
-etat : hiver
+etat : printemps
 toc : true
 ---
 
@@ -22,6 +22,20 @@ On remplace `*`par le nom des colonnes qui nous intéresse :
 ```SQL
 SELECT some_column, another_column, amazing_colum FROM table_name;
 ````
+
+### Changer le nom des colonnes affichées
+
+On peut changer le nom des colonnes affichées avec `AS "col_new_name"` :
+
+```SQL
+SELECT col1253556 AS "First_name" FROM table_name;
+````
+
+|First_name|
+|-|
+|Eric|
+|Peter|
+|...|
 
 ## Ordonner le résultat de la sélection
 

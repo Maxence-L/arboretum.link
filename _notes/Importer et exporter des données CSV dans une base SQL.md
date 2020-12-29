@@ -61,7 +61,7 @@ CREATE TABLE supervisor_salaries_temp (LIKE supervisor_salaries);
 
 -- Importation du fichier CSV dans le tableau temporaire
 COPY supervisor_salaries_temp (town, supervisor, salary)
-FROM '/Users/maxencelaumonier/scripts/supervisor_salaries.txt'
+FROM '/Users/scripts/supervisor_salaries.txt'
 WITH (FORMAT CSV, HEADER);
 
 -- Insertion du tableau temporaire + la valeur par défaut de 'county'

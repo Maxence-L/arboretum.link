@@ -11,7 +11,7 @@
           "type": "markdown",
           "state": {
             "file": "_notes/Opérations mathématiques avec SQL.md",
-            "mode": "source"
+            "mode": "preview"
           }
         }
       }
@@ -49,7 +49,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -96,15 +97,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
-    "_notes/Oérations mathématiques avec SQL.md",
+    "_notes/Opérations mathématiques avec SQL.md",
     "_notes/Importer et exporter des données CSV dans une base SQL.md",
+    "_notes/SELECTionner des données SQL.md",
+    "_notes/Oérations mathématiques avec SQL.md",
     "_notes/Untitled 1.md",
     "_notes/Sauvegarder un tableau SQL au format CSV.md",
     "_notes/Importer des données CSV dans une base SQL.md",
     "_notes/Modifier le type d'une colonne SQL.md",
     "_notes/Types de données SQL.md",
-    "_notes/Untitled 5.md",
-    "_notes/Type de données SQL.md",
-    "_notes/SELECTionner des données SQL.md"
+    "_notes/Untitled 5.md"
   ]
 }
