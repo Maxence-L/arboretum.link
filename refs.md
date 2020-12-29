@@ -3,7 +3,6 @@ layout: post
 title: Reférences
 permalink: /refs/
 content-type: eg
-toc : true
 ---
 
 Cette page référence les ressources que j'utilise ou que j'ai utilisé et mes impressions à leur sujet.
