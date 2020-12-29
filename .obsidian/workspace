@@ -10,8 +10,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/Créer un tableau (table) SQL.md",
-            "mode": "source"
+            "file": "_notes/Insérer des données dans un tableau SQL.md",
+            "mode": "preview"
           }
         }
       }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Créer un tableau (table) SQL.md",
+                "file": "_notes/Insérer des données dans un tableau SQL.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,7 +84,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Créer un tableau (table) SQL.md"
+                "file": "_notes/Insérer des données dans un tableau SQL.md"
               }
             }
           }
@@ -96,15 +96,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
-    "_notes/Créer une table SQL.md",
+    "_notes/Insérer des données dans un tableau SQL.md",
     "_notes/Importer et exporter des données CSV dans une base SQL.md",
+    "_notes/Créer une table SQL.md",
     "_notes/Untitled.md",
     "_notes/Opérations mathématiques avec SQL.md",
     "_notes/SELECTionner des données SQL.md",
     "_notes/Oérations mathématiques avec SQL.md",
     "_notes/Untitled 1.md",
     "_notes/Sauvegarder un tableau SQL au format CSV.md",
-    "_notes/Importer des données CSV dans une base SQL.md",
-    "_notes/Modifier le type d'une colonne SQL.md"
+    "_notes/Importer des données CSV dans une base SQL.md"
   ]
 }

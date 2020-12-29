@@ -1,6 +1,6 @@
 ---
 title : Insérer des données dans un tableau SQL
-tags : PostgreSQL
+tags : SQL
 etat : hiver
 ---
 
