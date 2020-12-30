@@ -197,7 +197,7 @@ FROM teachers:
 | F.D. Roosevelt HS   | 38500  |
 | F.D. Roosevelt HS   | 36200  |
 
-Plusieurs astuces existent pour lister les les doublons. Voir l'article en [lien](https://sql.sh/55-requete-trouver-doublon). 
+Plusieurs astuces existent pour lister les les doublons. Voir cet article de [sql.sh](https://sql.sh/55-requete-trouver-doublon). 
 
 ### Trouver les doublons
 
