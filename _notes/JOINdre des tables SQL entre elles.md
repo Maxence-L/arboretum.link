@@ -62,6 +62,37 @@ ON schools_left.id = schools_right.id;
 
 On le voit, seules les lignes communes aux deux tableaux sont représentées.
 
+### Sélectionner des colonnes particulières
+
+Les colonnes trouvées dans le tableau d'arrivée sont précisées après `SELECT`. Pour éviter les ambiguités (par exemple, si les deux tableaux possèdent des colonnes synonymes), il faut préciser le `nom_du_tableau.nom_colonne`.
+
+En effet, la requête suivante renvoie une erreur :
+
+```SQL
+SELECT id
+FROM schools_left LEFT JOIN schools_right
+ON schools_left.id = schools_right.id;
+````
+
+La manière correcte : 
+
+```SQL
+SELECT schools_left.id,
+	schools_left.left_school,
+	schools_right.right_school
+FROM schools_left LEFT JOIN schools_right
+ON schools_left.id schools_right.id;
+````
+
+id|left_school| right\_school|
+|-|-|-|
+1|Oak Street School|Oak Street School
+2|Roosevelt High School|Roosevelt High School
+5|Washington Middle School| |
+6| Jefferson High School |Jefferson High School
+
+Il est également possible de changer le nom de la colonne en utilisant `AS`: `SELECT schools_left.id AS left_id, ...`
+
 ## LEFT JOIN et RIGHT JOIN
 
 `LEFT JOIN` et `RIGHT JOIN` produisent un tableau contenant toutes les lignes d'une table et des lignes vides pour celles qui ne sont pas communes aux deux tableaux. Le tableau de référence (qui restera complet) est désigné par la commande `LEFT` (le premier tableau) ou `RIGHT` (le second).

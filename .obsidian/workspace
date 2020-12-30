@@ -10,8 +10,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/SELECTionner des données SQL.md",
-            "mode": "source"
+            "file": "_notes/JOINdre des tables SQL entre elles.md",
+            "mode": "preview"
           }
         }
       }
@@ -49,11 +49,13 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 274.5036334991455
+    "width": 274.5036334991455,
+    "collapsed": true
   },
   "right": {
     "id": "15b808a1e515cd90",
@@ -69,7 +71,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/SELECTionner des données SQL.md",
+                "file": "_notes/JOINdre des tables SQL entre elles.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,7 +86,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/SELECTionner des données SQL.md"
+                "file": "_notes/JOINdre des tables SQL entre elles.md"
               }
             }
           }
@@ -96,15 +98,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
-    "_notes/SELECTionner des données SQL.md",
     "_notes/JOINdre des tables SQL entre elles.md",
+    "_notes/SELECTionner des données SQL.md",
+    "_notes/Les doublons dans un tableau SQL.md",
+    "_notes/Untitled.md",
     "refs.md",
     "_notes/Insérer des données dans un tableau SQL.md",
     "_notes/Importer et exporter des données CSV dans une base SQL.md",
     "_notes/Créer une table SQL.md",
-    "_notes/Untitled.md",
     "_notes/Opérations mathématiques avec SQL.md",
-    "_notes/Oérations mathématiques avec SQL.md",
-    "_notes/Untitled 1.md"
+    "_notes/Oérations mathématiques avec SQL.md"
   ]
 }

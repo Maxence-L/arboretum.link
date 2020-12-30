@@ -128,6 +128,8 @@ On obtient tous les professeurs dont les salaires sont entre 40K et 65K.
 
 > A noter :  `BETWEEN` est inclusif. `BETWEEN 40000 AND 65000`est donc équivalent à $[40000, 65000]$.
 
+## Opérateurs filtrants
+
 ### Filtrer par correspondance incomplète : `LIKE`
 
 Les opérateurs `LIKE` et `ILIKE` permettent de passer des opérateurs de filtrage similaires au [[regex]].
@@ -166,54 +168,10 @@ WHERE school = 'F.D. Roosevelt HS'
 
 > A noter : Il faut énoncer une condition à la fois. C'est fastidieux, surtout si l'on a plusieurs valeurs à sélectionner.
 
-### Retirer les doublons `DISTINCT`
 
-On utilise le mot-clé `DISTINCT` associé aux colonnes qui nous intéressent. Cette fonction est utile pour comprendre les valeurs possibles d'une variable, par exemple.
+### `NULL` permet de détecter les valeurs nulles
 
-```SQL
-SELECT DISTINCT school
-FROM teachers;
-````
+L'expression `WHERE col1 IS NULL`  retournera un tableau où toutes les lignes de `col1` seront nulles (vides).
 
-Le résultat est le suivant :
-
-| school|
-|---------------------|
-| F.D. Roosevelt HS   |
-| Myers Middle School |
-
-On peut aussi appliquer `DISTINCT` à plusieurs colonnes ; les lignes retournées correspondent aux observations uniques.
-
-```SQL
-SELECT DISTINCT school, salary
-FROM teachers:
-````
-
-| school              | salary |
-|---------------------|--------|
-| Myers Middle School | 43500  |
-| Myers Middle School | 36200  |
-| F.D. Roosevelt HS   | 65000  |
-| F.D. Roosevelt HS   | 38500  |
-| F.D. Roosevelt HS   | 36200  |
-
-Plusieurs astuces existent pour lister les les doublons. Voir cet article de [sql.sh](https://sql.sh/55-requete-trouver-doublon). 
-
-### Trouver les doublons
-
-On peut aussi vouloir lister les doublons présents dans le tableau.
-
-```SQL
-SELECT COUNT(*) AS nbr_doublon, school
-FROM teachers
-GROUP BY school
-HAVING COUNT(*) > 1;
-````
-
-|nbr_doublon| school              |
-|-|---------------------|
-|2| Myers Middle School |
-|3| F.D. Roosevelt HS   |
-
-> A noter : On peut obtenir les doublons complets (toute la ligne est un doublon) en précisant l'intégralité des colonnes dans la commande `GROUP BY`.
+A l'inverse, on peut utiliser `IS NOT NULL` pour chercher les lignes ne présentant pas de valeur manquante.
 
