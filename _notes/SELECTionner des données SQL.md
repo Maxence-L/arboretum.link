@@ -166,7 +166,7 @@ WHERE school = 'F.D. Roosevelt HS'
 
 > A noter : Il faut énoncer une condition à la fois. C'est fastidieux, surtout si l'on a plusieurs valeurs à sélectionner.
 
-### Retirer les doublon `DISTINCT`
+### Retirer les doublons `DISTINCT`
 
 On utilise le mot-clé `DISTINCT` associé aux colonnes qui nous intéressent. Cette fonction est utile pour comprendre les valeurs possibles d'une variable, par exemple.
 
