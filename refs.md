@@ -103,6 +103,12 @@ Les ouvrages sur le sujet sont donc souvent centrés sur les statistiques (et no
 
 *Book of R* est d'abord centré sur R et permet d'apprendre les concepts comme n'importe quel langage orienté-objet sans ambiguïté. Le ton de l'auteur est assez froid mais les explications sont claires tout comme les exercices. J'eu apprécié qu'il fut publié au moment de mes études !
 
+### Practical SQL: A Beginner's Guide to Storytelling with Data, *Anthony DeBarros*
+
+Un excellent livre d'introduction à SQL. Les exemples des notes du site au sujet d'SQL viennent de ce livre  : je me rééxplique en français l'ouvrage à mesure que j'avance dans la lecture. 
+
+L'écriture de l'auteur est claire et très joviale et l'on aborde tous les points important pour se débrouiller ensuite professionnellement avec les bases de données. Le livre aborde même des sujets techniques qui dépassent la seule introduction au langage. C'est donc une bonne référence qui évoluera avec le lecteur. Par ailleurs, étant publié chez NoStarch, l'édition est excellente.
+
 ### *Python Workout*, Reuven M. Lerner
 
 Un livre d'exercices en apparence simples sur Python, mais dont la résolution est expliquée en détail et approfondie à chaque fois. Une excellente manière de s'entrainer au quotidien et de découvrir certaines fonctionnalités méconnues ou des solutions habiles à certaines questions.

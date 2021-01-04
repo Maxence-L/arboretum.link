@@ -225,3 +225,33 @@ CONSTRAINT student_id_key PRIMARY KEY (student_id)
 
 ## Ajouter et retirer des contraintes après création du tableau
 
+On utilise la commande `ALTER TABLE` pour modifier les contraintes d'un tableau. Les colonnes concernées doivent respecter la contrainte pour qu'elle soit ajoutée.
+
+### Suppression de contrainte
+Pour supprimer une clé (étrangère ou primaire) ou une contrainte de type `UNIQUE`, on utilise la commande suivante : `ALTER TABLE table_name DROP CONSTRAINT constraint_name;`
+
+Par exemple :
+
+```SQL
+ALTER TABLE not_null_example DROP CONSTRAINT student_id_key;
+````
+
+Pour supprimer une contrainte `NOT NULL` :
+
+```SQL
+ALTER TABLE table_name ALTER COLUMN column_name DROP NOT NULL;
+````
+
+### Ajout de contrainte
+
+Pour une contrainte de type "clé" :
+
+```SQL
+ALTER TABLE not_null_example ADD CONSTRAINT student_id_key PRIMARY KEY (student_id);
+````
+
+Pour une contrainte autre :
+```SQL
+ALTER TABLE not_null_example ALTER COLUMN first_name SET NOT NULL;
+````
+
