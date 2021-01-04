@@ -2,6 +2,7 @@
 title : Clés et contraintes dans SQL
 tags : SQL
 etat : hiver
+toc : true
 ---
 
 ## Clés primaires
@@ -164,4 +165,63 @@ CREATE TABLE registrations_child
 ## Contraintes
 
 ### `CHECK`
+
+La contrainte `CHECK` permet de vérifier si la valeur respecte une condition attendue. En l'occurence, on utilise un [[SELECTionner des données SQL\|test logique]]. Au cas où le critère de serait pas rempli, la base de donnée retourne une erreur.
+
+`CHECK (condition)`  se déclare lors de la création de la colonne comme une contrainte :
+
+```SQL
+CREATE TABLE check_constraint_example (
+    user_id bigserial,
+    user_role varchar(50),
+    salary integer,
+    CONSTRAINT user_id_key PRIMARY KEY (user_id),
+    CONSTRAINT check_role_in_list CHECK (user_role IN('Admin', 'Staff')),
+    CONSTRAINT check_salary_not_zero CHECK (salary > 0)
+);
+````
+
+### `UNIQUE`
+
+`UNIQUE` est similaire à une contrainte de type clé : chaque valeur de la colonne doit être unique. Toutefois, il est possible que la colonne contienne des valeurs `NULL`, contrairement à une colonne ayant une contrainte de type "clé".
+
+```SQL
+CREATE TABLE unique_constraint_example (
+    contact_id bigserial CONSTRAINT contact_id_key PRIMARY KEY,
+    first_name varchar(50),
+    last_name varchar(50),
+    email varchar(200),
+    CONSTRAINT email_unique UNIQUE (email)
+) ;
+````
+
+```SQL
+INSERT INTO unique_constraint_example (first_name, last_name, email)
+VALUES ('Samantha', 'Lee', 'slee@example.org');
+
+INSERT INTO unique_constraint_example (first_name, last_name, email)
+VALUES ('Betty', 'Diaz', 'bdiaz@example.org');
+
+INSERT INTO unique_constraint_example (first_name, last_name, email)
+VALUES ('Sasha', 'Lee', 'slee@example.org');
+````
+
+````
+[23505] ERROR: duplicate key value violates unique constraint "email_unique" Détail : Key (email)=(slee@example.org) already exists.
+`````
+
+### `NOT NULL`
+
+`NOT NULL` force les valeurs insérée dans la colonne contraintes à ne pas avoir la valeur nulle.
+
+```SQL
+CREATE TABLE not_null_example (
+student_id bigserial,
+first_name varchar(50) NOT NULL,
+last_name varchar(50) NOT NULL ,
+CONSTRAINT student_id_key PRIMARY KEY (student_id)
+);
+```
+
+## Ajouter et retirer des contraintes après création du tableau
 

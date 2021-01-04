@@ -96,6 +96,7 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "_notes/Clés et contraintes dans SQL.md",
     "_notes/Gestion des clés dans SQL.md",
     "_notes/Afficher les tables existantes dans une base SQL.md",
     "_notes/JOINdre des tables SQL entre elles.md",
@@ -104,7 +105,6 @@
     "_notes/Les doublons dans un tableau SQL.md",
     "_notes/Untitled.md",
     "refs.md",
-    "_notes/Insérer des données dans un tableau SQL.md",
-    "_notes/Importer et exporter des données CSV dans une base SQL.md"
+    "_notes/Insérer des données dans un tableau SQL.md"
   ]
 }
