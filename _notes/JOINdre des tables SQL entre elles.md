@@ -62,37 +62,6 @@ ON schools_left.id = schools_right.id;
 
 On le voit, seules les lignes communes aux deux tableaux sont représentées.
 
-### Sélectionner des colonnes particulières
-
-Les colonnes trouvées dans le tableau d'arrivée sont précisées après `SELECT`. Pour éviter les ambiguités (par exemple, si les deux tableaux possèdent des colonnes synonymes), il faut préciser le `nom_du_tableau.nom_colonne`.
-
-En effet, la requête suivante renvoie une erreur :
-
-```SQL
-SELECT id
-FROM schools_left LEFT JOIN schools_right
-ON schools_left.id = schools_right.id;
-````
-
-La manière correcte : 
-
-```SQL
-SELECT schools_left.id,
-	schools_left.left_school,
-	schools_right.right_school
-FROM schools_left LEFT JOIN schools_right
-ON schools_left.id schools_right.id;
-````
-
-id|left_school| right\_school|
-|-|-|-|
-1|Oak Street School|Oak Street School
-2|Roosevelt High School|Roosevelt High School
-5|Washington Middle School| |
-6| Jefferson High School |Jefferson High School
-
-Il est également possible de changer le nom de la colonne en utilisant `AS`: `SELECT schools_left.id AS left_id, ...`
-
 ## LEFT JOIN et RIGHT JOIN
 
 `LEFT JOIN` et `RIGHT JOIN` produisent un tableau contenant toutes les lignes d'une table et des lignes vides pour celles qui ne sont pas communes aux deux tableaux. Le tableau de référence (qui restera complet) est désigné par la commande `LEFT` (le premier tableau) ou `RIGHT` (le second).
@@ -173,4 +142,118 @@ FROM schools_left CROSS JOIN schools_right;
 | 6 | Jefferson High School | 4 | Chase Magnet Acadeny |
 | 6 | Jefferson High School | 6 | Jefferson High School |
 
+## Manipuler plus finement les jonctions
+
+### Sélectionner des colonnes particulières
+
+Les colonnes trouvées dans le tableau d'arrivée sont précisées après `SELECT`. Pour éviter les ambiguités (par exemple, si les deux tableaux possèdent des colonnes synonymes), il faut préciser le `nom_du_tableau.nom_colonne`.
+
+En effet, la requête suivante renvoie une erreur :
+
+```SQL
+SELECT id
+FROM schools_left LEFT JOIN schools_right
+ON schools_left.id = schools_right.id;
+````
+
+La manière correcte : 
+
+```SQL
+SELECT schools_left.id,
+	schools_left.left_school,
+	schools_right.right_school
+FROM schools_left LEFT JOIN schools_right
+ON schools_left.id schools_right.id;
+````
+
+id|left_school| right\_school|
+|-|-|-|
+1|Oak Street School|Oak Street School
+2|Roosevelt High School|Roosevelt High School
+5|Washington Middle School| |
+6| Jefferson High School |Jefferson High School
+
+
+### Simplifier les commandes `JOIN` avec des alias
+
+ #### Changer le nom des colonnes utilisées
+
+Il est possible de changer le nom de la colonne en utilisant `AS`: `SELECT schools_left.id AS left_id, ...`
+
+#### Changer le nom des tables utilisées
+
+Les requêtes pouvant devenir complexes à lire pour des opérations de grandes taille, on peut définir alors un alias afin de simplifier leur écriture. 
+
+Par exemple, la colonne `naissances` du tableau `population_franche_comté_2020_12` se désigne normalement par `population_franche_comté_2020_12.naissances`. En utilisant `AS` au moment de nommer la table, on peut désigner la colonne simplement comme `pop20_12_fc.naissances`.
+
+Un autre exemple :
+
+```SQL
+SELECT lt.id,
+	lt.left_school,
+	rt.right_school
+FROM schools left AS lt LEFT JOIN schools right AS rt
+ON lt.id = rt.id;
+````
+
+### Joindre plusieurs tableaux
+
+Il suffit de chainer les comandes `JOIN`. Illustration :
+
+On a les trois tables suivantes que l'on veut fusionner :
+
+`schools_left`
+
+| id | left\_school |
+| :--- | :--- |
+| 1 | Oak Street School |
+| 2 | Roosevelt High School |
+| 5 | Washington Middle School |
+| 6 | Jefferson High School |
+
+`schools_enrollment`
+
+| id | enrollment |
+| :--- | :--- |
+| 1 | 360 |
+| 2 | 1001 |
+| 5 | 450 |
+| 6 | 927 |
+
+`schools_grades`
+
+| id | grades |
+| :--- | :--- |
+| 1 | K-3 |
+| 2 | 9-12 |
+| 5 | 6-8 |
+| 6 | 9-12 |
+
+
+```SQL
+SELECT lt.id, lt.left_school, en.enrollment, gr.grades
+FROM schools_left AS lt
+    LEFT JOIN schools_enrollment AS en
+        ON lt.id = en.id
+    LEFT JOIN schools_grades AS gr
+        ON lt.id = gr.id;
+````
+
+Résultat :
+
+| id | left\_school | enrollment | grades |
+| :--- | :--- | :--- | :--- |
+| 1 | Oak Street School | 360 | K-3 |
+| 2 | Roosevelt High School | 1001 | 9-12 |
+| 5 | Washington Middle School | 450 | 6-8 |
+| 6 | Jefferson High School | 927 | 9-12 |
+
+
+
+
+
+
+
+
+				
 
