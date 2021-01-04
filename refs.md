@@ -107,7 +107,7 @@ Les ouvrages sur le sujet sont donc souvent centrés sur les statistiques (et no
 
 Un excellent livre d'introduction à SQL. Les exemples des notes du site au sujet d'SQL viennent de ce livre  : je me rééxplique en français l'ouvrage à mesure que j'avance dans la lecture. 
 
-L'écriture de l'auteur est claire et très joviale et l'on aborde tous les points important pour se débrouiller ensuite professionnellement avec les bases de données. Le livre aborde même des sujets techniques qui dépassent la seule introduction au langage. C'est donc une bonne référence qui évoluera avec le lecteur. Par ailleurs, étant publié chez NoStarch, l'édition est excellente.
+L'écriture de l'auteur est claire et très joviale et l'on aborde tous les points important pour se débrouiller ensuite professionnellement avec les bases de données. Le livre est assez massif (plus de 500 pages) et aborde des sujets avancés à partir des chapitres 10-11 qui dépassent la seule introduction au langage. C'est donc une bonne référence qui évoluera avec le lecteur. Par ailleurs, étant publié chez NoStarch, l'édition est excellente.
 
 ### *Python Workout*, Reuven M. Lerner
 
