@@ -212,7 +212,7 @@ VALUES ('Sasha', 'Lee', 'slee@example.org');
 
 ### `NOT NULL`
 
-`NOT NULL` force les valeurs insérée dans la colonne contraintes à ne pas avoir la valeur nulle.
+`NOT NULL` force les valeurs insérées dans la colonne contrainte à ne pas avoir la valeur nulle.
 
 ```SQL
 CREATE TABLE not_null_example (
