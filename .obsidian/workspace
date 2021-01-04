@@ -10,8 +10,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/JOINdre des tables SQL entre elles.md",
-            "mode": "preview"
+            "file": "_notes/Clés et contraintes dans SQL.md",
+            "mode": "source"
           }
         }
       }
@@ -53,7 +53,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 274.5036334991455
+    "width": 240.0036334991455
   },
   "right": {
     "id": "15b808a1e515cd90",
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/JOINdre des tables SQL entre elles.md",
+                "file": "_notes/Clés et contraintes dans SQL.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,7 +84,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/JOINdre des tables SQL entre elles.md"
+                "file": "_notes/Clés et contraintes dans SQL.md"
               }
             }
           }
@@ -96,15 +96,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
-    "_notes/JOINdre des tables SQL entre elles.md",
+    "_notes/Gestion des clés dans SQL.md",
     "_notes/Afficher les tables existantes dans une base SQL.md",
+    "_notes/JOINdre des tables SQL entre elles.md",
     "_notes/Untitled 2.md",
     "_notes/SELECTionner des données SQL.md",
     "_notes/Les doublons dans un tableau SQL.md",
     "_notes/Untitled.md",
     "refs.md",
     "_notes/Insérer des données dans un tableau SQL.md",
-    "_notes/Importer et exporter des données CSV dans une base SQL.md",
-    "_notes/Créer une table SQL.md"
+    "_notes/Importer et exporter des données CSV dans une base SQL.md"
   ]
 }
