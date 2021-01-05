@@ -168,10 +168,10 @@ WHERE school = 'F.D. Roosevelt HS'
 
 > A noter : Il faut énoncer une condition à la fois. C'est fastidieux, surtout si l'on a plusieurs valeurs à sélectionner.
 
-
 ### `NULL` permet de détecter les valeurs nulles
 
 L'expression `WHERE col1 IS NULL`  retournera un tableau où toutes les lignes de `col1` seront nulles (vides).
 
 A l'inverse, on peut utiliser `IS NOT NULL` pour chercher les lignes ne présentant pas de valeur manquante.
+
 

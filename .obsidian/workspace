@@ -10,8 +10,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "about.md",
-            "mode": "source"
+            "file": "_notes/Modifier le type d'une colonne SQL.md",
+            "mode": "preview"
           }
         }
       }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "sql",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -49,7 +49,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -69,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "about.md",
+                "file": "_notes/Modifier le type d'une colonne SQL.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,7 +85,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "about.md"
+                "file": "_notes/Modifier le type d'une colonne SQL.md"
               }
             }
           }
@@ -96,15 +97,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
-    "about.md",
+    "_notes/Modifier le type d'une colonne SQL.md",
+    "_notes/Créer un tableau (table) SQL.md",
+    "_notes/Insérer des données dans un tableau SQL.md",
     "_notes/Modifier les données d'un tableau SQL.md",
+    "_notes/Untitled.md",
     "_notes/SELECTionner des données SQL.md",
+    "about.md",
     "_notes/Opérations sur données aggrégées dans SQL.md",
     "_notes/Untitled 4.md",
-    "_notes/Les doublons dans un tableau SQL.md",
-    "_notes/Untitled 3.md",
-    "_notes/Clés et contraintes dans SQL.md",
-    "_notes/Importer et exporter des données CSV dans une base SQL.md",
-    "_notes/Créer un tableau (table) SQL.md"
+    "_notes/Les doublons dans un tableau SQL.md"
   ]
 }

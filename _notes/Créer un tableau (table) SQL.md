@@ -28,6 +28,6 @@ CREATE TABLE employee (
 - `hire_date` est de type `date` et permet de représenter des données temporelles.
 - `salary` est au format `numeric`.
 
-Il est par ailleurs possible d'ajouter des [[Clés et contraintes dans SQL\|contraintes ou de créer des clés]] lors de la création d'un tableau. Après, on utilisera [`ALTER TABLE`](https://sql.sh/cours/alter-table).
+Il est par ailleurs possible d'ajouter des [[Clés et contraintes dans SQL\|contraintes ou de créer des clés]] lors de la création d'un tableau..
 
 Une fois la table créée on peut [[Insérer des données dans un tableau SQL\| y insérer des données]].
