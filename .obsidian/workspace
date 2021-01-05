@@ -10,8 +10,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/Modifier le type d'une colonne SQL.md",
-            "mode": "preview"
+            "file": "_notes/Modifier les données d'un tableau SQL.md",
+            "mode": "source"
           }
         }
       }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "sql",
+                "query": "CAST",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -49,12 +49,12 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 240.0036334991455
+    "width": 240.0036334991455,
+    "collapsed": true
   },
   "right": {
     "id": "15b808a1e515cd90",
@@ -70,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Modifier le type d'une colonne SQL.md",
+                "file": "_notes/Modifier les données d'un tableau SQL.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -85,7 +85,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Modifier le type d'une colonne SQL.md"
+                "file": "_notes/Modifier les données d'un tableau SQL.md"
               }
             }
           }
@@ -97,15 +97,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "_notes/Modifier les données d'un tableau SQL.md",
+    "_notes/Créer un tableau SQL.md",
+    "_notes/SELECTionner des données SQL.md",
     "_notes/Modifier le type d'une colonne SQL.md",
     "_notes/Créer un tableau (table) SQL.md",
     "_notes/Insérer des données dans un tableau SQL.md",
-    "_notes/Modifier les données d'un tableau SQL.md",
     "_notes/Untitled.md",
-    "_notes/SELECTionner des données SQL.md",
     "about.md",
     "_notes/Opérations sur données aggrégées dans SQL.md",
-    "_notes/Untitled 4.md",
-    "_notes/Les doublons dans un tableau SQL.md"
+    "_notes/Untitled 4.md"
   ]
 }

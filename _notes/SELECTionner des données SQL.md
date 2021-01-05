@@ -174,4 +174,3 @@ L'expression `WHERE col1 IS NULL`  retournera un tableau où toutes les lignes d
 
 A l'inverse, on peut utiliser `IS NOT NULL` pour chercher les lignes ne présentant pas de valeur manquante.
 
-

@@ -1,8 +1,10 @@
 ---
-title : Créer un tableau (table) SQL
+title : Création de tableau SQL
 tags : SQL
 etat : hiver
 ---
+
+## Créer un nouveau tableau
 
 Un tableau SQL est un objet utilisé pour stocker des donner, tel un récipient. Le tableau SQL est un objet contenu dans une base de données qui regroupera plusieurs tableaux (comme des récipients dans un placard).
 
@@ -30,4 +32,25 @@ CREATE TABLE employee (
 
 Il est par ailleurs possible d'ajouter des [[Clés et contraintes dans SQL\|contraintes ou de créer des clés]] lors de la création d'un tableau..
 
-Une fois la table créée on peut [[Insérer des données dans un tableau SQL\| y insérer des données]].
+Une fois le tableau créée on peut [[Insérer des données dans un tableau SQL\| y insérer des données]].
+
+## Créer un tableau de sauvegarde
+
+Lorsque l'on procède à des importantes [[Modifier les données d'un tableau SQL\|modifications]] du tableau, il peut être indiqué de sauvegarder l'ancien.
+
+La syntaxe est simple :
+
+```SQL
+CREATE TABLE table_backup AS
+SELECT * FROM table;
+````
+
+On peut vérifier le résultat de la manière suivante :
+
+```SQL
+SELECT
+	(SELECT count(*) FROM meat_poultry_egg_inspect) AS original,
+	(SELECT count(*) FROM meat_poulty_egg_inspect_bac) AS backup;
+```
+
+> A noter : Si un index était présent, il faut le recréer sur le nouveau tableau.

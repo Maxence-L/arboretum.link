@@ -9,7 +9,7 @@ La commande centrale pour l'import et l'export des données SQL est [`COPY`](htt
 
 ## Import
 
-On peut importer les données d'un fichier dans une table déjà existante. Il faut donc [[Créer un tableau (table) SQL\|définir les colonnes]] (et leur [[Types de données SQL\|type]]) avant de procéder à l'import.
+On peut importer les données d'un fichier dans une table déjà existante. Il faut donc [[Création de tableau SQL\|définir les colonnes]] (et leur [[Types de données SQL\|type]]) avant de procéder à l'import.
 
 Un exemple simple d'import :
 

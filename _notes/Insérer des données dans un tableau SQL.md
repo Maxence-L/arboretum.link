@@ -4,7 +4,7 @@ tags : SQL
 etat : hiver
 ---
 
-Une fois le tableau [[Créer un tableau (table) SQL\|créé]], on peut y ajouter es données avec la commande `INSERT` :
+Une fois le tableau [[Création de tableau SQL\|créé]], on peut y ajouter es données avec la commande `INSERT` :
 
 ```SQL
 INSERT INTO teachers (first_name, last_name, school, hire_date, salary)
