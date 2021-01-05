@@ -10,8 +10,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/Modifier les données d'un tableau SQL.md",
-            "mode": "source"
+            "file": "_notes/Supprimer un tableau SQL.md",
+            "mode": "preview"
           }
         }
       }
@@ -70,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Modifier les données d'un tableau SQL.md",
+                "file": "_notes/Supprimer un tableau SQL.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -85,7 +85,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Modifier les données d'un tableau SQL.md"
+                "file": "_notes/Supprimer un tableau SQL.md"
               }
             }
           }
@@ -97,13 +97,13 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "_notes/Untitled.md",
     "_notes/Modifier les données d'un tableau SQL.md",
     "_notes/Créer un tableau SQL.md",
     "_notes/SELECTionner des données SQL.md",
     "_notes/Modifier le type d'une colonne SQL.md",
     "_notes/Créer un tableau (table) SQL.md",
     "_notes/Insérer des données dans un tableau SQL.md",
-    "_notes/Untitled.md",
     "about.md",
     "_notes/Opérations sur données aggrégées dans SQL.md",
     "_notes/Untitled 4.md"

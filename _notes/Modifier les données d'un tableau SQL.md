@@ -122,3 +122,28 @@ WHERE EXISTS (SELECT column
 ````
 
 ### Concaténer des valeurs
+
+Anecdotique mais utile, la concaténation de valeurs se fait avec l'opérateur `||`. Ici, on ajoute "+1" aux numéros de téléphone canadiens ou étatsuniens.
+
+```SQL
+UPDATE table
+SET phone = '+1' || phone
+WHERE country IN ('US', 'CA')
+````
+
+## Supprimer des lignes d'un tableau
+
+Pour supprimer toutes les lignes d'un tableau :
+
+```SQL
+DELETE FROM table_name;
+````
+
+Pour supprimer conditionnellement les lignes :
+
+```SQL
+DELETE FROM table_name WHERE expression;
+````
+
+
+
