@@ -68,6 +68,7 @@ ORDER BY count(*) DESC;
 | MA | 370 |  
 | KS | 328 |  
 | NJ | 296 |
+|...|...|
 
 Fonctions sont habituellement utilisées pour décrire les groupes :
 
@@ -76,3 +77,44 @@ Fonctions sont habituellement utilisées pour décrire les groupes :
 - `min(col), max(col)` : retourne la valeur minimum ou maximum de la sélection (colonne x groupe)
 
 ## Filtrer les groupes affichés avec `HAVING`
+
+`HAVING` permet de filtrer en fin de requête les groupes retournés selon une condition.
+
+L'avantage de `HAVING` est que le filtrage peut être le résultat d'une fonction appelée sur chaque groupe, une des colonnes de la sélection ou la colonne aggrégative.
+
+Exemple pour un filtre sur la colonne aggrégative :
+
+```SQL
+SELECT stabr, count(*)
+FROM pls_fy2014_pupld14a
+GROUP BY stabr
+HAVING stabr LIKE 'A%'
+ORDER BY count(*) DESC;
+````
+
+| stabr | count |
+| :--- | :--- |
+| AL | 224 |
+| AZ | 91 |
+| AK | 85 |
+| AR | 58 |
+| AS | 1 |
+
+Sur le résultat d'une fonction appelée sur chaque groupe :
+
+```SQL
+SELECT stabr, count(*)
+FROM pls_fy2014_pupld14a
+GROUP BY stabr
+HAVING count(*) > 500
+ORDER BY count(*) DESC;
+````
+
+| stabr | count |
+| :--- | :--- |
+| NY | 756 |
+| IL | 625 |
+| TX | 556 |
+| IA | 543 |
+
+> A noter : [En rêgle générale](https://waytolearnx.com/2018/08/difference-entre-having-et-where.html), `HAVING` vient après `GROUP BY` et permet de filtrer les résultats, tandis que `WHERE` vient en amont (avant `GROUP BY`, donc) et [[SELECTionner des données SQL\|permet de filtrer ce qui est inclu dans la sélection]].
