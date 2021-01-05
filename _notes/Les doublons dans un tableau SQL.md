@@ -5,24 +5,13 @@ etat : printemps
 toc : true
 ---
 
-La gestion des doublons n'est pas toujours aisée avec SQL et internet regorge d'astuces à ce sujet.
+Trois types de doublons existent :
 
-Le tableau des exemples :
+- **Doublon absolu** : Il correspond aux combinaisons identiques de valeurs sur toute une ligne. Par exemple, (1,0,0) et (1,0,0) sont des doublons absolus, (1,0,0) et (1,0,1) n'en sont pas, même s'ils partagent quelques mêmes valeurs.
+- **Doublon relatif** : Il correspond à un doublon absolu, moins la clé (qui est différente).
+- **Quasi doublon** : Il correspond aux lignes comportant des valeurs identiques. On peut ajuster la détection des quasi doublons en précisant quelles colonnes nous importent. 
 
-```SQL
-CREATE table test (  
-    champ1 integer,  
- champ2 varchar(10),  
- champ3 varchar(10)  
-);  
-  
-INSERT INTO test (champ1, champ2, champ3) VALUES  
- (1,'deux','Pierre'),  
- (1,'deux','Léon'),  
- (4,'cinq','Hugo'),  
- (4,'cinq','Hugo'),  
- (7,'huit','Albert');
- ````
+On part du tableau suivant :
 
 | champ1 | champ2 | champ3 |
 | :--- | :--- | :--- |

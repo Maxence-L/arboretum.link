@@ -49,7 +49,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -96,6 +97,8 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "_notes/Opérations sur données aggrégées dans SQL.md",
+    "_notes/Les doublons dans un tableau SQL.md",
     "_notes/Untitled 3.md",
     "_notes/Clés et contraintes dans SQL.md",
     "_notes/Importer et exporter des données CSV dans une base SQL.md",
@@ -103,8 +106,6 @@
     "refs.md",
     "_notes/Gestion des clés dans SQL.md",
     "_notes/Afficher les tables existantes dans une base SQL.md",
-    "_notes/JOINdre des tables SQL entre elles.md",
-    "_notes/Untitled 2.md",
-    "_notes/SELECTionner des données SQL.md"
+    "_notes/JOINdre des tables SQL entre elles.md"
   ]
 }
