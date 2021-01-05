@@ -1,7 +1,8 @@
 ---
 title : Opérations sur données aggrégées dans SQL
 tags : SQl
-etat : hiver
+etat : printemps
+toc : true
 ---
 
 SQL donne la possibilité d'aggréger les données par groupes avec `GROUP BY col`. On peut ensuite appliquer des fonctions sur chacun de ces groupes.

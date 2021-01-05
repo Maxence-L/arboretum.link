@@ -10,8 +10,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/Opérations sur données aggrégées dans SQL.md",
-            "mode": "preview"
+            "file": "about.md",
+            "mode": "source"
           }
         }
       }
@@ -49,13 +49,11 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 240.0036334991455,
-    "collapsed": true
+    "width": 240.0036334991455
   },
   "right": {
     "id": "15b808a1e515cd90",
@@ -71,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Opérations sur données aggrégées dans SQL.md",
+                "file": "about.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -86,7 +84,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Opérations sur données aggrégées dans SQL.md"
+                "file": "about.md"
               }
             }
           }
@@ -98,15 +96,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "about.md",
+    "_notes/Modifier les données d'un tableau SQL.md",
+    "_notes/SELECTionner des données SQL.md",
     "_notes/Opérations sur données aggrégées dans SQL.md",
+    "_notes/Untitled 4.md",
     "_notes/Les doublons dans un tableau SQL.md",
     "_notes/Untitled 3.md",
     "_notes/Clés et contraintes dans SQL.md",
     "_notes/Importer et exporter des données CSV dans une base SQL.md",
-    "_notes/Créer un tableau (table) SQL.md",
-    "refs.md",
-    "_notes/Gestion des clés dans SQL.md",
-    "_notes/Afficher les tables existantes dans une base SQL.md",
-    "_notes/JOINdre des tables SQL entre elles.md"
+    "_notes/Créer un tableau (table) SQL.md"
   ]
 }

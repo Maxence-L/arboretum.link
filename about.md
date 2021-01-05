@@ -9,13 +9,13 @@ Mon espace de travail sur [[Obsidian::https://obsidian.md]] devenant de plus en 
 
 Le but est de ce site est de me forcer à en améliorer la qualité de ces notes, la perspective d'être lu par quelqu'un étant motivant. Cela me permet par ailleurs d'y accéder partout.
 
-J'ai parfois du mal à me souvenir d'éléments purement techniques : une formule mathématique, quelle méthode utiliser dans un package... Je compense en m'expliquant à moi-même par écrit ce que j'étudie, afin de pouvoir y revenir facilement lorsque j'en ai besoin.
+J'ai parfois du mal à me souvenir d'éléments purement techniques : une formule mathématique, quelle méthode utiliser dans un package... Je compense en m'expliquant à moi-même par écrit ce que j'étudie, afin de pouvoir y revenir facilement lorsque j'en ai besoin. Certaines pages peuvent être une simple synthèse et un lien vers une autre page disponible sur le réseau. Après tout, un bon lien vaut parfois une bonne explication.
 
-Les notes que vous trouverez ici sont donc perpétuellement en cours d'amélioration et son mises à jour quotidiennement. Mémoriser des concepts est un processus itératif au cours duquel je me corrige et je complète mes connaissances. 
+Les notes que vous trouverez ici sont perpétuellement en cours d'amélioration et son mises à jour [[quotidiennement::https://github.com/Maxence-L]]. Mémoriser des concepts est un processus itératif au cours duquel je me corrige et je complète mes connaissances. 
 
 Le web étant essentiellement en anglais, traduire en français[^1] des sujets techniques me permet de réfléchir au sens des mots que j'utilise, et donc de mieux m'approprier ces connaissances.
 
-[^1] : Je recommande à ce sujet le [Grand dictionnaire terminologique](http://gdt.oqlf.gouv.qc.ca/) québècois, une arme de terreur particulièrement efficace dans les réunions où le franglish règne.
+[^1] : Je recommande à ce sujet le [Grand dictionnaire terminologique](http://gdt.oqlf.gouv.qc.ca/) québècois, disponible sur *[ordiphone](http://gdt.oqlf.gouv.qc.ca/ficheOqlf.aspx?Id_Fiche=8360216)*, une arme de terreur particulièrement efficace dans les réunions où le franglish règne.
 
 Les notes peuvent prendre un des états suivants :
 
