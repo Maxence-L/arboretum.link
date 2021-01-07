@@ -94,7 +94,7 @@ $$
 \end{aligned}
 $$
 
-La maximisation de la log-vraisemblance se fait en dérivant son expression en fonction de ses paramètres et en charchant le point où la dérivée atteint 0 :
+La maximisation de la log-vraisemblance se fait en dérivant son expression en fonction de ses paramètres.  On cherche ensuite pour chaque équation dite de *score* le point où elles atteignent 0 :
 
 $$
 \begin{aligned}
@@ -109,7 +109,7 @@ L'approche de la valeur des paramètres du modèle se fait au moyen de l'algorit
 
 > **A noter :** On peut utiliser les mêmes techniques de [[Régularisation\|régularisation]] que pour la [[Régression linéaire\|régression linéaire]].
 
-### Classification
+## Classification
 
 Afin de maximiser la précision, choisira $Y = 1$ lorsque le score $p(x)$ associé à l'observation est égal à 0,5 et $Y = 0$ lorsque $p(x) < 0,5$, ce qui correspond au point où $P(y=1 \mid x)=P(y=0 \mid x)=\frac{1}{2}$.
 
@@ -117,17 +117,35 @@ Dans le cadre de la fonction logistique $p(X)=\frac{e^{\beta_{0}+\beta_{1} X}}{1
 
 > A noter : On peut choisir une limite de décision (*decision boundary*) différente en fonction de l'évènement à détecter. Pour réduire les faux négatifs, on choisira une limite inférieure à 0,5, au prix d'un nombre accru de faux positifs. Un bon moyen de choisir est de consulter la [[Evaluer les performances d'un classificateur\|courbe ROC]] du modèle. Voir aussi cette [bonne réponse sur SO](https://datascience.stackexchange.com/questions/49573/how-to-plot-logistic-regression-decision-boundary) sur l'aspect mathématique et graphique de cette question.
 
-### Interprétation
+## Interprétation
 
 Si le modèle s'inspire de la régression linéaire, il n'est pas aussi explicatif que celle-ci. 
 
-En effet, comme on le constate, une augmentation de $x_i$ de une unité ne correspond pas à une variation de la probabilité $p(X=x_i)$ égale à $\beta_{1i}$. 
+En effet, comme on le constate, une augmentation de $x_i$ de une unité ne correspond pas à une variation égale à $\beta_{1i}$ de la probabilité $p(X=x_i)$ , mais à la côte de celle-ci.
 
 Néanmoins, on peut toujours comparer les effets $\beta_i$ entre eux (à condition que les variables soient [[Mise à l'échelle des données - standardisation et normalisation\|normalisées]]) et le signe de $\beta_i$ nous laisse une indication pertinente à propos de l'effet de la variable $X_i$ sur $p(X)$.
 
-## Utilisation avec scikit-learn
+## Sélection du modèle
 
-On utilise [sklearn.linear_model.LogisticRegression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html). :
+L'interprétation des coefficients peut être complexifiée par la présence de variables correlées entre elles qui peuvent remplacer les variables explicatives ayant une relation de causalité et non seulement de corrélation.
+
+Il semble y avoir des [divergences](https://stats.stackexchange.com/questions/18638/model-selection-logistic-regression) sur la meilleure manière de choisir ses variables.
+
+Plusieurs stratégies sont possibles, certaines algorithmiques, d'autres plus analytiques. Le choix dépendra du temps, des ressources à disposition, mais aussi de la culture de practicien (*machine learning* versus économétrie) et du sujet étudié.
+
+- Supprimer la variable la moins significative du modèle puis rééstimer ses paramètres, jusqu'à ce que toutes les variables soient significatives.
+
+- Estimer le modèle avec chaque variable en moins (soit $k-1$ variable à chaque fois), et choisir le modèle dont le $R^2$ est le plus élevé, puis répèter avec $k-2$ variables et ainsi de suite.
+
+- Tester les coefficients avec les tests de **Rao** (inclusion d'un coefficient) et de **Wald** (exclusion d'un coefficient). [Plus de détails dans ce lien.](http://www.stat.umn.edu/geyer/8112/notes/tests.pdf)
+
+- Comparer le score [[AIC]] des modèles un à un. $A I C=-2 \times \ln (\text { vraisemblance })+2 k$ où $k$ est égal au nombre de variables du modèle. On choisit le score AIC le plus faible.
+
+Le package Python "Statsmodel" est très complet sur le sujet. [Un bon guide pour avancer rapidement.](http://eric.univ-lyon2.fr/~ricco/tanagra/fichiers/fr_Tanagra_Python_Regression_Logistique.pdf)
+
+## Utilisation simple avec scikit-learn
+
+On utilise [sklearn.linear_model.LogisticRegression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html). Voir le guide référencé ci-dessus, qui comprend le fonctionnement de sklearn en plus de détails.
 
  ```python
 from sklearn import datasets
