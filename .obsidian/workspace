@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "CAST",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -49,7 +49,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -97,14 +98,14 @@
   },
   "lastOpenFiles": [
     "_notes/Régression logistique.md",
-    "_notes/ZSnippets html.md",
     "_notes/Régression linéaire.md",
+    "_notes/Evaluer les performances d'un classificateur.md",
+    "_notes/Analyse discriminante.md",
+    "_notes/ZSnippets html.md",
     "_notes/Les transactions SQL.md",
     "assets/img/Capture d’écran 2021-01-05 à 23.00.37.png",
     "_notes/Untitled.md",
     "_notes/Modifier les données d'un tableau SQL.md",
-    "_notes/Supprimer un tableau SQL.md",
-    "_notes/Créer un tableau SQL.md",
-    "_notes/SELECTionner des données SQL.md"
+    "_notes/Supprimer un tableau SQL.md"
   ]
 }

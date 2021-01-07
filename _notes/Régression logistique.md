@@ -34,20 +34,11 @@ $$
 
 ### Classification
 
-Afin de maximiser la précision, on peut choisir $Y = 1$ lorsque $p(x) \geq 0,5$ et $Y = 0$ lorsque $p(x) < 0,5$, ce qui correspond au point où $P(y=1 \mid x)=P(y=0 \mid x)=\frac{1}{2}$.
+Afin de maximiser la précision, choisira $Y = 1$ lorsque le score $p(x)$ associé à l'observation est égal à 0,5 et $Y = 0$ lorsque $p(x) < 0,5$, ce qui correspond au point où $P(y=1 \mid x)=P(y=0 \mid x)=\frac{1}{2}$.
 
 Dans le cadre de la fonction logistique $p(X)=\frac{e^{\beta_{0}+\beta_{1} X}}{1+e^{\beta_{0}+\beta_{1} X}}$, cela revient à choisir $Y=1$ lorsque $\beta_{0}+\beta_{1} X$ est supérieur à 0 et $Y=0$ lorsque $\beta_{0}+\beta_{1} X$ est égal à 1. **On crée de fait un classificateur linéaire.**
 
-![linear boundary](/assets/img/linearboundary.png#center)
-<div align="center">
-	<p>
-  Source : scikit-learn.org
-</p>
-</div>
-
-Il existe certains cas où les faux négatifs (ou les faux positifs) sont problématiques. Par exemple, condamner un innocent (faux positif) ou ne pas détecter une appendicite (faux négatif).
-
-On pourra alors accroitre le poids d'une classe et choisir un classificateur linéaire différent de 0,5. [Une bonne réponse sur SO à ce sujet.](https://datascience.stackexchange.com/questions/49573/how-to-plot-logistic-regression-decision-boundary)
+> A noter : On peut toutefois choisir une limite de décision (*decision boundary*) différente en fonction de l'évènement à détecter. Pour réduire les faux négatifs, on choisira une limite inférieure à 0,5, au prix d'un nombre accru de faux positifs. Un bon moyen de choisir est de consulter la [[Evaluer les performances d'un classificateur\|courbe ROC]] du modèle. [Une bonne réponse sur SO](https://datascience.stackexchange.com/questions/49573/how-to-plot-logistic-regression-decision-boundary) au sujet de la régression logistique.
 
 ### Interprétation
 
