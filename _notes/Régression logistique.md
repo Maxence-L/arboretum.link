@@ -52,7 +52,7 @@ $$
 \operatorname{P}(G=2 \mid X=x)=\frac{1}{1+\exp \left(\beta_{0}+\beta^{T} x\right)}
 $$
 
-Ses paramètres $\theta = \beta_{0}+\beta^{T}x$ sont isolables en réalisant la transformation *logit*,  $\log [p /(1-p)]$ suivante :
+Ses paramètres $\theta = \beta_{0}+\beta^{T}x$ sont isolables en réalisant la transformation *logit*,  log\[p /(1-p)\] suivante :
 
 $$
 \log \frac{\operatorname{Pr}(G=1 \mid X=x)}{\operatorname{Pr}(G=2 \mid X=x)}=\beta_{0}+\beta^{T} x
