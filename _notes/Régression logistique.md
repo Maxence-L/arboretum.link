@@ -14,7 +14,7 @@ Grand classique de l'économétrie, longtemps envié, rarement dépassé !
 
 ## Explication du modèle
 
-La [[Régression linéaire\|régression linéaire]] classique ne permet pas d'estimer une probabilité, ses résultats n'étant pas bornés entre 0 et 1. On résout ce problème en utilisant la fonction logistique, dont les résultats sont compris entre $0$ et $1$ pour tout $X$, ce qui permet de modéliser $p(X)$  :
+La [[Régression linéaire\|régression linéaire]] classique ne permet pas d'estimer une probabilité, ses résultats n'étant pas bornés entre 0 et 1. On résout ce problème en utilisant la fonction logistique, dont les résultats sont compris entre 0 et 1 pour tout $X$, ce qui permet de modéliser $p(X)$  :
 
 $$
 p(X)=\frac{e^{\beta_{0}+\beta_{1} X}}{1+e^{\beta_{0}+\beta_{1} X}}
@@ -23,7 +23,9 @@ $$
 ![](/assets/img/linearvslogistic.png#center)
 
 <div align="center">
+	<p>
   Estimation (en bleu) de la probabilité de défaut en fonction du solde du compte en banque. A gauche, régression linéaire, à droite, régression logistique. Source : ISLR (Tibshirani et al.).
+	</p>
 </div>
 
 *Méthode d'estimation par le maximum de vraisemblance : à compléter.

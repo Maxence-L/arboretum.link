@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/Les transactions SQL.md",
+            "file": "_notes/Régression logistique.md",
             "mode": "preview"
           }
         }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Les transactions SQL.md",
+                "file": "_notes/Régression logistique.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,7 +84,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Les transactions SQL.md"
+                "file": "_notes/Régression logistique.md"
               }
             }
           }
@@ -96,15 +96,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
-    "_notes/Les transactions SQL.md",
+    "_notes/Régression logistique.md",
     "_notes/ZSnippets html.md",
+    "_notes/Régression linéaire.md",
+    "_notes/Les transactions SQL.md",
     "assets/img/Capture d’écran 2021-01-05 à 23.00.37.png",
     "_notes/Untitled.md",
     "_notes/Modifier les données d'un tableau SQL.md",
     "_notes/Supprimer un tableau SQL.md",
     "_notes/Créer un tableau SQL.md",
-    "_notes/SELECTionner des données SQL.md",
-    "_notes/Modifier le type d'une colonne SQL.md",
-    "_notes/Créer un tableau (table) SQL.md"
+    "_notes/SELECTionner des données SQL.md"
   ]
 }
