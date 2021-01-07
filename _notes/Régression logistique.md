@@ -1,7 +1,7 @@
 ---
 title: Régression logistique
 tags : Apprentissage-supervisé
-etat : printemps
+etat : été
 ---
 
 La régression logistique estime la probabilité qu'une variable binaire soit égale à 1 sachant $X$ : $Pr(Y = 1 \vert X = x)$. 

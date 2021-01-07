@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/Opérations sur données aggrégées dans SQL.md",
+            "file": "_notes/Régression logistique.md",
             "mode": "preview"
           }
         }
@@ -70,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Opérations sur données aggrégées dans SQL.md",
+                "file": "_notes/Régression logistique.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -85,7 +85,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Opérations sur données aggrégées dans SQL.md"
+                "file": "_notes/Régression logistique.md"
               }
             }
           }
@@ -97,8 +97,8 @@
     "collapsed": true
   },
   "lastOpenFiles": [
-    "_notes/Opérations sur données aggrégées dans SQL.md",
     "_notes/Régression logistique.md",
+    "_notes/Opérations sur données aggrégées dans SQL.md",
     "_notes/Régression linéaire.md",
     "_notes/Evaluer les performances d'un classificateur.md",
     "_notes/Analyse discriminante.md",
