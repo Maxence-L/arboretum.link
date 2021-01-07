@@ -97,6 +97,7 @@
   },
   "lastOpenFiles": [
     "_notes/Evaluation des modèles en pratique.md",
+    "_notes/Régularisation.md",
     "refs.md",
     "about.md",
     "_notes/Validation croisée et grid search.md",
@@ -104,7 +105,6 @@
     "_notes/filter().md",
     "_notes/Indicateurs de performance des classificateurs.md",
     "_notes/Régression logistique.md",
-    "_notes/Evaluer les performances d'un classificateur.md",
-    "_notes/Opérations sur données aggrégées dans SQL.md"
+    "_notes/Evaluer les performances d'un classificateur.md"
   ]
 }

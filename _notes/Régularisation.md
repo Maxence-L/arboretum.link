@@ -40,7 +40,7 @@ _ = plt.ylabel('Coefficients')plt.show()
 
 ### Régression Ridge
 
-On utilise la classe `Ridge`. Tout comme 
+On utilise la classe `Ridge`.
 
 ````python
 from sklearn.linear_model import Ridge
@@ -109,3 +109,10 @@ display_plot(ridge_scores, ridge_scores_std)
 Le résultat :
 
 ![](/assets/img/ridge_loop.png#center)
+
+### ElasticNet
+
+ElasticNet est une méthode simple combinant les deux régularisations vues plus haut. On ajoute une combinaison linéaire des régurlarisations $L1$ et $L2$ : $a * L1 + b * L2$.
+
+On utilise la classe `ElasticNet` du module `sklearn.linear_model` prend en paramètre la valeur $a$, appelée `l1_ratio`. Si le paramètre est égal à 1, cela revient à utiliser seulement un lasso, si il est de 0, cela correspond à une régression ridge pure.
+

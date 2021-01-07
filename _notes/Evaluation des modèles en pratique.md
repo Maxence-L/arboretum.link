@@ -46,7 +46,10 @@ X = digits.data
 y = digits.target
 
 # Split into training and test set
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state=42, stratify=y)
+X_train, X_test, y_train, y_test = train_test_split(X, y, 
+	test_size = 0.2, 
+	random_state=42, 
+	stratify=y)
 
 # Create a k-NN classifier with 7 neighbors: knn
 knn = KNeighborsClassifier(n_neigbors=7)
@@ -102,39 +105,43 @@ Dans ce cas, la valeur maximum mesurée (0.726) se situe pour *C* = 0.3 et *Alph
 
 ### Avec sklearn :
 
-Exemple avec la [[Régression logistique\|régression logistique]], qui est [régularisée par défaut](https://datascience.stackexchange.com/questions/10805/does-scikit-learn-use-regularization-by-default) dans sklearn. 
+Exemple avec la [[Régression linéaire\|régression linéaire]], régularisée avec ElasticNet ($a*L1 + (1-a)*L2*$) dont on cherche l'hyperparamètre $a$ optimal.
 
 La méthode [`GridSearchCV` ](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html?highlight=grid%20search%20cv#sklearn.model_selection.GridSearchCV) applique une *grid search* et une validation croisée (5 découpes par défaut, mais modifiable en paramètre).
 
 ```python
-# Import necessary modules
-from sklearn.linear_model import LogisticRegression
-from sklearn.model_selection import GridSearchCV
+# Import necessary modules
+from sklearn.linear_model import ElasticNet
+from sklearn.metrics import mean_squared_error
+from sklearn.model_selection import GridSearchCV, train_test_split
 
-# Setup of the hyperparameter grid :
+# Create train and test sets
+X_train, X_test, y_train, y_test = train_test_split(X,y, test_size = 0.4, random_state=42)
 
-# Define the values used for the search
-# Here we use an uniform distribution over a logspace
-c_space = np.logspace(-5, 8, 15)
+# Create the hyperparameter grid
+l1_space = np.linspace(0, 1, 30)
+param_grid = {'l1_ratio': l1_space}
 
-# Create a dictionary containing {parameter_name : values, ...}
-param_grid = {'C': c_space}
+# Instantiate the ElasticNet regressor: elastic_net
+elastic_net = ElasticNet()
 
-# Instantiate a logistic regression classifier: logreg
-logreg = LogisticRegression()
+# Setup the GridSearchCV object: gm_cv
+gm_cv = GridSearchCV(elastic_net, param_grid, cv=5)
 
-# Instantiate the GridSearchCV object: logreg_cv
-logreg_cv = GridSearchCV(logreg, param_grid, cv=5)
+# Fit it to the training data
+gm_cv.fit(X_train, y_train)
 
-# Fit it to the data
-logreg_cv.fit(X,y)
+# Predict on the test set and compute metrics
+y_pred = gm_cv.predict(X_test)
+r2 = gm_cv.score(X_test,y_test)
+mse = mean_squared_error(y_pred, y_test)
+print("Tuned ElasticNet l1 ratio: {}".format(gm_cv.best_params_))
+print("Tuned ElasticNet R squared: {}".format(r2))
+print("Tuned ElasticNet MSE: {}".format(mse))
 
-# Print the tuned parameters and score
-print("Tuned Logistic Regression Parameters: {}".format(logreg_cv.best_params_)) 
-print("Best score is {}".format(logreg_cv.best_score_))
-
-> Tuned Logistic Regression Parameters: {'C': 3.727593720314938}
-> Best score is 0.7708333333333334
+> Tuned ElasticNet l1 ratio: {'l1_ratio': 0.20689655172413793}
+> Tuned ElasticNet R squared: 0.8668305372460283
+> Tuned ElasticNet MSE: 10.05791413339844
 ````
 
 ## *Randomized search* : *grid search* aléatoire
