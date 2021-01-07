@@ -1,6 +1,6 @@
 ---
 title : Opérations sur données aggrégées dans SQL
-tags : SQl
+tags : SQL
 etat : printemps
 toc : true
 ---
@@ -118,4 +118,4 @@ ORDER BY count(*) DESC;
 | TX | 556 |
 | IA | 543 |
 
-> A noter : [En rêgle générale](https://waytolearnx.com/2018/08/difference-entre-having-et-where.html), `HAVING` vient après `GROUP BY` et permet de filtrer les résultats, tandis que `WHERE` vient en amont (avant `GROUP BY`, donc) et [[SELECTionner des données SQL\|permet de filtrer ce qui est inclu dans la sélection]].
+> A noter : [En règle générale](https://waytolearnx.com/2018/08/difference-entre-having-et-where.html), `HAVING` vient après `GROUP BY` et permet de filtrer les résultats, tandis que `WHERE` vient en amont (avant `GROUP BY`, donc) et [[SELECTionner des données SQL\|permet de filtrer ce qui est inclu dans la sélection]].
