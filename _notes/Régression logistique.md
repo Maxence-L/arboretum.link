@@ -87,11 +87,25 @@ Dans le cas à deux classes (plus simple), où la variable objectif $y_i$ est bi
 
 $$
 \begin{aligned}
-\ell(\beta) &=\sum_{i=1}^{N}\left\{y_{i} \log p\left(x_{i} ; \beta\right)+\left(1-y_{i}\right) \log \left(1-p\left(x_{i} ; \beta\right)\right)\right\} \\
-&=\sum_{i=1}^{N}\left\{y_{i} \beta^{T} x_{i}-\log \left(1+e^{\beta^{T} x_{i}}\right)\right\}
+\ell\left(\beta_{0}, \beta\right) &=\sum_{i=1}^{n} y_{i} \log p\left(x_{i}\right)+\left(1-y_{i}\right) \log(1-p\left(x_{i}\right)) \\
+&=\sum_{i=1}^{n} \log(1-p\left(x_{i}\right))+\sum_{i=1}^{n} y_{i} \log \frac{p\left(x_{i}\right)}{1-p\left(x_{i}\right)} \\
+&=\sum_{i=1}^{n} \log(1-p\left(x_{i}\right))+\sum_{i=1}^{n} y_{i}\left(\beta_{0}+x_{i} \cdot \beta\right) \\
+&=\sum_{i=1}^{n}-\log(1+e^{\beta_{0}+x_{i} \cdot \beta})+\sum_{i=1}^{n} y_{i}\left(\beta_{0}+x_{i} \cdot \beta\right)
 \end{aligned}
 $$
 
+La maximisation de la log-vraisemblance se fait en dérivant son expression en fonction de ses paramètres et en charchant le point où la dérivée atteint 0 :
+
+$$
+\begin{aligned}
+\frac{\partial \ell}{\partial \beta_{j}} &=-\sum_{i=1}^{n} \frac{1}{1+e^{\beta_{0}+x_{i} \cdot \beta}} e^{\beta_{0}+x_{i} \cdot \beta} x_{i j}+\sum_{i=1}^{n} y_{i} x_{i j} \\
+&=\sum_{i=1}^{n}\left(y_{i}-p\left(x_{i} ; \beta_{0}, \beta\right)\right) x_{i j}
+\end{aligned}
+$$
+
+> **A noter** : Le coefficient $\beta_{k0}$ est égal à la répartition à priori de $y_i$.
+
+L'approche de la valeur des paramètres du modèle se fait au moyen de l'algorithme de Newton-Raphson, que l'on peut retrouver p120-121 d'[ESLII](https://web.stanford.edu/~hastie/Papers/ESLII.pdf).
 
 > **A noter :** On peut utiliser les mêmes techniques de [[Régularisation\|régularisation]] que pour la [[Régression linéaire\|régression linéaire]].
 
