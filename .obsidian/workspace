@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/Régression logistique.md",
+            "file": "_notes/Indicateurs de performance des classificateurs.md",
             "mode": "preview"
           }
         }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "aggrégées",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -49,8 +49,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -70,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Régression logistique.md",
+                "file": "_notes/Indicateurs de performance des classificateurs.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -85,7 +84,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Régression logistique.md"
+                "file": "_notes/Indicateurs de performance des classificateurs.md"
               }
             }
           }
@@ -97,15 +96,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "_notes/Indicateurs de performance des classificateurs.md",
     "_notes/Régression logistique.md",
+    "_notes/Evaluer les performances d'un classificateur.md",
     "_notes/Opérations sur données aggrégées dans SQL.md",
     "_notes/Régression linéaire.md",
-    "_notes/Evaluer les performances d'un classificateur.md",
     "_notes/Analyse discriminante.md",
     "_notes/ZSnippets html.md",
     "_notes/Les transactions SQL.md",
     "assets/img/Capture d’écran 2021-01-05 à 23.00.37.png",
-    "_notes/Untitled.md",
-    "_notes/Modifier les données d'un tableau SQL.md"
+    "_notes/Untitled.md"
   ]
 }

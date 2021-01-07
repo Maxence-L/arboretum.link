@@ -1,5 +1,5 @@
 ---
-title : Evaluer les performances d'un classificateur
+title : Indicateurs de performance des classificateurs
 tags : ml-pratique
 etat : printemps
 toc : true
