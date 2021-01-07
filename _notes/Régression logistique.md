@@ -72,7 +72,11 @@ $$
 \operatorname{Pr}(G=k \mid X=x)=p_{k}(x ; \theta)
 $$
 
-Où $\theta$ correspond aux paramètres du modèle $\theta=\left\{\beta_{10}, \beta_{1}^{T}, \ldots, \beta_{(K-1) 0}, \beta_{K-1}^{T}\right\}$, comme expliqué plus haut.
+Où $\theta$ correspond aux paramètres du modèle, comme expliqué plus haut :
+
+$$\theta=\left\{\beta_{10}, \beta_{1}^{T}, \ldots, \beta_{(K-1) 0}, \beta_{K-1}^{T}\right\}$$
+
+
 
 
 ## Estimation du modèle
