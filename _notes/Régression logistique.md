@@ -81,7 +81,7 @@ $$\theta=\left\{\beta_{10}, \beta_{1}^{T}, \ldots, \beta_{(K-1) 0}, \beta_{K-1}^
 
 ## Estimation du modèle
 
-On utilise l'estimateur du [[maximum de vraisemblance]] pour chercher la valeur $\theta$. La log-vraisemblance s'exprime ainsi :
+On utilise l'[[estimateur du maximum de vraisemblance]] pour chercher la valeur $\theta$. La log-vraisemblance s'exprime ainsi :
 
 $$
 \ell(\theta)=\sum_{i=1}^{N} \log p_{g_{i}}\left(x_{i} ; \theta\right)
@@ -143,7 +143,7 @@ Plusieurs stratégies sont possibles, certaines algorithmiques, d'autres plus an
 
 - Tester les coefficients avec les tests de **Rao** (inclusion d'un coefficient) et de **Wald** (exclusion d'un coefficient). [Plus de détails dans ce lien.](http://www.stat.umn.edu/geyer/8112/notes/tests.pdf)
 
-- Comparer le score [[AIC]] des modèles un à un. $A I C=-2 \times \ln (\text { vraisemblance })+2 k$ où $k$ est égal au nombre de variables du modèle. On choisit le score AIC le plus faible.
+- Comparer le score [[AIC]] des modèles un à un. $AIC=-2 \times \ln (\text {vraisemblance})+2 k$ où $k$ est égal au nombre de variables du modèle. On choisit le score AIC le plus faible.
 
 Le package Python "Statsmodel" est très complet sur le sujet. [Un bon guide pour avancer rapidement.](http://eric.univ-lyon2.fr/~ricco/tanagra/fichiers/fr_Tanagra_Python_Regression_Logistique.pdf)
 
