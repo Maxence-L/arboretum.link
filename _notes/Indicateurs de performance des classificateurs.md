@@ -242,7 +242,7 @@ plt.show()
 
 L'utilisateur parcimonieux de son temps pourra exploiter [`plot_roc_curve()`](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.plot_roc_curve.html) pour s'épargner la manipulation sur matplotlib.
 
-Un exemple de courbe ROC avec [[Validation croisée et grid search\|validation croisée]], issue d'un [guide sur le site de sklearn](https://scikit-learn.org/stable/auto_examples/model_selection/plot_roc_crossval.html#sphx-glr-auto-examples-model-selection-plot-roc-crossval-py) :
+Un exemple de courbe ROC avec [[Evaluation des modèles en pratique\|validation croisée]], issue d'un [guide sur le site de sklearn](https://scikit-learn.org/stable/auto_examples/model_selection/plot_roc_crossval.html#sphx-glr-auto-examples-model-selection-plot-roc-crossval-py) :
 
 ![](/assets/img/roc_cross_valid.png#center)
 

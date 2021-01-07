@@ -45,7 +45,7 @@ rmse = np.sqrt(mean_squared_error(y_test, y_pred))
 print("Root Mean Squared Error: {}".format(rmse))
 ````
 
-### Évaluation par [[Validation croisée et grid search\|validation croisée]]
+### Évaluation par [[Evaluation des modèles en pratique\|validation croisée]]
 
 Pour éviter que le split ait une trop forte influence sur le résultat, on partage les données en $k$ segments et l'on estime le vecteur $\beta$ sur chacun d'entre eux. On mesure ensuite le [[R2]] moyen. 
 

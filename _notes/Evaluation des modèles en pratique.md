@@ -1,5 +1,5 @@
 ---
-title : Evaluer les modèles en pratique
+title : Evaluation des modèles en pratique
 tags : ml-pratique
 etat : hiver
 toc : true
@@ -85,6 +85,8 @@ On nomme ces paramètres "hyperparamètres" (aussi appelés méta-paramètres) c
 
 Le *grid search* consiste à tester les paramètres sur nos données en entraînant successivement plusieurs modèles et à comparer leurs résultats. Si l'on dispose d'un grand volume de données, cette étape se prête bien à la parallélisation des calculs.
 
+> A noter : cette méthode est souvent assez lourde en calculs. Si le temps de traitement est trop long, on pourra le réduire avec une recherche aléatoire (voir plus bas).
+
 Par exemple, pour un modèle dont les méta-paramètres sont *Alpha* et *C*, la *grid search* produira le tableau suivant.
 ![](/assets/img/grid_search_table.png#center)
 
@@ -96,18 +98,83 @@ Par exemple, pour un modèle dont les méta-paramètres sont *Alpha* et *C*, la 
 
 Dans ce cas, la valeur maximum mesurée (0.726) se situe pour *C* = 0.3 et *Alpha* = 0.2. Nous choisirons donc ce paramètre pour le modèle final.
 
+> A noter : Si l'on dispose d'un grand nombre d'hyperparamètres à évaluer, il vaut mieux sélectionner en amont un sous-ensemble de paramètres importants et optimiser le modèle en fonction.
+
 ### Avec sklearn :
 
-Pour les besoins de l'exemple, on utilise les [[K-neighbors]]. La méthode [`GridSearchCV` ](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html?highlight=grid%20search%20cv#sklearn.model_selection.GridSearchCV) applique une *grid search* et une validation croisée (5 découpes par défaut, mais modifiable en paramêtre).
+Exemple avec la [[Régression logistique\|régression logistique]], qui est [régularisée par défaut](https://datascience.stackexchange.com/questions/10805/does-scikit-learn-use-regularization-by-default) dans sklearn. 
+
+La méthode [`GridSearchCV` ](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html?highlight=grid%20search%20cv#sklearn.model_selection.GridSearchCV) applique une *grid search* et une validation croisée (5 découpes par défaut, mais modifiable en paramètre).
 
 ```python
+# Import necessary modules
+from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import GridSearchCV
-param_grid = {'n_neighbors': np.arange(1, 50)}
-knn = KNeighborsClassifier()
 
-knn_cv
-GridSearchCV(knn, param_grid, cv=5)
+# Setup of the hyperparameter grid :
 
-knn_cv.fit(X, y)
-knn_cv.best_params_
+# Define the values used for the search
+# Here we use an uniform distribution over a logspace
+c_space = np.logspace(-5, 8, 15)
+
+# Create a dictionary containing {parameter_name : values, ...}
+param_grid = {'C': c_space}
+
+# Instantiate a logistic regression classifier: logreg
+logreg = LogisticRegression()
+
+# Instantiate the GridSearchCV object: logreg_cv
+logreg_cv = GridSearchCV(logreg, param_grid, cv=5)
+
+# Fit it to the data
+logreg_cv.fit(X,y)
+
+# Print the tuned parameters and score
+print("Tuned Logistic Regression Parameters: {}".format(logreg_cv.best_params_)) 
+print("Best score is {}".format(logreg_cv.best_score_))
+
+> Tuned Logistic Regression Parameters: {'C': 3.727593720314938}
+> Best score is 0.7708333333333334
 ````
+
+## *Randomized search* : *grid search* aléatoire
+
+La [recherche aléatoire](https://jamesrledoux.com/code/randomized_parameter_search) remplace l'utilisation d'une liste de valeurs par un tirage de $n$ valeurs issues d'une distribution définie par l'utilisateur. Cette approche est vue comme plus efficace, car elle permet de couvrir un grand espace plus rapidement, au prix d'une optimisation moindre.
+
+### Avec sklearn :
+On utilise ici une [[Forêts aléatoires\|forêt aléatoire]]. La logique est la même que pour l'exemple précédent :
+
+```python
+# Import necessary modules
+from scipy.stats import randint
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.model_selection import RandomizedSearchCV
+
+# Setup the parameters and distributions to sample from: param_dist
+param_dist = {"max_depth": [3, None],
+              "max_features": randint(1, 9),
+              "min_samples_leaf": randint(1, 9),
+              "criterion": ["gini", "entropy"]}
+
+# Instantiate a Decision Tree classifier: tree
+tree = DecisionTreeClassifier()
+
+# Instantiate the RandomizedSearchCV object: tree_cv
+tree_cv = RandomizedSearchCV(tree, param_dist, cv=5)
+
+# Fit it to the data
+tree_cv.fit(X, y)
+
+# Print the tuned parameters and score
+print("Tuned Decision Tree Parameters: {}".format(tree_cv.best_params_))
+print("Best score is {}".format(tree_cv.best_score_))
+
+> Tuned Decision Tree Parameters: {
+	'criterion': 'entropy', 
+	'max_depth': 3, 
+	'max_features': 8, 
+	'min_samples_leaf': 2} 
+	
+> Best score is 0.734375
+````
+
