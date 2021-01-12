@@ -25,46 +25,46 @@ La [[Régression linéaire\|régression linéaire]] classique ne permet pas d'es
 </p>
 </div>
 
-On souhaite donc trouver quelle est la classe la plus probable pour chaque observation. Toute observation appartenant à une classe[^2], on attribuera à chaque observation la classe ayant la [cote](http://www.granddictionnaire.com/ficheOqlf.aspx?Id_Fiche=26529673) la plus élevée, c'est à dire la classe la plus probable comparée aux autres.
+Toute observation appartenant à une classe[^2], on attribuera à chaque observation la classe ayant la [cote](http://www.granddictionnaire.com/ficheOqlf.aspx?Id_Fiche=26529673) la plus élevée, c'est à dire la classe la plus probable comparée aux autres.
 
 [^2]: Même les sans-classes, qui forment de facto une classe ! Imparable.
 
-Dans le cas simple où l'on a deux classes possibles, cela reviendra à calculer le ratio des deux probabilités :
+Dans le cas simple où l'on a deux classes possibles ($Y=1$ ou $Y=0$), cela reviendra à calculer le ratio des deux probabilités :
 
 $$
-cote = \frac{\operatorname{P}(G=1 \mid X=x)}{\operatorname{P}(G=2 \mid X=x)}
+cote = \frac{\operatorname{P}(Y=1 \mid X=x)}{\operatorname{P}(Y=0 \mid X=x)}
 $$
 
 Ce qui revient à :
 
 $$
-cote = \frac{\operatorname{P}(G=1 \mid X=x)}{1-\operatorname{Pr}(G=1 \mid X=x)}
+cote = \frac{\operatorname{P}(Y=1 \mid X=x)}{1-\operatorname{Pr}(Y=1 \mid X=x)}
 $$
 
 Comment estimer la probabilité $\operatorname{P}(G=1 \mid X=x)$ de telle manière qu'elle soit comprise entre 0 et 1 ? On exploite la fonction logistique, qui possède ces propriétés :
 
 $$
-\operatorname{P}(G=1 \mid X=x)=\frac{\exp \left(\beta_{0}+\beta^{T} x\right)}{1+\exp \left(\beta_{0}+\beta^{T} x\right)}
+\operatorname{P}(Y=1 \mid X=x)=\frac{\exp \left(\beta_{0}+\beta^{T} x\right)}{1+\exp \left(\beta_{0}+\beta^{T} x\right)}
 $$
 
 Sachant que :
 
 $$
-\operatorname{P}(G=2 \mid X=x)=\frac{1}{1+\exp \left(\beta_{0}+\beta^{T} x\right)}
+\operatorname{P}(Y=0 \mid X=x)=\frac{1}{1+\exp \left(\beta_{0}+\beta^{T} x\right)}
 $$
 
 Ses paramètres $\theta = \beta_{0}+\beta^{T}x$ sont isolables en réalisant la transformation *logit*,  log\[p /(1-p)\] suivante :
 
 $$
-\log \frac{\operatorname{Pr}(G=1 \mid X=x)}{\operatorname{Pr}(G=2 \mid X=x)}=\beta_{0}+\beta^{T} x
+\log \frac{\operatorname{Pr}(Y=1 \mid X=x)}{\operatorname{Pr}(Y=0 \mid X=x)}=\beta_{0}+\beta^{T} x
 $$
 
 Cette propriété est très commode, car elle se rapproche de la régression linéaire et donne la contribution au modèle de chaque variable, ce qui permet une bonne interprétabilité.
 
-Le cas à K > 2 classe est une généralisation de ce modèle :
+Le cas à K > 2 classes est une généralisation de ce modèle :
 
 $$
-\log \frac{\operatorname{Pr}(G=K-1 \mid X=x)}{\operatorname{Pr}(G=K \mid X=x)}=\beta_{(K-1) 0}+\beta_{K-1}^{T} x
+\log \frac{\operatorname{Pr}(Y=K-1 \mid X=x)}{\operatorname{Pr}(G=K \mid X=x)}=\beta_{(K-1) 0}+\beta_{K-1}^{T} x
 $$
 
 On calcule alors la cote de chaque classe par rapport à la dernière classe. En pratique, le choix de dénominateur est libre et n'influe pas sur le résultat. La probabilité postérieure associée à chaque classe est exprimée ainsi :
