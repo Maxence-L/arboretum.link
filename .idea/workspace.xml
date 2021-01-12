@@ -23,10 +23,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e416042-0831-410e-bc48-ad8738bffa8b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/_notes/Connexion SSH avec un notebook.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_notes/Détecter la langue d'un texte.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.obsidian/workspace" beforeDir="false" afterPath="$PROJECT_DIR$/.obsidian/workspace" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,6 +95,7 @@
       <workItem from="1606149375779" duration="1386000" />
       <workItem from="1607012788436" duration="7312000" />
       <workItem from="1607456787438" duration="747000" />
+      <workItem from="1610470240528" duration="646000" />
     </task>
     <servers />
   </component>

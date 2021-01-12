@@ -347,7 +347,7 @@ hr {
 }
 
 .link-to-notes a {
-    color: #4183c4;
+    color: #b84800;
     text-decoration: none;
     font-family: 'IBM Plex Sans', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 15px;
@@ -438,7 +438,7 @@ hr {
 }
 
 .toc-entry , a{
-    color: #4183c4;
+    color: #b84800;
     text-decoration: none;
     line-height: 1.5;
 }
@@ -786,7 +786,7 @@ hr {
 }
 
 .content a {
-    color: #4183c4;
+    color: #b84800;
     text-decoration: none;
 }
 
