@@ -67,7 +67,7 @@ my_loaded_obj
 
 ### Modèles sklearn
 
-On peut utiliser pickle pour [[sklearn#Sauvegarde du modèle|enregistrer]] des modèles [[sklearn]] préalablement entraînés pour une réutilisation ultérieure. [L'aide en ligne](https://scikit-learn.org/stable/modules/model_persistence.html#model-persistence) explique plus spécifiquement la procédure.
+On peut utiliser pickle pour [[sklearn#Sauvegarde du modèle\|enregistrer]] des modèles [[sklearn]] préalablement entraînés pour une réutilisation ultérieure. [L'aide en ligne](https://scikit-learn.org/stable/modules/model_persistence.html#model-persistence) explique plus spécifiquement la procédure.
 
 
 

@@ -24,7 +24,6 @@ kramdown:
   math_engine: null
   smart_quotes: ["apos", "apos", "quot", "quot"]
   syntax_highlighter: rouge
-  auto_ids: true
 
 
 sass:

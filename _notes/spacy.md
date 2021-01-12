@@ -105,7 +105,7 @@ Le résultat :
 
 > **A noter** :
 > Il est possible de sélectionner une tranche (_slice_) de plusieurs mots en en spécifiant l'index : `doc[0:3]`.
-> Une bonne pratique est de le stocker dans un objet [Span](Spacy#span).
+> Une bonne pratique est de le stocker dans un objet Span.
 
 ### Named entities
 
@@ -334,8 +334,6 @@ doc = Doc(nlp.vocab, words=words, spaces=spaces)
 
 Comme on le voit ci-dessus, l'objet `Doc` prend en paramètres `nlp.vocab` correspondant à la langue du texte, les mots et les espaces qui les séparent.
 
-(#span)
-
 #### Span
 
 Un objet `span` est un sous-ensemble de `Doc`correspondant à une tranche de mots du `doc`.
@@ -393,7 +391,7 @@ On peut aussi accéder à la [[Norme d'un vecteur]] avec `doc.vector_norm`.
 
 #### Similarité
 
-SpaCy propose par défaut la méthode `doc.similarity(doc comparé)` qui produit la [[similarité cosinus]]. On peut l'appliquer à un document ou à un [[Span::#span]].
+SpaCy propose par défaut la méthode `doc.similarity(doc comparé)` qui produit la [[similarité cosinus]]. On peut l'appliquer à un document ou à un Span.
 
 ```python
 doc = nlp("This was a great restaurant. Afterwards, we went to a really nice bar.")
@@ -679,7 +677,7 @@ doc = nlp.make_doc("Bonjour tout le monde")
 
 ## Entrainer un modèle d'étiquetage de données
 
-On peut utiliser spaCy pour modifier le modèle de reconnaissance d'attributs ou détecter des types de Named Entities. Cela permet d'améliorer les systèmes de règles de type regex mais nécessite un grand nombre de données étiquetées au préalable. Un exellent modèle pour commencer est disponible sur [[github::https://github.com/explosion/spaCy/blob/master/examples/training/train_ner.py#L75]].
+On peut utiliser spaCy pour modifier le modèle de reconnaissance d'attributs ou détecter des types de Named Entities. Cela permet d'améliorer les systèmes de règles de type regex mais nécessite un grand nombre de données étiquetées au préalable. Un exellent modèle pour commencer est disponible sur [github](https://github.com/explosion/spaCy/blob/master/examples/training/train_ner.py#L75).
 
 ![model](/assets/img/spacy-model.png#center)
 

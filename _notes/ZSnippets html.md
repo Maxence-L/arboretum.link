@@ -12,3 +12,5 @@ Centrer un paragraphe :
 </em>
 </p>
 </div>
+
+[[Régression logistique#Estimation du modèle]]

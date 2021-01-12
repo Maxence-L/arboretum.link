@@ -71,7 +71,7 @@ Si $k=2$ et $\pi_1 = \pi_2$, alors le classificateur est à équidistance des de
 
 ### Installation
 
-On importe classes [[LinearDiscriminantAnalysis::https://scikit-learn.org/stable/modules/generated/sklearn.discriminant_analysis.LinearDiscriminantAnalysis.html]] et [[QuadraticDiscriminantAnalysis::https://scikit-learn.org/stable/modules/generated/sklearn.discriminant_analysis.QuadraticDiscriminantAnalysis.html#sklearn.discriminant_analysis.QuadraticDiscriminantAnalysis]] du module [[sklearn.discriminant_analysis::https://scikit-learn.org/stable/modules/classes.html#module-sklearn.discriminant_analysis]].
+On importe classes [LinearDiscriminantAnalysis](https://scikit-learn.org/stable/modules/generated/sklearn.discriminant_analysis.LinearDiscriminantAnalysis.html) et [QuadraticDiscriminantAnalysis](https://scikit-learn.org/stable/modules/generated/sklearn.discriminant_analysis.QuadraticDiscriminantAnalysis.html#sklearn.discriminant_analysis.QuadraticDiscriminantAnalysis) du module [sklearn.discriminant_analysis](https://scikit-learn.org/stable/modules/classes.html#module-sklearn.discriminant_analysis).
 
 ```python
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
@@ -79,7 +79,7 @@ from sklearn.discriminant_analysis import QuadraticDiscriminantAnalysis
 from sklearn.metrics import confusion_matrix, classification_report, precision_score
 ````
 
-Pour cet exemple, on utilise les [[données::https://github.com/JWarmenhoven/ISLR-python/raw/master/Notebooks/Data/Smarket.csv]] relatives au mouvements à la hausse ou à la baisse du marché boursier, en fonction des variations des jours précédents.
+Pour cet exemple, on utilise les [données](https://github.com/JWarmenhoven/ISLR-python/raw/master/Notebooks/Data/Smarket.csv) relatives au mouvements à la hausse ou à la baisse du marché boursier, en fonction des variations des jours précédents.
 
 ```python
 df = pd.read_csv('Smarket.csv', usecols=range(1,10), index_col=0, parse_dates=True)

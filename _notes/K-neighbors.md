@@ -17,6 +17,7 @@ On mesure la performance de l'algorithme au moyen de l'[[Inertia|inertie]] du r�
 Cette mesure sert par la suite à déterminer le nombre optimal de clusters, au moyen d'un graphique en coude :
 
 ![elbow](/assets/img/kmeanselbow.png#center)
+
 <div align="center">
 	<p>
   Inertie de la classification en fonction du nombre de clusters
@@ -108,4 +109,5 @@ plt.xlabel('Number of Neighbors')
 plt.ylabel('Accuracy')
 plt.show()
 ```
+
 ![](/assets/img/k-voisins-perf.png#center)

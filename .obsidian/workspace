@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/Régression logistique.md",
+            "file": "about.md",
             "mode": "preview"
           }
         }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "evaluer",
+                "query": "test",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Régression logistique.md",
+                "file": "about.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,7 +84,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Régression logistique.md"
+                "file": "about.md"
               }
             }
           }
@@ -96,15 +96,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
-    "_notes/Régression logistique.md",
-    "_notes/Régularisation.md",
-    "_notes/Ecrire un script shell.md",
-    "_notes/Evaluation des modèles en pratique.md",
-    "_notes/Obtenir des données de test facilement.md",
-    "_notes/ZSnippets html.md",
-    "_notes/Données de test.md",
-    "refs.md",
     "about.md",
-    "_notes/Validation croisée et grid search.md"
+    "_notes/test.md",
+    "_notes/Spacy.md",
+    "_notes/Pickle.md",
+    "_notes/dbscan.md",
+    "assets/img/dbscan-clusters.png",
+    "assets/img/dbscan-centroides.png",
+    "_notes/K-neighbors.md",
+    "_notes/Détecter les valeurs extrêmes.md",
+    "_notes/Analyse discriminante.md"
   ]
 }
