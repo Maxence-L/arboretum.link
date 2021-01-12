@@ -4,9 +4,9 @@ tags : Apprentissage-supervisé
 etat : été
 ---
 
-La régression logistique estime la probabilité qu'une variable binaire soit égale à 1 sachant $X$ : $Pr(Y = 1 \vert X = x)$. 
+La régression logistique estime la probabilité qu'une variable binaire soit égale à 1 sachant $X$ : $Pr(Y = 1 \vert X = x)$. En y ajoutant un seuil de décision, on en fait un [[Classificateur linéaire\|classificateur linéaire]] permettant de séparer des classes entre elles. 
 
-En y ajoutant un seuil de décision, on en fait un [[Classificateur linéaire\|classificateur linéaire]] permettant de séparer des classes entre elles. Pour des solutions à plus de deux classes, on lui préfère en général l'[[Analyse discriminante\|analyse discriminante]][^1], bien que ce soit possible en pratique, comme on va le voir.
+Pour des solutions à plus de deux classes, on lui préfère en général l'[[Analyse discriminante\|analyse discriminante]][^1], bien que ce soit possible en pratique
 
 [^1]: Voir https://www.stat.cmu.edu/~cshalizi/uADA/12/lectures/ch12.pdf, partie 12.2.2, par exemple.
 
@@ -14,14 +14,15 @@ Grand classique de l'économétrie, longtemps envié, rarement dépassé !
 
 ## Explication du modèle
 
-La [[Régression linéaire\|régression linéaire]] classique ne permet pas d'estimer une probabilité qu'une observation appartienne à une classe donnée, ses résultats n'étant pas bornés entre 0 et 1. En pratique, cela n'empèche pas de réaliser une classification, mais les résultats seront instables lors du test du modèle.
+La [[Régression linéaire\|régression linéaire]] classique ne permet pas d'estimer une probabilité qu'une observation appartienne à une classe donnée, ses résultats n'étant pas bornés entre 0 et 1. En pratique, cela n'empêche pas de réaliser une classification, mais les résultats seront instables, notamment si l'on a des données extrêmes dans l'échantillon de test.
 
 ![](/assets/img/linearvslogistic.png#center)
 
 <div align="center">
-	<p>
+	<p> <em>
   Estimation (en bleu) de la probabilité de défaut en fonction du solde du compte en banque. A gauche, régression linéaire, à droite, régression logistique. Source : ISLR (Tibshirani et al.).
-	</p>
+</em>
+</p>
 </div>
 
 On souhaite donc trouver quelle est la classe la plus probable pour chaque observation. Toute observation appartenant à une classe[^2], on attribuera à chaque observation la classe ayant la [cote](http://www.granddictionnaire.com/ficheOqlf.aspx?Id_Fiche=26529673) la plus élevée, c'est à dire la classe la plus probable comparée aux autres.

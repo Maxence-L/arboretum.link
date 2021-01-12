@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/Evaluation des modèles en pratique.md",
+            "file": "_notes/Régression logistique.md",
             "mode": "preview"
           }
         }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Evaluation des modèles en pratique.md",
+                "file": "_notes/Régression logistique.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,7 +84,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Evaluation des modèles en pratique.md"
+                "file": "_notes/Régression logistique.md"
               }
             }
           }
@@ -96,15 +96,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "_notes/Régression logistique.md",
+    "_notes/ZSnippets html.md",
+    "_notes/Données de test.md",
     "_notes/Evaluation des modèles en pratique.md",
     "_notes/Régularisation.md",
     "refs.md",
     "about.md",
     "_notes/Validation croisée et grid search.md",
     "_notes/Ecrire un script shell.md",
-    "_notes/filter().md",
-    "_notes/Indicateurs de performance des classificateurs.md",
-    "_notes/Régression logistique.md",
-    "_notes/Evaluer les performances d'un classificateur.md"
+    "_notes/filter().md"
   ]
 }
