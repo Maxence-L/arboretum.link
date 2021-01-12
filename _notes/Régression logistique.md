@@ -64,28 +64,25 @@ Cette propriété est très commode, car elle se rapproche de la régression lin
 Le cas à K > 2 classes est une généralisation de ce modèle :
 
 $$
-\log \frac{\operatorname{Pr}(Y=K-1 \mid X=x)}{\operatorname{Pr}(G=K \mid X=x)}=\beta_{(K-1) 0}+\beta_{K-1}^{T} x
+\log \frac{\operatorname{Pr}(Y=K-1 \mid X=x)}{\operatorname{Pr}(Y=K \mid X=x)}=\beta_{(K-1) 0}+\beta_{K-1}^{T} x
 $$
 
-On calcule alors la cote de chaque classe par rapport à la dernière classe. En pratique, le choix de dénominateur est libre et n'influe pas sur le résultat. La probabilité postérieure associée à chaque classe est exprimée ainsi :
+On calcule alors la cote de chaque classe par rapport à la dernière classe. En pratique, le choix de dénominateur est libre et n'influe pas sur le résultat. La probabilité postérieure associée à chaque classe, en fonction de $\theta$ est exprimée ainsi :
 
 $$
-\operatorname{Pr}(G=k \mid X=x)=p_{k}(x ; \theta)
+\operatorname{Pr}(Y=k \mid X=x)=p_{k}(x ; \theta)
 $$
 
 Où $\theta$ correspond aux paramètres du modèle, comme expliqué plus haut :
 
 $$\theta=\left\{\beta_{10}, \beta_{1}^{T}, \ldots, \beta_{(K-1) 0}, \beta_{K-1}^{T}\right\}$$
 
-
-
-
 ## Estimation du modèle
 
 On utilise l'[[estimateur du maximum de vraisemblance]] pour chercher la valeur $\theta$. La log-vraisemblance s'exprime ainsi :
 
 $$
-\ell(\theta)=\sum_{i=1}^{N} \log p_{g_{i}}\left(x_{i} ; \theta\right)
+\ell(\theta)=\sum_{i=1}^{N} \log p_{y_{i}}\left(x_{i} ; \theta\right)
 $$
 
 Dans le cas à deux classes (plus simple), où la variable objectif $y_i$ est binaire (0 ou 1) et $p_{1}(x ; \theta)=p(x ; \theta)$, $p_{2}(x ; \theta)=1-p(x ; \theta)$, on a :
@@ -112,11 +109,23 @@ $$
 
 L'approche de la valeur des paramètres du modèle se fait au moyen de l'algorithme de Newton-Raphson, que l'on peut retrouver p120-121 d'[ESLII](https://web.stanford.edu/~hastie/Papers/ESLII.pdf).
 
-> **A noter :** On peut utiliser les mêmes techniques de [[Régularisation\|régularisation]] que pour la [[Régression linéaire\|régression linéaire]].
+## Régularisation
+
+On peut utiliser les mêmes techniques de [[Régularisation\|régularisation]] que pour la [[Régression linéaire\|régression linéaire]]. Il est seulement nécessaire de centrer et réduire les variables explicatives, la variable objectif étant déjà comprise entre 0 et 1.
+
+> A noter : La constante n'est pas concernée par la régularisation, étant simplement une variable d'ajustement *a priori* du modèle.
+
+La pénalité est ajoutée à la vraisemblance : 
+
+
+$$
+\ell\left(\beta_{0}, \beta\right)=\sum_{i=1}^{n}-\log \left(1+e^{\beta_{0}+x_{i} \cdot \beta}\right)+\sum_{i=1}^{n} y_{i}\left(\beta_{0}+x_{i} \cdot \beta\right)+\alpha \sum_{j=1}^{p}\left|\beta_{j}\right|+(1-\alpha) \sum_{j=1}^{p} \beta_{j}^{2}
+$$
+
 
 ## Classification
 
-Afin de maximiser la précision, choisira $Y = 1$ lorsque le score $p(x)$ associé à l'observation est égal à 0,5 et $Y = 0$ lorsque $p(x) < 0,5$, ce qui correspond au point où $P(y=1 \mid x)=P(y=0 \mid x)=\frac{1}{2}$.
+Afin de maximiser la précision, choisira $y_i = 1$ lorsque le score $p(x_i)$ associé à l'observation est égal à 0,5 et $y_i = 0$ lorsque $p(x_i) < 0,5$, ce qui correspond au point où $P(y_i=1 \mid x_i)=P(y_i=0 \mid x_i)=\frac{1}{2}$.
 
 Dans le cadre de la fonction logistique $p(X)=\frac{e^{\beta_{0}+\beta_{1} X}}{1+e^{\beta_{0}+\beta_{1} X}}$, cela revient à choisir $Y=1$ lorsque $\beta_{0}+\beta_{1} X$ est supérieur à 0 et $Y=0$ lorsque $\beta_{0}+\beta_{1} X$ est égal à 1. **On crée de fait un classificateur linéaire.**
 
@@ -150,7 +159,7 @@ Le package Python "Statsmodel" est très complet sur le sujet. [Un bon guide pou
 
 ## Utilisation simple avec scikit-learn
 
-On utilise [sklearn.linear_model.LogisticRegression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html). Voir le guide référencé ci-dessus, qui comprend le fonctionnement de sklearn en plus de détails.
+On utilise [sklearn.linear_model.LogisticRegression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html). A noter que sklearn [régularise la régresssion par défaut](https://datascience.stackexchange.com/questions/10805/does-scikit-learn-use-regularization-by-default), ce qui peut produire des résultats différents d'une régression classique réalisée avec R ou [statsmodels](https://www.statsmodels.org/stable/index.html).
 
  ```python
 from sklearn import datasets
@@ -172,8 +181,6 @@ lr.score(X_test, Y_test))
 
 # Probabilités estimées pour la première observation :
 lr.predict_proba(X_test[0])
-
-# Régularisation
-
 ````
+
 

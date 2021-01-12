@@ -11,7 +11,7 @@
           "type": "markdown",
           "state": {
             "file": "_notes/Régression logistique.md",
-            "mode": "source"
+            "mode": "preview"
           }
         }
       }
@@ -97,14 +97,14 @@
   },
   "lastOpenFiles": [
     "_notes/Régression logistique.md",
+    "_notes/Régularisation.md",
+    "_notes/Ecrire un script shell.md",
+    "_notes/Evaluation des modèles en pratique.md",
+    "_notes/Obtenir des données de test facilement.md",
     "_notes/ZSnippets html.md",
     "_notes/Données de test.md",
-    "_notes/Evaluation des modèles en pratique.md",
-    "_notes/Régularisation.md",
     "refs.md",
     "about.md",
-    "_notes/Validation croisée et grid search.md",
-    "_notes/Ecrire un script shell.md",
-    "_notes/filter().md"
+    "_notes/Validation croisée et grid search.md"
   ]
 }
