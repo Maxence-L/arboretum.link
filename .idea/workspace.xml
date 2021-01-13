@@ -24,19 +24,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3e416042-0831-410e-bc48-ad8738bffa8b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.obsidian/graph.json" beforeDir="false" afterPath="$PROJECT_DIR$/.obsidian/graph.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.obsidian/workspace" beforeDir="false" afterPath="$PROJECT_DIR$/.obsidian/workspace" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/content.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/content.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/post.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/post.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_notes/Analyse discriminante.md" beforeDir="false" afterPath="$PROJECT_DIR$/_notes/Analyse discriminante.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_notes/K-neighbors.md" beforeDir="false" afterPath="$PROJECT_DIR$/_notes/K-neighbors.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_notes/Pickle.md" beforeDir="false" afterPath="$PROJECT_DIR$/_notes/Pickle.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_notes/ZSnippets html.md" beforeDir="false" afterPath="$PROJECT_DIR$/_notes/ZSnippets html.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_notes/dbscan.md" beforeDir="false" afterPath="$PROJECT_DIR$/_notes/dbscan.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_notes/test.md" beforeDir="false" afterPath="$PROJECT_DIR$/_notes/test.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tags.md" beforeDir="false" afterPath="$PROJECT_DIR$/tags.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +94,7 @@
       <workItem from="1606149375779" duration="1386000" />
       <workItem from="1607012788436" duration="7312000" />
       <workItem from="1607456787438" duration="747000" />
-      <workItem from="1610470240528" duration="13101000" />
+      <workItem from="1610470240528" duration="14455000" />
     </task>
     <servers />
   </component>

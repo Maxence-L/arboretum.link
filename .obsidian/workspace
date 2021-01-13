@@ -10,8 +10,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "about.md",
-            "mode": "preview"
+            "file": "_notes/Imputation valeurs manquantes.md",
+            "mode": "source"
           }
         }
       }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "test",
+                "query": "impute",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -49,11 +49,12 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 240.0036334991455
+    "width": 200.0036334991455
   },
   "right": {
     "id": "15b808a1e515cd90",
@@ -69,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "about.md",
+                "file": "_notes/Imputation valeurs manquantes.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,7 +85,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "about.md"
+                "file": "_notes/Imputation valeurs manquantes.md"
               }
             }
           }
@@ -96,15 +97,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "_notes/Imputation valeurs manquantes.md",
+    "_notes/df.dropna().md",
+    "_notes/df.fillna().md",
+    "_notes/Conversion des données catégorielles.md",
+    "assets/img/Capture d’écran 2021-01-13 à 19.31.23.png",
+    "_notes/sklearn.impute.SimpleImputer() - Imputation simple.md",
+    "_notes/Que faire des valeurs manquantes (imputation).md",
+    "_notes/Untitled.md",
     "about.md",
-    "_notes/test.md",
-    "_notes/Spacy.md",
-    "_notes/Pickle.md",
-    "_notes/dbscan.md",
-    "assets/img/dbscan-clusters.png",
-    "assets/img/dbscan-centroides.png",
-    "_notes/K-neighbors.md",
-    "_notes/Détecter les valeurs extrêmes.md",
-    "_notes/Analyse discriminante.md"
+    "_notes/test.md"
   ]
 }

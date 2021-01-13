@@ -4,7 +4,7 @@ tags: pandas
 etat: hiver
 ---
 
-Méthode permettant de remplacer les valeurs NaN par d'autres valeurs. 
+Méthode permettant de remplacer les valeurs NaN par d'autres valeurs.  On utilisera [[df.dropna()]] si l'on désire les supprimer.
 
 On peut spécifier en valeur une valeur unique, mais aussi une [[pd.series\|Série]] ou un [[dataframe]]. 
 

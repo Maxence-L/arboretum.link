@@ -5,7 +5,7 @@ permalink: /about/
 content-type: eg
 ---
 
-Mon espace de travail sur [[Obsidian::https://obsidian.md]] devenant de plus en plus touffu et complexe à gérer, j'ai décidé de mettre en ligne progressivement mes notes sur cette interface que je trouve plus claire.
+Mon espace de travail sur [Obsidian](https://obsidian.md) devenant de plus en plus touffu et complexe à gérer, j'ai décidé de mettre en ligne progressivement mes notes sur cette interface que je trouve plus claire.
 
 Le but est de ce site est de me forcer à en améliorer la qualité de ces notes, la perspective d'être lu par quelqu'un étant motivant. Cela me permet par ailleurs d'y accéder partout.
 
