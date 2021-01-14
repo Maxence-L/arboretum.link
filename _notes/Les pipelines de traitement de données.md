@@ -110,4 +110,25 @@ cached_pipe.fit(X_digits, y_digits)
 
 print(cached_pipe.named_steps['reduce_dim'].components_)
 
-> [[-1.77484909e-19 ... 4.07058917e-18]]
+> [-1.77484909e-19 ... 4.07058917e-18]
+````
+
+## Pipeline pandas
+
+[[pandas]] propose une méthode `df.pipe()` associée à un objet dataframe, qui permet de chaîner les opérations réalisées. Il est en cela similaire à l'opérateur `%>%` que l'on retrouve dans le package [magrittr](https://r4ds.had.co.nz/pipes.html) du langage R.
+
+On l'utilise ainsi :
+
+```python
+df.pipe(h)
+	.pipe(g, arg1=a)
+	.pipe(fun, arg2=b, arg3=c)
+````
+
+Ce qui est équivalent aux fonctions emboitées suivantes :
+
+```python
+fun(g(h(df), arg1=a), arg2=b, arg3=c)
+```
+
+L'exemple est tiré de la [documentation](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.pipe.html), que l'on peut consulter sur le sujet.
