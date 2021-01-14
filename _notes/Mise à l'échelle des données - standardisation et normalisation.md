@@ -14,6 +14,7 @@ La mise à l'échelle consiste à altérer les données afin de réduire leur va
 
 - La [[gradient descent\|descente du gradient]] est plus rapide si les données partagent la même échelle. (*rescaled*).
 
+
 ## Normalisation 'Min-Max'
 
 C'est la méthode la plus simple, qui met à l'échelle les données de manière à ce qu'elles soient bornées entre $[0, 1]$. Le $max(x)$ sera égal à 1 et le $min(x)$ sera égal à 0.
@@ -114,12 +115,30 @@ où
 
 $$L_2(p) = \sqrt{\sum\limits_{k=0}^n p^2_i}$$
 
-Voir la note sur la [[Norme d'un vecteur]] pour une explication plus détaillée sur le sujet.
+Voir la note sur la [[Norme d'un vecteur\|norme d'un vecteur]] pour une explication plus détaillée sur le sujet.
 
 Cette normalisation est particulièrement utile dans le domaine du [[NLP]], et de la [[classification]] en général.
 
 [^1]: Quelle est l'expression française pour 'unit-vector normalization' ?
 
+## Mise à l'échelle de données dans python
+
+Avec python, on pourra utiliser le module `sklearn.preprocessing`, et notamment sa fonction [`scaled(X)`](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.scale.html). Celle-ci centre et standardise les données pour $\sigma = 1$ :
+
+```python
+# Import scale
+from sklearn.preprocessing import scale
+
+# Scale the features: X_scaled
+X_scaled = scale(X)
+
+# Print the mean and standard deviation of the scaled features
+print("Mean of Scaled Features: {}".format(np.mean(X)))
+print("Standard Deviation of Scaled Features: {}".format(np.std(X_scaled)))
+
+> Mean of Scaled Features: 18.432687072460002 
+> Standard Deviation of Scaled Features: 0.9999999999999999
+````
 
 ## Reférences :
 
