@@ -17,7 +17,7 @@ Plusieurs options sont disponibles pour résoudre le problème :
 
 Le module [sklearn.impute](https://scikit-learn.org/stable/modules/classes.html#module-sklearn.impute) est utile pour l'aspect pratique de cette étape. [[sklean]] propose un excellent tutoriel sur son site : [Imputation of missign values](https://scikit-learn.org/stable/modules/impute.html)
 
-Il est aussi possible d'utiliser [sklearn.preprocessing.Imputer](https://scikit-learn.org/0.16/modules/generated/sklearn.preprocessing.Imputer.html), dont le résultat est de plus haut niveau et permet de l'intégrer dirrectement à un pipeline. On explique son fonctionnement à la [[Imputation valeurs manquantes#Intégrer l'imputation à un pipeline avec imputer\|fin de la note]].
+Il est aussi possible d'utiliser [sklearn.preprocessing.Imputer](https://scikit-learn.org/0.16/modules/generated/sklearn.preprocessing.Imputer.html), dont le résultat est de plus haut niveau et permet de l'intégrer dirrectement à un pipeline. On explique son fonctionnement à la [[Imputation des valeurs manquantes#Intégrer l'imputation à un pipeline avec imputer\|fin de la note]].
 
 ## Imputation simple : mode, moyenne, médiane
 
@@ -115,6 +115,61 @@ La méthode [sklearn.impute.IterativeImputer](https://scikit-learn.org/stable/mo
 
 Un peut faire cette opération pour $n$ itérations, afin de lisser les divergences liées à l'ordre dans lesquelles les variables sont estimées. L'utilisation est expliquée sur le site [scikit-learn](https://scikit-learn.org/stable/modules/impute.html#multivariate-feature-imputation).
 
-
 ## Intégrer l'imputation à un pipeline avec `.imputer`
+
+L'imputeur du module `preprocessing` fonctionne comme un transformateur classique (que l'on peut retrouver, par exemple, pour le calcul de l'ACP) et propose donc des méthodes `.fit()` et `.fit_transform()`. Cela permet d'éviter les manipulation d'arrays.
+
+L'imputation simple est toutefois la seule proposée : on a accès aux trois méthodes suivantes :
+
+`mean, median, most_frequent`
+
+L'intégration à un [[Les pipelines de données\|pipeline]] se fait ainsi :
+
+```python
+# Import the Imputer module
+from sklearn.preprocessing import Imputer
+from sklearn.svm import SVC
+from sklearn.pipeline import Pipeline
+
+# Setup the Imputation transformer: imp
+imp = Imputer(missing_values='NaN', strategy='most_frequent', axis=0)
+
+# Instantiate the SVC classifier: clf
+clf = SVC()
+
+# Setup the pipeline with the required steps: steps
+steps = [('imputation', imp),
+        ('SVM', clf)]
+
+pipeline = Pipeline(steps)
+````
+
+On peut aussi directement déclarer l'imputeur dans le pipeline :
+
+```python
+# Import necessary modules
+from sklearn.preprocessing import Imputer
+from sklearn.pipeline import Pipeline
+from sklearn.svm import SVC
+
+# Setup the pipeline steps: steps
+steps = [('imputation', Imputer(missing_values='NaN', strategy='most_frequent', axis=0)),
+        ('SVM', SVC())]
+
+# Create the pipeline: pipeline
+pipeline = Pipeline(steps)
+
+# Create training and test sets
+X_train, X_test, y_train, y_test = train_test_split(X,y, test_size = 0.3, random_state=42)
+
+# Fit the pipeline to the train set
+pipeline.fit(X_train, y_train)
+
+# Predict the labels of the test set
+y_pred = pipeline.predict(X_test)
+
+# Compute metrics
+print(classification_report(y_test, y_pred))
+````
+
 

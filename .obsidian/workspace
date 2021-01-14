@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/Imputation valeurs manquantes.md",
+            "file": "_notes/Imputation des valeurs manquantes.md",
             "mode": "source"
           }
         }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "impute",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -70,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Imputation valeurs manquantes.md",
+                "file": "_notes/Imputation des valeurs manquantes.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -85,7 +85,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Imputation valeurs manquantes.md"
+                "file": "_notes/Imputation des valeurs manquantes.md"
               }
             }
           }
@@ -98,14 +98,14 @@
   },
   "lastOpenFiles": [
     "_notes/Imputation valeurs manquantes.md",
+    "_notes/Indicateurs de performance des classificateurs.md",
+    "_notes/Les pipelines de données.md",
     "_notes/df.dropna().md",
     "_notes/df.fillna().md",
     "_notes/Conversion des données catégorielles.md",
     "assets/img/Capture d’écran 2021-01-13 à 19.31.23.png",
     "_notes/sklearn.impute.SimpleImputer() - Imputation simple.md",
     "_notes/Que faire des valeurs manquantes (imputation).md",
-    "_notes/Untitled.md",
-    "about.md",
-    "_notes/test.md"
+    "_notes/Untitled.md"
   ]
 }
