@@ -123,7 +123,7 @@ L'imputation simple est toutefois la seule proposée : on a accès aux trois mé
 
 `mean, median, most_frequent`
 
-L'intégration à un [[Les pipelines de données\|pipeline]] se fait ainsi :
+L'intégration à un [[Les pipelines de traitement de données\|pipeline]] se fait ainsi :
 
 ```python
 # Import the Imputer module
