@@ -49,11 +49,13 @@ pipe['reduce_dim']
 > PCA()
 ````
 
-On peut modifier les paramètres avec `.set_params()` et en spécifiant le nom du paramètre.
+On peut modifier les paramètres avec `.set_params()` et **en spécifiant le nom du paramètre de la manière suivante : `step_name__parameter_name`**.
 
 ```python
 pipe.set_params(clf__C=10)
 ````
+
+Ici, on a donc l'étape `clf` et le paramètre `C`.
 
 Ce qui est utile si l'on réalise une *[[Evaluation des modèles en pratique#Ajuster les hyper paramètres avec la grid search\|grid search]]* :
 
@@ -111,6 +113,39 @@ cached_pipe.fit(X_digits, y_digits)
 print(cached_pipe.named_steps['reduce_dim'].components_)
 
 > [-1.77484909e-19 ... 4.07058917e-18]
+````
+
+Un exemple complet pour s'y retrouver :
+
+```python
+# Setup the pipeline
+steps = [('scaler', StandardScaler()),
+         ('SVM', SVC())]
+
+pipeline = Pipeline(steps)
+
+# Specify the hyperparameter space
+parameters = {'SVM__C':[1, 10, 100],
+              'SVM__gamma':[0.1, 0.01]}
+
+# Create train and test sets
+X_train, X_test, y_train, y_test = train_test_split(X,y,
+                 test_size=0.2,
+                 random_state=21)
+
+# Instantiate the GridSearchCV object: cv
+cv = GridSearchCV(pipeline, param_grid=parameters)
+
+# Fit to the training set
+cv.fit(X_train,y_train)
+
+# Predict the labels of the test set: y_pred
+y_pred = cv.predict(X_test)
+
+# Compute and print metrics
+print("Accuracy: {}".format(cv.score(X_test, y_test)))
+print(classification_report(y_test, y_pred))
+print("Tuned Model Parameters: {}".format(cv.best_params_))
 ````
 
 ## Pipeline pandas

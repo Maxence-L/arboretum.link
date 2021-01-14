@@ -133,12 +133,45 @@ from sklearn.preprocessing import scale
 X_scaled = scale(X)
 
 # Print the mean and standard deviation of the scaled features
-print("Mean of Scaled Features: {}".format(np.mean(X)))
+print("Mean of Scaled Features: {}".format(np.std(X)))
 print("Standard Deviation of Scaled Features: {}".format(np.std(X_scaled)))
 
-> Mean of Scaled Features: 18.432687072460002 
+> Standard Deviation of Unscaled Features: 2.7314972981668206e-15 
 > Standard Deviation of Scaled Features: 0.9999999999999999
 ````
+
+`scaled()` existe aussi comme transformeur, ce qui lui permet d'être utilisé dans un pipeline :
+
+```python
+# Import the necessary modules
+from sklearn.preprocessing import StandardScaler
+from sklearn.pipeline import Pipeline
+
+# Setup the pipeline steps: steps
+steps = [('scaler', StandardScaler()),
+        ('knn', KNeighborsClassifier())]
+
+# Create the pipeline: pipeline
+pipeline = Pipeline(steps)
+
+# Create train and test sets
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
+
+# Fit the pipeline to the training set: knn_scaled
+knn_scaled = pipeline.fit(X_train, y_train)
+
+# Instantiate and fit a k-NN classifier to the unscaled data
+knn_unscaled = KNeighborsClassifier().fit(X_train, y_train)
+
+# Compute and print metrics
+print('Accuracy with Scaling: {}'.format(knn_scaled.score(X_test, y_test)))
+print('Accuracy without Scaling: {}'.format(knn_unscaled.score(X_test, y_test)))
+
+> Accuracy with Scaling: 0.7700680272108843 
+> Accuracy without Scaling: 0.6979591836734694
+````
+
+
 
 ## Reférences :
 

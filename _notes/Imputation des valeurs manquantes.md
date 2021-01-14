@@ -150,26 +150,35 @@ On peut aussi directement déclarer l'imputeur dans le pipeline :
 # Import necessary modules
 from sklearn.preprocessing import Imputer
 from sklearn.pipeline import Pipeline
-from sklearn.svm import SVC
+from sklearn.regression import ElasticNet
+from sklearn.preprocessing import StandardScaler
 
 # Setup the pipeline steps: steps
-steps = [('imputation', Imputer(missing_values='NaN', strategy='most_frequent', axis=0)),
-        ('SVM', SVC())]
+steps = [
+    ('imputation', Imputer(missing_values='NaN', strategy='mean', axis=0)),
+    ('scaler', StandardScaler()),
+    ('elasticnet', ElasticNet())
+    ]
 
 # Create the pipeline: pipeline
 pipeline = Pipeline(steps)
 
-# Create training and test sets
-X_train, X_test, y_train, y_test = train_test_split(X,y, test_size = 0.3, random_state=42)
+# Specify the hyperparameter space
+parameters = {'elasticnet__l1_ratio' : np.linspace(0,1,30)}
 
-# Fit the pipeline to the train set
-pipeline.fit(X_train, y_train)
+# Create train and test sets
+X_train, X_test, y_train, y_test = train_test_split(X,y, test_size=0.4, random_state=42)
 
-# Predict the labels of the test set
-y_pred = pipeline.predict(X_test)
+# Create the GridSearchCV object: gm_cv
+gm_cv = GridSearchCV(pipeline, param_grid=parameters)
 
-# Compute metrics
-print(classification_report(y_test, y_pred))
+# Fit to the training set
+gm_cv.fit(X_train,y_train)
+
+# Compute and print the metrics
+r2 = gm_cv.score(X_test, y_test)
+print("Tuned ElasticNet Alpha: {}".format(gm_cv.best_params_))
+print("Tuned ElasticNet R squared: {}".format(r2))
 ````
 
 
