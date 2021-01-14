@@ -112,3 +112,5 @@ L'écriture de l'auteur est claire et très joviale et l'on aborde tous les poin
 ### *Python Workout*, Reuven M. Lerner
 
 Un livre d'exercices en apparence simples sur Python, mais dont la résolution est expliquée en détail et approfondie à chaque fois. Une excellente manière de s'entrainer au quotidien et de découvrir certaines fonctionnalités méconnues ou des solutions habiles à certaines questions.
+
+
