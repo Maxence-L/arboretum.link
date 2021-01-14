@@ -12,7 +12,7 @@ La mise à l'échelle consiste à altérer les données afin de réduire leur va
 
 - Il sera difficile de comparer les coefficients d'une régression linéaire si les variables sur lesquels ils s'appliquent n'ont pas d'échelle comparable. 
 
-- Le [[gradient descent]] est plus rapide si les données partagent la même échelle. (*rescaled*).
+- La [[gradient descent\|descente du gradient]] est plus rapide si les données partagent la même échelle. (*rescaled*).
 
 ## Normalisation 'Min-Max'
 
@@ -50,8 +50,8 @@ La transformation Box-Cox fait partie des transformations appelées ["*power tra
 
 ![log-transform](/assets/img/log_transform.png#center)
 <div align="center">
-	<p>
-	Population américaine. La courbe de droite est exprimée sur une échelle logarithmique. <a href="http://onlinestatbook.com/2/transformations/tukey.html"> Source </a>
+	<p> <i>
+	Population américaine. La courbe de droite est exprimée sur une échelle logarithmique. <a href="http://onlinestatbook.com/2/transformations/tukey.html"> Source </a> </i>
 </p>
 </div>
 

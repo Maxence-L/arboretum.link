@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/Les pipelines de traitement de données.md",
+            "file": "_notes/Mise à l'échelle des données - standardisation et normalisation.md",
             "mode": "preview"
           }
         }
@@ -49,8 +49,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -70,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Les pipelines de traitement de données.md",
+                "file": "_notes/Mise à l'échelle des données - standardisation et normalisation.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -85,7 +84,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Les pipelines de traitement de données.md"
+                "file": "_notes/Mise à l'échelle des données - standardisation et normalisation.md"
               }
             }
           }
@@ -97,6 +96,7 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "_notes/Mise à l'échelle des données - standardisation et normalisation.md",
     "_notes/Les pipelines de données.md",
     "_notes/Imputation des valeurs manquantes.md",
     "_notes/Imputation valeurs manquantes.md",
@@ -105,7 +105,6 @@
     "_notes/df.fillna().md",
     "_notes/Conversion des données catégorielles.md",
     "assets/img/Capture d’écran 2021-01-13 à 19.31.23.png",
-    "_notes/sklearn.impute.SimpleImputer() - Imputation simple.md",
-    "_notes/Que faire des valeurs manquantes (imputation).md"
+    "_notes/sklearn.impute.SimpleImputer() - Imputation simple.md"
   ]
 }
