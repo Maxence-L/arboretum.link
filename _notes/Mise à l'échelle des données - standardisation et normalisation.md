@@ -105,15 +105,11 @@ On peut alors faire varier $\lambda$ afin de trouver la valeur pour laquelle la 
 
 ## Normalisation au vecteur unitaire[^1]
 
-Si ce qui nous intéresse se rapporte à la *direction* du point $p$ et non à sa distance à l'origine, on peut utiliser la normalisation à l'unité.
+Si ce qui nous intéresse se rapporte à la *direction* du point $p$ et non à sa distance à l'origine, on peut utiliser la normalisation à l'unité :
+
+$\frac{p}{L_2(p)}$ où $L_2(p) = \sqrt{\sum\limits_{k=0}^n p^2_i}$
 
 > **A noter** : Cette dénomination correspond à la [[Norme d'un vecteur\|norme d'un vecteur]] et non à la loi normale.
-
-$$ \frac{p}{L_2(p)}$$
-
-où
-
-$$L_2(p) = \sqrt{\sum\limits_{k=0}^n p^2_i}$$
 
 Voir la note sur la [[Norme d'un vecteur\|norme d'un vecteur]] pour une explication plus détaillée sur le sujet.
 
