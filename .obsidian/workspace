@@ -10,8 +10,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/Mise à l'échelle des données - standardisation et normalisation.md",
-            "mode": "source"
+            "file": "refs.md",
+            "mode": "preview"
           }
         }
       }
@@ -70,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Mise à l'échelle des données - standardisation et normalisation.md",
+                "file": "refs.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -85,7 +85,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Mise à l'échelle des données - standardisation et normalisation.md"
+                "file": "refs.md"
               }
             }
           }
@@ -97,6 +97,7 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "refs.md",
     "_notes/Mise à l'échelle des données - standardisation et normalisation.md",
     "_notes/Imputation des valeurs manquantes.md",
     "_notes/Les pipelines de traitement de données.md",
@@ -105,7 +106,6 @@
     "_notes/Imputation valeurs manquantes.md",
     "_notes/Indicateurs de performance des classificateurs.md",
     "_notes/df.dropna().md",
-    "_notes/df.fillna().md",
-    "_notes/Conversion des données catégorielles.md"
+    "_notes/df.fillna().md"
   ]
 }

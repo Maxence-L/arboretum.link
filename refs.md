@@ -43,7 +43,7 @@ L'ouvrage est à la fois théorique et superficiel sur de nombreux sujets. Tous 
 
 De même, de nombreuses solutions pointues sont exposées, mais pas les techniques liées aux arbres de décision, très utilisés dans le domaine. J'aurais préféré un chapitre sur ce sujet plutôt que sur la "visualisation interactive d'information", d'autant que le livre est imprimé en noir et blanc sur un papier mat. Cet oubli est peut-être est dû à l'auteur principal du livre, qui dans ses ouvrages précédents[^1] sur le sujet n'aborde pas non plus les forêts aléatoires.
 
-[^1] "Apprentissage machine - de la théorie à la pratique - Massih-Ressa Amini" (2015) par exemple.
+[^1]: "Apprentissage machine - de la théorie à la pratique - Massih-Ressa Amini" (2015) par exemple.
 
 Le livre est donc parfois lacunaire et réservé à des lecteurs expérimentés. Il présente toutefois l'intérêt de donner la définition formelle de certaines méthodes d'apprentissage, ce qui peut en faire une bonne référence si l'on désire mettre en œuvre certaines techniques avancées.
 
