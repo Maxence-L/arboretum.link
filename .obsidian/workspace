@@ -10,8 +10,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/Imputation des valeurs manquantes.md",
-            "mode": "source"
+            "file": "_notes/Mise à l'échelle des données - standardisation et normalisation.md",
+            "mode": "preview"
           }
         }
       }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "imputati",
+                "query": "standa",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -70,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Imputation des valeurs manquantes.md",
+                "file": "_notes/Mise à l'échelle des données - standardisation et normalisation.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -85,7 +85,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Imputation des valeurs manquantes.md"
+                "file": "_notes/Mise à l'échelle des données - standardisation et normalisation.md"
               }
             }
           }
@@ -97,9 +97,9 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "_notes/Mise à l'échelle des données - standardisation et normalisation.md",
     "_notes/Imputation des valeurs manquantes.md",
     "_notes/Les pipelines de traitement de données.md",
-    "_notes/Mise à l'échelle des données - standardisation et normalisation.md",
     "_notes/Séparer les données entre des données d'entrainement et de test.md",
     "_notes/Les pipelines de données.md",
     "_notes/Imputation valeurs manquantes.md",

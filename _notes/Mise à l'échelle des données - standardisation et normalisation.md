@@ -176,7 +176,7 @@ print('Accuracy without Scaling: {}'.format(knn_unscaled.score(X_test, y_test)))
 ## Reférences :
 
 - [[Feature Scaling::https://en.wikipedia.org/wiki/Feature_scaling]] (Wikipedia)
-- *Chapitre 10, p.303, [[The Data Science Manual, Skienna]]*
+- *Chapitre 10, p.303,[[../refs#The Data Science Design Manual Steven S Skienna\|The Data Science Manual, Skienna]]*
 - *52., p38, [[Les Datasciences en 100 Questions, Y. Benzaki]]*
 - [Vector Math for 3D Computer Graphic](https://chortle.ccsu.edu/VectorLessons/vectorIndex.html#07) (chortle.ccsu.edu)
 - *Online Statistics Education* - disponible sur [onlinestatbook.com](http://onlinestatbook.com/2/transformations/box-cox.html)
