@@ -15,7 +15,7 @@ Les notes que vous trouverez ici sont perpétuellement en cours d'amélioration 
 
 Le web étant essentiellement en anglais, traduire en français[^1] des sujets techniques me permet de réfléchir au sens des mots que j'utilise, et donc de mieux m'approprier ces connaissances.
 
-[^1]: Je recommande à ce sujet le [Grand dictionnaire terminologique](http://gdt.oqlf.gouv.qc.ca/) québècois, disponible sur *[ordiphone](http://gdt.oqlf.gouv.qc.ca/ficheOqlf.aspx?Id_Fiche=8360216)*, une arme de terreur particulièrement efficace dans les réunions où le franglish règne.
+[^1]: Je recommande à ce sujet le [Grand dictionnaire terminologique](http://gdt.oqlf.gouv.qc.ca/) québécois, disponible sur *[ordiphone](http://gdt.oqlf.gouv.qc.ca/ficheOqlf.aspx?Id_Fiche=8360216)*, une arme de terreur particulièrement efficace dans les réunions où le franglish règne.
 
 Les notes peuvent prendre un des états suivants :
 

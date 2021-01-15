@@ -82,6 +82,6 @@
     or page.content-type == "post"
     or page.content-type == "eg"  -%}
     {%- if page.title != "Tags" -%}
-    <script>for(let h of document.querySelectorAll('h2[id],h3[id],h4[id]'))h.innerHTML+=` <a href="#${h.id}" aria-hidden="true">#</a>`</script>
+    <script>for(let h of document.querySelectorAll('h2[id],h3[id],h4[id]'))h.innerHTML+=` <a id="hashtag" href="#${h.id}" aria-hidden="true">#</a>`</script>
     {%- endif -%}
 {%- endif -%}

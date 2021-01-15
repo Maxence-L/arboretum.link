@@ -24,8 +24,12 @@
   <component name="ChangeListManager">
     <list default="true" id="3e416042-0831-410e-bc48-ad8738bffa8b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.obsidian/workspace" beforeDir="false" afterPath="$PROJECT_DIR$/.obsidian/workspace" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/content.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/content.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_layouts/post.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/post.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/refs.md" beforeDir="false" afterPath="$PROJECT_DIR$/refs.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_notes/Régression linéaire.md" beforeDir="false" afterPath="$PROJECT_DIR$/_notes/Régression linéaire.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.md" beforeDir="false" afterPath="$PROJECT_DIR$/about.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,6 +102,8 @@
       <workItem from="1607456787438" duration="747000" />
       <workItem from="1610470240528" duration="14455000" />
       <workItem from="1610648230995" duration="89000" />
+      <workItem from="1610707419453" duration="6098000" />
+      <workItem from="1610714472500" duration="523000" />
     </task>
     <servers />
   </component>

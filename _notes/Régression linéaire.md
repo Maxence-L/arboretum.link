@@ -7,7 +7,7 @@ etat : hiver
 La régression linéaire est une technique de base de l'analyse de données permettant d'estimer la relation linéaire qu'il peut exister entre deux variables.
 
 
-## Mise en pratique avec [[sklean]] :
+## Mise en pratique avec [[sklearn]] :
 
 ### Séparation entre un jeu de données de test et d'entrainement
 
