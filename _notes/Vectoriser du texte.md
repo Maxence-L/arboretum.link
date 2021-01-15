@@ -93,7 +93,7 @@ La vectorisation TF-IDF donne à chaque mot un poids selon son originalité et s
 
 On compare la fréquence avec laquelle le mot apparait dans le document à la fréquence inverse avec laquelle il apparaît au moins une fois dans les documents comparés.
 
-[[Plusieurs variantes de calcul existent::https://en.wikipedia.org/wiki/Tf%E2%80%93idf#Definition]]. Voici la méthode canonique :
+[[https://en.wikipedia.org/wiki/Tf%E2%80%93idf#Definition::Plusieurs variantes de calcul existent]]. Voici la méthode canonique :
 
 * $tf(t,d) = f_{t,d}$ correspond au nombre de fois où le terme $t$ est rencontré dans le document $d$.
 

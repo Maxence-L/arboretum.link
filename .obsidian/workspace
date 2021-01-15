@@ -11,7 +11,7 @@
           "type": "markdown",
           "state": {
             "file": "_notes/Vectoriser du texte.md",
-            "mode": "preview"
+            "mode": "source"
           }
         }
       }
@@ -41,7 +41,7 @@
               "type": "search",
               "state": {
                 "query": "nlp",
-                "matchingCase": false,
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
                 "extraContext": false,
@@ -49,13 +49,11 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200.0036334991455,
-    "collapsed": true
+    "width": 200.0036334991455
   },
   "right": {
     "id": "15b808a1e515cd90",
@@ -99,8 +97,8 @@
   },
   "lastOpenFiles": [
     "_notes/Vectoriser du texte.md",
-    "_notes/JOINdre des tables SQL entre elles.md",
     "about.md",
+    "_notes/JOINdre des tables SQL entre elles.md",
     "refs.md",
     "_notes/Régression linéaire.md",
     "_notes/Connexion SSH avec un notebook jupyter.md",
