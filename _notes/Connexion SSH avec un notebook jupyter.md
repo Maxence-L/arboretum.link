@@ -26,10 +26,12 @@ On commence par se connecter à la machine distance en CLI :
 ssh username@ip
 ````
 
-Une fois connecté on démarre le notebook (ici jupyterLab) et on lui donne le port sur lequel envoyer les données :
+L'invite de commande demandera ensuite un mot de passe.
+
+Une fois connecté, on peut ouvrir une session bash avec `bash` et démarrer le notebook (ici jupyterLab). On lui donne le port sur lequel envoyer les données :
 
 ```bash
-jupyter lab --no-browser --port=8080
+jupyter lab --no-browser --ip=127.0.0.1 --port=8080
 ````
 
 On peut à présent ouvrir un nouveau tunnel SSH sur notre machine locale et lui dire de passer les informations du port 8080 de la machine distante sur le port équivalent de notre machine locale :

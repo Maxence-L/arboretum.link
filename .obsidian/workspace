@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "refs.md",
+            "file": "_notes/Installer node.js.md",
             "mode": "preview"
           }
         }
@@ -40,8 +40,8 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "standa",
-                "matchingCase": false,
+                "query": "",
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
                 "extraContext": false,
@@ -49,8 +49,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -70,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "refs.md",
+                "file": "_notes/Installer node.js.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -85,7 +84,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "refs.md"
+                "file": "_notes/Installer node.js.md"
               }
             }
           }
@@ -97,15 +96,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "_notes/Untitled.md",
+    "_notes/Connexion SSH avec un notebook jupyter.md",
+    "_notes/Vectoriser du texte.md",
+    "_notes/Analyse discriminante.md",
     "refs.md",
     "_notes/Mise à l'échelle des données - standardisation et normalisation.md",
     "_notes/Imputation des valeurs manquantes.md",
     "_notes/Les pipelines de traitement de données.md",
     "_notes/Séparer les données entre des données d'entrainement et de test.md",
-    "_notes/Les pipelines de données.md",
-    "_notes/Imputation valeurs manquantes.md",
-    "_notes/Indicateurs de performance des classificateurs.md",
-    "_notes/df.dropna().md",
-    "_notes/df.fillna().md"
+    "_notes/Les pipelines de données.md"
   ]
 }
