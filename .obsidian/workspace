@@ -10,8 +10,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "about.md",
-            "mode": "preview"
+            "file": "_notes/JOINdre des tables SQL entre elles.md",
+            "mode": "source"
           }
         }
       }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "about.md",
+                "file": "_notes/JOINdre des tables SQL entre elles.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,7 +84,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "about.md"
+                "file": "_notes/JOINdre des tables SQL entre elles.md"
               }
             }
           }
@@ -96,6 +96,7 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "_notes/JOINdre des tables SQL entre elles.md",
     "about.md",
     "refs.md",
     "_notes/Régression linéaire.md",
@@ -104,7 +105,6 @@
     "_notes/Vectoriser du texte.md",
     "_notes/Analyse discriminante.md",
     "_notes/Mise à l'échelle des données - standardisation et normalisation.md",
-    "_notes/Imputation des valeurs manquantes.md",
-    "_notes/Les pipelines de traitement de données.md"
+    "_notes/Imputation des valeurs manquantes.md"
   ]
 }

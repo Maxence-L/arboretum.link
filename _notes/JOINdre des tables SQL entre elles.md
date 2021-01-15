@@ -176,7 +176,7 @@ id|left_school| right\_school|
 
 ### Simplifier les commandes `JOIN` avec des alias
 
- #### Changer le nom des colonnes utilisées
+#### Changer le nom des tables utilisées
 
 Il est possible de changer le nom de la colonne en utilisant `AS`: `SELECT schools_left.id AS left_id, ...`
 
