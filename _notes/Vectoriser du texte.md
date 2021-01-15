@@ -28,7 +28,7 @@ Un vecteur contextuel issu d'un vecteur lexical.  <a href="https://www.aclweb.or
 
 [^1]: https://hal.archives-ouvertes.fr/tel-02504543/document
 
-### Résumé des techniques
+### Présentation des techniques
 
 | Technique de vectorisation      | Fonction                                           | Utile pour                           | Remarques                                                                        |   |
 |-----------------------------|----------------------------------------------------|-------------------------------------|---------------------------------------------------------------------------------------|---|
@@ -87,7 +87,13 @@ vectors = vectorizer.fit_transform(corpus)
 
 (à faire)
 
-## TF-IDF
+## TF-IDF (*term frequency - inverse document frequency*)
+
+La vectorisation TF-IDF mesure pour chaque mot son originalité. On compare la fréquence avec laquelle le mot apparait dans le document à la fréquence inverse avec laquelle il apparaît au moins une fois dans les documents comparés.
+
+[[Plusieurs variantes de calcul existent::https://en.wikipedia.org/wiki/Tf%E2%80%93idf#Definition]]  
+
+
 
 ### L'enregistrement de la matrice TF
 
