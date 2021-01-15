@@ -94,8 +94,13 @@ La vectorisation TF-IDF mesure pour chaque mot son originalité. On compare la f
 [[Plusieurs variantes de calcul existent::https://en.wikipedia.org/wiki/Tf%E2%80%93idf#Definition]]. La méthode canonique :
 
 * $tf(t,d) = f_{t,d}$ correspond au nombre de fois où le terme $t$ est rencontré dans le document $d$.
-* $idf(t,D) = \log \frac{N}{n_{t}}$. 
-  * $N$ correspond au nombre total de documents et $n_t$ au nombre de documents contenant le terme $t$.
+
+* $idf(t,D) = \log \frac{N}{n_{t}}$.
+  - $N$ correspond au nombre total de documents
+  - $n_t$ au nombre de documents contenant le terme $t$.
+  - Le logarithme du ratio est utilisé afin d'éviter que les termes trop rares ne produisent des résultats trop importants.
+
+Le résultat :
 
 $$
 tfidf(t,d) = \frac{f_{t, d}}{\log \frac{N}{n_{t}}}
