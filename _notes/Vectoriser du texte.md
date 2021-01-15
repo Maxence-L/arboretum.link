@@ -89,15 +89,17 @@ vectors = vectorizer.fit_transform(corpus)
 
 ## TF-IDF (*term frequency - inverse document frequency*)
 
-La vectorisation TF-IDF mesure pour chaque mot son originalité. On compare la fréquence avec laquelle le mot apparait dans le document à la fréquence inverse avec laquelle il apparaît au moins une fois dans les documents comparés.
+La vectorisation TF-IDF donne à chaque mot un poids selon son originalité et son importance dans le document.
 
-[[Plusieurs variantes de calcul existent::https://en.wikipedia.org/wiki/Tf%E2%80%93idf#Definition]]. La méthode canonique :
+On compare la fréquence avec laquelle le mot apparait dans le document à la fréquence inverse avec laquelle il apparaît au moins une fois dans les documents comparés.
+
+[[Plusieurs variantes de calcul existent::https://en.wikipedia.org/wiki/Tf%E2%80%93idf#Definition]]. Voici la méthode canonique :
 
 * $tf(t,d) = f_{t,d}$ correspond au nombre de fois où le terme $t$ est rencontré dans le document $d$.
 
-* $idf(t,D) = \log \frac{N}{n_{t}}$.
+* $idf(t,D) = \log \frac{N}{1+n_{t}}$.
   - $N$ correspond au nombre total de documents
-  - $n_t$ au nombre de documents contenant le terme $t$.
+  - $n_t$ au nombre de documents contenant le terme $t$. On y ajoute 1 pour éviter les problèmes de division par 0.
   - Le logarithme du ratio est utilisé afin d'éviter que les termes trop rares ne produisent des résultats trop importants.
 
 Le résultat :
@@ -106,11 +108,14 @@ $$
 tfidf(t,d) = \frac{f_{t, d}}{\log \frac{N}{n_{t}}}
 $$
 
-Où :
+Cette mesure permet d'évaluer le potentiel sémantique de chaque mot :
 
+- $tf(t,d)$ : Plus un mot est retrouvé dans un document, plus il y influe sur le sens du document, ce qui sera utile pour comparer celui-ci aux corpus.
+- $idf(t,D$ : Moins un mot est utilisé au sein du corpus, plus il sera important pour évaluer la similitude entre deux documents où l'on le retrouve.
 
+Les variantes viennent lisser les poids produits par la formule de départ. Par exemple, plutôt que de d'utiliser la fréquence brute $tf(t,d)= f_{t, d}$, on peut utiliser la fréquence relative au sein du document :
 
-
+$$tf(t,d)=f_{t, d} / \sum_{t^{\prime} \in d} f_{t^{\prime}, d}$$
 
 ### L'enregistrement de la matrice TF
 
