@@ -10,8 +10,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "refs.md",
-            "mode": "source"
+            "file": "about.md",
+            "mode": "preview"
           }
         }
       }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "refs.md",
+                "file": "about.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,7 +84,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "refs.md"
+                "file": "about.md"
               }
             }
           }
@@ -96,9 +96,9 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "about.md",
     "refs.md",
     "_notes/Régression linéaire.md",
-    "about.md",
     "_notes/Connexion SSH avec un notebook jupyter.md",
     "_notes/Untitled.md",
     "_notes/Vectoriser du texte.md",

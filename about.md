@@ -5,7 +5,7 @@ permalink: /about/
 content-type: eg
 ---
 
-Mon espace de travail sur [Obsidian](https://obsidian.md) devenant de plus en plus touffu et complexe à gérer, j'ai décidé de mettre en ligne progressivement mes notes sur cette interface que je trouve plus claire.
+Mon espace de travail sur [Obsidian](https://obsidian.md) devenant de plus en plus touffu et complexe à gérer, j'ai décidé de mettre en ligne progressivement mes notes sur cette interface qui me laisse plus de liberté.
 
 Le but est de ce site est de me forcer à en améliorer la qualité de ces notes, la perspective d'être lu par quelqu'un étant motivant. Cela me permet par ailleurs d'y accéder partout.
 
@@ -24,7 +24,7 @@ Les notes peuvent prendre un des états suivants :
 - Été : la note est considérée comme complète ou presque (> 80%).
 - Automne : la note est à retravailler.
 
-Le site utilise [[Jekyll::https://jekyllrb.com/]], ainsi que le modèle [[notenote.link::https://github.com/Maxence-L/notenote.link]], version alternative de [[simply-jekyll::https://github.com/raghuveerdotnet/simply-jekyll]] que j'ai modifiée pour être compatible avec le logiciel [[Obsidian::https://obsidian.md]]. Ce site est lui dans une version de test permanente, certaines fonctionnalités peuvent donc comporter des bogues.
+Le site utilise [[Jekyll::https://jekyllrb.com/]], ainsi que le modèle [[notenote.link::https://github.com/Maxence-L/notenote.link]], version alternative de [[simply-jekyll::https://github.com/raghuveerdotnet/simply-jekyll]] que j'ai modifiée pour être compatible avec le logiciel [[Obsidian::https://obsidian.md]]. Ce site est lui dans une version de test permanente, certaines fonctionnalités peuvent donc comporter des bogues. J'ai récemment changé les couleurs pour du sépia, plus reposant pour les yeux.
 
 N'hésitez pas à ouvrir un [ticket](https://github.com/Maxence-L/arboretum.link/issues) sur github si vous constatez une erreur ! 
 
