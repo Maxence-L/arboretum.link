@@ -10,8 +10,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/JOINdre des tables SQL entre elles.md",
-            "mode": "source"
+            "file": "_notes/Vectoriser du texte.md",
+            "mode": "preview"
           }
         }
       }
@@ -40,8 +40,8 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
-                "matchingCase": true,
+                "query": "nlp",
+                "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
                 "extraContext": false,
@@ -49,11 +49,13 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 200.0036334991455
+    "width": 200.0036334991455,
+    "collapsed": true
   },
   "right": {
     "id": "15b808a1e515cd90",
@@ -69,7 +71,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/JOINdre des tables SQL entre elles.md",
+                "file": "_notes/Vectoriser du texte.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,7 +86,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/JOINdre des tables SQL entre elles.md"
+                "file": "_notes/Vectoriser du texte.md"
               }
             }
           }
@@ -96,13 +98,13 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "_notes/Vectoriser du texte.md",
     "_notes/JOINdre des tables SQL entre elles.md",
     "about.md",
     "refs.md",
     "_notes/Régression linéaire.md",
     "_notes/Connexion SSH avec un notebook jupyter.md",
     "_notes/Untitled.md",
-    "_notes/Vectoriser du texte.md",
     "_notes/Analyse discriminante.md",
     "_notes/Mise à l'échelle des données - standardisation et normalisation.md",
     "_notes/Imputation des valeurs manquantes.md"

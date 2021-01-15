@@ -20,8 +20,8 @@ D'autres approches exploitant les réseaux de neurones existent, appelées "repr
 
 ![context_vector](/assets/img/context_vector.png#center)
 <div align="center">
-	<p>
-Un vecteur contextuel issu d'un vecteur lexical.  <a href="https://www.aclweb.org/anthology/W06-2501.pdf">Source.</a>
+	<p> <i>
+Un vecteur contextuel issu d'un vecteur lexical.  <a href="https://www.aclweb.org/anthology/W06-2501.pdf">Source.</a></i>
 	</p>
 </div>
 
