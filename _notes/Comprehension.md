@@ -52,6 +52,12 @@ Le principe est le même, voici la syntaxe :
 
 On remarquera l'ajout d'un index.
 
+Cette technique est particulièrement utile si l'on désire inverser les paires clé : valeur d'un dictionnaire :
+
+```python
+{v:k for k,v in key_value_dict.items()}
+````
+
 ## Set comprehension
 
 De même, sans index :

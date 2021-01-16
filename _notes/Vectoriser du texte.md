@@ -74,6 +74,10 @@ Scikit-learn propose la méthode `CountVectorizer` du module `sklearn.feature_ex
 
 La méthode `.transform()` change chaque document en un array *sparce* et les combine dans une matrice :
 
+
+
+> À noter : Pour des corpus de grande taille, on peut utiliser `HashingVectorizer` qui hache le mot à son index, réduisant ainsi la mémoire utilisée (toutes les informations n'ont pas besoin d'être chargées dans la mémoire). Il n'y a toutefois pas de réversion au stade précédent dans ce cas `.inverse_transform` et l'on ne peut pas pondérer par fréquence inverse.
+
 ```pythpn
 from sklearn.feature_extraction.text import CountVectorizer
 
@@ -81,7 +85,66 @@ vectorizer = CountVectorizer()
 vectors = vectorizer.fit_transform(corpus)
 ````
 
-> À noter : Pour des corpus de grande taille, on peut utiliser `HashingVectorizer` qui hache le mot à son index, réduisant ainsi la mémoire utilisée (toutes les informations n'ont pas besoin d'être chargées dans la mémoire). Il n'y a toutefois pas de réversion au stade précédent dans ce cas `.inverse_transform` et l'on ne peut pas pondérer par fréquence inverse.
+On obtient une [matrice creuse](https://en.wikipedia.org/wiki/Sparse_matrix) (*sparse matrix*) où la plupart des éléments égaux à 0. Un exemple d'une telle matrice :
+
+$$
+\left(\begin{array}{cccccc}
+10 & 0 & 0 & 0 & 0 & 0 \\
+0 & 30 & 0 & 40 & 0 & 0 \\
+0 & 0 & 0 & 60 & 70 & 0 \\
+0 & 0 & 0 & 0 & 0 & 80
+\end{array}\right)
+$$
+
+Le stockage se fait au format *[[Manipuler les formats longs et larges de données\|long]]*, appelé matrice creuse compressée (*Compressed Sparse Row - CSR*) :
+
+```
+V         = [ 10 20 30 40 50 60 70 80 ]
+COL_INDEX = [  0  1  1  3  2  3  4  5 ]   
+ROW_INDEX = [  0  2  4  7  8 ]
+````
+
+En pratique :
+
+```python
+print(vectors)
+
+> (0, 108644)       4
+(0, 110106)     1
+(0, 57577)      2
+(0, 24398)      2
+(0, 79534)      1
+(0, 100942)     1
+(0, 37154)      1
+
+
+:       :
+(11313, 55901)  1
+(11313, 93448)  1
+...
+````
+
+```python
+print(type(vectors))
+
+> <class scipy.sparse.csr.csr_matrix>
+````
+
+On voit que sklearn renvoie un objet de type `csr_matrix`, qui correspond à une matrice creuse. Pour éviter les problèmes de compatibilité, il est possible de la convertir ensuite au format [[array]] :
+
+```python
+vectors_np_matrix = vectors.toarray()
+
+print(vectors_np_matrix)
+
+> [ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 0 0] ]
+  ````
 
 ## One-hot-encoding
 
@@ -93,7 +156,7 @@ La vectorisation TF-IDF donne à chaque mot un poids selon son originalité et s
 
 On compare la fréquence avec laquelle le mot apparait dans le document à la fréquence inverse avec laquelle il apparaît au moins une fois dans les documents comparés.
 
-[[https://en.wikipedia.org/wiki/Tf%E2%80%93idf#Definition::Plusieurs variantes de calcul existent]]. Voici la méthode canonique :
+[Plusieurs variantes de calcul existent](https://en.wikipedia.org/wiki/Tf%E2%80%93idf#Definition). Voici la méthode canonique :
 
 * $tf(t,d) = f_{t,d}$ correspond au nombre de fois où le terme $t$ est rencontré dans le document $d$.
 
@@ -115,95 +178,38 @@ Cette mesure permet d'évaluer le potentiel sémantique de chaque mot :
 
 Les variantes viennent lisser les poids produits par la formule de départ. Par exemple, plutôt que de d'utiliser la fréquence brute $tf(t,d)= f_{t, d}$, on peut utiliser la fréquence relative au sein du document :
 
-$$tf(t,d)=f_{t, d} / \sum_{t^{\prime} \in d} f_{t^{\prime}, d}$$
-
-### L'enregistrement de la matrice TF
-
-Si l'on analyse plusieurs textes (ce qui est généralement le cas), on aura alors une grande matrice, où chaque colonne correspondra à un mot et chaque ligne à un texte comparé. On l'appelle une matrice creuse compressée (*Compressed Sparse Row - CSR*).
-
-Cela donne une [[matrice creuse::https://en.wikipedia.org/wiki/Sparse_matrix]] (*sparse matrix*) où la plupart des éléments égaux à 0. Un exemple d'une telle matrice :
-
 $$
-\left(\begin{array}{cccccc}
-10 & 20 & 0 & 0 & 0 & 0 \\
-0 & 30 & 0 & 40 & 0 & 0 \\
-0 & 0 & 50 & 60 & 70 & 0 \\
-0 & 0 & 0 & 0 & 0 & 80
-\end{array}\right)
+tf(t,d)=f_{t, d} / \sum_{t^{\prime} \in d} f_{t^{\prime}, d}
 $$
 
-Le stockage se ferait au format *[[Manipuler les formats longs et larges de données\|long]]* :
-
-```
-V         = [ 10 20 30 40 50 60 70 80 ]
-COL_INDEX = [  0  1  1  3  2  3  4  5 ]   
-ROW_INDEX = [  0  2  4  7  8 ]
-````
-
-Bien qu'il soit facile de créer une matrice TF pour ensuite la convertir au format *CSR*, [[sklearn]] s'en charge pour nous, avec la classe `CounVectorizer`du module `sklearn.feature_extraction.text` :
-
-Importation :
-```python
-from sklearn.feature_extraction.text import CountVectorizer
-vectorizer = CountVectorizer()
-````
-
-Utilisation[^1] :
-```python
-tf_matrix = vectorizer.fit_transform(newsgroups.data)
-print(tf_matrix)
-
-> (0, 108644)       4
-(0, 110106)     1
-(0, 57577)      2
-(0, 24398)      2
-(0, 79534)      1
-(0, 100942)     1
-(0, 37154)      1
-(0, 45141)      1
-(0, 70570)      1
-(0, 78701)      2
-(0, 101084)     4
-(0, 32499)      4
-(0, 92157)      1
-(0, 100827)     6
-(0, 79461)      1
-(0, 39275)      1
-(0, 60326)      2
-(0, 42332)      1
-(0, 96432)      1
-(0, 67137)      1
-(0, 101732)     1
-(0, 27703)      1
-(0, 49871)      2
-(0, 65338)      1
-(0, 14106)      1
-:       :
-(11313, 55901)  1
-(11313, 93448)  1
-...
-````
+On génère la matrice contenant les poids tfidf avec le transformeur `TfidfVectorizer` de `sklearn.feature_extraction.text`:
 
 ```python
-print(type(tf_matrix))
-
-> <class 'scipy.sparse.csr.csr_matrix'>
+from sklearn.feature_extraction.text import TfidfVectorizer
+tfidf_vectorizer = TfidfVectorizer()
+tfidf_matrix = tfidf_vectorizer.fit_transform(data_nlp)
 ````
 
-On voit que sklearn renvoie un objet de type `csr_matrix`, qui correspond à une matrice creuse. Il est recommandé, pour éviter les problèmes de compatibilité, de la convertir au format [[array]] :
+Le vocabulaire est consultable en inspectant l'attribut `.vocabulary_` du transformeur :
+ 
+ ```python
+tfidf_vec = tfidf_vectorizer.fit(data_nlp).vocabulary_
+print(tfidf_vec)
 
-```python
-tf_np_matrix = tf_matrix.toarray()
-print(tf_np_matrix)
-
-> [ [0 0 0 ... 0 0 0]
- [0 0 0 ... 0 0 0]
- [0 0 0 ... 0 0 0]
- ...
- [0 0 0 ... 0 0 0]
- [0 0 0 ... 0 0 0]
- [0 0 0 ... 0 0 0] ]
-  ````
+{'clue': 8629,
+ 'crazy': 10154,
+ 'pant': 33931,
+ 'fragility': 17132,
+ 'porcelain': 35870,
+ 'doll': 12709,
+ 'ig': 21954,
+ 'rini': 39010,
+ 'jump': 24277,
+ 'conclusion': 9231,
+ 'unto': 48633,
+ 'shall': 41297,
+ ...}
+````
 
 
 
@@ -212,4 +218,3 @@ Références :
 - [Applied Text Analysis with Python, Benjamin Bengfort, Rebecca Bilbro, Tony Ojeda](https://www.oreilly.com/library/view/applied-text-analysis/9781491963036/)
 - [*Data Science Bookcamp*, de Leonard Apelstin](https://www.manning.com/books/data-science-bookcamp)
 
-[^1]: Exemple tiré de *Data Science Bookcamp*, de Leonard Apelstin, utilisant le `newsgroup` dataset (`from sklearn.datasets import fetch_20newsgroups`)
