@@ -222,19 +222,20 @@ print(tfidf_vec)
 
 Accessoirement, on peut utiliser ce code tiré d'un cours de [Datacamp](https://campus.datacamp.com/courses/preprocessing-for-machine-learning-in-python/selecting-features-for-modeling?ex=9), qui permet de ne conserver pour chaque texte que les `n` mots dont les scores sont les plus élevés.
 
-On a en input :
-
-- `vocab` correspond au 
-
 ```python
 from sklearn.feature_extraction.text import TfidfVectorizer
-tfidf_vectorizer = TfidfVectorizer()
-tfidf_matrix = tfidf_vectorizer.fit_transform(data_nlp)
 
+# On initialise le transformateur
+tfidf_vectorizer = TfidfVectorizer()
+
+# On entraîne le transformateur sur le corpus (data_nlp)
 tfidf_train = tfidf_vectorizer.fit(data_nlp)
 
+# On crée un dictionnaire {index : mot}
 vocab = {v:k for k,v in tfidf_vec.vocabulary_.items()}
 
+# Cette fonction retourne les indexes des top_n mots de la ligne vector_index 
+# ayant le poids tfidf le plus élevé :
 def return_weights(vocab, original_vocab, vector, vector_index, top_n):
     zipped = dict(zip(vector[vector_index].indices, vector[vector_index].data))
     
@@ -245,24 +246,56 @@ def return_weights(vocab, original_vocab, vector, vector_index, top_n):
     zipped_index = zipped_series.sort_values(ascending=False)[:top_n].index
     return [original_vocab[i] for i in zipped_index]
 
-# Print out the weighted words
-print(return_weights(vocab, tfidf_vec.vocabulary_, text_tfidf, 8, 3))
+print(return_weights(vocab, tfidf_vec.vocabulary_, text_tfidf, 3, 5))
 
+> [40507, 40394, 44197, 3928, 12690]
+
+print([vocab[key] for key in [40507, 40394, 44197, 3928, 12690]]
+
+> ['schütze', 'schaukeln', 'stroud', 'bartimäus', 'doherty']
+````
+
+```python
+# Cette fonction retourne les indices des top_n mots de chaque ligne, pour tout le corpus.
 def words_to_filter(vocab, original_vocab, vector, top_n):
+
     filter_list = []
     for i in range(0, vector.shape[0]):
     
-        # Here we'll call the function from the previous exercise, and extend the list we're creating
         filtered = return_weights(vocab, original_vocab, vector, i, top_n)
         filter_list.extend(filtered)
-    # Return the list in a set, so we don't get duplicate word indices
+    # On utilise un set pour éviter les doublons
     return set(filter_list)
 
-# Call the function to get the list of word indices
+# On obtient une liste d'indices
 filtered_words = words_to_filter(vocab, tfidf_vec.vocabulary_, text_tfidf, 3)
 
-# By converting filtered_words back to a list, we can use it to filter the columns in the text vector
+print(filtered_words)
+
+> {32770,
+ 32774,
+ 8,
+ 10,
+ 12,
+ 32780,
+ ...
+ }
+````
+
+```python
+# En convertissant filtered_words en une liste, on peut l'utiliser pour retirer les mots 
+# dont la valeur tf_idf est trop faible.
 filtered_text = text_tfidf[:, list(filtered_words)]
+print(filtered_text.shape)
+
+> (8979, 13309)
+
+# La matrice vectorisée initiale :
+print(tfidf_vectorizer.fit_transform(data_nlp).shape)
+
+>(8979, 52631)
+
+# On constate que l'on a supprimé trois quarts des mots.
 ```
 
 
