@@ -45,6 +45,30 @@ Les options graphique suivantes sont disponibles :
 
 Exemple plus fourni :
 
+```python
+from wordcloud import WordCloud
+
+cloud_generator = WordCloud(random_state=1,
+                            height=1000, width = 1000,
+                           background_color='salmon',
+                           colormap = 'Pastel2',
+                           collocations=False)
+
+wordcloud_image = cloud_generator.fit_words(df_ranked_words[0:50])
+
+def plot_cloud(wordcloud):
+    # Set figure size
+    plt.figure(figsize=(7, 7))
+    # Display image
+    plt.imshow(wordcloud, interpolation='bilinear') 
+    # No axis details
+    plt.axis("off");
+
+
+plot_cloud(wordcloud_image)
+```
+
+![](/assets/img/wcd2.png#center)
 
 
 [^1]: On importe avec `from matplotlib import cm`. [Matplotlib colormaps](https://matplotlib.org/3.2.1/tutorials/colors/colormaps.html)

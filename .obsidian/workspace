@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "nuage",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -49,7 +49,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -96,15 +97,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "_notes/Faire un nuage de mots avec Matplotlib.md",
+    "assets/img/wcd2.png",
+    "_notes/Afficher les tables existantes dans une base SQL.md",
+    "assets/img/wordcloud1.png",
+    "_notes/Vectoriser du texte.md",
+    "_notes/Régression linéaire.md",
+    "_notes/Régression logistique.md",
     "_notes/Faire un nuage de mots.md",
     "assets/img/Capture d’écran 2021-01-18 à 23.01.11.png",
-    "_notes/Matplotlib.md",
-    "_notes/Analyse discriminante.md",
-    "_notes/Argparse - créer une interface en ligne de commande.md",
-    "_notes/Untitled.md",
-    "_notes/Afficher les tables existantes dans une base SQL.md",
-    "_notes/Vectoriser du texte.md",
-    "_notes/csv.md",
-    "_notes/Pickle.md"
+    "_notes/Matplotlib.md"
   ]
 }
