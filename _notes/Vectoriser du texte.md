@@ -85,6 +85,9 @@ vectorizer = CountVectorizer()
 vectors = vectorizer.fit_transform(corpus)
 ````
 
+
+### Compressed Sparse Row
+
 On obtient une [matrice creuse](https://en.wikipedia.org/wiki/Sparse_matrix) (*sparse matrix*) où la plupart des éléments égaux à 0. Un exemple d'une telle matrice :
 
 $$
@@ -96,17 +99,23 @@ $$
 \end{array}\right)
 $$
 
-Le stockage se fait au format *[[Manipuler les formats longs et larges de données\|long]]*, appelé matrice creuse compressée (*Compressed Sparse Row - CSR*) :
+Le stockage se fait dans un format *[[Manipuler les formats longs et larges de données\|long]]* particulier, appelé matrice creuse compressée (*Compressed Sparse Row - CSR*). 
+
+Elle correspond schématiquement aux données suivantes :
 
 ```
-V         = [ 10 20 30 40 50 60 70 80 ]
+Value         = [ 10 20 30 40 50 60 70 80 ]
 COL_INDEX = [  0  1  1  3  2  3  4  5 ]   
 ROW_INDEX = [  0  2  4  7  8 ]
 ````
 
-En pratique :
+Sklearn renvoie un objet de type `csr_matrix`, qui correspond à une matrice creuse.
 
 ```python
+print(type(vectors))
+
+> <class scipy.sparse.csr.csr_matrix>
+
 print(vectors)
 
 > (0, 108644)       4
@@ -124,13 +133,13 @@ print(vectors)
 ...
 ````
 
-```python
-print(type(vectors))
+On peut consulter la [doc](https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.csr_matrix.html) de scipy à ce sujet. Elle détient des attributs qui permettent d'accéder à ses données. Par exemple :
 
-> <class scipy.sparse.csr.csr_matrix>
-````
+- `.indices`: indices 
 
-On voit que sklearn renvoie un objet de type `csr_matrix`, qui correspond à une matrice creuse. Pour éviter les problèmes de compatibilité, il est possible de la convertir ensuite au format [[array]] :
+On peut 
+
+Pour éviter les problèmes de compatibilité, il est possible de la convertir ensuite au format [[array]] :
 
 ```python
 vectors_np_matrix = vectors.toarray()
@@ -190,7 +199,7 @@ tfidf_vectorizer = TfidfVectorizer()
 tfidf_matrix = tfidf_vectorizer.fit_transform(data_nlp)
 ````
 
-Le vocabulaire est consultable en inspectant l'attribut `.vocabulary_` du transformeur :
+Le vocabulaire associé à la position du mot dans l'index est consultable en inspectant l'attribut `.vocabulary_` du transformeur :
  
  ```python
 tfidf_vec = tfidf_vectorizer.fit(data_nlp).vocabulary_
@@ -211,6 +220,50 @@ print(tfidf_vec)
  ...}
 ````
 
+Accessoirement, on peut utiliser ce code tiré d'un cours de [Datacamp](https://campus.datacamp.com/courses/preprocessing-for-machine-learning-in-python/selecting-features-for-modeling?ex=9), qui permet de ne conserver pour chaque texte que les `n` mots dont les scores sont les plus élevés.
+
+On a en input :
+
+- `vocab` correspond au 
+
+```python
+from sklearn.feature_extraction.text import TfidfVectorizer
+tfidf_vectorizer = TfidfVectorizer()
+tfidf_matrix = tfidf_vectorizer.fit_transform(data_nlp)
+
+tfidf_train = tfidf_vectorizer.fit(data_nlp)
+
+vocab = {v:k for k,v in tfidf_vec.vocabulary_.items()}
+
+def return_weights(vocab, original_vocab, vector, vector_index, top_n):
+    zipped = dict(zip(vector[vector_index].indices, vector[vector_index].data))
+    
+    # Let's transform that zipped dict into a series
+    zipped_series = pd.Series({vocab[i]:zipped[i] for i in vector[vector_index].indices})
+    
+    # Let's sort the series to pull out the top n weighted words
+    zipped_index = zipped_series.sort_values(ascending=False)[:top_n].index
+    return [original_vocab[i] for i in zipped_index]
+
+# Print out the weighted words
+print(return_weights(vocab, tfidf_vec.vocabulary_, text_tfidf, 8, 3))
+
+def words_to_filter(vocab, original_vocab, vector, top_n):
+    filter_list = []
+    for i in range(0, vector.shape[0]):
+    
+        # Here we'll call the function from the previous exercise, and extend the list we're creating
+        filtered = return_weights(vocab, original_vocab, vector, i, top_n)
+        filter_list.extend(filtered)
+    # Return the list in a set, so we don't get duplicate word indices
+    return set(filter_list)
+
+# Call the function to get the list of word indices
+filtered_words = words_to_filter(vocab, tfidf_vec.vocabulary_, text_tfidf, 3)
+
+# By converting filtered_words back to a list, we can use it to filter the columns in the text vector
+filtered_text = text_tfidf[:, list(filtered_words)]
+```
 
 
 Références :

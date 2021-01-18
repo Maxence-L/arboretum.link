@@ -10,8 +10,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/Comprehension.md",
-            "mode": "preview"
+            "file": "_notes/Vectoriser du texte.md",
+            "mode": "source"
           }
         }
       }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "dict compre",
+                "query": "jupyter",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -49,13 +49,11 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200.0036334991455,
-    "collapsed": true
+    "width": 200.0036334991455
   },
   "right": {
     "id": "15b808a1e515cd90",
@@ -71,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/Comprehension.md",
+                "file": "_notes/Vectoriser du texte.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -86,7 +84,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/Comprehension.md"
+                "file": "_notes/Vectoriser du texte.md"
               }
             }
           }
@@ -98,15 +96,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
-    "_notes/Comprehension.md",
     "_notes/Vectoriser du texte.md",
+    "_notes/Régression linéaire.md",
+    "_notes/Régression logistique.md",
+    "_notes/Evaluation des modèles en pratique.md",
+    "_notes/Connexion SSH avec un notebook jupyter.md",
+    "_notes/Comprehension.md",
     "about.md",
     "_notes/JOINdre des tables SQL entre elles.md",
     "refs.md",
-    "_notes/Régression linéaire.md",
-    "_notes/Connexion SSH avec un notebook jupyter.md",
-    "_notes/Untitled.md",
-    "_notes/Analyse discriminante.md",
-    "_notes/Mise à l'échelle des données - standardisation et normalisation.md"
+    "_notes/Untitled.md"
   ]
 }
