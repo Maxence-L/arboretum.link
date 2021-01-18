@@ -1,5 +1,5 @@
 ---
-title: Analyse discriminante
+title : Analyse discriminante
 tags : Apprentissage-supervisé
 etat : printemps
 ---
