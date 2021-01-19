@@ -388,13 +388,70 @@ Les modèles utilisés pour analyser le texte ne sont pas tous équivalent : si 
 
 On peut consulter les valeurs calculée du vecteur d'un `token` ou d'un `doc` avec `doc.vector`ou `doc[index].vector`.
 
-On peut aussi accéder à la [[Norme d'un vecteur]] avec `doc.vector_norm`.
+
+
+
+Spacy facilite grandement les manipulations de données et la vectorisation des lignes. 
+
+Une fois l'objet `nlp()` instancié avec du texte, on peut accéder à l'attribut `.vector` qui correspond à un vecteur Word2Vec contenant 300 paramètres :
+
+```python
+a = nlp("We shall prevail")
+
+
+a.doc.vector
+
+> array([-3.21556963e-02,  2.17638351e-02, -1.38545722e-01, -4.77672182e-02,
+       -6.52147382e-02, -2.39986577e-03, -1.01446500e-03,  1.90733224e-02,
+       -9.15176515e-03,  1.29499006e+00, -1.51797950e-01, -6.41339123e-02,
+	   ...]
+	   
+a.doc.vector.shape
+
+> (300,)
+````
+
+Ce vecteur n'est pas [[Norme d'un vecteur\|normalisé]]. On accède à sa [[Norme d'un vecteur\|norme]] avec `doc.vector_norm`. :
+
+```python
+# Norme du vecteur
+np.linalg.norm(a.doc.vector)
+
+> 4.845292
+
+a.doc.vector_norm
+
+> 4.845291884565563
+
+# Norme du vecteur une fois normalisé
+np.linalg.norm(a.doc.vector/np.linalg.norm(a.doc.vector))
+
+> 0.99999994
+
+# Distance entre deux vecteurs :
+
+b = nlp("A computer fell off the apple tree")
+np.linalg.norm(a.doc.vector - b.doc.vector)
+
+> 4.6305118
+````
+
+La similarité se calcule avec la méthode `.similarity(autre_vecteur)` :
+
+```python
+
+````
 
 #### Similarité
 
 SpaCy propose par défaut la méthode `doc.similarity(doc comparé)` qui produit la [[similarité cosinus]]. On peut l'appliquer à un document ou à un Span.
 
 ```python
+# A partir d'un doc :
+a.similarity(b)
+
+> 0.456237800465105
+
 doc = nlp("This was a great restaurant. Afterwards, we went to a really nice bar.")
 
 # Spans pour "great restaurant" et "really nice bar"

@@ -298,59 +298,6 @@ print(tfidf_vectorizer.fit_transform(data_nlp).shape)
 # On constate que l'on a supprimé trois quarts des mots.
 ```
 
-## Word2Vec
-
-([à complêter](https://datascientest.com/nlp-word-embedding-word2vec))
-
-### Mise en oeuvre avec [[Spacy]]
-
-Spacy facilite grandement les manipulations de données et la vectorisation des lignes. 
-
-Une fois l'objet `nlp()` instancié avec du texte, on peut accéder à l'attribut `.vector` qui correspond à un vecteur Word2Vec contenant 300 paramètres :
-
-```python
-a = nlp(data_nlp[1])
-
-a.doc.vector
-
-> array([-3.21556963e-02,  2.17638351e-02, -1.38545722e-01, -4.77672182e-02,
-       -6.52147382e-02, -2.39986577e-03, -1.01446500e-03,  1.90733224e-02,
-       -9.15176515e-03,  1.29499006e+00, -1.51797950e-01, -6.41339123e-02,
-	   ...]
-	   
-a.doc.vector.shape
-
-> (300,)
-````
-
-Ce vecteur n'est pas [[Norme d'un vecteur\|normalisé]] :
-
-```python
-# Norme du vecteur
-np.linalg.norm(a.doc.vector)
-
-> 2.5447857
-
-# Norme du vecteur une fois normalisé
-np.linalg.norm(a.doc.vector/np.linalg.norm(a.doc.vector))
-
-> 1.0
-
-# Distance entre deux vecteurs :
-
-b = nlp(data_nlp[4])
-np.linalg.norm(a.doc.vector - b.doc.vector)
-
-> 1.488689
-````
-
-La similarité se calcule avec la méthode `.similarity(autre_vecteur)` :
-
-```python
-a.similarity(b)
-
-> 0.8405074023837766
-````
 
 
 
