@@ -43,7 +43,7 @@ Les options graphique suivantes sont disponibles :
 - `collocations=False` - Permet d'éviter que des doublons apparaissent
 - `stopwords = STOPWORDS`- retire les *stopwords*[^2]
 
-Exemple plus fourni :
+Exemple plus fourni issu de [cet article](https://towardsdatascience.com/simple-wordcloud-in-python-2ae54a9f58e5) :
 
 ```python
 from wordcloud import WordCloud
@@ -68,6 +68,7 @@ def plot_cloud(wordcloud):
 plot_cloud(wordcloud_image)
 ```
 
+Le résultat :
 ![](/assets/img/wcd2.png#center)
 
 

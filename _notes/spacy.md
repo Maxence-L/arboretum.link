@@ -16,27 +16,28 @@ La documentation de spaCy est, je dois le dire, absolument la meilleure que j'ai
 
 ## Installation
 
-On l'importe de la manière suivante :
+Installation de spacy :
 
 ```bash
-pip install spacy
+!pip install spacy
 ````
 
-Il faut penser à installer le pack de langage désiré [parmi ceux disponibles](https://spacy.io/usage/models) pour l'analyse :
+Il faut penser à installer le pack de langage désiré [parmi ceux disponibles](https://spacy.io/usage/models) pour l'analyse. Pour exemple avec le modèle "lourd" (> 750 Mo)[^1]
+
+[^1]: Voir [ce ticket](https://github.com/explosion/spaCy/issues/4577)
 
 ```bash
-python -m spacy download en
+!python -m spacy download en_core_web_lg
 ```
 
-On peut alors importer spaCy, ainsi que le modèle contenant les règles de tokenisation ainsi que le pipeline de transformation : ^466265
+On peut alors importer spaCy, ainsi que le modèle contenant les règles de tokenisation ainsi que le pipeline de transformation :
 
 ```python
 import spacy
+import en_core_web_lg
 
-nlp = # On charge le modèle de base avec .load("en_core_web_sm")
-# On peut remplacer le langage.
-
-nlp = spacy.load("en_core_web_sm")
+# On charge le modèle de base avec .load("en_core_web_sm")
+nlp = en_core_web_lg.load()
 ```
 
 On peut toutefois importer la classe correspondant au champ lexical d'une langue :

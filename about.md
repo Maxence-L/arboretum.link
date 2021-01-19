@@ -9,9 +9,9 @@ Mon espace de travail sur [Obsidian](https://obsidian.md) devenant de plus en pl
 
 Le but est de ce site est de me forcer à en améliorer la qualité de ces notes, la perspective d'être lu par quelqu'un étant motivant. Cela me permet par ailleurs d'y accéder partout.
 
-J'oublie parfois certains éléments purement techniques : une formule mathématique, quelle méthode utiliser dans un package... Je compense en m'expliquant à moi-même par écrit ce que j'étudie, afin de pouvoir m'en souvenir rapidement lorsque j'en ai besoin. Pour en savoir plus sur ce procédé, je vous invite à lire l'article [*From note-taking to note-making*](https://nesslabs.com/from-note-taking-to-note-making) (court) ou de consulter le [portail dédié](http://www.sussex.ac.uk/skillshub/?id=260) de l'Université du Sussex.
+J'oublie parfois certains éléments purement techniques : une formule mathématique, quelle méthode utiliser dans un package... Je compense en m'expliquant par écrit ce que j'étudie, afin de pouvoir m'en souvenir rapidement lorsque j'en ai besoin. Pour en savoir plus sur ce procédé, je vous invite à lire l'article [*From note-taking to note-making*](https://nesslabs.com/from-note-taking-to-note-making) (court) ou de consulter le [portail dédié](http://www.sussex.ac.uk/skillshub/?id=260) de l'Université du Sussex (long).
 
-Je mets de plus en plus de liens sur les pages, ils correspondent la plupart du temps à des explications plus détaillées et pertinentes à propos du sujet traité. Cliquez dessus !
+Je mets de plus en plus de liens sur les pages, ils correspondent la plupart du temps à des explications plus détaillées et pertinentes à propos du sujet traité. Cliquez !
 
 Les notes que vous trouverez ici sont perpétuellement en cours d'amélioration et son mises à jour [[quotidiennement::https://github.com/Maxence-L]]. Mémoriser des concepts est un processus itératif au cours duquel je me corrige et je complète mes connaissances. 
 
@@ -26,8 +26,8 @@ Les notes peuvent prendre un des états suivants :
 - Été : la note est considérée comme complète ou presque (> 80%).
 - Automne : la note est à retravailler.
 
-Le site utilise [[Jekyll::https://jekyllrb.com/]], ainsi que le modèle [[notenote.link::https://github.com/Maxence-L/notenote.link]], version alternative de [[simply-jekyll::https://github.com/raghuveerdotnet/simply-jekyll]] que j'ai modifiée pour être compatible avec le logiciel [[Obsidian::https://obsidian.md]]. Ce site est lui dans une version de test permanente, certaines fonctionnalités peuvent donc comporter des bogues. J'ai récemment changé les couleurs pour du sépia, plus reposant pour les yeux.
+Le site utilise [[Jekyll::https://jekyllrb.com/]], ainsi que le modèle [[notenote.link::https://github.com/Maxence-L/notenote.link]], version alternative de [[simply-jekyll::https://github.com/raghuveerdotnet/simply-jekyll]] que j'ai modifiée pour être compatible avec le logiciel [[Obsidian::https://obsidian.md]]. Ce site est lui dans une version de test permanente, certaines fonctionnalités peuvent donc comporter des bogues. J'ai récemment changé les couleurs pour du sépia, plus reposant pour les yeux, notamment le soir.
 
-N'hésitez pas à ouvrir un [ticket](https://github.com/Maxence-L/arboretum.link/issues) sur github si vous constatez une erreur ! 
+N'hésitez pas à ouvrir un [ticket](https://github.com/Maxence-L/arboretum.link/issues) sur github si vous voulez améliorer une note ou qu'une erreur s'est glissée dans une note ! 
 
 Un tracking rudimentaire et anonymisé est réalisé avec [Insights](https://getinsights.io/).
