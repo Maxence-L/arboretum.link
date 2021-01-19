@@ -4,7 +4,7 @@ tags: NLP
 toc: true
 etat: été
 ---
-SpaCy est une bibliothèque python facilitant les étapes du NLP.
+Bienvenue sur la méganote Spacy 🔥 ! SpaCy est une bibliothèque python facilitant les étapes du NLP. 
 
 La documentation de spaCy est, je dois le dire, absolument la meilleure que j'ai pu lire sur le web :
 
