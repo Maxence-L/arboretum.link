@@ -1,7 +1,7 @@
 ---
-title: Ansible
+title: Préparer Ansible avant le déploiement
 tags : DevOps
-etat : hiver
+etat : printemps
 toc: true
 ---
 
