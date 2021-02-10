@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_notes/df.isna(), df.isnull() - trouver les valeurs manquantes.md",
+            "file": "_notes/Ansible.md",
             "mode": "preview"
           }
         }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "isna",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -49,12 +49,12 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200.0036334991455
+    "width": 200.0036334991455,
+    "collapsed": true
   },
   "right": {
     "id": "15b808a1e515cd90",
@@ -70,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_notes/df.isna(), df.isnull() - trouver les valeurs manquantes.md",
+                "file": "_notes/Ansible.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -85,7 +85,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_notes/df.isna(), df.isnull() - trouver les valeurs manquantes.md"
+                "file": "_notes/Ansible.md"
               }
             }
           }
@@ -98,15 +98,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "_notes/Untitled.md",
+    "_notes/Vectoriser du texte.md",
+    "_notes/Faire un nuage de mots avec Matplotlib.md",
+    "_notes/csv.md",
     "_notes/df.isna(), df.isnull() - trouver les valeurs manquantes.md",
     "_notes/Similarité.md",
     "_notes/Similarité cosinus.md",
     "_notes/Spacy.md",
-    "_notes/Vectoriser du texte.md",
     "_notes/BeautifulSoup.md",
-    "_notes/df.isin() - vérifier le contenu d'une ligne.md",
-    "about.md",
-    "_notes/Faire un nuage de mots avec Matplotlib.md",
-    "assets/img/wcd2.png"
+    "_notes/df.isin() - vérifier le contenu d'une ligne.md"
   ]
 }
