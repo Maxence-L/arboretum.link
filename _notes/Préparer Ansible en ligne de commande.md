@@ -1,5 +1,5 @@
 ---
-title: Préparer Ansible avant le déploiement
+title: Préparer Ansible en ligne de commande
 tags : DevOps
 etat : printemps
 toc: true
